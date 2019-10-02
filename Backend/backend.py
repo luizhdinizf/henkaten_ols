@@ -1,4 +1,4 @@
-from mongoExample import *
+from mongoCli import *
 from flask import make_response
 import cv2
 from flask import Flask, render_template, flash, request,make_response
@@ -10,8 +10,7 @@ app = Flask(__name__)
 app.config.from_object(__name__)
 app.config['SECRET_KEY'] = '7d441f27d441f27567d441f2b6176a'
 
-class ReusableForm(Form):
-    name = TextField('Name:', validators=[validators.required()])
+class ReusableForm(Form):   
     
     @app.route("/", methods=['GET', 'POST'])
     def hello():

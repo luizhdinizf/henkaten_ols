@@ -10,7 +10,7 @@ services:
             - FLASK_APP=app
             - FLASK_ENV=development
         ports:
-            - "80:5000"
+            - "800:5000"
         depends_on:
             - mongo
         
