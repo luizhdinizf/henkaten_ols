@@ -151,6 +151,7 @@ scale = 4
 processThisFrame = True
 retrieveInformation = True
 sendInformation = False
+sendNextFace = True
 processedFrames = 0
 framesFromLastRetrieve = 0
 framesFromLastSend = 0
@@ -179,13 +180,16 @@ while 1:
         framesFromLastRetrieve = 0
     else:
         framesFromLastRetrieve +=1 
+    if sendNextFace:
+        uplaodImage(frame)
+        sendNextFace = False
     displayDict = preparaDisplay(frame,wpInfo,recognizedFaces,encodedFaces,nomes,missingSkills)
     displayScreen(displayDict)
     key= cv2.waitKey(1) & 0xFF
     if key == ord('q'):
         break
-    if key == ord('c'):
-        encodedFaces = []
+    if key == ord('g'):
+        sendNextFace = True
         print("c")
     if key == ord('h'):
         missingSkills=[]
