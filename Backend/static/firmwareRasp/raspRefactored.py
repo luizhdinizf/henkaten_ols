@@ -144,12 +144,8 @@ wpInfo = {
     ], 
     "mac" : "0x87fdb4b8ca2d"
     }
-wpInfo=getWorkplaceInfo({'mac':'0x87fdb4b8ca2d'})
-#print(wp2)
-print('\n')
-print(wpInfo)
 
-#wpInfo=getWorkplaceInfo({'mac':'0x87fdb4b8ca2d'})
+wpInfo=getWorkplaceInfo({'mac':'0x87fdb4b8ca2d'})
 encodedFaces,nomes,missingSkills = getInformation(wpInfo)
 scale = 4
 processThisFrame = True
