@@ -1,7 +1,7 @@
 import cv2
 import face_recognition
 import numpy as np
-from mongoServer import *
+from mongoCli import *
 font = 4
 video_capture = cv2.VideoCapture(0)
 def encodeSingleFromImagePath(path):
@@ -128,7 +128,7 @@ wpInfo = {
     "cliente" : "Fiat", 
     "area" : "Ato", 
     "linha" : "Vão Motor XMF", 
-    "modelo" : "Vão Motor XMF", 
+    "modelo" : "Kicks", 
     "requisitos" : [
         "DIRECIONAMENTO", 
         "ACABAMENTO",
@@ -144,6 +144,10 @@ wpInfo = {
     ], 
     "mac" : "0x87fdb4b8ca2d"
     }
+wpInfo=getWorkplaceInfo({'mac':'0x87fdb4b8ca2d'})
+#print(wp2)
+print('\n')
+print(wpInfo)
 
 #wpInfo=getWorkplaceInfo({'mac':'0x87fdb4b8ca2d'})
 encodedFaces,nomes,missingSkills = getInformation(wpInfo)
