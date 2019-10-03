@@ -144,6 +144,8 @@ wpInfo = {
     ], 
     "mac" : "0x87fdb4b8ca2d"
     }
+
+#wpInfo=getWorkplaceInfo({'mac':'0x87fdb4b8ca2d'})
 encodedFaces,nomes,missingSkills = getInformation(wpInfo)
 scale = 4
 processThisFrame = True
@@ -155,7 +157,8 @@ framesFromLastSend = 0
 
 while 1:
     ret, frame = video_capture.read()  
-    if retrieveInformation:        
+    if retrieveInformation:  
+        #wpInfo=getWorkplaceInfo({'mac':'0x87fdb4b8ca2d'})     
         encodedFaces,nomes,missingSkills = getInformation(wpInfo)
         retrieveInformation = False
     if processThisFrame:
@@ -164,11 +167,7 @@ while 1:
         processThisFrame = False
     if sendInformation:
         print("INFORMING TO SERVER")        
-        processThisFrame = False
-        
-   
-    
-        
+        sendInformation = False
     if processedFrames > 30:
         processThisFrame = True
         processedFrames = 0
@@ -179,11 +178,7 @@ while 1:
         retrieveInformation = True
         framesFromLastRetrieve = 0
     else:
-        framesFromLastRetrieve +=1
-    
-        
-    
-    
+        framesFromLastRetrieve +=1 
     displayDict = preparaDisplay(frame,wpInfo,recognizedFaces,encodedFaces,nomes,missingSkills)
     displayScreen(displayDict)
     key= cv2.waitKey(1) & 0xFF
@@ -197,9 +192,7 @@ while 1:
         print("h")
     if key == ord('j'):
         missingSkills=[[]]
-        print("j")
-
-    
+        print("j")  
     if key == ord('r'):
         encodedFaces,nomes,missingSkills = getInformation(wpInfo)
 video_capture.release()
