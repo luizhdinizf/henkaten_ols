@@ -2,6 +2,7 @@ import cv2
 import face_recognition
 import numpy as np
 from mongoCli import *
+import uuid
 font = 4
 video_capture = cv2.VideoCapture(0)
 def encodeSingleFromImagePath(path):
@@ -49,6 +50,20 @@ def displayIds(frame,ids):
         cv2.rectangle(frame, (left, bottom - 35), (right, bottom), borderColor, cv2.FILLED)
         cv2.putText(frame, colaborador['name'], (left + 6, bottom - 6), font, 1.0, (255, 255, 255), 1)
         cv2.putText(frame, txtQualificado, (left + 6, top - 6), font, 0.8, borderColor, 1)
+    return frame
+
+
+def saveRecognition(frame,ids):          
+    for colaborador in ids:       
+        (bottom, right, top, left) = colaborador['position']  
+        top *= scale
+        right *= scale
+        bottom *= scale
+        left *= scale        
+        cropped = frame[bottom:top, left:right]
+        uplaodImage(cropped)
+        cv2.imshow("cropped", cropped)
+    print("SalvarImagem")    
     return frame
 
 def displayScreen(displayDict):
@@ -107,7 +122,8 @@ def preparaDisplay(frame,wpInfo,recognizedFaces,encodedFaces,names,missingSkills
             'name':str(face['index']),
             'missingSkills':['Desconhecido']   
         }
-        else:
+        else:          
+            
             dictFromFace = {
                 'position':face['position'],
                 'name':names[face['index']],
@@ -120,32 +136,11 @@ def preparaDisplay(frame,wpInfo,recognizedFaces,encodedFaces,names,missingSkills
 
 
             
+mac = hex(uuid.getnode())
 
+print(mac)
 
-wpInfo = { 
-    "_id" : "5d9021cb0b84d14281061ed3", 
-    "N" : 1, 
-    "cliente" : "Fiat", 
-    "area" : "Ato", 
-    "linha" : "Vão Motor XMF", 
-    "modelo" : "Kicks", 
-    "requisitos" : [
-        "DIRECIONAMENTO", 
-        "ACABAMENTO",
-        "SOLDAGEM QUENTE"
-    ], 
-    "colaboradores" : [
-        "2536", 
-        "2137", 
-        "851"
-    ], 
-    "reconhecidos" : [
-
-    ], 
-    "mac" : "0x87fdb4b8ca2d"
-    }
-
-wpInfo=getWorkplaceInfo({'mac':'0x87fdb4b8ca2d'})
+wpInfo=getWorkplaceInfo({'mac':mac})
 encodedFaces,nomes,missingSkills = getInformation(wpInfo)
 scale = 4
 processThisFrame = True
@@ -155,9 +150,11 @@ sendNextFace = True
 processedFrames = 0
 framesFromLastRetrieve = 0
 framesFromLastSend = 0
+frameWithFace = []
 
 while 1:
     ret, frame = video_capture.read()  
+    frame = cv2.flip(frame, 1)
     if retrieveInformation:  
         #wpInfo=getWorkplaceInfo({'mac':'0x87fdb4b8ca2d'})     
         encodedFaces,nomes,missingSkills = getInformation(wpInfo)
@@ -165,6 +162,8 @@ while 1:
     if processThisFrame:
         small_frame = cv2.resize(frame, (0, 0), fx=1/scale, fy=1/scale)
         recognizedFaces = recognizeInImage(small_frame,encodedFaces)
+        if len(recognizedFaces)>0:
+            frameWithFace = frame.copy()
         processThisFrame = False
     if sendInformation:
         print("INFORMING TO SERVER")        
@@ -180,10 +179,12 @@ while 1:
         framesFromLastRetrieve = 0
     else:
         framesFromLastRetrieve +=1 
-    if sendNextFace:
-        uplaodImage(frame)
-        sendNextFace = False
+   
     displayDict = preparaDisplay(frame,wpInfo,recognizedFaces,encodedFaces,nomes,missingSkills)
+    
+    if sendNextFace:
+        saveRecognition(frameWithFace,displayDict['ids'])
+        sendNextFace = False    
     displayScreen(displayDict)
     key= cv2.waitKey(1) & 0xFF
     if key == ord('q'):
@@ -195,7 +196,7 @@ while 1:
         missingSkills=[]
         print("h")
     if key == ord('j'):
-        missingSkills=[[]]
+        print(nomes)
         print("j")  
     if key == ord('r'):
         encodedFaces,nomes,missingSkills = getInformation(wpInfo)

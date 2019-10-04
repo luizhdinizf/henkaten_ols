@@ -1,4 +1,6 @@
 
+source ~/.profile
+workon cv
 rm ./unitTest.py
 rm ./mongoCli.py
 rm ./raspRefactored.py

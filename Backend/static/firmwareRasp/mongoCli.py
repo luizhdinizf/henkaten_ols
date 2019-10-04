@@ -266,7 +266,7 @@ def getColaboradoresFromLinha(wpInfo):
     cursor = collection.find(query)
     #try:
     for doc in cursor:
-        novoColaborador ={}
+        novoColaborador ={}    
         novoColaborador={
             'Nome':doc['NOME'],
             'Matricula':doc['MATRÍCULA']                            

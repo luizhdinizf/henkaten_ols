@@ -7,7 +7,7 @@ import cv2
 import jsonpickle
 import numpy as np
 import random
-from flask import Flask, render_template, flash, request,make_response, url_for,Response
+from flask import Flask, render_template, flash, request,make_response, url_for,Response,redirect
 from wtforms import Form, TextField, TextAreaField, validators, StringField, SubmitField
 from flask import jsonify
 from bson import ObjectId
@@ -74,14 +74,15 @@ def rename(source):
     frame = cv2.imread(src)
     recognizedLocations = face_recognition.face_locations(frame)
     encodedFaces = face_recognition.face_encodings(frame, recognizedLocations)
-    saveEncodedFace(registro,encodedFaces[0][0])
+    #return(str(len(encodedFaces)))
+    saveEncodedFace(registro,list(encodedFaces[0]))
     dest="static/upload/"+registro+".jpg"
     shutil.move(src, dest)
-    return(dest)
+    return redirect("/", code=301)
 
 @app.route('/api/upload', methods=['POST'])
 def test2():
-    id = '123'
+    id = str(random.randint(1000,9999))
     r = request
    
    
