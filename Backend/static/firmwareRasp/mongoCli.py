@@ -24,13 +24,13 @@ def acharColaboradores(queryColaboradores):
     finally:
         client.close()
 
-def preencheReconhecidos(posto,ids):
+def preencheReconhecidos(mac,nomes):
     collection = database['postos']  
     result = collection.update_many( 
-        {"N":posto}, 
+        {"mac":mac}, 
         { 
                 "$set":{ 
-                        "reconhecidos":ids
+                        "reconhecidos":nomes
                         }, 
                                  
                 } 
@@ -325,13 +325,21 @@ def getInformation(wpInfo):
 def uplaodImage(img):
     addr = 'http://172.22.45.216:800'
     test_url = addr + '/api/upload'
-
-    # prepare headers for http request
     content_type = 'image/jpeg'
     headers = {'content-type': content_type}   
-    # encode image as jpeg
     _, img_encoded = cv2.imencode('.jpg', img)
-    # send http request with image and receive response
-    response = requests.post(test_url, data=img_encoded.tostring(), headers=headers)
-    # decode response
+    response = requests.post(test_url, data=img_encoded.tostring(), headers=headers) 
     print(json.loads(response.text))
+    
+    
+def regularizaPosto():     
+    collection = database["postos"]
+    query = {}
+    cursor = collection.find(query)
+    for doc in cursor:
+        requisitos = doc['requisitos'].split(',')
+        postoQueVaiSerEditadoQuery={}
+        postoQueVaiSerEditadoQuery['_id'] = doc['_id']
+        newvalues = { "$set": { "requisitos": requisitos} }
+        collection.update_one(postoQueVaiSerEditadoQuery, newvalues) 
+        print(doc)  

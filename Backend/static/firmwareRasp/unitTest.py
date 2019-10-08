@@ -22,21 +22,7 @@ wpInfo = {
     }
 
 
-encodedFaces,nomes,missingSkills = getInformation(wpInfo)
-print(encodedFaces)
-print("\n")
-print(nomes)
-print("\n")
-print(missingSkills)
-
-print("\n\n\n")
-wpInfo2=getWorkplaceInfo({'mac':'0x87fdb4b8ca2d'})
-encodedFaces,nomes,missingSkills = getInformation(wpInfo2)
-print(encodedFaces)
-print("\n")
-print(nomes)
-print("\n")
-print(missingSkills)
+regularizaPosto()
 
 
 

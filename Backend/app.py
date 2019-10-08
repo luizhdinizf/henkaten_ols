@@ -10,12 +10,14 @@ import random
 from flask import Flask, render_template, flash, request,make_response, url_for,Response,redirect
 from wtforms import Form, TextField, TextAreaField, validators, StringField, SubmitField
 from flask import jsonify
+from flask_cors import CORS
 from bson import ObjectId
 import sys
 import json
 import os
 import shutil
 import uuid
+
 
 
 class JSONEncoder(json.JSONEncoder):
@@ -39,6 +41,7 @@ def scanStaticFolder():
 
 DEBUG = True
 app = Flask(__name__)
+CORS(app)
 app.config.from_object(__name__)
 app.config['SECRET_KEY'] = '7d441f27d441f27567d441f2b6176a'
 
@@ -80,6 +83,7 @@ def rename(source):
     shutil.move(src, dest)
     return redirect("/", code=301)
 
+
 @app.route('/api/upload', methods=['POST'])
 def test2():
     id = str(random.randint(1000,9999))
@@ -108,4 +112,4 @@ def test():
     return r.data
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    app.run(host='0.0.0.0',ssl_context=('cert.pem', 'key.pem'))

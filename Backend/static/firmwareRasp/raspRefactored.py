@@ -72,6 +72,7 @@ def displayScreen(displayDict):
     linha = displayDict['linha']
     frame = displayIds(frame,ids)
     frame = displayInfo(frame,linha)
+    #imS = cv2.resize(frame, (1280, 1024))  
     cv2.imshow('Video', frame)
 
 def recognizeInImage(frame,knownFacesEncoded):
@@ -148,9 +149,13 @@ retrieveInformation = True
 sendInformation = False
 sendNextFace = True
 processedFrames = 0
+framesSemNimguem = 0
 framesFromLastRetrieve = 0
 framesFromLastSend = 0
 frameWithFace = []
+reconhecidos=[]
+cv2.namedWindow("Video", cv2.WND_PROP_FULLSCREEN)
+cv2.setWindowProperty("Video",cv2.WND_PROP_FULLSCREEN,cv2.WINDOW_FULLSCREEN)
 
 while 1:
     ret, frame = video_capture.read()  
@@ -163,7 +168,16 @@ while 1:
         small_frame = cv2.resize(frame, (0, 0), fx=1/scale, fy=1/scale)
         recognizedFaces = recognizeInImage(small_frame,encodedFaces)
         if len(recognizedFaces)>0:
-            frameWithFace = frame.copy()
+            reconhecidos = []
+            for face in recognizedFaces:
+                if face['index'] != -1:
+                    reconhecidos.append(nomes[face['index']])
+            preencheReconhecidos(mac,reconhecidos)
+            
+        else:            
+            framesSemNimguem += 1
+            print(framesSemNimguem)
+            
         processThisFrame = False
     if sendInformation:
         print("INFORMING TO SERVER")        
@@ -179,7 +193,13 @@ while 1:
         framesFromLastRetrieve = 0
     else:
         framesFromLastRetrieve +=1 
+    
+    if framesSemNimguem > 100:
+        preencheReconhecidos(mac,[])
+        framesSemNimguem = 0
    
+    
+    
     displayDict = preparaDisplay(frame,wpInfo,recognizedFaces,encodedFaces,nomes,missingSkills)
     
     if sendNextFace:
