@@ -3,6 +3,8 @@ import face_recognition
 import numpy as np
 from mongoCli import *
 import uuid
+import subprocess
+
 font = 4
 video_capture = cv2.VideoCapture(0)
 def encodeSingleFromImagePath(path):
@@ -20,6 +22,11 @@ def displayInfo(frame,infos):
     fontColor = (0,255,0)#bgr
     left = 10
     top = 10
+    
+    cv2.putText(frame, hostname, (left, top+letterSpacing*i), font, fontSize, fontColor, 1)
+    i+=1      
+    cv2.putText(frame, mac, (left, top+letterSpacing*i), font, fontSize, fontColor, 1)
+    i+=1 
     for key in infos:        
         text = '{}:{}'.format(key,infos[key])
         cv2.putText(frame, text, (left, top+letterSpacing*i), font, fontSize, fontColor, 1)
@@ -72,7 +79,6 @@ def displayScreen(displayDict):
     linha = displayDict['linha']
     frame = displayIds(frame,ids)
     frame = displayInfo(frame,linha)
-    #imS = cv2.resize(frame, (1280, 1024))  
     cv2.imshow('Video', frame)
 
 def recognizeInImage(frame,knownFacesEncoded):
@@ -142,6 +148,12 @@ mac = hex(uuid.getnode())
 print(mac)
 
 wpInfo=getWorkplaceInfo({'mac':mac})
+hostname = wpInfo['cliente'] +'_' +wpInfo['linha']+'_'+wpInfo['Posto']
+hostname = hostname.replace(" ", "_")
+hostname = hostname.replace("_", "")
+print(mac)
+print(hostname) #NissanMainDirec1
+#subprocess.call(['hostname', hostname])
 encodedFaces,nomes,missingSkills = getInformation(wpInfo)
 scale = 4
 processThisFrame = True
@@ -149,13 +161,9 @@ retrieveInformation = True
 sendInformation = False
 sendNextFace = True
 processedFrames = 0
-framesSemNimguem = 0
 framesFromLastRetrieve = 0
 framesFromLastSend = 0
 frameWithFace = []
-reconhecidos=[]
-cv2.namedWindow("Video", cv2.WND_PROP_FULLSCREEN)
-cv2.setWindowProperty("Video",cv2.WND_PROP_FULLSCREEN,cv2.WINDOW_FULLSCREEN)
 
 while 1:
     ret, frame = video_capture.read()  
@@ -168,16 +176,7 @@ while 1:
         small_frame = cv2.resize(frame, (0, 0), fx=1/scale, fy=1/scale)
         recognizedFaces = recognizeInImage(small_frame,encodedFaces)
         if len(recognizedFaces)>0:
-            reconhecidos = []
-            for face in recognizedFaces:
-                if face['index'] != -1:
-                    reconhecidos.append(nomes[face['index']])
-            preencheReconhecidos(mac,reconhecidos)
-            
-        else:            
-            framesSemNimguem += 1
-            print(framesSemNimguem)
-            
+            frameWithFace = frame.copy()
         processThisFrame = False
     if sendInformation:
         print("INFORMING TO SERVER")        
@@ -193,13 +192,7 @@ while 1:
         framesFromLastRetrieve = 0
     else:
         framesFromLastRetrieve +=1 
-    
-    if framesSemNimguem > 100:
-        preencheReconhecidos(mac,[])
-        framesSemNimguem = 0
    
-    
-    
     displayDict = preparaDisplay(frame,wpInfo,recognizedFaces,encodedFaces,nomes,missingSkills)
     
     if sendNextFace:
