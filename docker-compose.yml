@@ -19,10 +19,11 @@ services:
                
     mongo:
         image: mongo
-        restart: always        
+        restart: always              
         ports:
             - "27017:27017"
         volumes:
+            - ./db_backup:/db_backup   
             - ./Database:/data/db
     
     theia:
@@ -34,6 +35,8 @@ services:
     
     mongoide:
         image: mongo-express
+        volumes:
+            - ./db_backup:/db_backup
         ports:
             - "8081:8081"
         links:
