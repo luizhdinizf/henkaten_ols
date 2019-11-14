@@ -121,7 +121,8 @@ def saveEncodedFace(registro,encodedFace):
                                  
                 } 
         ) 
-   
+
+
 
 def getFaceFromMatricula(registro):
     collection = database['colaboradores']

@@ -4,6 +4,8 @@ import numpy as np
 from mongoCli import *
 import uuid
 import subprocess
+import socket
+
 
 font = 4
 video_capture = cv2.VideoCapture(0)
@@ -79,6 +81,8 @@ def displayScreen(displayDict):
     linha = displayDict['linha']
     frame = displayIds(frame,ids)
     frame = displayInfo(frame,linha)
+    cv2.namedWindow("Video", cv2.WND_PROP_FULLSCREEN)
+    cv2.setWindowProperty("Video",cv2.WND_PROP_FULLSCREEN,cv2.WINDOW_FULLSCREEN)   
     cv2.imshow('Video', frame)
 
 def recognizeInImage(frame,knownFacesEncoded):
@@ -148,23 +152,24 @@ mac = hex(uuid.getnode())
 print(mac)
 
 wpInfo=getWorkplaceInfo({'mac':mac})
-hostname = wpInfo['cliente'] +'_' +wpInfo['linha']+'_'+wpInfo['Posto']
-hostname = hostname.replace(" ", "_")
-hostname = hostname.replace("_", "")
+hostname = socket.gethostname()
+
 print(mac)
 print(hostname) #NissanMainDirec1
-#subprocess.call(['hostname', hostname])
+
 encodedFaces,nomes,missingSkills = getInformation(wpInfo)
 scale = 4
 processThisFrame = True
 retrieveInformation = True
 sendInformation = False
-sendNextFace = True
+saveNextFace = False
+logarColaborador = True
 processedFrames = 0
 framesFromLastRetrieve = 0
 framesFromLastSend = 0
-frameWithFace = []
-
+delaySalvar = 0
+frameWithFace = []                   
+cv2.namedWindow("cropped")
 while 1:
     ret, frame = video_capture.read()  
     frame = cv2.flip(frame, 1)
@@ -174,7 +179,10 @@ while 1:
         retrieveInformation = False
     if processThisFrame:
         small_frame = cv2.resize(frame, (0, 0), fx=1/scale, fy=1/scale)
-        recognizedFaces = recognizeInImage(small_frame,encodedFaces)
+        try:
+            recognizedFaces = recognizeInImage(small_frame,encodedFaces)
+        except:
+            pass
         if len(recognizedFaces)>0:
             frameWithFace = frame.copy()
         processThisFrame = False
@@ -190,21 +198,50 @@ while 1:
     if framesFromLastRetrieve  > 100:
         retrieveInformation = True
         framesFromLastRetrieve = 0
+        try:            
+            cv2.destroyWindow("cropped")
+        except:
+            pass
     else:
         framesFromLastRetrieve +=1 
+       
    
     displayDict = preparaDisplay(frame,wpInfo,recognizedFaces,encodedFaces,nomes,missingSkills)
-    
-    if sendNextFace:
-        saveRecognition(frameWithFace,displayDict['ids'])
-        sendNextFace = False    
+    if logarColaborador or saveNextFace:
+        delaySalvar +=1
+        maxTime = 150
+        if delaySalvar < maxTime and logarColaborador:
+            loginMessage = "Iniciando Login:" + str((maxTime-delaySalvar)/10)
+        elif delaySalvar < maxTime and saveNextFace:
+            loginMessage = "Iniciando Foto:" + str((maxTime-delaySalvar)/10)
+        else:      
+            loginMessage = "Pronto" 
+        processThisFrame = False
+        cv2.rectangle(frame, (100, 150), (500,400), (0, 255,0),)
+        cv2.putText(frame, loginMessage, (0, 50), font, 1.8, (0, 0, 255), 1)
+        if delaySalvar >maxTime:
+            processThisFrame = True
+        else:
+            recognizedFaces = []
+        if len(recognizedFaces)>0 and delaySalvar>maxTime:
+            if logarColaborador:
+                print(displayDict['ids'])
+            if saveNextFace:
+                saveRecognition(frameWithFace,displayDict['ids'])
+            logarColaborador = False
+            saveNextFace = False  
+            delaySalvar = 0
+
+   
     displayScreen(displayDict)
     key= cv2.waitKey(1) & 0xFF
     if key == ord('q'):
         break
     if key == ord('g'):
-        sendNextFace = True
-        print("c")
+        saveNextFace = True
+        print("g")
+    if key == ord('y'):
+        logarColaborador = True
     if key == ord('h'):
         missingSkills=[]
         print("h")

@@ -1,7 +1,7 @@
 import uuid
 import subprocess
 from pymongo import MongoClient
-client = MongoClient("mongodb://172.22.45.216:27017/")
+client = MongoClient("mongodb://brmtz-dev-001:27017/")
 database = client["henkaten_ols"]
 
 def getWorkplaceInfo(args): 

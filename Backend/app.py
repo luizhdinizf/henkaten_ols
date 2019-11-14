@@ -51,11 +51,13 @@ class ReusableForm(Form):
     def hello():
         form = ReusableForm(request.form) 
         scanResult = scanStaticFolder()
-        if len(scanResult) > 0:
-            return render_template('index.html', form=form,img=scanResult)
-        else:
-            return("Sem imagens para Cadastrar")
-
+        try:
+            if len(scanResult) > 0:
+                return render_template('index.html', form=form,img=scanResult)
+            else:
+                return("Sem imagens para Cadastrar")
+        except:
+            return("Sem imagens para Cadastrar ERRO!")
 
 
 @app.route('/api/<function>',methods=['GET', 'POST'])
@@ -83,12 +85,41 @@ def rename(source):
     shutil.move(src, dest)
     return redirect("/", code=301)
 
+@app.route('/remove/<source>', methods=['GET', 'POST'])
+def remove(source):    
+    
+    src="static/upload/desconhecido/"+source   
+    os.remove(src)
+    return redirect("/", code=301)
+
+
+def clearMain():
+    collection = database['colaboradores'] 
+    frame = cv2.imread("static/upload/desconhecido/1341.jpg")  
+    recognizedLocations = face_recognition.face_locations(frame)
+    encodedFaces = face_recognition.face_encodings(frame, recognizedLocations)
+    enco = list(encodedFaces[0])
+    result = collection.update_many( 
+        {"LINHA":"Main"}, 
+        { 
+                "$set":{ 
+                        "FACE":enco
+                        }, 
+                                 
+                } 
+        ) 
+
+@app.route('/api/clear', methods=['GET'])
+def clear():
+    clearMain()
+    return"CLEAR"
+   
+
 
 @app.route('/api/upload', methods=['POST'])
 def test2():
     id = str(random.randint(1000,9999))
-    r = request
-   
+    r = request    
    
     nparr = np.fromstring(r.data, np.uint8)
     # decode image
@@ -96,7 +127,7 @@ def test2():
    
     cv2.imwrite('static/upload/desconhecido/'+id+'.jpg',img)    
   
-
+    
   
     response = {'message': 'image received. size={}x{}'.format(img.shape[1], img.shape[0])}
     # encode response using jsonpickle

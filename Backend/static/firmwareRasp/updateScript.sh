@@ -7,12 +7,12 @@ rm ./updateScript.sh
 rm ./hostnameSet.sh
 
 
-wget "http://172.22.45.216:800/static/firmwareRasp/mongoCli.py"
-wget "http://172.22.45.216:800/static/firmwareRasp/unitTest.py"
-wget "http://172.22.45.216:800/static/firmwareRasp/raspRefactored.py"
-wget "http://172.22.45.216:800/static/firmwareRasp/iniciaRede.py"
-wget "http://172.22.45.216:800/static/firmwareRasp/hostnameSet.sh" -O- | tr -d '\r' >hostnameSet.sh
-wget "http://172.22.45.216:800/static/firmwareRasp/updateScript.sh" -O- | tr -d '\r' >updateScript.sh
+wget "http://brmtz-dev-001:800/static/firmwareRasp/mongoCli.py"
+wget "http://brmtz-dev-001:800/static/firmwareRasp/unitTest.py"
+wget "http://brmtz-dev-001:800/static/firmwareRasp/raspRefactored.py"
+wget "http://brmtz-dev-001:800/static/firmwareRasp/iniciaRede.py"
+wget "http://brmtz-dev-001:800/static/firmwareRasp/hostnameSet.sh" -O- | tr -d '\r' >hostnameSet.sh
+wget "http://brmtz-dev-001:800/static/firmwareRasp/updateScript.sh" -O- | tr -d '\r' >updateScript.sh
 chmod +x ./hostnameSet.sh
 chmod +x ./updateScript.sh
 

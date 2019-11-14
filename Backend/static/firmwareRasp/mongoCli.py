@@ -6,7 +6,7 @@ import json
 import cv2
 import gridfs
 
-client = MongoClient("mongodb://172.22.45.216:27017/")
+client = MongoClient("mongodb://brmtz-dev-001:27017/")
 database = client["henkaten_ols"]
 
 
@@ -323,7 +323,7 @@ def getInformation(wpInfo):
     return (encodedFaces,nomes,missingSkills)
 
 def uplaodImage(img):
-    addr = 'http://172.22.45.216:800'
+    addr = 'http://brmtz-dev-001:800'
     test_url = addr + '/api/upload'
     content_type = 'image/jpeg'
     headers = {'content-type': content_type}   
