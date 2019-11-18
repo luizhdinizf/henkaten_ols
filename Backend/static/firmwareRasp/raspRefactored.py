@@ -5,6 +5,33 @@ from mongoCli import *
 import uuid
 import subprocess
 import socket
+import paho.mqtt.client as mqtt
+
+def on_connect(client, userdata, flags, rc):
+    # O subscribe fica no on_connect pois, caso perca a conexão ele a renova
+    # Lembrando que quando usado o #, você está falando que tudo que chegar após a barra do topico, será recebido
+    client.subscribe("#")
+    print("conectado mqtt")
+# Callback responável por receber uma mensagem publicada no tópico acima
+def on_message(client, userdata, msg):
+    global saveNextFace
+    global logarColaborador
+    global InicioLogin
+    mensagem = msg.payload.decode("utf-8")    
+    print(mensagem)
+    if mensagem=="reset":
+        encodedFaces,nomes,missingSkills = getInformation(wpInfo)
+    elif mensagem=="save":
+        saveNextFace = True
+    elif mensagem=="logout":
+        logarColaborador = True
+        InicioLogin = True
+    print(msg.topic+" -  "+mensagem)
+
+client = mqtt.Client()
+client.on_connect = on_connect
+client.on_message = on_message
+
 
 
 font = 4
@@ -173,6 +200,9 @@ delaySalvar = 0
 frameWithFace = []      
 colaboradoresLogados = []             
 cv2.namedWindow("cropped")
+# Conecta no MQTT Broker, no meu caso, o Mosquitto
+client.connect("brmtz-dev-001", 1883, 60)
+client.loop_start()
 while 1:
     ret, frame = video_capture.read()  
     frame = cv2.flip(frame, 1)
