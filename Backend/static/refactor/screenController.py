@@ -77,11 +77,9 @@ class screenController():
     def displayRecognizedFaces(self):        
         for colaborador in self.recognizedColabs:
             (top, right, bottom, left) = colaborador.facePosition
-         
-           
             self.fontSize = 0.5
             i=0
-            letterSpacing = int(24*self.fontSize+1)          
+            letterSpacing = int(24*self.fontSize+1)
             for skill in colaborador.missingSkills:
                 self.fontColor = (0,0,255)
                 cv2.putText(self.frame, skill, (right, top+5+letterSpacing*i),self.font, self.fontSize, self.fontColor, 1)
@@ -90,4 +88,3 @@ class screenController():
             cv2.rectangle(self.frame, (left, bottom - 35),(right, bottom), colaborador.borderColor, cv2.FILLED)
             cv2.putText(self.frame, colaborador.name, (left + 6,bottom - 6), self.font, 1.0, (255, 255, 255), 1)
             cv2.putText(self.frame, colaborador.txtQualificado, (left + 6, top - 6),self.font, 0.8,colaborador.borderColor, 1)
-        

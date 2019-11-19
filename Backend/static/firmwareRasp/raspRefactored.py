@@ -127,6 +127,7 @@ def recognizeInImage(frame,knownFacesEncoded):
         frameDetectedFacesEncoding = face_recognition.face_encodings(frame, frameDetectedFacesLocations)
         for frameFaceEncoding,frameFaceLocation in zip(frameDetectedFacesEncoding,frameDetectedFacesLocations):
             matches = face_recognition.compare_faces(knownFacesEncoded, frameFaceEncoding)
+            print(knownFacesEncoded)
             index = -1
             knowFacesDistancesFromCurrent = face_recognition.face_distance(knownFacesEncoded, frameFaceEncoding)
             best_match_index = np.argmin(knowFacesDistancesFromCurrent)

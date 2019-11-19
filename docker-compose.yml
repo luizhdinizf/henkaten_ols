@@ -27,11 +27,7 @@ services:
             - ./Database:/data/db
     
     theia:
-<<<<<<< HEAD
         image: theiaide/theia-python
-=======
-        image: theiaide/theia-python:latest  
->>>>>>> c71036adf4709fc0065629638e9257bb9daf4056
         ports:
            - "3001:3000"
         volumes:
