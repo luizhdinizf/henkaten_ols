@@ -27,7 +27,7 @@ services:
             - ./Database:/data/db
     
     theia:
-        image: theiaide/theia       
+        image: theiaide/theia-python
         ports:
            - "3001:3000"
         volumes:
