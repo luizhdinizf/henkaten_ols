@@ -1,0 +1,46 @@
+version: '3'
+services:
+    web:
+        build: ./Backend
+        restart: always
+        working_dir: /dir
+        volumes:
+            - ./Backend:/dir
+        environment:
+            - FLASK_APP=app
+            - FLASK_ENV=development
+        ports:
+            - "800:5000"
+            - "443:443"
+        depends_on:
+            - mongo
+        
+        command: python -m flask run --host=0.0.0.0 
+               
+    mongo:
+        image: mongo
+        restart: always              
+        ports:
+            - "27017:27017"
+        volumes:
+            - ./db_backup:/db_backup   
+            - ./Database:/data/db
+    
+    theia:
+        image: theiaide/theia       
+        ports:
+           - "3001:3000"
+        volumes:
+           - ./:/home/project
+    
+    mongoide:
+        image: mongo-express
+        volumes:
+            - ./db_backup:/db_backup
+        ports:
+            - "8081:8081"
+        links:
+            - mongo
+        environment:           
+            - ME_CONFIG_OPTIONS_EDITORTHEME="ambiance"
+            - ME_CONFIG_MONGODB_SERVER=mongo 

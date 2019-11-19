@@ -27,7 +27,11 @@ services:
             - ./Database:/data/db
     
     theia:
+<<<<<<< HEAD
         image: theiaide/theia-python
+=======
+        image: theiaide/theia-python:latest  
+>>>>>>> c71036adf4709fc0065629638e9257bb9daf4056
         ports:
            - "3001:3000"
         volumes:
@@ -44,3 +48,26 @@ services:
         environment:           
             - ME_CONFIG_OPTIONS_EDITORTHEME="ambiance"
             - ME_CONFIG_MONGODB_SERVER=mongo 
+    nodered:
+        image: nodered/node-red-docker
+        volumes:
+            - ./nodered:/data
+        ports:
+            - "1880:1880"
+        links:
+            - mongo
+            - web
+            - mqtt
+    mqtt:
+        image: eclipse-mosquitto
+        ports:
+            - "1883:1883"
+            - "9001:9001"
+        volumes:
+                - ./mqtt/mosquitto.conf:/mosquitto/config/mosquitto.conf
+                - ./mqtt/logs:/mosquitto/log
+                - ./mqtt/data:/mosquitto/data
+
+         
+
+ 

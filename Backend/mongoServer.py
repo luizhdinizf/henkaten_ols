@@ -173,17 +173,19 @@ def getNamesFromIds(ids):
         #encodedFaces.append(
     return(Names)
     
-def getColaboradoresDoPosto(posto):
+def getColaboradoresDoPosto(args):
     collection = database['postos']
+    posto = args['posto']
     ids = collection.find(
     { 
-        "_id" : posto
+        "N" : posto
     }, 
     { 
-        "colaboradores" : 1.0
+        "reconhecidos" : 1.0
     }
     )
-    return(ids)
+    #http://brmtz-dev-001:800/api/getColaboradoresDoPosto?posto=0
+    return(ids[0]['reconhecidos'])
 
 def getWorkplaceInfo(args): 
     mac = args['mac']

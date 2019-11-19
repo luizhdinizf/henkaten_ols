@@ -5,6 +5,33 @@ from mongoCli import *
 import uuid
 import subprocess
 import socket
+import paho.mqtt.client as mqtt
+
+def on_connect(client, userdata, flags, rc):
+    # O subscribe fica no on_connect pois, caso perca a conexão ele a renova
+    # Lembrando que quando usado o #, você está falando que tudo que chegar após a barra do topico, será recebido
+    client.subscribe("#")
+    print("conectado mqtt")
+# Callback responável por receber uma mensagem publicada no tópico acima
+def on_message(client, userdata, msg):
+    global saveNextFace
+    global logarColaborador
+    global InicioLogin
+    mensagem = msg.payload.decode("utf-8")    
+    print(mensagem)
+    if mensagem=="reset":
+        encodedFaces,nomes,missingSkills = getInformation(wpInfo)
+    elif mensagem=="save":
+        saveNextFace = True
+    elif mensagem=="logout":
+        logarColaborador = True
+        InicioLogin = True
+    print(msg.topic+" -  "+mensagem)
+
+client = mqtt.Client()
+client.on_connect = on_connect
+client.on_message = on_message
+
 
 
 font = 4
@@ -42,6 +69,7 @@ def displayIds(frame,ids):
         right *= scale
         bottom *= scale
         left *= scale
+       
         if len(colaborador['missingSkills'])>0:
             txtQualificado = "N Qualificado"
             borderColor = (0,0,255) #bgr
@@ -159,6 +187,7 @@ print(hostname) #NissanMainDirec1
 
 encodedFaces,nomes,missingSkills = getInformation(wpInfo)
 scale = 4
+InicioLogin = False
 processThisFrame = True
 retrieveInformation = True
 sendInformation = False
@@ -168,14 +197,19 @@ processedFrames = 0
 framesFromLastRetrieve = 0
 framesFromLastSend = 0
 delaySalvar = 0
-frameWithFace = []                   
+frameWithFace = []      
+colaboradoresLogados = []             
 cv2.namedWindow("cropped")
+# Conecta no MQTT Broker, no meu caso, o Mosquitto
+client.connect("brmtz-dev-001", 1883, 60)
+client.loop_start()
 while 1:
     ret, frame = video_capture.read()  
     frame = cv2.flip(frame, 1)
     if retrieveInformation:  
         #wpInfo=getWorkplaceInfo({'mac':'0x87fdb4b8ca2d'})     
         encodedFaces,nomes,missingSkills = getInformation(wpInfo)
+        colaboradoresLogados = getColaboradoresDoPosto(mac)
         retrieveInformation = False
     if processThisFrame:
         small_frame = cv2.resize(frame, (0, 0), fx=1/scale, fy=1/scale)
@@ -207,15 +241,21 @@ while 1:
        
    
     displayDict = preparaDisplay(frame,wpInfo,recognizedFaces,encodedFaces,nomes,missingSkills)
+   
     if logarColaborador or saveNextFace:
         delaySalvar +=1
-        maxTime = 150
+        maxTime = 100
+        if logarColaborador and InicioLogin:
+            colaboradoresLogados = getColaboradoresDoPosto(mac)
+            InicioLogin = False
+        for colab in colaboradoresLogados:
+            print(colab)
         if delaySalvar < maxTime and logarColaborador:
             loginMessage = "Iniciando Login:" + str((maxTime-delaySalvar)/10)
         elif delaySalvar < maxTime and saveNextFace:
             loginMessage = "Iniciando Foto:" + str((maxTime-delaySalvar)/10)
         else:      
-            loginMessage = "Pronto" 
+            loginMessage = "Logar" 
         processThisFrame = False
         cv2.rectangle(frame, (100, 150), (500,400), (0, 255,0),)
         cv2.putText(frame, loginMessage, (0, 50), font, 1.8, (0, 0, 255), 1)
@@ -225,15 +265,16 @@ while 1:
             recognizedFaces = []
         if len(recognizedFaces)>0 and delaySalvar>maxTime:
             if logarColaborador:
-                print(displayDict['ids'])
+                nomes2 = displayDict['ids'][0]['name']
+                preencheReconhecidos(mac,nomes2)
             if saveNextFace:
                 saveRecognition(frameWithFace,displayDict['ids'])
             logarColaborador = False
             saveNextFace = False  
             delaySalvar = 0
-
-   
     displayScreen(displayDict)
+   
+    
     key= cv2.waitKey(1) & 0xFF
     if key == ord('q'):
         break
@@ -242,6 +283,7 @@ while 1:
         print("g")
     if key == ord('y'):
         logarColaborador = True
+        InicioLogin = True
     if key == ord('h'):
         missingSkills=[]
         print("h")
