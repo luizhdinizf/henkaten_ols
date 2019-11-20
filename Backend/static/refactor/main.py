@@ -5,6 +5,7 @@ from linha import linha
 from workplace import workplace
 from faceDetector import faceDetector
 from screenController import screenController
+from statistics import mode
 import requests
 import json
 
@@ -52,11 +53,12 @@ class mainController():
             self.screen.frame = self.frame.copy()
             self.screen.displayAll()
             self.timingFunction()
+
+            if self.saveNextFace is True:
+                self.saveNextFaceFunction()
             if self.loggedUser is False:
                 self.doRecognition = False
                 self.aguardarLoggin()
-            if self.saveNextFace is True:
-                self.saveNextFaceFunction()
 
             self.screen.show()
             key = cv2.waitKey(1) & 0xFF
@@ -84,15 +86,22 @@ class mainController():
 
     def aguardarLoggin(self):
         self.reconhecidos = []
+        maxReconhecimentos = 5
         self.preencheReconhecidos()
         self.screen.displayCenterRectangle()
-        self.screen.displaySubtitule("Aguardando Login")
-        self.recogntionTimeout = 10
-        for colab in self.faceDetector.detectedColabs:
-            if colab.qualificado is True:
-                self.loggedUser = True
-                self.reconhecidos.append(colab.name)
-        self.preencheReconhecidos()
+        self.faceDetector.encodeFacesInImage(self.frame)
+        self.faceDetector.makeFaceIndex()
+        stringSubtitle = "Aguardando Login: "+str(maxReconhecimentos-len(self.faceDetector.faceIndexes))
+        print(self.faceDetector.faceIndexes)
+        if len(self.faceDetector.faceIndexes) > maxReconhecimentos:
+            indiceDoColaboradorLogado = self.faceDetector.knownFacesIndexes[mode(self.faceDetector.faceIndexes)]  #Editar esta Linha para fazer login de mais de um ao mesmo tempo
+            newColab = self.linha.colaboradores[indiceDoColaboradorLogado]  #Editar esta Linha para fazer login de mais de um ao mesmo tempo
+            self.reconhecidos = [newColab.name]  #Editar esta Linha para fazer login de mais de um ao mesmo tempo
+            self.preencheReconhecidos()
+            self.faceDetector.faceIndexes = []
+            self.loggedUser = True
+
+        self.screen.displaySubtitule(stringSubtitle)
 
     def preencheReconhecidos(self):
         #Retirar Daqui, deve ficar na classe linha
