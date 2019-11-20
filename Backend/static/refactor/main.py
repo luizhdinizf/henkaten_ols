@@ -1,5 +1,6 @@
 import cv2
 
+from database import database
 from linha import linha
 from workplace import workplace
 from faceDetector import faceDetector
@@ -23,8 +24,6 @@ class mainController():
         self.frame = []
         self.screen = screenController()
         self.faceDetector = faceDetector()
-        
-
         self.workplace = workplace(mac)
         self.linha = linha(self.workplace.area, self.workplace.cliente, self.workplace.linha)
         self.linha.calculateAllMissingSkills(self.workplace)
@@ -51,9 +50,10 @@ class mainController():
 
             self.screen.recognizedColabs = self.faceDetector.detectedColabs
             self.screen.frame = self.frame.copy()
-
             self.screen.displayAll()
+            self.timingFunction()
             if self.loggedUser is False:
+                self.doRecognition = False
                 self.aguardarLoggin()
             if self.saveNextFace is True:
                 self.saveNextFaceFunction()
@@ -74,7 +74,7 @@ class mainController():
         cv2.destroyAllWindows()
         cap.release()
 
-    def timingFunction(self):        
+    def timingFunction(self):
         if self.recognitionTimer > self.recogntionTimeout:
             self.doRecognition = True
             self.recognitionTimer = 0
@@ -83,10 +83,28 @@ class mainController():
             self.recognitionTimer += 1
 
     def aguardarLoggin(self):
+        self.reconhecidos = []
+        self.preencheReconhecidos()
         self.screen.displayCenterRectangle()
         self.screen.displaySubtitule("Aguardando Login")
-        if len(self.faceDetector.detectedColabs) > 0:
-            self.loggedUser = True
+        self.recogntionTimeout = 10
+        for colab in self.faceDetector.detectedColabs:
+            if colab.qualificado is True:
+                self.loggedUser = True
+                self.reconhecidos.append(colab.name)
+        self.preencheReconhecidos()
+
+    def preencheReconhecidos(self):
+        #Retirar Daqui, deve ficar na classe linha
+        collection = database['postos']
+        result = collection.update_many( 
+            {"mac": self.mac},
+            {
+                    "$set": {
+                            "reconhecidos": self.reconhecidos
+                            },
+                    }
+                         )
 
     def saveNextFaceFunction(self):
         if len(self.faceDetector.detectedColabs) > 0:

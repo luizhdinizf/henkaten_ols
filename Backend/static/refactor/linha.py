@@ -35,6 +35,8 @@ class linha():
         for colab in self.colaboradores:
             colab.calculateMissingSkills(workplace.requisitos)
 
+
+
     def printNames(self):
         for colab in self.colaboradores:
             print(colab.name)

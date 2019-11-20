@@ -1,10 +1,12 @@
-from colaborador import *
+from colaborador import colaborador
 import numpy as np
 import cv2
+
+
 class screenController():
 
     def __init__(self):
-        self.frame = np.zeros((1000,1000,3),np.uint8)
+        self.frame = np.zeros((1000, 1000, 3), np.uint8)
         self._cliente = 'a'
         self._area = 'b'
         self._linha = 'linha'
@@ -14,48 +16,48 @@ class screenController():
         self._mac = 'mac'
         self.recognizedColabs = []
         self.font = 4
-        self.rectangleSizeInPercentOfScreen = 0.8  
-              
+        self.rectangleSizeInPercentOfScreen = 0.8
 
-    def setParametersFromWorkplace(self,workplace):
+    def setParametersFromWorkplace(self, workplace):
         self._cliente = workplace.cliente
-        self._area = workplace.area 
+        self._area = workplace.area
         self._linha = workplace.linha
         self._requisitos = workplace.requisitos
-        self._mac = workplace.mac       
+        self._mac = workplace.mac
         self._modelo = workplace.modelo
 
     def displayAll(self):
         self.displayInfo()
         self.displayRecognizedFaces()
+
     def show(self):
         cv2.imshow('Video', self.frame)
-    
+
     def displayCenterRectangle(self):
-        frameMask = np.zeros(self.frame.shape,np.uint8)
-        frameMask[:,:] = (255,255,255)
+        frameMask = np.zeros(self.frame.shape, np.uint8)
+        frameMask[:,:] = (255, 255, 255)
         self.screenSizeX = self.frame.shape[1]
         self.screenSizeY = self.frame.shape[0]
         self.screenCenterX = self.screenSizeX/2
         self.screenCenterY = self.screenSizeY/2
-        rectangleLeft = int(self.screenCenterX-self.rectangleSizeInPercentOfScreen*self.screenSizeX/2)        
-        rectangleRight = int(self.screenCenterX+self.rectangleSizeInPercentOfScreen*self.screenSizeX/2)        
-        rectangleTop =int(self.screenCenterY-self.rectangleSizeInPercentOfScreen*self.screenSizeX/2/2)
+        rectangleLeft = int(self.screenCenterX-self.rectangleSizeInPercentOfScreen*self.screenSizeX/2)
+        rectangleRight = int(self.screenCenterX+self.rectangleSizeInPercentOfScreen*self.screenSizeX/2)
+        rectangleTop = int(self.screenCenterY-self.rectangleSizeInPercentOfScreen*self.screenSizeX/2/2)
         rectangleBottom = int(self.screenCenterY+self.rectangleSizeInPercentOfScreen*self.screenSizeX/2/2)
-        cv2.rectangle(frameMask, (rectangleLeft, rectangleTop), (rectangleRight, rectangleBottom), (0,255,0), cv2.FILLED)
-        alpha = 0.5
+        cv2.rectangle(frameMask, (rectangleLeft, rectangleTop), (rectangleRight, rectangleBottom), (0, 255, 0), cv2.FILLED)
+        alpha = 0.2
         cv2.addWeighted(frameMask, alpha, self.frame, 1 - alpha,
-		0, self.frame)       
-    def displaySubtitule(self,text):      
+		0, self.frame)
+
+    def displaySubtitule(self, text):
         self.screenSizeX = self.frame.shape[1]
         self.screenSizeY = self.frame.shape[0]
         self.screenCenterX = self.screenSizeX/2
-        self.screenCenterY = self.screenSizeY/2                
-        titleTop =int(self.screenCenterY-self.rectangleSizeInPercentOfScreen*self.screenSizeX/2/2)-20
+        self.screenCenterY = self.screenSizeY/2
+        titleTop = int(self.screenCenterY-self.rectangleSizeInPercentOfScreen*self.screenSizeX/2/2)-20
         titleLeft = int(self.screenCenterX-self.rectangleSizeInPercentOfScreen*self.screenSizeX/2)
-        cv2.putText(self.frame, text, (titleLeft,titleTop),self.font, 1.5, (0,0,255), 1)
-        
-        
+        cv2.putText(self.frame, text, (titleLeft, titleTop), self.font, 1.5, (0, 0, 255), 1)
+
 
     def displayInfo(self):
         self.fontSize = 0.5
@@ -63,16 +65,12 @@ class screenController():
         self.fontColor = (0, 255, 0)  # bgr green
         left = 10
         top = 10
-        
-
         cv2.putText(self.frame, self._hostname, (left, top+letterSpacing*1),self.font, self.fontSize, self.fontColor, 1)
         cv2.putText(self.frame, self._mac, (left, top+letterSpacing*2),self.font, self.fontSize, self.fontColor, 1)
         cv2.putText(self.frame, self._cliente, (left, top+letterSpacing*3),self.font, self.fontSize, self.fontColor, 1)
         cv2.putText(self.frame, self._area, (left, top+letterSpacing*4),self.font, self.fontSize, self.fontColor, 1)
         cv2.putText(self.frame, self._linha, (left, top+letterSpacing*5),self.font, self.fontSize, self.fontColor, 1)
         cv2.putText(self.frame, self._modelo, (left, top+letterSpacing*6),self.font, self.fontSize, self.fontColor, 1)
-
-
 
     def displayRecognizedFaces(self):        
         for colaborador in self.recognizedColabs:
