@@ -6,10 +6,13 @@ from workplace import workplace
 from faceDetector import faceDetector
 from screenController import screenController
 from statistics import mode
+import subprocess
 import requests
 import json
+import socket
 
-mac = '0xb827ebb984f1'
+
+mac = socket.gethostname()
 cap = cv2.VideoCapture(0)
 
 
@@ -24,6 +27,7 @@ class mainController():
         self.recogntionTimeout = 30
         self.frame = []
         self.screen = screenController()
+        self.screen.hostname = mac
         self.faceDetector = faceDetector()
         self.workplace = workplace(mac)
         self.linha = linha(self.workplace.area, self.workplace.cliente, self.workplace.linha)
@@ -39,6 +43,8 @@ class mainController():
         self.faceDetector.fillKnowFacesAndIndexes(self.linha)
         self.screen.setParametersFromWorkplace(self.workplace)
         self.loggedUser = False
+        subprocess.call("./.killChromium.sh")
+
 
     def show(self):
         while 1:
@@ -85,9 +91,9 @@ class mainController():
             self.recognitionTimer += 1
 
     def aguardarLoggin(self):
-        self.reconhecidos = []
+        self.linha.reconhecidos = []
         maxReconhecimentos = 5
-        self.preencheReconhecidos()
+        self.linha.preencheReconhecidos(mac)
         self.screen.displayCenterRectangle()
         self.faceDetector.encodeFacesInImage(self.frame)
         self.faceDetector.makeFaceIndex()
@@ -96,30 +102,22 @@ class mainController():
         if len(self.faceDetector.faceIndexes) > maxReconhecimentos:
             indiceDoColaboradorLogado = self.faceDetector.knownFacesIndexes[mode(self.faceDetector.faceIndexes)]  #Editar esta Linha para fazer login de mais de um ao mesmo tempo
             newColab = self.linha.colaboradores[indiceDoColaboradorLogado]  #Editar esta Linha para fazer login de mais de um ao mesmo tempo
-            self.reconhecidos = [newColab.name]  #Editar esta Linha para fazer login de mais de um ao mesmo tempo
-            self.preencheReconhecidos()
+            self.linha.reconhecidos = [newColab.matricula]  #Editar esta Linha para fazer login de mais de um ao mesmo tempo
+            self.linha.preencheReconhecidos(mac)
             self.faceDetector.faceIndexes = []
             self.loggedUser = True
+            #subprocess.call("./.ajudaMTZ.sh")
+            subprocess.Popen("./.ajudaMTZ.sh")
 
         self.screen.displaySubtitule(stringSubtitle)
 
-    def preencheReconhecidos(self):
-        #Retirar Daqui, deve ficar na classe linha
-        collection = database['postos']
-        result = collection.update_many( 
-            {"mac": self.mac},
-            {
-                    "$set": {
-                            "reconhecidos": self.reconhecidos
-                            },
-                    }
-                         )
+   
 
     def saveNextFaceFunction(self):
         if len(self.faceDetector.detectedColabs) > 0:
             for colab in self.faceDetector.detectedColabs:
                 colab.updateFaceImage(self.frame)
-                cv2.imshow(colab.name, colab.faceImage)
+                #cv2.imshow(colab.name, colab.faceImage)
                 self.uploadImage(colab.faceImage)
             self.saveNextFace = False
         self.screen.displayCenterRectangle()

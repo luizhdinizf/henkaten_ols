@@ -184,8 +184,17 @@ def getColaboradoresDoPosto(args):
         "reconhecidos" : 1.0
     }
     )
+    reconhecidos = ids[0]['reconhecidos']
+    collection = database['colaboradores']
+    
+    ids = collection.find(
+    { 
+        "MATRÍCULA" : reconhecidos[0]
+    } 
+   
+    )
     #http://brmtz-dev-001:800/api/getColaboradoresDoPosto?posto=0
-    return(ids[0]['reconhecidos'])
+    return(ids[0])
 
 def getWorkplaceInfo(args): 
     mac = args['mac']

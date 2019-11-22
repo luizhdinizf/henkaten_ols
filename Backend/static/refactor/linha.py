@@ -5,6 +5,7 @@ from database import database
 class linha():
     def __init__(self, area, cliente, linha):
         self.colaboradores = []
+        self.reconhecidos = []
         self.area = area
         self.cliente = cliente
         self.linha = linha
@@ -44,3 +45,15 @@ class linha():
     def printMissingSkills(self):
         for colab in self.colaboradores:
             print(colab.missingSkills)
+
+    def preencheReconhecidos(self,mac):
+        #Retirar Daqui, deve ficar na classe linha
+        collection = database['postos']
+        result = collection.update_many( 
+            {"mac": mac},
+            {
+                    "$set": {
+                            "reconhecidos": self.reconhecidos
+                            },
+                    }
+                         )

@@ -11,7 +11,7 @@ class screenController():
         self._area = 'b'
         self._linha = 'linha'
         self._modelo = ""
-        self._hostname = 'hostname'
+        self.hostname = 'hostname'
         self._requisitos = 'requisitos'
         self._mac = 'mac'
         self.recognizedColabs = []
@@ -65,7 +65,7 @@ class screenController():
         self.fontColor = (0, 255, 0)  # bgr green
         left = 10
         top = 10
-        cv2.putText(self.frame, self._hostname, (left, top+letterSpacing*1),self.font, self.fontSize, self.fontColor, 1)
+        cv2.putText(self.frame, self.hostname, (left, top+letterSpacing*1),self.font, self.fontSize, self.fontColor, 1)
         cv2.putText(self.frame, self._mac, (left, top+letterSpacing*2),self.font, self.fontSize, self.fontColor, 1)
         cv2.putText(self.frame, self._cliente, (left, top+letterSpacing*3),self.font, self.fontSize, self.fontColor, 1)
         cv2.putText(self.frame, self._area, (left, top+letterSpacing*4),self.font, self.fontSize, self.fontColor, 1)
