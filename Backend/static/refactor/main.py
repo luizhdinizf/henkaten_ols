@@ -10,16 +10,45 @@ import subprocess
 import requests
 import json
 import socket
+import paho.mqtt.client as mqtt
+
+def on_connect(client, userdata, flags, rc):
+    print("Connected with result code "+str(rc))
+    global mac
+    # Subscribing in on_connect() means that if we lose the connection and
+    # reconnect then subscriptions will be renewed.
+    client.subscribe(mac+"/#")
+    client.subscribe(mac+"broadcast/#")
+
+
+# The callback for when a PUBLISH message is received from the server.
+def on_message(client, userdata, msg):
+    global main1
+    print(msg.topic+" "+str(msg.payload))
+    mensagem = msg.payload.decode("utf-8")
+    print(main1.loggedUser)
+    if mensagem == "reset":
+        main1.restartParams()
+    elif mensagem == "cadastrar":
+        main1.saveNextFace = True
+    print(mensagem)
 
 
 mac = socket.gethostname()
 cap = cv2.VideoCapture(0)
 
 
+client = mqtt.Client()
+client.on_connect = on_connect
+client.on_message = on_message
+client.connect("brmtz-dev-001", 1883, 60)
+client.loop_start()
+
 class mainController():
 
     def __init__(self):
         self.mac = mac
+        client.publish(self.mac+"/logado", "false",retain=True)
         self.loggedUser = False
         self.saveNextFace = False
         self.doRecognition = True
@@ -33,9 +62,10 @@ class mainController():
         self.linha = linha(self.workplace.area, self.workplace.cliente, self.workplace.linha)
         self.linha.calculateAllMissingSkills(self.workplace)
         self.faceDetector.fillKnowFacesAndIndexes(self.linha)
-        self.screen.setParametersFromWorkplace(self.workplace)
+        self.screen.setdaParametersFromWorkplace(self.workplace)
 
     def restartParams(self):
+        client.publish(self.mac+"/logado", "false",retain=True)
         self.faceDetector = faceDetector()
         self.workplace = workplace(mac)
         self.linha = linha(self.workplace.area, self.workplace.cliente, self.workplace.linha)
@@ -44,7 +74,6 @@ class mainController():
         self.screen.setParametersFromWorkplace(self.workplace)
         self.loggedUser = False
         subprocess.call("./.killChromium.sh")
-
 
     def show(self):
         while 1:
@@ -100,18 +129,20 @@ class mainController():
         stringSubtitle = "Aguardando Login: "+str(maxReconhecimentos-len(self.faceDetector.faceIndexes))
         print(self.faceDetector.faceIndexes)
         if len(self.faceDetector.faceIndexes) > maxReconhecimentos:
-            indiceDoColaboradorLogado = self.faceDetector.knownFacesIndexes[mode(self.faceDetector.faceIndexes)]  #Editar esta Linha para fazer login de mais de um ao mesmo tempo
+            client.publish(self.mac+"/logado", "true")
+            try:
+                indiceDoColaboradorLogado = self.faceDetector.knownFacesIndexes[mode(self.faceDetector.faceIndexes)]  #Editar esta Linha para fazer login de mais de um ao mesmo tempo
+            except:
+                self.restartParams()
             newColab = self.linha.colaboradores[indiceDoColaboradorLogado]  #Editar esta Linha para fazer login de mais de um ao mesmo tempo
             self.linha.reconhecidos = [newColab.matricula]  #Editar esta Linha para fazer login de mais de um ao mesmo tempo
             self.linha.preencheReconhecidos(mac)
             self.faceDetector.faceIndexes = []
             self.loggedUser = True
-            #subprocess.call("./.ajudaMTZ.sh")
             subprocess.Popen("./.ajudaMTZ.sh")
 
         self.screen.displaySubtitule(stringSubtitle)
 
-   
 
     def saveNextFaceFunction(self):
         if len(self.faceDetector.detectedColabs) > 0:

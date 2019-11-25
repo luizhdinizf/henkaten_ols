@@ -174,27 +174,31 @@ def getNamesFromIds(ids):
     return(Names)
     
 def getColaboradoresDoPosto(args):
-    collection = database['postos']
-    posto = args['posto']
-    ids = collection.find(
-    { 
-        "N" : posto
-    }, 
-    { 
-        "reconhecidos" : 1.0
-    }
-    )
-    reconhecidos = ids[0]['reconhecidos']
-    collection = database['colaboradores']
+    try:
+        collection = database['postos']
+        posto = args['posto']
+        ids = collection.find(
+        { 
+            "N" : posto
+        }, 
+        { 
+            "reconhecidos" : 1.0
+        }
+        )
+        reconhecidos = ids[0]['reconhecidos']
+        collection = database['colaboradores']
+        
+        ids = collection.find(
+        { 
+            "MATRÍCULA" : reconhecidos[0]
+        } 
     
-    ids = collection.find(
-    { 
-        "MATRÍCULA" : reconhecidos[0]
-    } 
-   
-    )
-    #http://brmtz-dev-001:800/api/getColaboradoresDoPosto?posto=0
-    return(ids[0])
+        )
+        #http://brmtz-dev-001:800/api/getColaboradoresDoPosto?posto=0
+        retorno = ids[0]
+    except:
+        retorno="0"
+    return(retorno)
 
 def getWorkplaceInfo(args): 
     mac = args['mac']

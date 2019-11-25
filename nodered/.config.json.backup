@@ -538,7 +538,7 @@
   "node-red-dashboard": {
    "name": "node-red-dashboard",
    "version": "2.17.1",
-   "local": false,
+   "local": true,
    "nodes": {
     "ui_base": {
      "name": "ui_base",
@@ -755,7 +755,7 @@
   "node-red-contrib-mongo-client": {
    "name": "node-red-contrib-mongo-client",
    "version": "0.2.2",
-   "local": false,
+   "local": true,
    "nodes": {
     "mongo-client": {
      "name": "mongo-client",
@@ -783,7 +783,8 @@
      "view-show-grid": false,
      "view-snap-grid": false
     }
-   }
+   },
+   "menu-menu-item-sidebar": true
   }
  }
 }
