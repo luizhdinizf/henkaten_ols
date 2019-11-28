@@ -1,0 +1,11 @@
+version: '3'
+services:
+    squid:
+        image: sameersbn/squid:3.5.27-2        
+        restart: always      
+        volumes:
+            - ./squid.conf:/etc/squid/squid.conf
+        ports:
+            - "3128:3128"
+
+    

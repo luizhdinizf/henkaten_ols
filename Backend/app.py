@@ -71,19 +71,20 @@ def api(function):
 @app.route('/img/<id>', methods=['GET', 'POST'])
 def image(id):     
     return render_template('img.html',img=id+'.jpg')
-   
+
+
 @app.route('/rename/<source>', methods=['GET', 'POST'])
-def rename(source):     
-    registro=request.form['matricula']   
-    src="static/upload/desconhecido/"+source
+def rename(source):
+    registro = request.form['matricula']   
+    src = "static/upload/desconhecido/"+source
     frame = cv2.imread(src)
     recognizedLocations = face_recognition.face_locations(frame)
     encodedFaces = face_recognition.face_encodings(frame, recognizedLocations)
     #return(str(len(encodedFaces)))
-    saveEncodedFace(registro,list(encodedFaces[0]))
-    dest="static/upload/"+registro+".jpg"
+    saveEncodedFace(registro, list(encodedFaces[0]))
+    dest="static/upload/" + registro + ".jpg"
     shutil.move(src, dest)
-    return redirect("/", code=301)
+    return redirect("http://brmtz-dev-001:1880/ui", code=301)
 
 @app.route('/remove/<source>', methods=['GET', 'POST'])
 def remove(source):    
