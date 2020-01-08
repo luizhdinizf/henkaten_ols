@@ -10,19 +10,6 @@ import requests
 import json
 import socket
 import paho.mqtt.client as mqtt
-import fcntl
-import struct
-import os
-import time
-def get_ip_address(ifname):
-    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    return socket.inet_ntoa(fcntl.ioctl(
-        s.fileno(),
-        0x8915,  # SIOCGIFADDR
-        struct.pack('256', ifname[:15])
-    )[20:24])
-
-
 
 
 def on_connect(client, userdata, flags, rc):
@@ -36,38 +23,20 @@ def on_connect(client, userdata, flags, rc):
 
 # The callback for when a PUBLISH message is received from the server.
 def on_message(client, userdata, msg):
-    try:
-        global main1
-    except:
-        pass
+    global main1
     print(msg.topic+" "+str(msg.payload))
-    mensagem = str(msg.payload.decode("utf-8"))
-  
-    print(msg.topic+" "+mensagem)
+    mensagem = msg.payload.decode("utf-8")
+    print(main1.loggedUser)
     if mensagem == "reset":
-        print("RESETANDO")
-        try:
-            main1.restartParams()
-        except:
-            pass
-       # 
+        main1.restartParams()
     elif mensagem == "cadastrar":
-        try:
-            main1.saveNextFace = True
-        except:
-            pass
-        
-    elif mensagem == "reboot":
-        print("try to reboot")
-        print(os.system("reboot"))
-
+        main1.saveNextFace = True
     print(mensagem)
 
+
 mac = socket.gethostname()
-try:
-    cap = cv2.VideoCapture(0)
-except:
-    pass
+cap = cv2.VideoCapture(0)
+
 
 client = mqtt.Client()
 client.on_connect = on_connect
@@ -80,7 +49,7 @@ class mainController():
 
     def __init__(self):
         self.mac = mac
-        client.publish(self.mac+"/logado", "false", retain=False)
+        client.publish(self.mac+"/logado", "false", retain=True)
         self.loggedUser = False
         self.saveNextFace = False
         self.doRecognition = True
@@ -99,7 +68,7 @@ class mainController():
         self.screen.setParametersFromWorkplace(self.workplace)
 
     def restartParams(self):
-        client.publish(self.mac+"/logado", "false", retain=False)
+        client.publish(self.mac+"/logado", "false", retain=True)
         self.faceDetector = faceDetector()
         self.workplace = workplace(mac)
         self.linha = linha(self.workplace.area, self.workplace.cliente, self.workplace.linha)
@@ -165,7 +134,7 @@ class mainController():
         stringSubtitle = "Aguardando Login: "+str(maxReconhecimentos-len(self.faceDetector.faceIndexes))
         #print(self.faceDetector.faceIndexes)
         if len(self.faceDetector.faceIndexes) >= maxReconhecimentos:
-            client.publish(self.mac+"/logado", "true", retain=False)
+            client.publish(self.mac+"/logado", "true", retain=True)
             try:
                 indiceDoColaboradorLogado = self.faceDetector.knownFacesIndexes[mode(self.faceDetector.faceIndexes)]  #Editar esta Linha para fazer login de mais de um ao mesmo tempo
                 newColab = self.linha.colaboradores[indiceDoColaboradorLogado]  #Editar esta Linha para fazer login de mais de um ao mesmo tempo
@@ -203,23 +172,6 @@ class mainController():
         response = requests.post(fullUrl, data=img_encoded.tostring(), headers=headers)
         print(json.loads(response.text))
 
-if mac != "RMTZ3047":    
-    try:
-        main1 = mainController()
-        main1.show()
-    except:
-        time.sleep(5)
-        client.publish(mac+"/logado", "true", retain=False)
-        subprocess.Popen("./.ajudaMTZ.sh")
-        time.sleep(5)
-        while 1:
-            client.publish(mac+"/logado", "true", retain=False)
-            time.sleep(20)
 
-else:
-    client.publish(mac+"/logado", "false", retain=True)
-
-    while 1:
-        cmd = "/sbin/ifconfig wlan0 | grep 'inet' |  awk '{print $2}'"
-        ip = os.system(cmd)
-        time.sleep(1)
+main1 = mainController()
+main1.show()

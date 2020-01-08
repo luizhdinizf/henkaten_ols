@@ -15,7 +15,6 @@ class faceDetector():
         self.knownFacesEncoding = []
         self.recognizedIndexes = []
         self.faceIndexes = []
-        self.sensibility = 0.5
 
 
     def locateFacesInImage(self, frame):
@@ -52,7 +51,7 @@ class faceDetector():
             pass
         else:
             for frameFaceEncoding, frameFaceLocation in zip(self.detectedFaceEncodings, self.detectedFaceLocations):
-                matches = face_recognition.compare_faces(self.knownFacesEncoding, frameFaceEncoding, self.sensibility)
+                matches = face_recognition.compare_faces(self.knownFacesEncoding, frameFaceEncoding)
                 index = -1
                 knowFacesDistancesFromCurrent = face_recognition.face_distance(self.knownFacesEncoding, frameFaceEncoding)
                 best_match_index = np.argmin(knowFacesDistancesFromCurrent)
@@ -86,7 +85,7 @@ class faceDetector():
             self.generateColabsWithoutDetectingFace()
         else:
             for frameFaceEncoding, frameFaceLocation in zip(self.detectedFaceEncodings, self.detectedFaceLocations):
-                matches = face_recognition.compare_faces(self.knownFacesEncoding, frameFaceEncoding, self.sensibility)
+                matches = face_recognition.compare_faces(self.knownFacesEncoding, frameFaceEncoding)
                 index = -1
                 knowFacesDistancesFromCurrent = face_recognition.face_distance(self.knownFacesEncoding, frameFaceEncoding)
                 best_match_index = np.argmin(knowFacesDistancesFromCurrent)
