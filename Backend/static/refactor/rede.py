@@ -17,4 +17,4 @@ client.on_connect = on_connect
 client.on_message = on_message
 client.connect("brmtz-dev-001", 1883, 60)
 client.loop_start()
-print("rede Intialized")
+

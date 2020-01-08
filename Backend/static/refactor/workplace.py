@@ -18,8 +18,7 @@ class workplace():
         collection = database['postos']
         query = {}
         query["mac"] = self.mac
-        workplaceInfo = collection.find(query)[0]
-        print(workplaceInfo)
+        workplaceInfo = collection.find(query)[0]    
         self.processo = workplaceInfo["Processo"]
         self.posto = workplaceInfo["Posto"]
         self.atividades = workplaceInfo["Atividades"]

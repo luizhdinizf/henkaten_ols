@@ -40,7 +40,7 @@ def on_message(client, userdata, msg):
         global main1
     except:
         pass
-    print(msg.topic+" "+str(msg.payload))
+    #print(msg.topic+" "+str(msg.payload))
     mensagem = str(msg.payload.decode("utf-8"))
   
     print(msg.topic+" "+mensagem)
@@ -61,7 +61,7 @@ def on_message(client, userdata, msg):
         print("try to reboot")
         print(os.system("reboot"))
 
-    print(mensagem)
+   
 
 mac = socket.gethostname()
 try:
@@ -158,7 +158,7 @@ class mainController():
         self.linha.reconhecidos = []
         maxReconhecimentos = 5
         self.loginTimer += 1
-        self.linha.preencheReconhecidos(mac)
+        #self.linha.preencheReconhecidos(self.workplace)
         self.screen.displayCenterRectangle()
         self.faceDetector.encodeFacesInImage(self.frame)
         self.faceDetector.makeFaceIndex()
@@ -170,15 +170,15 @@ class mainController():
                 indiceDoColaboradorLogado = self.faceDetector.knownFacesIndexes[mode(self.faceDetector.faceIndexes)]  #Editar esta Linha para fazer login de mais de um ao mesmo tempo
                 newColab = self.linha.colaboradores[indiceDoColaboradorLogado]  #Editar esta Linha para fazer login de mais de um ao mesmo tempo
                 if (newColab.qualificado):
-                    self.linha.reconhecidos = [newColab.matricula]  #Editar esta Linha para fazer login de mais de um ao mesmo tempo
-                    self.linha.preencheReconhecidos(mac)
+                    self.linha.reconhecidos = [newColab.name]  #Editar esta Linha para fazer login de mais de um ao mesmo tempo
+                    self.linha.preencheReconhecidos(self.workplace)
                     self.faceDetector.faceIndexes = []
-                    self.loggedUser = True
-                    print(newColab.name)
+                    self.loggedUser = True                    
                     subprocess.Popen("./.ajudaMTZ.sh")
                 else:
                     self.restartParams()
-            except:
+            except Exception as e:
+                print(str(e))
                 self.restartParams()
         if self.loginTimer > self.loginTimeout:
             self.restartParams()
@@ -201,13 +201,15 @@ class mainController():
         headers = {'content-type': content_type}
         _, img_encoded = cv2.imencode('.jpg', img)
         response = requests.post(fullUrl, data=img_encoded.tostring(), headers=headers)
-        print(json.loads(response.text))
+        
 
 if mac != "RMTZ3047":    
     try:
+        print("TESTANDO")
         main1 = mainController()
         main1.show()
-    except:
+    except Exception as e:
+        print(str(e))
         time.sleep(5)
         client.publish(mac+"/logado", "true", retain=False)
         subprocess.Popen("./.ajudaMTZ.sh")

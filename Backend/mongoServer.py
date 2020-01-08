@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 from pymongo import MongoClient
 import gridfs
+import re
 
 client = MongoClient("mongodb://mongo:27017/")
 database = client["henkaten_ols"]
@@ -314,4 +315,17 @@ def retrieveImage(wpInfo):
         img = np.reshape(img, image['shape'])
         return img
 
-
+def retrieveLogged(date):
+        from bson.json_util import dumps
+        regx = re.compile("^"+date['date'], re.IGNORECASE)
+   # { "date" : { $regex : /^08\/01\/2020/ }}
+        collection = database["historico"]
+        query = {}
+        query["date"] = regx
+        #query["CLIENTE"] = self.cliente
+        #query["LINHA"] = self.linha
+        cursor = collection.find(query)
+        ret =[]
+        for doc in cursor:
+            ret.append(doc)
+        return (ret)

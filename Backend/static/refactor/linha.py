@@ -1,5 +1,6 @@
 from colaborador import colaborador
 from database import database
+from datetime import datetime
 
 
 class linha():
@@ -40,20 +41,28 @@ class linha():
 
     def printNames(self):
         for colab in self.colaboradores:
-            print(colab.name)
+           print("a")
 
     def printMissingSkills(self):
         for colab in self.colaboradores:
-            print(colab.missingSkills)
-
-    def preencheReconhecidos(self,mac):
+            print("a")
+    
+    #request by date { "date" : { $regex : /^08\/01\/2020/ }}
+    def preencheReconhecidos(self,workplace):
         #Retirar Daqui, deve ficar na classe linha
-        collection = database['postos']
-        result = collection.update_many( 
-            {"mac": mac},
-            {
-                    "$set": {
-                            "reconhecidos": self.reconhecidos
-                            },
-                    }
-                         )
+        if len(self.reconhecidos)>0:
+            collection = database['historico']
+            now = datetime.now()
+            today = now.strftime("%d-%m-%Y, %H:%M:%S")
+            dict = {"Posto": workplace.posto,"date":today,"reconhecidos": self.reconhecidos} 
+            result = collection.insert_one(dict)
+
+        #collection = database['postos']
+       # result = collection.update_many( 
+         #   {"mac": mac},
+            #{
+      #              "$set": {
+      #                      "reconhecidos": self.reconhecidos
+     # #                      },
+     #               }
+       #                  )
