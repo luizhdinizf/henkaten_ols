@@ -1,0 +1,205 @@
+commit 2692722d6f13b080463796f527f941742fa87d4d
+Author: Luiz Henrique <luizhdinizf@gmail.com>
+Date:   Wed Jan 8 08:18:44 2020 -0300
+
+    Refatorado com threads no controle de acesso
+
+commit 9a1b057f70881c2a11e694c8b97107d48b7cecf6
+Author: Luiz Henrique <luizhdinizf@gmail.com>
+Date:   Thu Nov 28 13:17:26 2019 +0000
+
+    Rasp subrscribe no topico broadcast corrigido e corrigido sobreposição de textos entre login e save nextface
+
+commit f98ac40f920c8516fc82c4297211f0d0d7ccff49
+Author: Luiz Henrique <luizhdinizf@gmail.com>
+Date:   Mon Nov 25 13:39:44 2019 +0000
+
+    Limpando Pasta e código, Não Testado
+
+commit 2e3f903e2fab411f6fb8aee955616a4f960d6593
+Author: Luiz Henrique <luizhdinizf@gmail.com>
+Date:   Mon Nov 25 13:27:37 2019 +0000
+
+    Testanto na LInha, Funcionando 1 posto de trabalho
+
+commit 9ce3bbe7eac8406714ab6c87a8324d7a4e206ce7
+Author: Luiz Henrique <luizhdinizf@gmail.com>
+Date:   Fri Nov 22 10:34:38 2019 -0300
+
+    Rodando na linha Main, abrindo intruções e etc, proximo passo será colocar o sistema MQTT
+
+commit 7c44b3e355c72c31f9e5118d73cb6dee207f0d00
+Author: Luiz Henrique <luizhdinizf@gmail.com>
+Date:   Wed Nov 20 09:52:27 2019 -0300
+
+    Working Login Melhorado pronto para instalar na linha
+
+commit 3c090dc4d6cf611f55ff143f5ebc949e675358a0
+Author: Luiz Henrique <luizhdinizf@gmail.com>
+Date:   Wed Nov 20 08:22:48 2019 -0300
+
+    Working
+
+commit 169bdd434a7c66dd2911dcb0ce067add304a404b
+Author: Luiz Henrique <luizhdinizf@gmail.com>
+Date:   Tue Nov 19 12:05:39 2019 -0300
+
+    Refatorado com objetos e funcionando
+
+commit 2c89e9e2422ab250cbd0bdfb1f08b9a150558a22
+Merge: a7bcc7f 9de72fa
+Author: Luiz Henrique <luizhdinizf@gmail.com>
+Date:   Tue Nov 19 09:15:44 2019 -0300
+
+    teste
+
+commit a7bcc7f84e08b216dd598c0090f4a7f5cb36593c
+Author: Luiz Henrique <luizhdinizf@gmail.com>
+Date:   Tue Nov 19 09:07:29 2019 -0300
+
+    Pronto para testes na linha
+
+commit 9de72faf4ea1319048083248c9f872e1b6dc361e
+Author: Luiz Henrique <luizhdinizf@gmail.com>
+Date:   Mon Nov 18 22:01:41 2019 -0300
+
+    refactoring com objects and classes
+
+commit 6e46dc50bb6f4c84905085823c1cd782e3c7cac1
+Merge: 659b8bd c71036a
+Author: Luiz Henrique <luizhdinizf@gmail.com>
+Date:   Mon Nov 18 22:00:06 2019 -0300
+
+    local
+
+commit 659b8bd6533acea81b63c05c151387e06df23132
+Author: Luiz Henrique <luizhdinizf@gmail.com>
+Date:   Mon Nov 18 21:59:02 2019 -0300
+
+    local
+
+commit c71036adf4709fc0065629638e9257bb9daf4056
+Author: Luiz Henrique <luizhdinizf@gmail.com>
+Date:   Mon Nov 18 11:34:33 2019 -0300
+
+    Iniciando dev com mqtt
+
+commit c38e08762f6a15f92a6d3bee31f47250b307879f
+Author: Luiz Henrique <luizhdinizf@gmail.com>
+Date:   Mon Nov 18 10:25:59 2019 -0300
+
+    Salvando Login no BD
+
+commit 30dc81446a561967596456b86f03e55ccbe2b39a
+Author: Luiz Henrique <luizhdinizf@gmail.com>
+Date:   Thu Nov 14 15:15:57 2019 -0300
+
+    Backup BD MELHORADO
+
+commit 73a08aae1252d9688e983ccef1d10deb76d5d172
+Author: Luiz Henrique <luizhdinizf@gmail.com>
+Date:   Thu Nov 14 14:57:34 2019 -0300
+
+    Login Relizado ao pressionar Y, Falta fazer envio para o bd do colocaborador Logado
+
+commit 9b037e330288d085f04501046feed35a7bebdfac
+Author: Luiz Henrique <luizhdinizf@gmail.com>
+Date:   Tue Oct 15 11:04:45 2019 -0300
+
+    Backup
+
+commit 6fe89702c4f4c32de622abf98e9d9726baa4e3b5
+Author: Luiz Henrique <luizhdinizf@gmail.com>
+Date:   Tue Oct 15 11:02:21 2019 -0300
+
+    Backup
+
+commit 0a958491f959197388a12627511cc27302c6b962
+Author: Luiz Henrique <luizhdinizf@gmail.com>
+Date:   Tue Oct 15 11:01:02 2019 -0300
+
+    Backup
+
+commit a28a6ad50e87a6fb9251fdb080dcc207db1eb9c8
+Author: Luiz Henrique <luizhdinizf@gmail.com>
+Date:   Tue Oct 8 09:38:15 2019 -0300
+
+    Reconhecimento enviado para o BD, falta implementar metodo de autenticacao de usuario com error proof
+
+commit f04e47548edeffe28c2b97be96011db501c201a0
+Author: Luiz Henrique <luizhdinizf@gmail.com>
+Date:   Tue Oct 8 09:36:46 2019 -0300
+
+    Reconhecimento enviado para o BD, falta implementar metodo de autenticacao de usuario com error proof
+
+commit b533eadbf9a3081a6cf26de1f95328f2b1a3c489
+Author: Luiz Henrique <luizhdinizf@gmail.com>
+Date:   Fri Oct 4 14:17:56 2019 -0300
+
+    Envio automatico finalizado, cadastramento funcionando, reconhecendo mais de 40 pessoas, preciso envair os reconhecidos para o bd e configurar os postos para fechar a primeira etapa
+
+commit c8437c00222354da91f26894417a465f49e0fd36
+Author: Luiz Henrique <luizhdinizf@gmail.com>
+Date:   Fri Oct 4 13:33:37 2019 -0300
+
+    Quase Finalizando envio automatico
+
+commit c69fb79f90aab3405885c80ad163dfd91e5a3d36
+Author: Luiz Henrique <luizhdinizf@gmail.com>
+Date:   Fri Oct 4 13:33:14 2019 -0300
+
+    Quase Finalizando envio automatico
+
+commit 8985b4756b00a7dd40bc6186fd99003b6f98807c
+Author: Luiz Henrique <luizhdinizf@gmail.com>
+Date:   Thu Oct 3 15:08:24 2019 -0300
+
+    Quase Finalizando envio automatico
+
+commit fa4b1fd2ee8e5f0025dad45ede7eb9e993a58c0c
+Author: Luiz Henrique <luizhdinizf@gmail.com>
+Date:   Thu Oct 3 15:04:10 2019 -0300
+
+    Teste do Firmware Refatorado
+
+commit e6cdd01d7b6135f0eff6eda3ed2587a6b80fa05f
+Author: Luiz Henrique <luizhdinizf@gmail.com>
+Date:   Thu Oct 3 14:58:56 2019 -0300
+
+    Teste do Firmware Refatorado
+
+commit 8d9f0ac1fc6bbbc44f3cce375718a193b52c3a0f
+Author: Luiz Henrique <luizhdinizf@gmail.com>
+Date:   Thu Oct 3 14:58:07 2019 -0300
+
+    Teste do Firmware Refatorado
+
+commit 8f1b1b142a54b426d949502d09c45798b488ccab
+Author: Luiz Henrique <luizhdinizf@gmail.com>
+Date:   Thu Oct 3 14:57:21 2019 -0300
+
+    Teste do Firmware Refatorado
+
+commit 406ea0452de815946d1b458eeb1a11534e2633de
+Author: Luiz Henrique <luizhdinizf@gmail.com>
+Date:   Thu Oct 3 14:38:31 2019 -0300
+
+    Teste do Firmware Refatorado
+
+commit ae06c311a0abb6f57abaa294c934afc09fc9aafc
+Author: Luiz Henrique <luizhdinizf@gmail.com>
+Date:   Thu Oct 3 14:30:11 2019 -0300
+
+    Teste do Firmware Refatorado
+
+commit e0e5d9cd10791fbed6b93f361e7a1f9f502001d4
+Author: Luiz Henrique <luizhdinizf@gmail.com>
+Date:   Wed Oct 2 13:42:42 2019 -0300
+
+    Upload de foto via rasp
+
+commit f2de1d9a24c4fe8c14f6a8b5974fe72c198e053a
+Author: Luiz Henrique <luizhdinizf@gmail.com>
+Date:   Tue Oct 1 01:29:57 2019 -0300
+
+    Inicializando Docker Containers
