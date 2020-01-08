@@ -1,1 +1,0 @@
-mongorestore db_backup --host localhost:27017 

@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 from pymongo import MongoClient
 import gridfs
+import re
 
 client = MongoClient("mongodb://mongo:27017/")
 database = client["henkaten_ols"]
@@ -174,18 +175,31 @@ def getNamesFromIds(ids):
     return(Names)
     
 def getColaboradoresDoPosto(args):
-    collection = database['postos']
-    posto = args['posto']
-    ids = collection.find(
-    { 
-        "N" : posto
-    }, 
-    { 
-        "reconhecidos" : 1.0
-    }
-    )
-    #http://brmtz-dev-001:800/api/getColaboradoresDoPosto?posto=0
-    return(ids[0]['reconhecidos'])
+    try:
+        collection = database['postos']
+        posto = args['posto']
+        ids = collection.find(
+        { 
+            "N" : posto
+        }, 
+        { 
+            "reconhecidos" : 1.0
+        }
+        )
+        reconhecidos = ids[0]['reconhecidos']
+        collection = database['colaboradores']
+        
+        ids = collection.find(
+        { 
+            "MATRÍCULA" : reconhecidos[0]
+        } 
+    
+        )
+        #http://brmtz-dev-001:800/api/getColaboradoresDoPosto?posto=0
+        retorno = ids[0]
+    except:
+        retorno="0"
+    return(retorno)
 
 def getWorkplaceInfo(args): 
     mac = args['mac']
@@ -301,4 +315,17 @@ def retrieveImage(wpInfo):
         img = np.reshape(img, image['shape'])
         return img
 
-
+def retrieveLogged(date):
+        from bson.json_util import dumps
+        regx = re.compile("^"+date['date'], re.IGNORECASE)
+   # { "date" : { $regex : /^08\/01\/2020/ }}
+        collection = database["historico"]
+        query = {}
+        query["date"] = regx
+        #query["CLIENTE"] = self.cliente
+        #query["LINHA"] = self.linha
+        cursor = collection.find(query)
+        ret =[]
+        for doc in cursor:
+            ret.append(doc)
+        return (ret)
