@@ -4,13 +4,22 @@ from datetime import datetime
 
 
 class linha():
-    def __init__(self,parametros):
+    def __init__(self, area, cliente, linha):
         self.colaboradores = []
         self.reconhecidos = []
-        self.findColaboradores(parametros)
+        self.area = area
+        self.cliente = cliente
+        self.linha = linha
+        self.findColaboradores()
 
-    def findColaboradores(self,parametros):       
-        for doc in parametros:
+    def findColaboradores(self):
+        collection = database["colaboradores"]
+        query = {}
+        query["AREA"] = self.area
+        #query["CLIENTE"] = self.cliente
+        #query["LINHA"] = self.linha
+        cursor = collection.find(query)
+        for doc in cursor:
             novoColaborador = {}
             novoColaborador = colaborador()
             novoColaborador.name = doc['NOME']
@@ -24,17 +33,11 @@ class linha():
             novoColaborador.skills = set(Habilidades)
             self.colaboradores.append(novoColaborador)
 
-    def calculateAllMissingSkills(self, requisitos):
+    def calculateAllMissingSkills(self, workplace):
         for colab in self.colaboradores:
-            colab.calculateMissingSkills(requisitos)
+            colab.calculateMissingSkills(workplace.requisitos)
 
-    def findColabByMatricula(self,matriculaBuscada):
-        for colab in self.colaboradores:
-            if colab.matricula == matriculaBuscada:
-                return colab
-        unknownColab = colaborador()
-        unknownColab.name = "Desconhecido"
-        return unknownColab
+
 
     def printNames(self):
         for colab in self.colaboradores:
@@ -43,7 +46,6 @@ class linha():
     def printMissingSkills(self):
         for colab in self.colaboradores:
             print("a")
-
     
     #request by date { "date" : { $regex : /^08\/01\/2020/ }}
     def preencheReconhecidos(self,workplace):
