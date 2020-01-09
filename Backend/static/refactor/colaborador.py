@@ -1,6 +1,6 @@
 class colaborador():
     def __init__(self):
-        self.matricula = "0"
+        self.matricula = "-1"
         self.facePosition = [20, 30, 200, 300] #(top, right, bottom, left)
         self.faceImage = []
         self.name = ""

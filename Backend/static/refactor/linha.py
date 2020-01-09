@@ -4,12 +4,19 @@ from datetime import datetime
 
 
 class linha():
-    def __init__(self,parametros):
-        self.colaboradores = []
-        self.reconhecidos = []
-        self.findColaboradores(parametros)
+    def __init__(self):
+        self.colaboradores = []        
 
-    def findColaboradores(self,parametros):       
+    def queryParametros(self, area):
+        collection = database["colaboradores"]
+        query = {}
+        query["AREA"] = area
+        #query["CLIENTE"] = self.cliente
+        #query["LINHA"] = self.linha
+        cursor = collection.find(query)
+        return cursor
+
+    def findColaboradores(self, parametros):       
         for doc in parametros:
             novoColaborador = {}
             novoColaborador = colaborador()
@@ -28,7 +35,7 @@ class linha():
         for colab in self.colaboradores:
             colab.calculateMissingSkills(requisitos)
 
-    def findColabByMatricula(self,matriculaBuscada):
+    def findColabByMatricula(self, matriculaBuscada):
         for colab in self.colaboradores:
             if colab.matricula == matriculaBuscada:
                 return colab
@@ -42,25 +49,7 @@ class linha():
 
     def printMissingSkills(self):
         for colab in self.colaboradores:
-            print("a")
+            print(colab.missingSkills)
 
     
-    #request by date { "date" : { $regex : /^08\/01\/2020/ }}
-    def preencheReconhecidos(self,workplace):
-        #Retirar Daqui, deve ficar na classe linha
-        if len(self.reconhecidos)>0:
-            collection = database['historico']
-            now = datetime.now()
-            today = now.strftime("%d-%m-%Y, %H:%M:%S")
-            dict = {"Posto": workplace.posto,"date":today,"reconhecidos": self.reconhecidos} 
-            result = collection.insert_one(dict)
-
-        #collection = database['postos']
-       # result = collection.update_many( 
-         #   {"mac": mac},
-            #{
-      #              "$set": {
-      #                      "reconhecidos": self.reconhecidos
-     # #                      },
-     #               }
-       #                  )
+   

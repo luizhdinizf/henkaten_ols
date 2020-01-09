@@ -14,9 +14,13 @@ class screenController():
         self.hostname = 'hostname'
         self._requisitos = 'requisitos'
         self._mac = 'mac'
+        self.showPopup = False
+        self.popupText = ""
+        self.popupText2 = ""
         self.recognizedColabs = []
         self.font = 4
         self.rectangleSizeInPercentOfScreen = 0.8
+        
 
     def setParametersFromWorkplace(self, workplace):
         self._cliente = workplace.cliente
@@ -27,19 +31,37 @@ class screenController():
         self._modelo = workplace.modelo
 
     def displayAll(self):
+        self.screenSizeX = self.frame.shape[1]
+        self.screenSizeY = self.frame.shape[0]
+        self.screenCenterX = self.screenSizeX/2
+        self.screenCenterY = self.screenSizeY/2
         self.displayInfo()
         self.displayRecognizedFaces()
+        self.displayPopups()
+    
+    def displayPopups(self):
+        if self.showPopup is True:
+            alpha = 1
+            frameMask = np.zeros(self.frame.shape, np.uint8)
+            frameMask[:,:] = (255, 255, 255)  
+            rectangleLeft = int(self.screenCenterX-0.3*self.screenSizeX/2)
+            rectangleRight = int(self.screenCenterX+0.3*self.screenSizeX/2)
+            rectangleTop = int(self.screenCenterY-0.3*self.screenSizeX/2/2)
+            rectangleBottom = int(self.screenCenterY+0.3*self.screenSizeX/2/2)
+            #cv2.rectangle(frameMask, (rectangleLeft, rectangleTop), (rectangleRight, rectangleBottom), (0, 255, 0), cv2.FILLED)
+            cv2.addWeighted(frameMask, alpha, self.frame, 1 - alpha, 0, self.frame)
+            titleTop = 100
+            titleLeft = 10
+            cv2.putText(self.frame, self.popupText, (titleLeft, titleTop), self.font, 1.5, (0, 0, 255), 1)
+            cv2.putText(self.frame, self.popupText2, (titleLeft, titleTop+50), self.font, 1.5, (0, 0, 255), 1)
+
 
     def show(self):
         cv2.imshow('Video', self.frame)
 
     def displayCenterRectangle(self):
         frameMask = np.zeros(self.frame.shape, np.uint8)
-        frameMask[:,:] = (255, 255, 255)
-        self.screenSizeX = self.frame.shape[1]
-        self.screenSizeY = self.frame.shape[0]
-        self.screenCenterX = self.screenSizeX/2
-        self.screenCenterY = self.screenSizeY/2
+        frameMask[:,:] = (255, 255, 255)        
         rectangleLeft = int(self.screenCenterX-self.rectangleSizeInPercentOfScreen*self.screenSizeX/2)
         rectangleRight = int(self.screenCenterX+self.rectangleSizeInPercentOfScreen*self.screenSizeX/2)
         rectangleTop = int(self.screenCenterY-self.rectangleSizeInPercentOfScreen*self.screenSizeX/2/2)
@@ -48,12 +70,9 @@ class screenController():
         alpha = 0.2
         cv2.addWeighted(frameMask, alpha, self.frame, 1 - alpha,
 		0, self.frame)
+    
 
     def displaySubtitule(self, text):
-        self.screenSizeX = self.frame.shape[1]
-        self.screenSizeY = self.frame.shape[0]
-        self.screenCenterX = self.screenSizeX/2
-        self.screenCenterY = self.screenSizeY/2
         titleTop = int(self.screenCenterY-self.rectangleSizeInPercentOfScreen*self.screenSizeX/2/2)-20
         titleLeft = int(self.screenCenterX-self.rectangleSizeInPercentOfScreen*self.screenSizeX/2)
         cv2.putText(self.frame, text, (titleLeft, titleTop), self.font, 1.5, (0, 0, 255), 1)

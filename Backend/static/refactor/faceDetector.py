@@ -28,7 +28,7 @@ class faceDetector():
         for frameFaceEncoding, _ in zip(self.detectedFaceEncodings, self.detectedFaceLocations):
             matches = face_recognition.compare_faces(self.knownFacesEncoding, frameFaceEncoding, self.sensibility)
             knowFacesDistancesFromCurrent = face_recognition.face_distance(self.knownFacesEncoding, frameFaceEncoding)
-            index = -1  
+            index = -1
             try:
                 best_match_index = np.argmin(knowFacesDistancesFromCurrent)
                 if matches[best_match_index]:                
@@ -39,7 +39,7 @@ class faceDetector():
             except Exception as e:
                 print(e)
                 self.recognizedMatriculas.append(index)
-        print(self.recognizedMatriculas)
+        
         
     def fillKnowFacesAndIndexes(self, linha):
         for colab in linha.colaboradores:
