@@ -52,8 +52,8 @@ class screenController():
             cv2.addWeighted(frameMask, alpha, self.frame, 1 - alpha, 0, self.frame)
             titleTop = 100
             titleLeft = 10
-            cv2.putText(self.frame, self.popupText, (titleLeft, titleTop), self.font, 1.5, (0, 0, 255), 1)
-            cv2.putText(self.frame, self.popupText2, (titleLeft, titleTop+50), self.font, 1.5, (0, 0, 255), 1)
+            cv2.putText(self.frame, self.popupText, (titleLeft, titleTop), self.font, 1.0, (0, 0, 255), 1)
+            cv2.putText(self.frame, self.popupText2, (titleLeft, titleTop+50), self.font, 1.0, (0, 0, 255), 1)
 
 
     def show(self):

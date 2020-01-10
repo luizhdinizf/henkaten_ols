@@ -34,8 +34,9 @@ class workplace():
         for colab in self.logados:
             if colab.matricula == matricula:
                 self.logados.discard(colab)
-        self.preencheReconhecidos()
 
+
+   
 
      #request by date { "date" : { $regex : /^08\/01\/2020/ }}
     def preencheReconhecidos(self):        

@@ -12,6 +12,8 @@ import fcntl
 import struct
 import os
 import time
+from datetime import datetime
+from database import database
 
 
 def findMostFrequent(list):
@@ -38,10 +40,18 @@ class controller():
         self.logar = True
         self.logados = []
 
+    def registraEvento(self,evento,dado):
+        collection = database['historico']
+        now = datetime.now()
+        today = now.strftime("%d-%m-%Y, %H:%M:%S")
+        dict = {"Posto": self.workplace.posto,"date":today,"dado":dado,"evento":evento} 
+        result = collection.insert_one(dict)
+
     def restart(self):
         self.workplace.getInfo(self.mac)
         self.linha.findColaboradores(self.linha.queryParametros("Ato"))
         self.linha.calculateAllMissingSkills(self.workplace.requisitos)
+        self.workplace.logados = set()
         self.faceDetector.fillKnowFacesAndIndexes(self.linha)
 
     def validaLogin(self):
@@ -51,20 +61,22 @@ class controller():
         mostFrequentMatricula = findMostFrequent(matriculas)
         if mostFrequentMatricula != -1:
             colabLogado = colab = self.linha.findColabByMatricula(mostFrequentMatricula)
-            if colabLogado.qualificado is True:
-                self.workplace.logados.add(colabLogado)
+            if colabLogado.qualificado is True:                
                 try:
-                    self.workplace.preencheReconhecidos()
+                    if colabLogado not in self.workplace.logados:
+                        self.registraEvento("login",colabLogado.name)
+                        self.workplace.logados.add(colabLogado)
+                    #self.workplace.preencheReconhecidos()
                 except Exception as e:
                     print(e)
                 self.screen.popupText = "Sucesso! Bem Vindo:"
                 self.screen.popupText2 = colabLogado.name
-                popupThread = threading.Thread(target=self.displayPopup, args=()).start()
+                threading.Thread(target=self.displayPopup, args=()).start()
                 self.logar = False
             else:
                 self.screen.popupText = "Falha no Login"
-                self.popupText2 = ""
-                popupThread = threading.Thread(target=self.displayPopup, args=()).start()                
+                self.screen.popupText2 = ""
+                threading.Thread(target=self.displayPopup, args=()).start()                
         self.logados = []
 
     def displayPopup(self):
@@ -99,7 +111,7 @@ class controller():
             
 
     def show(self):
-        recognitionThread = threading.Thread(target=self.recognize, args=()).start()
+        threading.Thread(target=self.recognize, args=()).start()
         while 1:
             _, frameInicial = self.cap.read()
             self.frame = cv2.flip(frameInicial, 1)
@@ -119,7 +131,7 @@ class controller():
             if key == ord('g'):
                 self.saveNextFace = True
             if key == ord('r'):
-                self.restart = True
+                self.restart()
         self.__del__()
     def __del__(self):
         cv2.destroyAllWindows()

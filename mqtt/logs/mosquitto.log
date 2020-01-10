@@ -290,3 +290,112 @@
 1578592507: New client connected from 172.22.45.80 as auto-622CAAD7-26E6-1E8B-0B15-022E27428332 (p2, c1, k60).
 1578592612: Socket error on client auto-622CAAD7-26E6-1E8B-0B15-022E27428332, disconnecting.
 1578592652: New connection from 172.22.45.80 on port 1883.
+1578616969: mosquitto version 1.6.8 starting
+1578616969: Config loaded from /mosquitto/config/mosquitto.conf.
+1578616969: Opening websockets listen socket on port 9001.
+1578616969: Opening ipv4 listen socket on port 1883.
+1578616969: Opening ipv6 listen socket on port 1883.
+1578616978: New connection from 172.22.0.8 on port 1883.
+1578616978: New client connected from 172.22.0.8 as mqtt_84bc8cff.326ed (p1, c1, k60).
+1578617424: New connection from 172.22.0.1 on port 1883.
+1578617424: New client connected from 172.22.0.1 as auto-E358E61A-874E-DC05-37B5-8D343188807F (p2, c1, k60).
+1578617424: New connection from 172.22.0.1 on port 1883.
+1578617424: New client connected from 172.22.0.1 as auto-BD1BD51F-72FB-0B10-D220-BD142B0788BE (p2, c1, k60).
+1578617457: Socket error on client auto-BD1BD51F-72FB-0B10-D220-BD142B0788BE, disconnecting.
+1578617457: Socket error on client auto-E358E61A-874E-DC05-37B5-8D343188807F, disconnecting.
+1578617465: New connection from 172.22.0.1 on port 1883.
+1578617465: New client connected from 172.22.0.1 as auto-08FBCA2B-6DD6-20D3-E040-81BF2D5AB71A (p2, c1, k60).
+1578617465: New connection from 172.22.0.1 on port 1883.
+1578617465: New client connected from 172.22.0.1 as auto-7C5DF735-EB0E-086C-78C0-A4E7F0CD4DE8 (p2, c1, k60).
+1578618770: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578618890: Socket error on client auto-7C5DF735-EB0E-086C-78C0-A4E7F0CD4DE8, disconnecting.
+1578618890: Socket error on client auto-08FBCA2B-6DD6-20D3-E040-81BF2D5AB71A, disconnecting.
+1578618906: New connection from 172.22.0.1 on port 1883.
+1578618906: New client connected from 172.22.0.1 as auto-0C57107F-34F8-C153-BBE9-D071BF7A7B9F (p2, c1, k60).
+1578619088: Socket error on client auto-0C57107F-34F8-C153-BBE9-D071BF7A7B9F, disconnecting.
+1578619097: New connection from 172.22.0.1 on port 1883.
+1578619097: New client connected from 172.22.0.1 as auto-9364CCFB-3CED-EF7D-A9EA-6799A2F9A921 (p2, c1, k60).
+1578619392: Socket error on client auto-9364CCFB-3CED-EF7D-A9EA-6799A2F9A921, disconnecting.
+1578619401: New connection from 172.22.0.1 on port 1883.
+1578619401: New client connected from 172.22.0.1 as auto-A513D56A-94B6-5603-E1D5-47DD50FF0856 (p2, c1, k60).
+1578619581: Client mqtt_84bc8cff.326ed disconnected.
+1578619581: New connection from 172.22.0.8 on port 1883.
+1578619581: New client connected from 172.22.0.8 as mqtt_ecd6427b.1528b (p1, c1, k60).
+1578619814: Socket error on client auto-A513D56A-94B6-5603-E1D5-47DD50FF0856, disconnecting.
+1578619934: New connection from 172.22.0.1 on port 1883.
+1578619934: New client connected from 172.22.0.1 as auto-201D8503-B3A0-8B7C-E070-FC9B76D54E61 (p2, c1, k60).
+1578620048: Socket error on client auto-201D8503-B3A0-8B7C-E070-FC9B76D54E61, disconnecting.
+1578620179: New connection from 172.22.0.1 on port 1883.
+1578620179: New client connected from 172.22.0.1 as auto-1E347E95-4A73-166E-28D0-E267A9A2BAB7 (p2, c1, k60).
+1578620244: Client mqtt_ecd6427b.1528b disconnected.
+1578620260: New connection from 172.22.0.8 on port 1883.
+1578620260: New client connected from 172.22.0.8 as mqtt_a47c6719.0809b8 (p1, c1, k60, u'root').
+1578620363: Client mqtt_a47c6719.0809b8 disconnected.
+1578620363: New connection from 172.22.0.8 on port 1883.
+1578620363: New client connected from 172.22.0.8 as mqtt_127ed4ad.56d6fb (p1, c1, k60, u'root').
+1578620409: Socket error on client auto-1E347E95-4A73-166E-28D0-E267A9A2BAB7, disconnecting.
+1578620420: New connection from 172.22.0.1 on port 1883.
+1578620420: New client connected from 172.22.0.1 as auto-CA4DA194-347B-E691-0D53-70108AFFF588 (p2, c1, k60).
+1578620571: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578620580: Socket error on client auto-CA4DA194-347B-E691-0D53-70108AFFF588, disconnecting.
+1578620599: New connection from 172.22.0.1 on port 1883.
+1578620599: New client connected from 172.22.0.1 as auto-FEEA0334-22AE-0E51-9047-C5F7F9360B56 (p2, c1, k60).
+1578620632: Socket error on client auto-FEEA0334-22AE-0E51-9047-C5F7F9360B56, disconnecting.
+1578620658: New connection from 172.22.0.1 on port 1883.
+1578620658: New client connected from 172.22.0.1 as auto-52801E9A-D297-925E-8020-A1BF0EF2BEAB (p2, c1, k60).
+1578620740: Client mqtt_127ed4ad.56d6fb disconnected.
+1578620740: New connection from 172.22.0.8 on port 1883.
+1578620740: New client connected from 172.22.0.8 as mqtt_c37cf870.a42308 (p1, c1, k60, u'root').
+1578621003: Socket error on client auto-52801E9A-D297-925E-8020-A1BF0EF2BEAB, disconnecting.
+1578621064: New connection from 172.22.0.1 on port 1883.
+1578621064: New client connected from 172.22.0.1 as auto-538B7CB9-A19A-3760-95BD-F2D034750881 (p2, c1, k60).
+1578621173: Socket error on client auto-538B7CB9-A19A-3760-95BD-F2D034750881, disconnecting.
+1578621180: New connection from 172.22.0.1 on port 1883.
+1578621180: New client connected from 172.22.0.1 as auto-FF9BCB10-89E3-241D-9528-0965609059C8 (p2, c1, k60).
+1578621314: Socket error on client auto-FF9BCB10-89E3-241D-9528-0965609059C8, disconnecting.
+1578621326: New connection from 172.22.0.1 on port 1883.
+1578621326: New client connected from 172.22.0.1 as auto-89A6BBB5-634C-B1EF-2862-D8B31F1026B1 (p2, c1, k60).
+1578621553: Socket error on client auto-89A6BBB5-634C-B1EF-2862-D8B31F1026B1, disconnecting.
+1578621607: New connection from 172.22.0.1 on port 1883.
+1578621607: New client connected from 172.22.0.1 as auto-261D3D1C-4EC3-3C35-90F1-4DF2F582A466 (p2, c1, k60).
+1578621752: Socket error on client auto-261D3D1C-4EC3-3C35-90F1-4DF2F582A466, disconnecting.
+1578621762: New connection from 172.22.0.1 on port 1883.
+1578621762: New client connected from 172.22.0.1 as auto-501A59E2-05BD-2AF8-2760-32AE174B9C0F (p2, c1, k60).
+1578622058: Socket error on client auto-501A59E2-05BD-2AF8-2760-32AE174B9C0F, disconnecting.
+1578622072: New connection from 172.22.0.1 on port 1883.
+1578622072: New client connected from 172.22.0.1 as auto-29DCEC8C-8D8A-DD72-A0F9-C3DC4688F0AD (p2, c1, k60).
+1578622147: Socket error on client auto-29DCEC8C-8D8A-DD72-A0F9-C3DC4688F0AD, disconnecting.
+1578622162: New connection from 172.22.0.1 on port 1883.
+1578622162: New client connected from 172.22.0.1 as auto-B8FDAADA-F73A-3E9A-8083-A79CF32E1EC4 (p2, c1, k60).
+1578622209: Socket error on client auto-B8FDAADA-F73A-3E9A-8083-A79CF32E1EC4, disconnecting.
+1578622238: New connection from 172.22.0.1 on port 1883.
+1578622238: New client connected from 172.22.0.1 as auto-6A217F59-25AA-3D97-7CCB-9D607AA7CD51 (p2, c1, k60).
+1578622344: Socket error on client auto-6A217F59-25AA-3D97-7CCB-9D607AA7CD51, disconnecting.
+1578622355: New connection from 172.22.0.1 on port 1883.
+1578622355: New client connected from 172.22.0.1 as auto-AD762FBA-DB4E-221D-27D9-A89421D0B681 (p2, c1, k60).
+1578622372: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578622408: Socket error on client auto-AD762FBA-DB4E-221D-27D9-A89421D0B681, disconnecting.
+1578622415: New connection from 172.22.0.1 on port 1883.
+1578622415: New client connected from 172.22.0.1 as auto-304462B3-54B0-459F-13DF-CB3FECF1CBF6 (p2, c1, k60).
+1578622471: Socket error on client auto-304462B3-54B0-459F-13DF-CB3FECF1CBF6, disconnecting.
+1578622485: New connection from 172.22.0.1 on port 1883.
+1578622485: New client connected from 172.22.0.1 as auto-8DCBAD29-5829-2E3B-7F8A-907C6FAC054A (p2, c1, k60).
+1578622603: Socket error on client auto-8DCBAD29-5829-2E3B-7F8A-907C6FAC054A, disconnecting.
+1578622621: New connection from 172.22.0.1 on port 1883.
+1578622621: New client connected from 172.22.0.1 as auto-6BF4CC11-4B41-9C79-271C-72A54D351485 (p2, c1, k60).
+1578622766: Socket error on client auto-6BF4CC11-4B41-9C79-271C-72A54D351485, disconnecting.
+1578622788: New connection from 172.22.0.1 on port 1883.
+1578622788: New client connected from 172.22.0.1 as auto-60CFED5E-F761-C24F-4E61-3A1CD11F0067 (p2, c1, k60).
+1578622822: Socket error on client auto-60CFED5E-F761-C24F-4E61-3A1CD11F0067, disconnecting.
+1578622846: New connection from 172.22.0.1 on port 1883.
+1578622846: New client connected from 172.22.0.1 as auto-6222844F-18AE-F315-A0AA-46807C4F1E56 (p2, c1, k60).
+1578622884: Socket error on client auto-6222844F-18AE-F315-A0AA-46807C4F1E56, disconnecting.
+1578622939: New connection from 172.22.0.1 on port 1883.
+1578622939: New client connected from 172.22.0.1 as auto-FF5FE16B-AD35-1782-7A15-36849356F3DE (p2, c1, k60).
+1578622992: Socket error on client auto-FF5FE16B-AD35-1782-7A15-36849356F3DE, disconnecting.
+1578623007: New connection from 172.22.0.1 on port 1883.
+1578623007: New client connected from 172.22.0.1 as auto-02454CE3-6F40-386C-FFC1-9146C4C4629C (p2, c1, k60).
+1578623035: Socket error on client auto-02454CE3-6F40-386C-FFC1-9146C4C4629C, disconnecting.
+1578623140: Socket error on client mqtt_c37cf870.a42308, disconnecting.
+1578623145: mosquitto version 1.6.8 terminating
+1578623145: Saving in-memory database to /mosquitto/data/mosquitto.db.
