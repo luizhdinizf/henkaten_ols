@@ -39,6 +39,7 @@ class controller():
         self.restart()
         self.logar = True
         self.logados = []
+        self.saveNextFace = False
 
     def registraEvento(self,evento,dado):
         collection = database['historico']
@@ -51,7 +52,6 @@ class controller():
         self.workplace.getInfo(self.mac)
         self.linha.findColaboradores(self.linha.queryParametros("Ato"))
         self.linha.calculateAllMissingSkills(self.workplace.requisitos)
-        self.workplace.logados = set()
         self.faceDetector.fillKnowFacesAndIndexes(self.linha)
 
     def validaLogin(self):
@@ -72,6 +72,7 @@ class controller():
                 self.screen.popupText = "Sucesso! Bem Vindo:"
                 self.screen.popupText2 = colabLogado.name
                 threading.Thread(target=self.displayPopup, args=()).start()
+                subprocess.Popen("./.ajudaMTZ.sh")
                 self.logar = False
             else:
                 self.screen.popupText = "Falha no Login"
@@ -98,17 +99,20 @@ class controller():
                     colab.facePosition[2] = faceLocation[2]*self.faceDetector.scale
                     colab.facePosition[3] = faceLocation[3]*self.faceDetector.scale
                     self.detectedColabs.append(colab)
-                    if self.logar is True:
+                    if self.logar is True and self.saveNextFace is False:
                         self.logados.append(colab)
                         if len(self.logados) > self.maxReconhecimentos:                           
                             self.validaLogin()
                     else:
-                        self.logados = []
+                        self.logados = []                        
+                    if self.saveNextFace is True:
+                        colab.updateFaceImage(self.frame)
+                        self.uploadImage(colab.faceImage)
+                        self.saveNextFace = False
                 time.sleep(0.2)
 
             except Exception as e:
                 time.sleep(0.5)
-            
 
     def show(self):
         threading.Thread(target=self.recognize, args=()).start()
@@ -118,21 +122,40 @@ class controller():
             self.screen.recognizedColabs = self.detectedColabs
             self.screen.frame = self.frame.copy()
             self.screen.displayAll()
-            if self.logar is True:
+            if self.logar is True and self.saveNextFace is False:
                 self.screen.displayCenterRectangle()
                 stringSubtitle = "Aguardando Login: "+str(self.maxReconhecimentos-len(self.logados))
                 self.screen.displaySubtitule(stringSubtitle)
+            elif self.saveNextFace is True:
+                self.screen.displayCenterRectangle()
+                stringSubtitle = "Cadastramento"
+                self.screen.displaySubtitule(stringSubtitle)
+
+            if len(self.workplace.logados) == 0:
+                subprocess.call("./.killChromium.sh")
+                self.logar = True
             self.screen.show()
             key = cv2.waitKey(1) & 0xFF
             if key == ord('q'):
                 break
             if key == ord('l'):
+                subprocess.call("./.killChromium.sh")
                 self.logar = True
             if key == ord('g'):
+                subprocess.call("./.killChromium.sh")
                 self.saveNextFace = True
             if key == ord('r'):
                 self.restart()
         self.__del__()
+
     def __del__(self):
         cv2.destroyAllWindows()
         self.cap.release()
+
+    def uploadImage(self, img):
+        serverAddress = 'http://brmtz-dev-001:800'
+        fullUrl = serverAddress + '/api/upload'
+        content_type = 'image/jpeg'
+        headers = {'content-type': content_type}
+        _, img_encoded = cv2.imencode('.jpg', img)
+        response = requests.post(fullUrl, data=img_encoded.tostring(), headers=headers)
