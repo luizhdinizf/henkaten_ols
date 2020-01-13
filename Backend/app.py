@@ -12,6 +12,7 @@ from wtforms import Form, TextField, TextAreaField, validators, StringField, Sub
 from flask import jsonify
 from flask_cors import CORS
 from bson import ObjectId
+from bson.json_util import dumps
 import sys
 import json
 import os
@@ -65,13 +66,58 @@ def api(function):
     mod = importlib.import_module('mongoServer')
     func = getattr(mod, function)
     result = func(request.args)  
-    response = JSONEncoder().encode(result)
+    
+    response = dumps(result)
     return response
 
 @app.route('/img/<id>', methods=['GET', 'POST'])
 def image(id):     
     return render_template('img.html',img=id+'.jpg')
 
+
+@app.route('/fill', methods=['GET'])
+def fillFaces():
+    try:
+        stringReturn = ""
+        for i in range(10):
+            matriculas = find_matriculas()
+            for root, dirs, files in os.walk("static/upload/templateSet"):
+                for picture in files:
+                    matricula = matriculas.pop()
+                    stringReturn += matricula
+                    stringReturn += "</br>"
+                    src = "static/upload/templateSet/"+picture
+                    frame = cv2.imread(src)
+                    recognizedLocations = face_recognition.face_locations(frame)
+                    encodedFaces = face_recognition.face_encodings(frame, recognizedLocations)
+                    saveEncodedFace(matricula, list(encodedFaces[0]))
+                    dest="static/upload/moved/" + matricula + ".jpg"
+                   # shutil.move(src, dest)
+        return stringReturn
+    except Exception as e:
+        return str(e)
+
+@app.route('/fill2', methods=['GET'])
+def fillFaces2():
+    stringReturn = "Resultado:"
+    matriculas = find_matriculas()
+    for root, dirs, files in os.walk("static/upload/fotosccp"):
+        for picture in files:
+            try:
+                matricula = picture[:-4]            
+                src = "static/upload/fotosccp/"+picture
+                frame = cv2.imread(src)
+                recognizedLocations = face_recognition.face_locations(frame)
+                encodedFaces = face_recognition.face_encodings(frame, recognizedLocations)
+                saveEncodedFace(matricula, list(encodedFaces[0]))
+                dest="static/upload/moved2/" + matricula + ".jpg"
+                shutil.move(src, dest)
+            except Exception as e:
+                stringReturn += str(e)
+                stringReturn +="</br>"
+            # shutil.move(src, dest)
+    return stringReturn
+        
 
 @app.route('/rename/<source>', methods=['GET', 'POST'])
 def rename(source):
@@ -84,7 +130,7 @@ def rename(source):
     saveEncodedFace(registro, list(encodedFaces[0]))
     dest="static/upload/" + registro + ".jpg"
     shutil.move(src, dest)
-    return redirect("http://brmtz-dev-001:1880/ui", code=301)
+    return redirect("http://brmtz-dev-001:800", code=301)
 
 @app.route('/remove/<source>', methods=['GET', 'POST'])
 def remove(source):    
@@ -94,42 +140,40 @@ def remove(source):
     return redirect("/", code=301)
 
 
+
+
+@app.route('/api/clear', methods=['GET'])
 def clearMain():
     collection = database['colaboradores'] 
-    frame = cv2.imread("static/upload/desconhecido/1341.jpg")  
-    recognizedLocations = face_recognition.face_locations(frame)
-    encodedFaces = face_recognition.face_encodings(frame, recognizedLocations)
-    enco = list(encodedFaces[0])
+    #frame = cv2.imread("static/upload/desconhecido/1341.jpg")  
+   # recognizedLocations = face_recognition.face_locations(frame)
+  #  encodedFaces = face_recognition.face_encodings(frame, recognizedLocations)
+  #  enco = list(encodedFaces[0])
     result = collection.update_many( 
-        {"LINHA":"Main"}, 
+        {},
+#        {"LINHA":"Main"}, 
         { 
                 "$set":{ 
-                        "FACE":enco
+                        "FACE":"0"
                         }, 
                                  
                 } 
         ) 
+    return "Sucess"
 
-@app.route('/api/clear', methods=['GET'])
-def clear():
-    clearMain()
-    return"CLEAR"
-   
+@app.route('/retrieveLogged', methods=['GET'])
+def loggeed():
+     return render_template('logged.html')
 
 
 @app.route('/api/upload', methods=['POST'])
 def test2():
     id = str(random.randint(1000,9999))
-    r = request    
-   
+    r = request
     nparr = np.fromstring(r.data, np.uint8)
     # decode image
     img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
-   
-    cv2.imwrite('static/upload/desconhecido/'+id+'.jpg',img)    
-  
-    
-  
+    cv2.imwrite('static/upload/desconhecido/'+id+'.jpg',img)
     response = {'message': 'image received. size={}x{}'.format(img.shape[1], img.shape[0])}
     # encode response using jsonpickle
     response_pickled = jsonpickle.encode(response)

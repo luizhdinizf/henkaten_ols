@@ -55,6 +55,7 @@ def on_message(client, userdata, msg):
         subprocess.call("./.killChromium.sh")
         print("Logando")
         main1.logar = True
+        
     elif command == "logout":
         mat = mensagem["matricula"]
         if mat == "all":

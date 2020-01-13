@@ -498,3 +498,435 @@
 1578677382: New client connected from ::ffff:172.22.45.153 as web_76 (p2, c1, k60).
 1578678414: Saving in-memory database to /mosquitto/data/mosquitto.db.
 1578679798: New client connected from ::ffff:172.22.45.153 as web_98 (p2, c1, k60).
+1578679798: Socket error on client web_76, disconnecting.
+1578680215: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578682016: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578682101: New client connected from ::ffff:172.22.45.153 as web_54 (p2, c1, k60).
+1578682101: Socket error on client web_98, disconnecting.
+1578682478: New client connected from ::ffff:172.22.45.153 as web_74 (p2, c1, k60).
+1578682478: Socket error on client web_54, disconnecting.
+1578683817: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578683828: Socket error on client web_74, disconnecting.
+1578683900: New client connected from ::ffff:172.22.45.153 as web_66 (p2, c1, k60).
+1578684590: Socket error on client web_66, disconnecting.
+1578684848: New client connected from ::ffff:172.22.45.153 as web_45 (p2, c1, k60).
+1578685618: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578685643: New client connected from ::ffff:172.22.45.153 as web_95 (p2, c1, k60).
+1578685643: Socket error on client web_45, disconnecting.
+1578686274: Socket error on client web_95, disconnecting.
+1578686304: New client connected from ::ffff:172.22.45.153 as web_83 (p2, c1, k60).
+1578686514: Socket error on client web_83, disconnecting.
+1578687158: New client connected from ::ffff:172.22.45.153 as web_91 (p2, c1, k60).
+1578687419: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578689220: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578691021: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578691270: Socket error on client web_91, disconnecting.
+1578691410: New client connected from ::ffff:172.22.45.153 as web_29 (p2, c1, k60).
+1578691560: Socket error on client web_29, disconnecting.
+1578691607: New client connected from ::ffff:172.22.45.153 as web_79 (p2, c1, k60).
+1578692822: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578694338: Socket error on client web_79, disconnecting.
+1578694350: New client connected from ::ffff:172.22.45.153 as web_64 (p2, c1, k60).
+1578694623: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578696424: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578698225: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578700026: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578700681: Socket error on client web_64, disconnecting.
+1578700916: New client connected from ::ffff:172.22.45.153 as web_12 (p2, c1, k60).
+1578701645: New client connected from ::ffff:172.22.45.153 as web_10 (p2, c1, k60).
+1578701645: Socket error on client web_12, disconnecting.
+1578701827: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578702028: New client connected from ::ffff:172.22.45.153 as web_67 (p2, c1, k60).
+1578702028: Socket error on client web_10, disconnecting.
+1578703628: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578705429: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578707230: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578709031: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578710620: New client connected from ::ffff:172.22.45.153 as web_59 (p2, c1, k60).
+1578710620: Socket error on client web_67, disconnecting.
+1578710679: New client connected from ::ffff:172.22.45.153 as web_36 (p2, c1, k60).
+1578710679: Socket error on client web_59, disconnecting.
+1578710832: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578711167: New client connected from ::ffff:172.22.45.153 as web_55 (p2, c1, k60).
+1578711167: Socket error on client web_36, disconnecting.
+1578711928: Client auto-E7AF5577-2A02-2E57-ADD9-DE8B285587CA has exceeded timeout, disconnecting.
+1578711965: New connection from 172.22.45.56 on port 1883.
+1578711965: New client connected from 172.22.45.56 as auto-F1CD0997-F3A4-8A1E-8825-A0BCC0E3CD42 (p2, c1, k60).
+1578712633: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578714434: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578716235: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578718036: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578718332: New client connected from ::ffff:172.22.45.153 as web_64 (p2, c1, k60).
+1578718332: Socket error on client web_55, disconnecting.
+1578719837: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578721638: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578723439: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578724483: Socket error on client web_64, disconnecting.
+1578724489: New client connected from ::ffff:172.22.45.153 as web_38 (p2, c1, k60).
+1578725240: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578727041: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578728842: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578729707: New client connected from ::ffff:172.22.45.153 as web_41 (p2, c1, k60).
+1578729707: Socket error on client web_38, disconnecting.
+1578730321: New client connected from ::ffff:172.22.45.153 as web_98 (p2, c1, k60).
+1578730321: Socket error on client web_41, disconnecting.
+1578730643: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578732444: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578734245: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578736046: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578736930: New client connected from ::ffff:172.22.45.153 as web_39 (p2, c1, k60).
+1578736930: Socket error on client web_98, disconnecting.
+1578737847: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578738004: New client connected from ::ffff:172.22.45.153 as web_22 (p2, c1, k60).
+1578738004: Socket error on client web_39, disconnecting.
+1578739594: Socket error on client web_22, disconnecting.
+1578739623: New client connected from ::ffff:172.22.45.153 as web_20 (p2, c1, k60).
+1578739648: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578739773: Socket error on client web_20, disconnecting.
+1578739884: New client connected from ::ffff:172.22.45.153 as web_9 (p2, c1, k60).
+1578739974: Socket error on client web_9, disconnecting.
+1578739987: New client connected from ::ffff:172.22.45.153 as web_53 (p2, c1, k60).
+1578741378: New client connected from ::ffff:172.22.45.153 as web_64 (p2, c1, k60).
+1578741378: Socket error on client web_53, disconnecting.
+1578741449: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578742693: New client connected from ::ffff:172.22.45.153 as web_57 (p2, c1, k60).
+1578742693: Socket error on client web_64, disconnecting.
+1578742995: New client connected from ::ffff:172.22.45.153 as web_4 (p2, c1, k60).
+1578742995: Socket error on client web_57, disconnecting.
+1578743250: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578743910: New client connected from ::ffff:172.22.45.153 as web_48 (p2, c1, k60).
+1578743911: Socket error on client web_4, disconnecting.
+1578744206: New client connected from ::ffff:172.22.45.153 as web_90 (p2, c1, k60).
+1578744206: Socket error on client web_48, disconnecting.
+1578744502: New client connected from ::ffff:172.22.45.153 as web_57 (p2, c1, k60).
+1578744502: Socket error on client web_90, disconnecting.
+1578745051: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578746449: New client connected from ::ffff:172.22.45.153 as web_37 (p2, c1, k60).
+1578746449: Socket error on client web_57, disconnecting.
+1578746852: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578748653: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578750454: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578752255: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578754056: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578755857: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578757658: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578759459: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578761260: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578763061: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578764862: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578766663: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578768464: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578770265: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578772066: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578773867: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578775668: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578777469: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578778156: New client connected from ::ffff:172.22.45.153 as web_89 (p2, c1, k60).
+1578778156: Socket error on client web_37, disconnecting.
+1578779270: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578779765: New client connected from ::ffff:172.22.45.153 as web_18 (p2, c1, k60).
+1578779765: Socket error on client web_89, disconnecting.
+1578780155: Socket error on client web_18, disconnecting.
+1578780169: New client connected from ::ffff:172.22.45.153 as web_48 (p2, c1, k60).
+1578781071: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578782872: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578782998: New client connected from ::ffff:172.22.45.153 as web_20 (p2, c1, k60).
+1578782998: Socket error on client web_48, disconnecting.
+1578783261: New client connected from ::ffff:172.22.45.153 as web_86 (p2, c1, k60).
+1578783261: Socket error on client web_20, disconnecting.
+1578783471: Socket error on client web_86, disconnecting.
+1578783475: New client connected from ::ffff:172.22.45.153 as web_37 (p2, c1, k60).
+1578784316: New client connected from ::ffff:172.22.45.153 as web_20 (p2, c1, k60).
+1578784316: Socket error on client web_37, disconnecting.
+1578784673: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578785026: New client connected from ::ffff:172.22.45.153 as web_68 (p2, c1, k60).
+1578785026: Socket error on client web_20, disconnecting.
+1578786167: New client connected from ::ffff:172.22.45.153 as web_13 (p2, c1, k60).
+1578786167: Socket error on client web_68, disconnecting.
+1578786474: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578786557: Socket error on client web_13, disconnecting.
+1578786566: New client connected from ::ffff:172.22.45.153 as web_34 (p2, c1, k60).
+1578788275: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578789417: Socket error on client web_34, disconnecting.
+1578789419: New client connected from ::ffff:172.22.45.153 as web_11 (p2, c1, k60).
+1578790076: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578791010: Socket error on client web_11, disconnecting.
+1578791013: New client connected from ::ffff:172.22.45.153 as web_18 (p2, c1, k60).
+1578791877: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578792160: New client connected from ::ffff:172.22.45.153 as web_8 (p2, c1, k60).
+1578792160: Socket error on client web_18, disconnecting.
+1578793678: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578795357: New client connected from ::ffff:172.22.45.153 as web_57 (p2, c1, k60).
+1578795357: Socket error on client web_8, disconnecting.
+1578795479: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578795716: New client connected from ::ffff:172.22.45.153 as web_35 (p2, c1, k60).
+1578795716: Socket error on client web_57, disconnecting.
+1578797280: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578799081: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578799827: Socket error on client web_35, disconnecting.
+1578799835: New client connected from ::ffff:172.22.45.153 as web_49 (p2, c1, k60).
+1578800882: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578801446: New client connected from ::ffff:172.22.45.153 as web_38 (p2, c1, k60).
+1578801446: Socket error on client web_49, disconnecting.
+1578801579: New client connected from ::ffff:172.22.45.153 as web_10 (p2, c1, k60).
+1578801579: Socket error on client web_38, disconnecting.
+1578802683: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578802809: Socket error on client web_10, disconnecting.
+1578802822: New client connected from ::ffff:172.22.45.153 as web_82 (p2, c1, k60).
+1578803393: Socket error on client web_82, disconnecting.
+1578803393: New client connected from ::ffff:172.22.45.153 as web_10 (p2, c1, k60).
+1578804484: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578804863: Socket error on client web_10, disconnecting.
+1578804877: New client connected from ::ffff:172.22.45.153 as web_12 (p2, c1, k60).
+1578806285: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578806289: Socket error on client web_12, disconnecting.
+1578806290: New client connected from ::ffff:172.22.45.153 as web_14 (p2, c1, k60).
+1578806920: Socket error on client web_40, disconnecting.
+1578806920: Socket error on client web_14, disconnecting.
+1578806925: New client connected from ::ffff:172.22.45.153 as web_22 (p2, c1, k60).
+1578806925: New client connected from ::ffff:172.22.46.45 as web_41 (p2, c1, k60).
+1578808086: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578809835: Socket error on client web_22, disconnecting.
+1578809848: New client connected from ::ffff:172.22.45.153 as web_88 (p2, c1, k60).
+1578809887: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578811688: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578812676: Socket error on client web_21, disconnecting.
+1578812682: New client connected from ::ffff:172.22.45.134 as web_51 (p2, c1, k60).
+1578813489: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578815290: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578817091: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578818892: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578820693: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578822494: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578824295: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578826096: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578827897: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578829698: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578831499: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578833300: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578835101: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578836902: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578838703: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578839115: Socket error on client web_88, disconnecting.
+1578839116: New client connected from ::ffff:172.22.45.153 as web_71 (p2, c1, k60).
+1578840504: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578842305: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578844106: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578845907: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578847708: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578849509: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578851310: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578853111: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578854912: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578856713: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578858514: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578860315: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578862116: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578863917: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578865653: Socket error on client web_71, disconnecting.
+1578865664: New client connected from ::ffff:172.22.45.153 as web_60 (p2, c1, k60).
+1578865718: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578866834: Socket error on client web_60, disconnecting.
+1578866838: New client connected from ::ffff:172.22.45.153 as web_81 (p2, c1, k60).
+1578867369: New client connected from ::ffff:172.22.45.153 as web_84 (p2, c1, k60).
+1578867369: Socket error on client web_81, disconnecting.
+1578867519: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578867975: New client connected from ::ffff:172.22.45.153 as web_94 (p2, c1, k60).
+1578867975: Socket error on client web_84, disconnecting.
+1578868659: New client connected from ::ffff:172.22.45.153 as web_69 (p2, c1, k60).
+1578868659: Socket error on client web_94, disconnecting.
+1578869082: New client connected from ::ffff:172.22.45.153 as web_74 (p2, c1, k60).
+1578869082: Socket error on client web_69, disconnecting.
+1578869320: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578869352: Socket error on client web_74, disconnecting.
+1578869362: New client connected from ::ffff:172.22.45.153 as web_22 (p2, c1, k60).
+1578870231: New client connected from ::ffff:172.22.45.153 as web_50 (p2, c1, k60).
+1578870231: Socket error on client web_22, disconnecting.
+1578871121: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578872722: New client connected from ::ffff:172.22.45.153 as web_3 (p2, c1, k60).
+1578872722: Socket error on client web_50, disconnecting.
+1578872922: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578874723: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578876524: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578878092: Socket error on client web_3, disconnecting.
+1578878099: New client connected from ::ffff:172.22.45.153 as web_55 (p2, c1, k60).
+1578878325: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578878747: New client connected from ::ffff:172.22.45.153 as web_44 (p2, c1, k60).
+1578878747: Socket error on client web_55, disconnecting.
+1578879976: New client connected from ::ffff:172.22.45.153 as web_27 (p2, c1, k60).
+1578879976: Socket error on client web_44, disconnecting.
+1578880042: New client connected from ::ffff:172.22.45.153 as web_86 (p2, c1, k60).
+1578880042: Socket error on client web_27, disconnecting.
+1578880126: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578880652: New client connected from ::ffff:172.22.45.153 as web_88 (p2, c1, k60).
+1578880652: Socket error on client web_86, disconnecting.
+1578881162: Socket error on client web_88, disconnecting.
+1578881176: New client connected from ::ffff:172.22.45.153 as web_69 (p2, c1, k60).
+1578881927: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578883161: New client connected from ::ffff:172.22.45.153 as web_92 (p2, c1, k60).
+1578883161: Socket error on client web_69, disconnecting.
+1578883367: New client connected from ::ffff:172.22.45.153 as web_3 (p2, c1, k60).
+1578883367: Socket error on client web_92, disconnecting.
+1578883728: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578884323: New client connected from ::ffff:172.22.45.153 as web_88 (p2, c1, k60).
+1578884323: Socket error on client web_3, disconnecting.
+1578885434: Socket error on client web_88, disconnecting.
+1578885442: New client connected from ::ffff:172.22.45.153 as web_96 (p2, c1, k60).
+1578885529: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578885937: New client connected from ::ffff:172.22.45.153 as web_77 (p2, c1, k60).
+1578885937: Socket error on client web_96, disconnecting.
+1578887330: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578887528: Socket error on client web_77, disconnecting.
+1578887533: New client connected from ::ffff:172.22.45.153 as web_0 (p2, c1, k60).
+1578887822: New client connected from ::ffff:172.22.45.153 as web_91 (p2, c1, k60).
+1578887822: Socket error on client web_0, disconnecting.
+1578889131: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578889834: Socket error on client web_91, disconnecting.
+1578889847: New client connected from ::ffff:172.22.45.153 as web_5 (p2, c1, k60).
+1578890932: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578892536: New client connected from ::ffff:172.22.45.153 as web_13 (p2, c1, k60).
+1578892536: Socket error on client web_5, disconnecting.
+1578892733: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578894534: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578896335: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578898136: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578899937: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578901738: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578903539: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578905006: New client connected from ::ffff:172.22.45.153 as web_95 (p2, c1, k60).
+1578905006: Socket error on client web_13, disconnecting.
+1578905340: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578907141: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578908942: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578909176: Socket error on client web_95, disconnecting.
+1578909180: New client connected from ::ffff:172.22.45.153 as web_61 (p2, c1, k60).
+1578910524: New client connected from ::ffff:172.22.45.153 as web_67 (p2, c1, k60).
+1578910524: Socket error on client web_61, disconnecting.
+1578910743: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578911024: New client connected from ::ffff:172.22.45.153 as web_90 (p2, c1, k60).
+1578911024: Socket error on client web_67, disconnecting.
+1578912544: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578912591: New client connected from ::ffff:172.22.45.153 as web_54 (p2, c1, k60).
+1578912591: Socket error on client web_90, disconnecting.
+1578913495: New client connected from ::ffff:172.22.45.153 as web_78 (p2, c1, k60).
+1578913495: Socket error on client web_54, disconnecting.
+1578914345: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578916017: New client connected from ::ffff:172.22.45.153 as web_68 (p2, c1, k60).
+1578916017: Socket error on client web_78, disconnecting.
+1578916146: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578917329: Socket error on client auto-5860B3E4-902A-AEC4-34A7-0174E3958101, disconnecting.
+1578917373: New connection from 172.22.45.80 on port 1883.
+1578917373: New client connected from 172.22.45.80 as auto-0319221E-0D4F-FA7E-9B71-75F7BE780693 (p2, c1, k60).
+1578917523: Socket error on client auto-0319221E-0D4F-FA7E-9B71-75F7BE780693, disconnecting.
+1578917553: New connection from 172.22.45.80 on port 1883.
+1578917553: New client connected from 172.22.45.80 as auto-FD28E1E7-FA58-FDE3-2EB9-C98DF667C5DD (p2, c1, k60).
+1578917643: Client auto-FD28E1E7-FA58-FDE3-2EB9-C98DF667C5DD has exceeded timeout, disconnecting.
+1578917644: New connection from 172.22.45.80 on port 1883.
+1578917644: New client connected from 172.22.45.80 as auto-4E79BAD4-7401-E8BF-F48D-9F6E2FA122FC (p2, c1, k60).
+1578917939: Socket error on client auto-4E79BAD4-7401-E8BF-F48D-9F6E2FA122FC, disconnecting.
+1578917947: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578917978: New connection from 172.22.45.80 on port 1883.
+1578917978: New client connected from 172.22.45.80 as auto-8FC8C162-C89A-AAD3-BD18-0D80E331E106 (p2, c1, k60).
+1578918276: Socket error on client auto-8FC8C162-C89A-AAD3-BD18-0D80E331E106, disconnecting.
+1578918312: New connection from 172.22.45.80 on port 1883.
+1578918312: New client connected from 172.22.45.80 as auto-067815AE-E8AA-0296-085A-DAF3437C9452 (p2, c1, k60).
+1578918551: New client connected from ::ffff:172.22.45.153 as web_54 (p2, c1, k60).
+1578918551: Socket error on client web_68, disconnecting.
+1578918943: Socket error on client web_54, disconnecting.
+1578918950: New client connected from ::ffff:172.22.45.153 as web_62 (p2, c1, k60).
+1578919748: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578920120: Socket error on client web_62, disconnecting.
+1578920127: New client connected from ::ffff:172.22.45.153 as web_45 (p2, c1, k60).
+1578920337: Socket error on client web_45, disconnecting.
+1578920346: New client connected from ::ffff:172.22.45.153 as web_40 (p2, c1, k60).
+1578920649: New client connected from ::ffff:172.22.45.153 as web_67 (p2, c1, k60).
+1578920649: Socket error on client web_40, disconnecting.
+1578920740: Socket error on client web_67, disconnecting.
+1578920747: New client connected from ::ffff:172.22.45.153 as web_12 (p2, c1, k60).
+1578921549: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578922610: New client connected from ::ffff:172.22.45.153 as web_58 (p2, c1, k60).
+1578922611: Socket error on client web_12, disconnecting.
+1578923348: New client connected from ::ffff:172.22.45.153 as web_35 (p2, c1, k60).
+1578923348: Socket error on client web_58, disconnecting.
+1578923350: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578923979: Socket error on client web_35, disconnecting.
+1578923986: New client connected from ::ffff:172.22.45.153 as web_58 (p2, c1, k60).
+1578924655: New client connected from ::ffff:172.22.45.153 as web_75 (p2, c1, k60).
+1578924655: Socket error on client web_58, disconnecting.
+1578925105: Socket error on client web_75, disconnecting.
+1578925118: New client connected from ::ffff:172.22.45.153 as web_33 (p2, c1, k60).
+1578925151: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578925471: New client connected from ::ffff:172.22.45.153 as web_23 (p2, c1, k60).
+1578925471: Socket error on client web_33, disconnecting.
+1578926459: New client connected from ::ffff:172.22.45.153 as web_47 (p2, c1, k60).
+1578926459: Socket error on client web_23, disconnecting.
+1578926952: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578928272: Socket error on client auto-067815AE-E8AA-0296-085A-DAF3437C9452, disconnecting.
+1578928313: New connection from 172.22.45.80 on port 1883.
+1578928313: New client connected from 172.22.45.80 as auto-EF88CC13-DB4E-1D64-BCA6-99FB1D74AE40 (p2, c1, k60).
+1578928720: Socket error on client auto-EF88CC13-DB4E-1D64-BCA6-99FB1D74AE40, disconnecting.
+1578928753: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578928795: New connection from 172.22.45.80 on port 1883.
+1578928795: New client connected from 172.22.45.80 as auto-E232635A-5EC5-1EDF-7ABA-C31E748FD2F8 (p2, c1, k60).
+1578928850: Socket error on client auto-E232635A-5EC5-1EDF-7ABA-C31E748FD2F8, disconnecting.
+1578928885: New connection from 172.22.45.80 on port 1883.
+1578928885: New client connected from 172.22.45.80 as auto-2CBC1E20-48D1-1F39-7F86-EDECF9104FBD (p2, c1, k60).
+1578928901: Socket error on client auto-2CBC1E20-48D1-1F39-7F86-EDECF9104FBD, disconnecting.
+1578928936: New connection from 172.22.45.80 on port 1883.
+1578928936: New client connected from 172.22.45.80 as auto-939FFDE2-FB2D-D993-638F-5FD39FEF0888 (p2, c1, k60).
+1578928947: Socket error on client auto-939FFDE2-FB2D-D993-638F-5FD39FEF0888, disconnecting.
+1578928982: New connection from 172.22.45.80 on port 1883.
+1578928982: New client connected from 172.22.45.80 as auto-CF8B582C-96A2-73EB-9E8B-BBB03CB82CA1 (p2, c1, k60).
+1578929044: New client connected from ::ffff:172.22.45.153 as web_64 (p2, c1, k60).
+1578929044: Socket error on client web_47, disconnecting.
+1578929451: New client connected from ::ffff:172.22.45.153 as web_7 (p2, c1, k60).
+1578929451: Socket error on client web_64, disconnecting.
+1578929539: New client connected from ::ffff:172.22.45.153 as web_15 (p2, c1, k60).
+1578929539: Socket error on client web_7, disconnecting.
+1578930554: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578931522: New client connected from ::ffff:172.22.45.153 as web_81 (p2, c1, k60).
+1578931522: Socket error on client web_15, disconnecting.
+1578932092: Socket error on client web_81, disconnecting.
+1578932096: New client connected from ::ffff:172.22.45.153 as web_38 (p2, c1, k60).
+1578932259: Socket error on client mqtt_32129aca.a5ded6, disconnecting.
+1578932260: mosquitto version 1.6.8 terminating
+1578932260: Socket error on client web_38, disconnecting.
+1578932260: Socket error on client web_41, disconnecting.
+1578932260: Socket error on client web_51, disconnecting.
+1578932260: Socket error on client web_30, disconnecting.
+1578932260: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578932292: mosquitto version 1.6.8 starting
+1578932292: Config loaded from /mosquitto/config/mosquitto.conf.
+1578932292: Opening websockets listen socket on port 9001.
+1578932292: Opening ipv4 listen socket on port 1883.
+1578932292: Opening ipv6 listen socket on port 1883.
+1578932297: New connection from 172.22.45.56 on port 1883.
+1578932297: New client connected from 172.22.45.56 as auto-881A6058-302C-6FA9-D9E0-BE781320D633 (p2, c1, k60).
+1578932297: New connection from 172.22.45.80 on port 1883.
+1578932297: New client connected from 172.22.45.80 as auto-6F8E9765-2939-B503-5590-74A6FACE443D (p2, c1, k60).
+1578932309: New connection from 172.18.0.8 on port 1883.
+1578932309: New client connected from 172.18.0.8 as mqtt_c1528f8b.a55bd (p1, c1, k60, u'root').
+1578932462: Socket error on client mqtt_c1528f8b.a55bd, disconnecting.
+1578932464: mosquitto version 1.6.8 terminating
+1578932464: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578932471: mosquitto version 1.6.8 starting
+1578932471: Config loaded from /mosquitto/config/mosquitto.conf.
+1578932471: Opening websockets listen socket on port 9001.
+1578932471: Opening ipv4 listen socket on port 1883.
+1578932471: Opening ipv6 listen socket on port 1883.
+1578932471: New connection from 172.22.45.56 on port 1883.
+1578932471: New client connected from 172.22.45.56 as auto-AA99C584-831D-FFD3-9DDF-130F0E7B5574 (p2, c1, k60).
+1578932471: New connection from 172.22.45.80 on port 1883.
+1578932471: New client connected from 172.22.45.80 as auto-823B66B7-3415-86FD-654E-6A56DB3FF178 (p2, c1, k60).
+1578932486: New connection from 172.18.0.8 on port 1883.
+1578932486: New client connected from 172.18.0.8 as mqtt_603c5f1e.6fd34 (p1, c1, k60, u'root').
+1578933213: New client connected from ::ffff:172.22.45.153 as web_28 (p2, c1, k60).
+1578934271: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578936072: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578936544: Socket error on client web_28, disconnecting.
+1578936544: New client connected from ::ffff:172.22.45.153 as web_54 (p2, c1, k60).
+1578937171: New client connected from ::ffff:172.22.45.153 as web_34 (p2, c1, k60).
+1578937171: Socket error on client web_54, disconnecting.
+1578937487: New client connected from ::ffff:172.22.45.153 as web_32 (p2, c1, k60).
+1578937487: Socket error on client web_34, disconnecting.
+1578937778: New client connected from ::ffff:172.22.45.153 as web_30 (p2, c1, k60).

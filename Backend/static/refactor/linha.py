@@ -10,26 +10,31 @@ class linha():
     def queryParametros(self, area):
         collection = database["colaboradores"]
         query = {}
-        query["AREA"] = area
+        #query["AREA"] = area
         #query["CLIENTE"] = self.cliente
         #query["LINHA"] = self.linha
         cursor = collection.find(query)
         return cursor
 
-    def findColaboradores(self, parametros):       
+    def findColaboradores(self, parametros):
+        x =0
         for doc in parametros:
             novoColaborador = {}
             novoColaborador = colaborador()
             novoColaborador.name = doc['NOME']
             novoColaborador.matricula = doc['MATRÍCULA']
-            if "FACE" in doc:
+            if  doc["FACE"] == "0":
+                pass
+            else:
                 novoColaborador.encodedFace = doc["FACE"]  #ou np.asarray(cursor[0]['FACE'])
+                x+=1
             Habilidades = []
             for key in doc:
                 if doc[key] == '1' or doc[key] == '2' or doc[key] == '3' or doc[key] == '4' or doc[key] == '5':
                     Habilidades.append(key)
             novoColaborador.skills = set(Habilidades)
             self.colaboradores.append(novoColaborador)
+        print(x)
 
     def calculateAllMissingSkills(self, requisitos):
         for colab in self.colaboradores:

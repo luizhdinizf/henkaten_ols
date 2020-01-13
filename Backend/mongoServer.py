@@ -201,6 +201,14 @@ def getColaboradoresDoPosto(args):
         retorno="0"
     return(retorno)
 
+
+def get_postos(args):
+    collection = database['postos']
+    query = {}
+    workplaceInfo = collection.find(query)
+    return workplaceInfo[:]
+
+
 def getWorkplaceInfo(args): 
     mac = args['mac']
     collection = database['postos']
@@ -329,3 +337,14 @@ def retrieveLogged(date):
         for doc in cursor:
             ret.append(doc)
         return (ret)
+
+
+def find_matriculas():
+    collection = database["colaboradores"]
+    query = {}
+    cursor = collection.find(query)
+    matriculas =[]
+    for doc in cursor:
+        if "FACE" not in doc:
+            matriculas.append(doc['MATRÍCULA'])
+    return matriculas

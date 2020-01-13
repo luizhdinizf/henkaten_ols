@@ -40,6 +40,7 @@ class controller():
         self.logar = True
         self.logados = []
         self.saveNextFace = False
+        self.simular = False
 
     def registraEvento(self,evento,dado):
         collection = database['historico']
@@ -118,7 +119,8 @@ class controller():
         threading.Thread(target=self.recognize, args=()).start()
         while 1:
             _, frameInicial = self.cap.read()
-            self.frame = cv2.flip(frameInicial, 1)
+            if self.simular is False:
+                self.frame = cv2.flip(frameInicial, 1)
             self.screen.recognizedColabs = self.detectedColabs
             self.screen.frame = self.frame.copy()
             self.screen.displayAll()
