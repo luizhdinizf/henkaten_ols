@@ -930,3 +930,10 @@
 1578937487: New client connected from ::ffff:172.22.45.153 as web_32 (p2, c1, k60).
 1578937487: Socket error on client web_34, disconnecting.
 1578937778: New client connected from ::ffff:172.22.45.153 as web_30 (p2, c1, k60).
+1578937779: Socket error on client web_32, disconnecting.
+1578937873: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1578938399: New client connected from ::ffff:172.22.45.153 as web_60 (p2, c1, k60).
+1578938399: Socket error on client web_30, disconnecting.
+1578938630: New client connected from ::ffff:172.22.45.153 as web_23 (p2, c1, k60).
+1578938630: Socket error on client web_60, disconnecting.
+1578939101: New client connected from ::ffff:172.22.45.153 as web_94 (p2, c1, k60).

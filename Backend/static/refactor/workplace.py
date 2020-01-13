@@ -11,6 +11,7 @@ class workplace():
         self.linha = ""
         self.modelo = ""
         self.logados = set()
+        self.status = "ausente"
 
     def getInfo(self,mac):
         collection = database['postos']
@@ -47,7 +48,12 @@ class workplace():
             for colab in self.logados:
                 dict = {"Posto": self.posto,"date":today,"reconhecidos": colab.name} 
                 result = collection.insert_one(dict)
-
+    
+    def preencheStatusLogin(self):
+        collection = database['postos']
+        query = {}
+        query["mac"] = mac
+        result = collection.update_many(query,{"status":self.status})
         #collection = database['postos']
        # result = collection.update_many( 
          #   {"mac": mac},
