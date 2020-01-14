@@ -3,10 +3,14 @@ import pandas as pd
 from pymongo import MongoClient
 import gridfs
 import re
+import paho.mqtt.client as mqtt
 
 client = MongoClient("mongodb://mongo:27017/")
 database = client["henkaten_ols"]
 
+mqttclient = mqtt.Client()
+mqttclient.connect("mqtt", 1883, 60)
+mqttclient.loop_start()
 
 def importarCSVparaMongo():    
     df = pd.read_csv('/home/luiz/Projetos/colaboradores_utf.csv',encoding = 'utf-8')
@@ -23,23 +27,6 @@ def importarCSVparaMongo():
 
 
 
-
-def preencherLinhaAleatoriamente(cliente,area,linha,modelo):
-    import random
-    query = {}
-    sort = [ ("value", 1) ]
-    competencias = database["competencias"]
-    cursor = competencias.find(query, sort = sort)
-
-    competencias = []
-    try:
-        for doc in cursor:
-            competencias.append(doc['value'])
-    finally:
-        client.close()
-    for i in range(20):    
-        x = [random.choice(competencias) for i in range(4)]
-        postos.insert({'N':i,'cliente':cliente,'area':area,'linha':linha,'modelo':modelo,'requisitos':x,'colaboradores':[]})
 
 
 def preencherPostos(postos,nivel):
@@ -69,45 +56,6 @@ def preencherPostos(postos,nivel):
     finally:
         client.close()
 
-
-def acharColaboradores(queryColaboradores):
-    projection = {}
-    projection["MATRÍCULA"] = 1.0    
-    colaboradores=[]
-    cursor = database.find(queryColaboradores, projection = projection)
-    try:
-        for doc in cursor:
-            colaboradores.append((doc['_id']))
-            #print(doc)
-        return colaboradores
-    finally:
-        client.close()
-
-def preencheReconhecidos(posto,ids):
-    collection = database['postos']  
-    result = collection.update_many( 
-        {"N":posto}, 
-        { 
-                "$set":{ 
-                        "reconhecidos":ids
-                        }, 
-                                 
-                } 
-        ) 
-   
-def preencheColaboradores(posto,ids):
-    collection = database['postos']
-  
-    result = collection.update_many( 
-        {"N":posto}, 
-        { 
-                "$set":{ 
-                        "colaboradores":ids
-                        }, 
-                                 
-                } 
-        ) 
- 
 
 
 def saveEncodedFace(registro,encodedFace):
@@ -140,16 +88,7 @@ def getFaceFromMatricula(registro):
         encodedFace = None
     return(encodedFace)
 
-def getFacesFromIds(ids):
-    encodedFaces =[]
-    nomes = []
-    for matricula in ids:
-        face = getFaceFromMatricula(matricula)
-        if face is not None:
-            encodedFaces.append(face)
-            nomes.append(getNameFromMatricula(matricula))
-        #encodedFaces.append(
-    return(nomes,encodedFaces)
+
 
 def getNameFromMatricula(registro):
     collection = database['colaboradores']
@@ -166,13 +105,6 @@ def getNameFromMatricula(registro):
         Name = None
     return(Name)
 
-def getNamesFromIds(ids):
-    Names =[]
-    for matricula in ids:
-        Name = getNameFromMatricula(matricula)
-        Names.append(Name) if Name is not None else None
-        #encodedFaces.append(
-    return(Names)
     
 def getColaboradoresDoPosto(args):
     try:
@@ -209,119 +141,33 @@ def get_postos(args):
     return workplaceInfo[:]
 
 
-def getWorkplaceInfo(args): 
-    mac = args['mac']
+def getWorkplaceInfo(args):
+    from bson.objectid import ObjectId
     collection = database['postos']
-    query = {}
-    query["mac"] = mac
-    workplaceInfo = collection.find(query)
-    #return mac
-    return workplaceInfo[0]
+    thing = collection.find_one({'_id': ObjectId(args['id']) })
+    return thing
 
 
-def getMatriculaFromName(args): 
-    name = args['name']
-    if name == "Desconhecido":
-        return 0
+def getColaboradorFromMatricula(args):
+    matricula = args['matricula']
     collection = database['colaboradores']
-    matriculas = collection.find(
-    { 
-        "NOME" : name
-    }, 
-    { 
-        "MATRÍCULA" : 1.0
-    }
-    )
-    try:
-        #print(matriculas[0])
-        return matriculas[0]['MATRÍCULA'] if matriculas[0]['MATRÍCULA'] is not None else None
-    except:        
-        return None
+    data = collection.find_one({'MATRÍCULA': matricula})
+    return data
 
-def getIdsFromNames(names):
-    collection = database['colaboradores']
-    ids =[]
-    for name in names:
-        id = getMatriculaFromName(name)    
-        try:    
-            ids.append(id) if id is not None else None
-        except:
-            pass
-        #encodedFaces.append(
-    return(ids)
-def processMissingSkills(skillsRequeridas,matricula):
-    nivel = 2
-    #skillsRequeridas =["ACABAMENTO"]
-    skillsDisponiveis=[]
-    skillsColaborador=[]
-    missing = []
-    query={}
-    try:
-        collection = database['colaboradores']                
-        query["MATRÍCULA"] = matricula       
-        queryResult = collection.find(query)[0]
-        skillsDisponiveis = set(list(queryResult.keys())[8:-7])
-        for skill in skillsDisponiveis:       
-                #print(int(queryResult[skill]))
-                try:
-                    if int(queryResult[skill]) > nivel:
-                        skillsColaborador.append(skill)
-                except:
-                    pass     
-        skillsColaborador= set(skillsColaborador)
-        for skill in skillsRequeridas:
-            #print (skill)
-            if skill not in skillsColaborador:
-                #print(skill)
-                missing.append(skill)
-        
-        #missing = skillsRequeridas.difference(skillsColaborador)     
-        #print(missing)
-        return missing  
-    except:
-        return(skillsRequeridas)           
-        #print("\n")
+def mqttMessage(args):
+    mqttclient.publish(args['topic'],args['payload'])
+    return "ok"
+def mqttCommand(args):
+    from bson.json_util import dumps
+    payload = {}
+    payload['command'] = args['command']
+    payload['matricula']=args['dado']
+    topic= args['topic']
+    payload = dumps(payload)
+    
+    mqttclient.publish(topic,payload)
+    return "ok"
 
-def saveImageOnDatabase(wpInfo,image): 
-    fs = gridfs.GridFS(database)   
-    collection = database['linhas']  
-    # convert ndarray to string
-    imageString = image.tostring()
-
-    # store the image
-    imageID = fs.put(imageString, encoding='utf-8')
-
-    # create our image meta data
-    meta = {       
-        
-                'imageID': imageID,
-                'shape': image.shape,
-                'dtype': str(image.dtype)
-            
-        
-    }
-    query = {}
-    query["cliente"] = wpInfo["cliente"]
-    query["area"] = wpInfo["area"]
-    query["linha"] = wpInfo["linha"]
-    query["modelo"] = wpInfo["modelo"]
-
-   
-    collection.update(query, {'$push': {'desconhecidos': meta}})
-
-def retrieveImage(wpInfo): 
-        fs = gridfs.GridFS(database) 
-        collection = database['linhas'] 
-        query = {}
-        query["cliente"] = wpInfo["cliente"]
-        query["area"] = wpInfo["area"]
-        query["linha"] = wpInfo["linha"]
-        query["modelo"] = wpInfo["modelo"]
-        image = collection.find_one(query)['desconhecidos'][0]   
-        gOut = fs.get(image['imageID'])   
-        img = np.frombuffer(gOut.read(), dtype=np.uint8)  
-        img = np.reshape(img, image['shape'])
-        return img
 
 def retrieveLogged(date):
         from bson.json_util import dumps

@@ -25,9 +25,10 @@ from colaborador import colaborador
 import paho.mqtt.client as mqtt
 import socket
 
-mac = socket.gethostname()
+#mac = socket.gethostname()
+mac = "RMTZ3097"
 cap = cv2.VideoCapture(0)   
-main1 = controller(mac,cap,screenController(),faceDetector(),linha(),workplace())
+main1 = controller(mac,cap,screenController(),faceDetector(),linha(),workplace(mac))
 
 def on_connect(client, userdata, flags, rc):
     print("Connected with result code "+str(rc))
@@ -52,14 +53,17 @@ def on_message(client, userdata, msg):
         print("RESETANDO")
         main1.restart()
     elif command == "login":
-        subprocess.call("./.killChromium.sh")
+        try:
+            subprocess.call("./.killChromium.sh")
+        except:
+            pass
         print("Logando")
         main1.logar = True
         
     elif command == "logout":
         mat = mensagem["matricula"]
         if mat == "all":
-            main1.workplace.logados = set()
+            main1.workplace.removerLogados()
             main1.registraEvento("logoutGeral", " ")
         else:
             colab = main1.linha.findColabByMatricula(mat)
@@ -68,8 +72,11 @@ def on_message(client, userdata, msg):
                 main1.workplace.removerLogado(colab.matricula)
 
     elif command == "cadastrar":
+        try:
             subprocess.call("./.killChromium.sh")
-            main1.saveNextFace = True
+        except:
+            pass
+        main1.saveNextFace = True
 
     elif command == "reboot":
         print("try to reboot")

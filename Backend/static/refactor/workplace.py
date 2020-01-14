@@ -1,7 +1,7 @@
 from database import database
 from datetime import datetime
 class workplace():
-    def __init__(self):
+    def __init__(self,mac):
         self.processo = ""
         self.posto = ""
         self.atividades = []
@@ -11,12 +11,13 @@ class workplace():
         self.linha = ""
         self.modelo = ""
         self.logados = set()
-        self.status = "ausente"
+        self.mac = mac
+        self.atualizaPosto()
 
-    def getInfo(self,mac):
+    def getInfo(self):
         collection = database['postos']
         query = {}
-        query["mac"] = mac
+        query["mac"] = self.mac
         workplaceInfo = collection.find(query)[0]
         self.processo = workplaceInfo["Processo"]
         self.posto = workplaceInfo["Posto"]
@@ -29,37 +30,27 @@ class workplace():
 
     def removerLogados(self):
         self.logados = set()
-        self.preencheReconhecidos()
+        self.atualizaPosto()
 
     def removerLogado(self, matricula):
         for colab in self.logados:
             if colab.matricula == matricula:
                 self.logados.discard(colab)
+                self.atualizaPosto()
 
+    def addLogado(self,colab):
+        self.logados.add(colab)
+        self.atualizaPosto()
 
-   
-
-     #request by date { "date" : { $regex : /^08\/01\/2020/ }}
-    def preencheReconhecidos(self):        
-        if len(self.logados) > 0:
-            collection = database['historico']
-            now = datetime.now()
-            today = now.strftime("%d-%m-%Y, %H:%M:%S")
-            for colab in self.logados:
-                dict = {"Posto": self.posto,"date":today,"reconhecidos": colab.name} 
-                result = collection.insert_one(dict)
-    
-    def preencheStatusLogin(self):
+    def atualizaPosto(self):
+        print("Atualizando Posto")
         collection = database['postos']
+        matriculas = [colab.matricula for colab in self.logados]
         query = {}
-        query["mac"] = mac
-        result = collection.update_many(query,{"status":self.status})
-        #collection = database['postos']
-       # result = collection.update_many( 
-         #   {"mac": mac},
-            #{
-      #              "$set": {
-      #                      "reconhecidos": self.reconhecidos
-     # #                      },
-     #               }
-       #                  )
+        query['mac'] = self.mac
+        action = {
+            "$set": {
+                        "logados": list(matriculas)
+                    },
+        }
+        collection.update_many(query, action)

@@ -50,8 +50,8 @@ class controller():
         result = collection.insert_one(dict)
 
     def restart(self):
-        self.workplace.getInfo(self.mac)
-        self.linha.findColaboradores(self.linha.queryParametros("Ato"))
+        self.workplace.getInfo()
+        self.linha.findColaboradores()
         self.linha.calculateAllMissingSkills(self.workplace.requisitos)
         self.faceDetector.fillKnowFacesAndIndexes(self.linha)
 
@@ -66,14 +66,14 @@ class controller():
                 try:
                     if colabLogado not in self.workplace.logados:
                         self.registraEvento("login",colabLogado.name)
-                        self.workplace.logados.add(colabLogado)
+                        self.workplace.addLogado(colabLogado)
                     #self.workplace.preencheReconhecidos()
                 except Exception as e:
                     print(e)
                 self.screen.popupText = "Sucesso! Bem Vindo:"
                 self.screen.popupText2 = colabLogado.name
                 threading.Thread(target=self.displayPopup, args=()).start()
-                subprocess.Popen("./.ajudaMTZ.sh")
+                self.onLogin()
                 self.logar = False
             else:
                 self.screen.popupText = "Falha no Login"
@@ -134,17 +134,17 @@ class controller():
                 self.screen.displaySubtitule(stringSubtitle)
 
             if len(self.workplace.logados) == 0:
-                subprocess.call("./.killChromium.sh")
+                self.onLogout()                
                 self.logar = True
             self.screen.show()
             key = cv2.waitKey(1) & 0xFF
             if key == ord('q'):
                 break
             if key == ord('l'):
-                subprocess.call("./.killChromium.sh")
+                self.onLogout()                
                 self.logar = True
             if key == ord('g'):
-                subprocess.call("./.killChromium.sh")
+                self.onLogout()                
                 self.saveNextFace = True
             if key == ord('r'):
                 self.restart()
@@ -154,6 +154,18 @@ class controller():
         cv2.destroyAllWindows()
         self.cap.release()
 
+    def onLogin(self):
+        try:
+            subprocess.Popen("./.ajudaMTZ.sh")
+        except:
+            pass
+
+    def onLogout(self):
+        try:
+            subprocess.call("./.killChromium.sh")
+        except:
+            pass
+
     def uploadImage(self, img):
         serverAddress = 'http://brmtz-dev-001:800'
         fullUrl = serverAddress + '/api/upload'
@@ -161,3 +173,4 @@ class controller():
         headers = {'content-type': content_type}
         _, img_encoded = cv2.imencode('.jpg', img)
         response = requests.post(fullUrl, data=img_encoded.tostring(), headers=headers)
+        print(response.text)
