@@ -6,28 +6,29 @@ from datetime import datetime
 class linha():
     def __init__(self):
         self.colaboradores = []        
+       
 
-    def queryParametros(self, area):
+    def findColaboradores(self,):
+        x = 0
         collection = database["colaboradores"]
         query = {}
         #query["AREA"] = area
         #query["CLIENTE"] = self.cliente
         #query["LINHA"] = self.linha
         cursor = collection.find(query)
-        return cursor
-
-    def findColaboradores(self, parametros):
-        x =0
-        for doc in parametros:
+        for doc in cursor:
             novoColaborador = {}
             novoColaborador = colaborador()
             novoColaborador.name = doc['NOME']
             novoColaborador.matricula = doc['MATRÍCULA']
-            if  doc["FACE"] == "0":
+            try:
+                if  doc["FACE"] == "0":
+                    pass
+                else:
+                    novoColaborador.encodedFace = doc["FACE"]  #ou np.asarray(cursor[0]['FACE'])
+                    x+=1
+            except:
                 pass
-            else:
-                novoColaborador.encodedFace = doc["FACE"]  #ou np.asarray(cursor[0]['FACE'])
-                x+=1
             Habilidades = []
             for key in doc:
                 if doc[key] == '1' or doc[key] == '2' or doc[key] == '3' or doc[key] == '4' or doc[key] == '5':

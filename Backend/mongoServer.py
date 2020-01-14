@@ -209,14 +209,11 @@ def get_postos(args):
     return workplaceInfo[:]
 
 
-def getWorkplaceInfo(args): 
-    mac = args['mac']
+def getWorkplaceInfo(args):
+    from bson.objectid import ObjectId
     collection = database['postos']
-    query = {}
-    query["mac"] = mac
-    workplaceInfo = collection.find(query)
-    #return mac
-    return workplaceInfo[0]
+    thing = collection.find_one({'_id': ObjectId(args['id']) })
+    return thing
 
 
 def getMatriculaFromName(args): 

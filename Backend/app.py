@@ -46,6 +46,7 @@ CORS(app)
 app.config.from_object(__name__)
 app.config['SECRET_KEY'] = '7d441f27d441f27567d441f2b6176a'
 
+
 class ReusableForm(Form):
     name = TextField('Name:', validators=[validators.required()])    
     @app.route("/", methods=['GET', 'POST'])
@@ -65,10 +66,19 @@ class ReusableForm(Form):
 def api(function):   
     mod = importlib.import_module('mongoServer')
     func = getattr(mod, function)
-    result = func(request.args)  
-    
+    result = func(request.args)
     response = dumps(result)
     return response
+
+@app.route('/base64', methods=['GET', 'POST'])
+def sendBase64():
+    image = request.args['mat']
+    import base64
+    string = "data:image/png;base64,"
+    string2 = ""
+    with open("static/fotosCadastradas/"+image+".jpg", "rb") as imageFile:
+        string2 = base64.b64encode(imageFile.read())
+    return (string+string2.decode("utf-8"))
 
 @app.route('/img/<id>', methods=['GET', 'POST'])
 def image(id):     
@@ -128,7 +138,7 @@ def rename(source):
     encodedFaces = face_recognition.face_encodings(frame, recognizedLocations)
     #return(str(len(encodedFaces)))
     saveEncodedFace(registro, list(encodedFaces[0]))
-    dest="static/upload/" + registro + ".jpg"
+    dest="static/fotosCadastradas/" + registro + ".jpg"
     shutil.move(src, dest)
     return redirect("http://brmtz-dev-001:800", code=301)
 
