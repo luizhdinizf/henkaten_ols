@@ -26,7 +26,8 @@ class JSONEncoder(json.JSONEncoder):
         if isinstance(o, ObjectId):
             return str(o)
         return json.JSONEncoder.default(self, o)
-    
+
+
 def scanStaticFolder():
     result =[]
     try:
@@ -143,11 +144,10 @@ def rename(source):
     return redirect("http://brmtz-dev-001:800", code=301)
 
 @app.route('/remove/<source>', methods=['GET', 'POST'])
-def remove(source):    
-    
+def remove(source):        
     src="static/upload/desconhecido/"+source   
     os.remove(src)
-    return redirect("/", code=301)
+    return redirect("http://brmtz-dev-001:800/", code=301)
 
 
 

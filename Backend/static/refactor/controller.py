@@ -144,8 +144,7 @@ class controller():
                 self.onLogout()                
                 self.logar = True
             if key == ord('g'):
-                self.onLogout()
-                
+                self.onLogout()                
                 self.saveNextFace = True
             if key == ord('r'):
                 self.restart()
@@ -174,3 +173,4 @@ class controller():
         headers = {'content-type': content_type}
         _, img_encoded = cv2.imencode('.jpg', img)
         response = requests.post(fullUrl, data=img_encoded.tostring(), headers=headers)
+        print(response.text)

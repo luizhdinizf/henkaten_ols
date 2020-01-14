@@ -53,7 +53,10 @@ def on_message(client, userdata, msg):
         print("RESETANDO")
         main1.restart()
     elif command == "login":
-        subprocess.call("./.killChromium.sh")
+        try:
+            subprocess.call("./.killChromium.sh")
+        except:
+            pass
         print("Logando")
         main1.logar = True
         
@@ -69,8 +72,11 @@ def on_message(client, userdata, msg):
                 main1.workplace.removerLogado(colab.matricula)
 
     elif command == "cadastrar":
+        try:
             subprocess.call("./.killChromium.sh")
-            main1.saveNextFace = True
+        except:
+            pass
+        main1.saveNextFace = True
 
     elif command == "reboot":
         print("try to reboot")
