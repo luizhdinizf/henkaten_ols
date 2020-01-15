@@ -1,0 +1,2193 @@
+1579000811: mosquitto version 1.6.8 starting
+1579000811: Config loaded from /mosquitto/config/mosquitto.conf.
+1579000811: Opening websockets listen socket on port 9001.
+1579000811: Opening ipv4 listen socket on port 1883.
+1579000811: Opening ipv6 listen socket on port 1883.
+1579000826: New connection from 172.18.0.8 on port 1883.
+1579000826: New client connected from 172.18.0.8 as mqtt_148b2180.54f64f (p1, c1, k60, u'root').
+1579000831: New connection from 172.22.45.80 on port 1883.
+1579000831: New client connected from 172.22.45.80 as auto-E63A8DA3-5331-6178-CD62-0D089E0AEED2 (p2, c1, k60).
+1579000831: New connection from 172.18.0.6 on port 1883.
+1579000831: New client connected from 172.18.0.6 as auto-5A42017F-6801-3352-15C6-606982523FE0 (p2, c1, k60).
+1579000833: New connection from 172.18.0.6 on port 1883.
+1579000833: New client connected from 172.18.0.6 as auto-52EBE99A-2446-78F8-8DCF-7CC32B12B258 (p2, c1, k60).
+1579000834: Socket error on client auto-52EBE99A-2446-78F8-8DCF-7CC32B12B258, disconnecting.
+1579000838: New connection from 172.18.0.6 on port 1883.
+1579000838: New client connected from 172.18.0.6 as auto-62CC7CE1-5095-AF58-B9A2-24F9FC5500AC (p2, c1, k60).
+1579001506: Socket error on client auto-E63A8DA3-5331-6178-CD62-0D089E0AEED2, disconnecting.
+1579001546: New connection from 172.22.45.80 on port 1883.
+1579001546: New client connected from 172.22.45.80 as auto-B78BD768-A15B-7B21-25F5-55B1D8FDEE5C (p2, c1, k60).
+1579001694: Socket error on client auto-62CC7CE1-5095-AF58-B9A2-24F9FC5500AC, disconnecting.
+1579001698: New connection from 172.18.0.6 on port 1883.
+1579001698: New client connected from 172.18.0.6 as auto-184E2BCC-FD4E-317F-82BC-CFACDE94BE1E (p2, c1, k60).
+1579002607: New connection from 172.22.46.13 on port 1883.
+1579002607: New client connected from 172.22.46.13 as auto-DA8A929D-5067-84E0-586D-D6A8A4A814CE (p2, c1, k60).
+1579002611: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579004412: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579006213: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579007981: New client connected from ::ffff:172.22.45.153 as web_17 (p2, c1, k60).
+1579008014: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579009815: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579011616: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579012692: Socket error on client web_17, disconnecting.
+1579012699: New client connected from ::ffff:172.22.45.153 as web_39 (p2, c1, k60).
+1579012899: New client connected from ::ffff:172.22.45.153 as web_30 (p2, c1, k60).
+1579012899: Socket error on client web_39, disconnecting.
+1579013417: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579013849: New client connected from ::ffff:172.22.45.153 as web_77 (p2, c1, k60).
+1579013849: Socket error on client web_30, disconnecting.
+1579014015: Socket error on client auto-DA8A929D-5067-84E0-586D-D6A8A4A814CE, disconnecting.
+1579014156: New connection from 172.22.45.142 on port 1883.
+1579014156: New client connected from 172.22.45.142 as auto-60596050-BB32-67B6-7989-5F6C1DE456B8 (p2, c1, k60).
+1579014481: Socket error on client auto-184E2BCC-FD4E-317F-82BC-CFACDE94BE1E, disconnecting.
+1579014486: New connection from 172.18.0.6 on port 1883.
+1579014486: New client connected from 172.18.0.6 as auto-54A812F3-5765-3C87-1126-BB875A3282D3 (p2, c1, k60).
+1579014537: Socket error on client auto-60596050-BB32-67B6-7989-5F6C1DE456B8, disconnecting.
+1579014624: Socket error on client auto-54A812F3-5765-3C87-1126-BB875A3282D3, disconnecting.
+1579014630: New connection from 172.18.0.6 on port 1883.
+1579014630: New client connected from 172.18.0.6 as auto-F21AE22D-7EEF-A23F-7C03-4804A67C0C3E (p2, c1, k60).
+1579014709: Socket error on client auto-F21AE22D-7EEF-A23F-7C03-4804A67C0C3E, disconnecting.
+1579014714: New connection from 172.18.0.6 on port 1883.
+1579014714: New client connected from 172.18.0.6 as auto-D0BFC853-E22C-85D7-0C35-B6565EDE0BA0 (p2, c1, k60).
+1579014730: Socket error on client auto-B78BD768-A15B-7B21-25F5-55B1D8FDEE5C, disconnecting.
+1579014770: New connection from 172.22.45.80 on port 1883.
+1579014770: New client connected from 172.22.45.80 as auto-DFF070D9-4471-86C1-296B-39106A1D9E94 (p2, c1, k60).
+1579014779: Socket error on client auto-D0BFC853-E22C-85D7-0C35-B6565EDE0BA0, disconnecting.
+1579014783: New connection from 172.18.0.6 on port 1883.
+1579014783: New client connected from 172.18.0.6 as auto-C161CF53-6ABA-CB1B-0010-A19F8CBA19B3 (p2, c1, k60).
+1579014847: Socket error on client auto-C161CF53-6ABA-CB1B-0010-A19F8CBA19B3, disconnecting.
+1579014852: New connection from 172.18.0.6 on port 1883.
+1579014852: New client connected from 172.18.0.6 as auto-530B5748-502E-E7E4-32B8-79BC96BA353D (p2, c1, k60).
+1579014969: Socket error on client auto-530B5748-502E-E7E4-32B8-79BC96BA353D, disconnecting.
+1579014974: New connection from 172.18.0.6 on port 1883.
+1579014974: New client connected from 172.18.0.6 as auto-B427F897-6A04-0A56-0BCD-357C1E052451 (p2, c1, k60).
+1579015080: New connection from 172.22.45.142 on port 1883.
+1579015080: New client connected from 172.22.45.142 as auto-057A3FB5-6140-3AF5-CEFF-A64E1DB6D2A6 (p2, c1, k60).
+1579015121: Socket error on client auto-DFF070D9-4471-86C1-296B-39106A1D9E94, disconnecting.
+1579015161: New connection from 172.22.45.80 on port 1883.
+1579015161: New client connected from 172.22.45.80 as auto-F20864DB-4477-7763-C094-800AB9576A41 (p2, c1, k60).
+1579015218: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579015396: New client connected from ::ffff:172.22.45.142 as web_64 (p2, c1, k60).
+1579015465: Socket error on client web_64, disconnecting.
+1579015536: New client connected from ::ffff:172.22.45.142 as web_6 (p2, c1, k60).
+1579015555: Socket error on client web_6, disconnecting.
+1579015577: New client connected from ::ffff:172.22.45.142 as web_92 (p2, c1, k60).
+1579015597: Socket error on client web_92, disconnecting.
+1579015766: New client connected from ::ffff:172.22.45.153 as web_60 (p2, c1, k60).
+1579015766: Socket error on client web_77, disconnecting.
+1579015769: New client connected from ::ffff:172.22.45.142 as web_59 (p2, c1, k60).
+1579015783: Socket error on client web_59, disconnecting.
+1579015812: New client connected from ::ffff:172.22.45.142 as web_16 (p2, c1, k60).
+1579015832: Socket error on client web_16, disconnecting.
+1579015893: New client connected from ::ffff:172.22.45.142 as web_8 (p2, c1, k60).
+1579015918: Socket error on client web_8, disconnecting.
+1579016012: New client connected from ::ffff:172.22.45.142 as web_58 (p2, c1, k60).
+1579016042: Socket error on client web_58, disconnecting.
+1579016057: Client web_60 already connected, closing old connection.
+1579016057: New client connected from ::ffff:172.22.45.142 as web_60 (p2, c1, k60).
+1579016057: Socket error on client web_60, disconnecting.
+1579016059: New client connected from ::ffff:172.22.45.153 as web_95 (p2, c1, k60).
+1579016069: Socket error on client web_60, disconnecting.
+1579016134: New client connected from ::ffff:172.22.45.153 as web_71 (p2, c1, k60).
+1579016134: Socket error on client web_95, disconnecting.
+1579016179: New client connected from ::ffff:172.22.45.142 as web_70 (p2, c1, k60).
+1579016188: Socket error on client web_70, disconnecting.
+1579016200: New client connected from ::ffff:172.22.45.142 as web_86 (p2, c1, k60).
+1579016235: Socket error on client web_86, disconnecting.
+1579016247: New client connected from ::ffff:172.22.45.142 as web_44 (p2, c1, k60).
+1579016260: Socket error on client web_44, disconnecting.
+1579016271: New client connected from ::ffff:172.22.45.142 as web_67 (p2, c1, k60).
+1579016272: Socket error on client web_67, disconnecting.
+1579016294: New client connected from ::ffff:172.22.45.142 as web_88 (p2, c1, k60).
+1579016311: Socket error on client web_88, disconnecting.
+1579016345: New client connected from ::ffff:172.22.45.142 as web_16 (p2, c1, k60).
+1579016459: New client connected from ::ffff:172.22.45.153 as web_66 (p2, c1, k60).
+1579016459: Socket error on client web_71, disconnecting.
+1579016642: Socket error on client web_16, disconnecting.
+1579016818: New client connected from ::ffff:172.22.45.142 as web_90 (p2, c1, k60).
+1579016853: Socket error on client web_90, disconnecting.
+1579016874: New client connected from ::ffff:172.22.45.142 as web_34 (p2, c1, k60).
+1579016878: New client connected from ::ffff:172.22.45.153 as web_0 (p2, c1, k60).
+1579016878: Socket error on client web_66, disconnecting.
+1579016945: Socket error on client web_34, disconnecting.
+1579017019: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579017031: New client connected from ::ffff:172.22.45.142 as web_35 (p2, c1, k60).
+1579017041: Socket error on client web_35, disconnecting.
+1579017075: New client connected from ::ffff:172.22.45.142 as web_81 (p2, c1, k60).
+1579017078: Socket error on client web_81, disconnecting.
+1579017246: New client connected from ::ffff:172.22.45.142 as web_2 (p2, c1, k60).
+1579017384: Socket error on client web_2, disconnecting.
+1579017913: New client connected from ::ffff:172.22.45.153 as web_3 (p2, c1, k60).
+1579017913: Socket error on client web_0, disconnecting.
+1579018088: New client connected from ::ffff:172.22.45.153 as web_55 (p2, c1, k60).
+1579018088: Socket error on client web_3, disconnecting.
+1579018820: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579019378: New client connected from ::ffff:172.22.45.142 as web_18 (p2, c1, k60).
+1579020219: Socket error on client web_55, disconnecting.
+1579020235: New client connected from ::ffff:172.22.45.153 as web_32 (p2, c1, k60).
+1579020470: New client connected from ::ffff:172.22.45.153 as web_71 (p2, c1, k60).
+1579020470: Socket error on client web_32, disconnecting.
+1579020594: New client connected from ::ffff:172.22.45.153 as web_8 (p2, c1, k60).
+1579020594: Socket error on client web_71, disconnecting.
+1579020621: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579020684: Socket error on client web_8, disconnecting.
+1579020687: New client connected from ::ffff:172.22.45.153 as web_77 (p2, c1, k60).
+1579022422: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579022489: New client connected from ::ffff:172.22.45.153 as web_5 (p2, c1, k60).
+1579022489: Socket error on client web_77, disconnecting.
+1579022578: New client connected from ::ffff:172.22.45.153 as web_13 (p2, c1, k60).
+1579022578: Socket error on client web_5, disconnecting.
+1579023448: Socket error on client web_13, disconnecting.
+1579023449: New client connected from ::ffff:172.22.45.153 as web_72 (p2, c1, k60).
+1579023564: Socket error on client auto-B427F897-6A04-0A56-0BCD-357C1E052451, disconnecting.
+1579023569: New connection from 172.18.0.6 on port 1883.
+1579023569: New client connected from 172.18.0.6 as auto-88273AE4-1490-EA67-4C5E-359FF2F46F1B (p2, c1, k60).
+1579023737: Socket error on client auto-F20864DB-4477-7763-C094-800AB9576A41, disconnecting.
+1579023782: New connection from 172.22.45.80 on port 1883.
+1579023782: New client connected from 172.22.45.80 as auto-24C39FCE-E72D-47D0-FA26-8928182369B7 (p2, c1, k60).
+1579024045: New client connected from ::ffff:172.22.45.153 as web_84 (p2, c1, k60).
+1579024045: Socket error on client web_72, disconnecting.
+1579024223: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579024377: Socket error on client web_84, disconnecting.
+1579024391: New client connected from ::ffff:172.22.45.153 as web_33 (p2, c1, k60).
+1579024630: New client connected from ::ffff:172.22.45.153 as web_3 (p2, c1, k60).
+1579024630: Socket error on client web_33, disconnecting.
+1579024786: New client connected from ::ffff:172.22.46.34 as web_43 (p2, c1, k60).
+1579024799: Client auto-057A3FB5-6140-3AF5-CEFF-A64E1DB6D2A6 has exceeded timeout, disconnecting.
+1579024810: Socket error on client web_18, disconnecting.
+1579024837: New connection from 172.22.45.142 on port 1883.
+1579024837: New client connected from 172.22.45.142 as auto-628C3A96-399C-EB2E-1531-E7104157294D (p2, c1, k60).
+1579026024: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579027351: New client connected from ::ffff:172.22.45.153 as web_80 (p2, c1, k60).
+1579027351: Socket error on client web_3, disconnecting.
+1579027825: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579028038: Client auto-24C39FCE-E72D-47D0-FA26-8928182369B7 has exceeded timeout, disconnecting.
+1579028075: New client connected from ::ffff:172.22.45.153 as web_72 (p2, c1, k60).
+1579028075: Socket error on client web_80, disconnecting.
+1579028097: New connection from 172.22.45.80 on port 1883.
+1579028099: New client connected from 172.22.45.80 as auto-40850CEA-D173-C8B5-9402-F74943250CB3 (p2, c1, k60).
+1579028218: Client auto-40850CEA-D173-C8B5-9402-F74943250CB3 has exceeded timeout, disconnecting.
+1579028275: New connection from 172.22.45.80 on port 1883.
+1579028276: New client connected from 172.22.45.80 as auto-1E182511-80B8-ED2A-6ECA-E1295F9C8575 (p2, c1, k60).
+1579028487: Client auto-1E182511-80B8-ED2A-6ECA-E1295F9C8575 has exceeded timeout, disconnecting.
+1579028542: New connection from 172.22.45.80 on port 1883.
+1579028543: New client connected from 172.22.45.80 as auto-9379C489-747C-617B-495B-5099B4D1B7D0 (p2, c1, k60).
+1579028807: Client auto-9379C489-747C-617B-495B-5099B4D1B7D0 has exceeded timeout, disconnecting.
+1579028840: New connection from 172.22.45.80 on port 1883.
+1579028840: New client connected from 172.22.45.80 as auto-E4BBA9DC-EDBD-1D57-8051-1635EB703BDA (p2, c1, k60).
+1579028997: Client auto-E4BBA9DC-EDBD-1D57-8051-1635EB703BDA has exceeded timeout, disconnecting.
+1579029037: New connection from 172.22.45.80 on port 1883.
+1579029038: New client connected from 172.22.45.80 as auto-E6A9F5D4-EE31-1EBA-EAB7-E171F39CCC0C (p2, c1, k60).
+1579029240: Client auto-E6A9F5D4-EE31-1EBA-EAB7-E171F39CCC0C has exceeded timeout, disconnecting.
+1579029303: New connection from 172.22.45.80 on port 1883.
+1579029330: New client connected from 172.22.45.80 as auto-D0D0F0C6-A530-7922-982D-D9E8C1CF259B (p2, c1, k60).
+1579029359: Socket error on client auto-D0D0F0C6-A530-7922-982D-D9E8C1CF259B, disconnecting.
+1579029388: New connection from 172.22.45.80 on port 1883.
+1579029388: New client connected from 172.22.45.80 as auto-778A564D-E398-9F1A-0FF8-D337523B6542 (p2, c1, k60).
+1579029531: New client connected from ::ffff:172.22.45.153 as web_92 (p2, c1, k60).
+1579029531: Socket error on client web_72, disconnecting.
+1579029626: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579029655: Client auto-778A564D-E398-9F1A-0FF8-D337523B6542 has exceeded timeout, disconnecting.
+1579029700: New connection from 172.22.45.80 on port 1883.
+1579029725: New client connected from 172.22.45.80 as auto-95C8DFBC-B6F4-35DC-6673-B52137D4540C (p2, c1, k60).
+1579029869: Client auto-95C8DFBC-B6F4-35DC-6673-B52137D4540C has exceeded timeout, disconnecting.
+1579029914: New connection from 172.22.45.80 on port 1883.
+1579029941: New client connected from 172.22.45.80 as auto-BBE36A31-E058-75ED-F61C-556672F22ECF (p2, c1, k60).
+1579030241: Client auto-BBE36A31-E058-75ED-F61C-556672F22ECF has exceeded timeout, disconnecting.
+1579030283: New connection from 172.22.45.80 on port 1883.
+1579030283: New client connected from 172.22.45.80 as auto-A0508E2D-575E-FA24-C6B9-F64C3ED1E439 (p2, c1, k60).
+1579030454: Client auto-A0508E2D-575E-FA24-C6B9-F64C3ED1E439 has exceeded timeout, disconnecting.
+1579030503: New connection from 172.22.45.80 on port 1883.
+1579030562: New client connected from 172.22.45.80 as auto-300E31C3-3175-DF74-F6E5-4B542C1774F8 (p2, c1, k60).
+1579030563: Socket error on client auto-300E31C3-3175-DF74-F6E5-4B542C1774F8, disconnecting.
+1579030590: New connection from 172.22.45.80 on port 1883.
+1579030616: New client connected from 172.22.45.80 as auto-BC5153A3-273A-4B0D-F087-946170D36D2C (p2, c1, k60).
+1579030641: Socket error on client web_92, disconnecting.
+1579030645: New client connected from ::ffff:172.22.45.153 as web_30 (p2, c1, k60).
+1579030707: Client auto-BC5153A3-273A-4B0D-F087-946170D36D2C has exceeded timeout, disconnecting.
+1579030788: New connection from 172.22.45.80 on port 1883.
+1579030815: New client connected from 172.22.45.80 as auto-63A7B144-DEB5-B4CA-9680-13C7CF6E45D3 (p2, c1, k60).
+1579030816: New client connected from ::ffff:172.22.45.153 as web_16 (p2, c1, k60).
+1579030816: Socket error on client web_30, disconnecting.
+1579030932: Client auto-63A7B144-DEB5-B4CA-9680-13C7CF6E45D3 has exceeded timeout, disconnecting.
+1579030967: New connection from 172.22.45.80 on port 1883.
+1579030990: New client connected from 172.22.45.80 as auto-547632A3-4A15-1126-7DBA-66C603B25A06 (p2, c1, k60).
+1579031161: Client auto-547632A3-4A15-1126-7DBA-66C603B25A06 has exceeded timeout, disconnecting.
+1579031237: New connection from 172.22.45.80 on port 1883.
+1579031237: New client connected from 172.22.45.80 as auto-DDEEC7B8-C289-B2FC-C674-A0AD9B3D2C74 (p2, c1, k60).
+1579031361: Client auto-DDEEC7B8-C289-B2FC-C674-A0AD9B3D2C74 has exceeded timeout, disconnecting.
+1579031427: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579031447: New connection from 172.22.45.80 on port 1883.
+1579031451: New client connected from 172.22.45.80 as auto-32959553-33CB-26AE-414D-62890F54DA84 (p2, c1, k60).
+1579031480: Socket error on client auto-32959553-33CB-26AE-414D-62890F54DA84, disconnecting.
+1579031547: New connection from 172.22.45.80 on port 1883.
+1579031586: New client connected from 172.22.45.80 as auto-049578E3-C25B-32CF-7988-C2299D326A23 (p2, c1, k60).
+1579031615: Socket error on client auto-049578E3-C25B-32CF-7988-C2299D326A23, disconnecting.
+1579031649: Client auto-628C3A96-399C-EB2E-1531-E7104157294D has exceeded timeout, disconnecting.
+1579031690: New connection from 172.22.45.142 on port 1883.
+1579031690: New client connected from 172.22.45.142 as auto-6C11B566-FA7E-A9FC-9BE8-52F526992005 (p2, c1, k60).
+1579031705: New connection from 172.22.45.80 on port 1883.
+1579031706: New client connected from 172.22.45.80 as auto-2FB9BA70-492E-4099-B85D-F964C15BABA2 (p2, c1, k60).
+1579031797: Client auto-2FB9BA70-492E-4099-B85D-F964C15BABA2 has exceeded timeout, disconnecting.
+1579031804: Client auto-6C11B566-FA7E-A9FC-9BE8-52F526992005 has exceeded timeout, disconnecting.
+1579031838: New connection from 172.22.45.142 on port 1883.
+1579031844: New connection from 172.22.45.80 on port 1883.
+1579031844: New client connected from 172.22.45.80 as auto-37B4FB9A-7E02-032F-A79D-2F43117D8E7D (p2, c1, k60).
+1579031861: New client connected from 172.22.45.142 as auto-94413B3E-0129-065A-9174-C1C4F8EB6D33 (p2, c1, k60).
+1579031935: Client auto-37B4FB9A-7E02-032F-A79D-2F43117D8E7D has exceeded timeout, disconnecting.
+1579032081: Client auto-94413B3E-0129-065A-9174-C1C4F8EB6D33 has exceeded timeout, disconnecting.
+1579032118: New connection from 172.22.45.142 on port 1883.
+1579032118: New client connected from 172.22.45.142 as auto-0A8A5ECF-A52A-2436-9486-05CCC3A8A09B (p2, c1, k60).
+1579032142: New connection from 172.22.45.80 on port 1883.
+1579032159: New client connected from 172.22.45.80 as auto-A516D816-746F-17CA-62D7-BEEB00F233B6 (p2, c1, k60).
+1579032159: Socket error on client auto-A516D816-746F-17CA-62D7-BEEB00F233B6, disconnecting.
+1579032225: New connection from 172.22.45.80 on port 1883.
+1579032269: New client connected from 172.22.45.80 as auto-9053D3A0-17F8-35CD-E064-99E70689B361 (p2, c1, k60).
+1579032304: Socket error on client auto-9053D3A0-17F8-35CD-E064-99E70689B361, disconnecting.
+1579032309: Client auto-0A8A5ECF-A52A-2436-9486-05CCC3A8A09B has exceeded timeout, disconnecting.
+1579032336: New connection from 172.22.45.142 on port 1883.
+1579032336: New client connected from 172.22.45.142 as auto-8192976F-3550-BF27-5073-701C24902742 (p2, c1, k60).
+1579032373: New connection from 172.22.45.80 on port 1883.
+1579032407: New client connected from 172.22.45.80 as auto-0111BFFA-AAD0-C4FF-A10D-3255E00867E4 (p2, c1, k60).
+1579032446: Socket error on client auto-0111BFFA-AAD0-C4FF-A10D-3255E00867E4, disconnecting.
+1579032561: New connection from 172.22.45.80 on port 1883.
+1579032637: New client connected from 172.22.45.80 as auto-538896D5-48C8-5F33-642E-E29BEFA0546F (p2, c1, k60).
+1579032643: Client auto-8192976F-3550-BF27-5073-701C24902742 has exceeded timeout, disconnecting.
+1579032674: New connection from 172.22.45.142 on port 1883.
+1579032686: Socket error on client auto-538896D5-48C8-5F33-642E-E29BEFA0546F, disconnecting.
+1579032697: New client connected from 172.22.45.142 as auto-5D3E7151-46DF-32DD-CAB0-F8D507C50EDA (p2, c1, k60).
+1579032808: New connection from 172.22.45.80 on port 1883.
+1579032839: Client auto-5D3E7151-46DF-32DD-CAB0-F8D507C50EDA has exceeded timeout, disconnecting.
+1579032898: Client <unknown> has exceeded timeout, disconnecting.
+1579032908: New connection from 172.22.45.142 on port 1883.
+1579032911: New client connected from 172.22.45.142 as auto-C2DE76EA-C0EF-2C9C-2EB3-0931E90EB21C (p2, c1, k60).
+1579033072: New connection from 172.22.45.80 on port 1883.
+1579033072: New client connected from 172.22.45.80 as auto-07286E11-0651-00B4-1EA8-F66EA9640C83 (p2, c1, k60).
+1579033072: Socket error on client auto-07286E11-0651-00B4-1EA8-F66EA9640C83, disconnecting.
+1579033169: Client auto-C2DE76EA-C0EF-2C9C-2EB3-0931E90EB21C has exceeded timeout, disconnecting.
+1579033223: New connection from 172.22.45.80 on port 1883.
+1579033228: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579033236: New connection from 172.22.45.142 on port 1883.
+1579033249: New client connected from 172.22.45.80 as auto-C7B7F547-7FB2-8740-AFA3-47C33B0B11EE (p2, c1, k60).
+1579033263: New client connected from 172.22.45.142 as auto-649BCC18-7848-F45E-BC81-2D9D402927FA (p2, c1, k60).
+1579033366: Socket error on client web_16, disconnecting.
+1579033370: New client connected from ::ffff:172.22.45.153 as web_80 (p2, c1, k60).
+1579033382: Client auto-649BCC18-7848-F45E-BC81-2D9D402927FA has exceeded timeout, disconnecting.
+1579033424: Client auto-C7B7F547-7FB2-8740-AFA3-47C33B0B11EE has exceeded timeout, disconnecting.
+1579033452: New connection from 172.22.45.142 on port 1883.
+1579033478: New client connected from 172.22.45.142 as auto-4378F68C-60D7-1B8E-F0E2-ADB5ADE8038F (p2, c1, k60).
+1579033528: New connection from 172.22.45.80 on port 1883.
+1579033528: New client connected from 172.22.45.80 as auto-D5E9B675-491F-9CE2-8154-09B24642533A (p2, c1, k60).
+1579033618: Client auto-D5E9B675-491F-9CE2-8154-09B24642533A has exceeded timeout, disconnecting.
+1579033626: Client auto-4378F68C-60D7-1B8E-F0E2-ADB5ADE8038F has exceeded timeout, disconnecting.
+1579033692: New connection from 172.22.45.80 on port 1883.
+1579033692: New client connected from 172.22.45.80 as auto-EFAE1497-2791-A9A0-EF50-8E9ACAC9624C (p2, c1, k60).
+1579033694: New connection from 172.22.45.142 on port 1883.
+1579033696: New client connected from 172.22.45.142 as auto-45FE6150-1BAC-525C-9618-396B4B5BD9BC (p2, c1, k60).
+1579033782: Client auto-EFAE1497-2791-A9A0-EF50-8E9ACAC9624C has exceeded timeout, disconnecting.
+1579033843: Client auto-45FE6150-1BAC-525C-9618-396B4B5BD9BC has exceeded timeout, disconnecting.
+1579033867: New connection from 172.22.45.80 on port 1883.
+1579033867: New client connected from 172.22.45.80 as auto-417F4DD6-A818-CE95-80E7-843A2FC56E6F (p2, c1, k60).
+1579033897: New connection from 172.22.45.142 on port 1883.
+1579033921: New client connected from 172.22.45.142 as auto-09B4C1A7-CAB4-8CBA-03A7-E38E7E6122D1 (p2, c1, k60).
+1579033958: Client auto-417F4DD6-A818-CE95-80E7-843A2FC56E6F has exceeded timeout, disconnecting.
+1579034012: Client auto-09B4C1A7-CAB4-8CBA-03A7-E38E7E6122D1 has exceeded timeout, disconnecting.
+1579034019: New connection from 172.22.45.80 on port 1883.
+1579034019: New client connected from 172.22.45.80 as auto-7EB45B7D-ECB2-89AA-A74D-001B9BDAFD37 (p2, c1, k60).
+1579034079: New connection from 172.22.45.142 on port 1883.
+1579034106: New client connected from 172.22.45.142 as auto-271E00F7-A428-1AFC-87DF-F6B4F14B60F4 (p2, c1, k60).
+1579034109: Client auto-7EB45B7D-ECB2-89AA-A74D-001B9BDAFD37 has exceeded timeout, disconnecting.
+1579034128: Socket error on client auto-271E00F7-A428-1AFC-87DF-F6B4F14B60F4, disconnecting.
+1579034184: New connection from 172.22.45.142 on port 1883.
+1579034184: New client connected from 172.22.45.142 as auto-72715423-86CD-5B03-EDB2-06F5BB2E8600 (p2, c1, k60).
+1579034225: New connection from 172.22.45.80 on port 1883.
+1579034262: New client connected from 172.22.45.80 as auto-1D726447-64FF-9E5D-B544-8821BED4D5C2 (p2, c1, k60).
+1579034262: Socket error on client auto-1D726447-64FF-9E5D-B544-8821BED4D5C2, disconnecting.
+1579034282: Client auto-72715423-86CD-5B03-EDB2-06F5BB2E8600 has exceeded timeout, disconnecting.
+1579034328: New connection from 172.22.45.142 on port 1883.
+1579034338: New connection from 172.22.45.80 on port 1883.
+1579034350: New client connected from 172.22.45.142 as auto-8743BB13-8CE3-2F9E-2EB3-6FCF5365B246 (p2, c1, k60).
+1579034403: New client connected from 172.22.45.80 as auto-405BDEF1-9B35-B618-F58A-9EC1705C6B21 (p2, c1, k60).
+1579034408: Socket error on client auto-405BDEF1-9B35-B618-F58A-9EC1705C6B21, disconnecting.
+1579034439: New connection from 172.22.45.80 on port 1883.
+1579034439: New client connected from 172.22.45.80 as auto-0BAA5959-AA4F-5913-94D5-80147C29A04C (p2, c1, k60).
+1579034441: Client auto-8743BB13-8CE3-2F9E-2EB3-6FCF5365B246 has exceeded timeout, disconnecting.
+1579034527: New connection from 172.22.45.142 on port 1883.
+1579034528: New client connected from 172.22.45.142 as auto-E595A200-4F4A-1D07-DE97-AE8552EA2139 (p2, c1, k60).
+1579034601: Client auto-0BAA5959-AA4F-5913-94D5-80147C29A04C has exceeded timeout, disconnecting.
+1579034775: New connection from 172.22.45.80 on port 1883.
+1579034819: New client connected from 172.22.45.80 as auto-54F7E40B-6E85-EF3E-22E6-352DA59A0D02 (p2, c1, k60).
+1579034842: Client auto-E595A200-4F4A-1D07-DE97-AE8552EA2139 has exceeded timeout, disconnecting.
+1579034850: Socket error on client auto-54F7E40B-6E85-EF3E-22E6-352DA59A0D02, disconnecting.
+1579034923: New connection from 172.22.45.142 on port 1883.
+1579034945: New connection from 172.22.45.80 on port 1883.
+1579034951: New client connected from 172.22.45.142 as auto-7DC2E644-B2F0-3292-9D9B-2C96C0B56894 (p2, c1, k60).
+1579035029: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579035035: Client <unknown> has exceeded timeout, disconnecting.
+1579035101: Client auto-7DC2E644-B2F0-3292-9D9B-2C96C0B56894 has exceeded timeout, disconnecting.
+1579035121: New connection from 172.22.45.80 on port 1883.
+1579035185: New client connected from 172.22.45.80 as auto-6C11A37B-B849-70FC-C678-9CAF11983849 (p2, c1, k60).
+1579035204: New connection from 172.22.45.142 on port 1883.
+1579035213: New client connected from 172.22.45.142 as auto-EC7E0E1C-1C90-B9BE-95D5-EE238E1F97DA (p2, c1, k60).
+1579035213: Socket error on client auto-EC7E0E1C-1C90-B9BE-95D5-EE238E1F97DA, disconnecting.
+1579035218: Socket error on client auto-6C11A37B-B849-70FC-C678-9CAF11983849, disconnecting.
+1579035285: New connection from 172.22.45.142 on port 1883.
+1579035316: New client connected from 172.22.45.142 as auto-61E2B273-DEFE-05EE-2D1A-5222ED31ECDC (p2, c1, k60).
+1579035316: Socket error on client auto-61E2B273-DEFE-05EE-2D1A-5222ED31ECDC, disconnecting.
+1579035324: New connection from 172.22.45.80 on port 1883.
+1579035326: New client connected from 172.22.45.80 as auto-CA168D68-0A83-A756-5213-106B632B65D5 (p2, c1, k60).
+1579035403: New connection from 172.22.45.142 on port 1883.
+1579035416: Client auto-CA168D68-0A83-A756-5213-106B632B65D5 has exceeded timeout, disconnecting.
+1579035443: New client connected from 172.22.45.142 as auto-145DAA6C-A3D0-F933-A51B-BDFB83D5E078 (p2, c1, k60).
+1579035477: New connection from 172.22.45.80 on port 1883.
+1579035477: New client connected from 172.22.45.80 as auto-AD15E65E-BFD3-B172-9B21-0FCEFCD77948 (p2, c1, k60).
+1579035484: Socket error on client auto-145DAA6C-A3D0-F933-A51B-BDFB83D5E078, disconnecting.
+1579035501: Socket error on client web_80, disconnecting.
+1579035512: New client connected from ::ffff:172.22.45.153 as web_10 (p2, c1, k60).
+1579035584: New connection from 172.22.45.142 on port 1883.
+1579035587: New client connected from 172.22.45.142 as auto-4F629F86-6088-1B55-3B92-DC9A0800FF81 (p2, c1, k60).
+1579035614: Client auto-AD15E65E-BFD3-B172-9B21-0FCEFCD77948 has exceeded timeout, disconnecting.
+1579035677: Client auto-4F629F86-6088-1B55-3B92-DC9A0800FF81 has exceeded timeout, disconnecting.
+1579035802: New connection from 172.22.45.80 on port 1883.
+1579035856: New client connected from 172.22.45.80 as auto-4983B488-0E41-01D2-58A1-B9EED2055304 (p2, c1, k60).
+1579035856: Socket error on client auto-4983B488-0E41-01D2-58A1-B9EED2055304, disconnecting.
+1579035861: New connection from 172.22.45.142 on port 1883.
+1579035893: New client connected from 172.22.45.142 as auto-F054945B-3926-F381-CDA2-3AC87D77E5AD (p2, c1, k60).
+1579035893: Socket error on client auto-F054945B-3926-F381-CDA2-3AC87D77E5AD, disconnecting.
+1579035938: New connection from 172.22.45.80 on port 1883.
+1579035962: New connection from 172.22.45.142 on port 1883.
+1579036000: New client connected from 172.22.45.80 as auto-3C5F0E4A-E29E-DFAD-30CA-9EBD48AD3AD6 (p2, c1, k60).
+1579036026: New client connected from 172.22.45.142 as auto-A3C9274E-F7F5-D380-5C88-7FE935F05A11 (p2, c1, k60).
+1579036056: Socket error on client auto-3C5F0E4A-E29E-DFAD-30CA-9EBD48AD3AD6, disconnecting.
+1579036059: Socket error on client auto-A3C9274E-F7F5-D380-5C88-7FE935F05A11, disconnecting.
+1579036131: New connection from 172.22.45.80 on port 1883.
+1579036170: New connection from 172.22.45.142 on port 1883.
+1579036175: New client connected from 172.22.45.80 as auto-7A496517-1F51-6881-58D4-E90060241281 (p2, c1, k60).
+1579036212: New client connected from 172.22.45.142 as auto-88A41360-751B-A1E4-09C1-4C8907B1DB43 (p2, c1, k60).
+1579036213: Socket error on client auto-7A496517-1F51-6881-58D4-E90060241281, disconnecting.
+1579036247: Socket error on client auto-88A41360-751B-A1E4-09C1-4C8907B1DB43, disconnecting.
+1579036289: New connection from 172.22.45.80 on port 1883.
+1579036346: New client connected from 172.22.45.80 as auto-F9F2ECC7-AFF2-8EA2-A8EF-2F98EFC6DF88 (p2, c1, k60).
+1579036377: New connection from 172.22.45.142 on port 1883.
+1579036382: Socket error on client auto-F9F2ECC7-AFF2-8EA2-A8EF-2F98EFC6DF88, disconnecting.
+1579036415: New client connected from 172.22.45.142 as auto-F543147F-D15A-6725-6AF6-C3AC41478270 (p2, c1, k60).
+1579036415: Socket error on client auto-F543147F-D15A-6725-6AF6-C3AC41478270, disconnecting.
+1579036492: New connection from 172.22.45.142 on port 1883.
+1579036506: New connection from 172.22.45.80 on port 1883.
+1579036562: Socket error on client web_10, disconnecting.
+1579036567: New client connected from 172.22.45.142 as auto-B521442A-0579-9995-D48A-41A0FB68F4F0 (p2, c1, k60).
+1579036571: New client connected from ::ffff:172.22.45.153 as web_38 (p2, c1, k60).
+1579036576: New client connected from 172.22.45.80 as auto-F64B4BDF-4DC7-38B3-859A-63AD415D7966 (p2, c1, k60).
+1579036612: Socket error on client auto-B521442A-0579-9995-D48A-41A0FB68F4F0, disconnecting.
+1579036616: Socket error on client auto-F64B4BDF-4DC7-38B3-859A-63AD415D7966, disconnecting.
+1579036694: New connection from 172.22.45.80 on port 1883.
+1579036694: New client connected from 172.22.45.80 as auto-73F37283-3694-63ED-D4A1-2E64533C6EDA (p2, c1, k60).
+1579036730: New connection from 172.22.45.142 on port 1883.
+1579036732: New client connected from 172.22.45.142 as auto-B8BCFC90-CD5A-F4F6-1924-C5E71FF290D0 (p2, c1, k60).
+1579036784: Client auto-73F37283-3694-63ED-D4A1-2E64533C6EDA has exceeded timeout, disconnecting.
+1579036822: Client auto-B8BCFC90-CD5A-F4F6-1924-C5E71FF290D0 has exceeded timeout, disconnecting.
+1579036830: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579036893: New connection from 172.22.45.142 on port 1883.
+1579036963: New client connected from 172.22.45.142 as auto-CED65E9B-E39B-DE3E-0451-061038AA64AC (p2, c1, k60).
+1579036966: New connection from 172.22.45.80 on port 1883.
+1579036998: Socket error on client auto-CED65E9B-E39B-DE3E-0451-061038AA64AC, disconnecting.
+1579037018: New client connected from 172.22.45.80 as auto-8443E343-15BC-023F-92A6-4DD4BDB2F1F4 (p2, c1, k60).
+1579037064: Socket error on client auto-8443E343-15BC-023F-92A6-4DD4BDB2F1F4, disconnecting.
+1579037087: New connection from 172.22.45.142 on port 1883.
+1579037135: New client connected from 172.22.45.142 as auto-1D36F87A-300F-B634-D834-0B269B65E734 (p2, c1, k60).
+1579037140: New connection from 172.22.45.80 on port 1883.
+1579037173: Socket error on client auto-1D36F87A-300F-B634-D834-0B269B65E734, disconnecting.
+1579037217: New client connected from 172.22.45.80 as auto-2EA134D0-9A92-E5CE-F21A-C04D843C2948 (p2, c1, k60).
+1579037224: Socket error on client auto-2EA134D0-9A92-E5CE-F21A-C04D843C2948, disconnecting.
+1579037251: New connection from 172.22.45.142 on port 1883.
+1579037267: New connection from 172.22.45.80 on port 1883.
+1579037318: New client connected from 172.22.45.142 as auto-15836BE2-09BE-A271-03B7-C0DFCA6DF12A (p2, c1, k60).
+1579037325: Socket error on client auto-15836BE2-09BE-A271-03B7-C0DFCA6DF12A, disconnecting.
+1579037347: New client connected from 172.22.45.80 as auto-80A7FCB0-E34C-CE83-50E6-00153C8B5CA5 (p2, c1, k60).
+1579037382: Socket error on client auto-80A7FCB0-E34C-CE83-50E6-00153C8B5CA5, disconnecting.
+1579037464: New connection from 172.22.45.142 on port 1883.
+1579037465: New client connected from 172.22.45.142 as auto-587C8A98-DA1D-0FCB-0DEC-51A60B24631C (p2, c1, k60).
+1579037465: Socket error on client auto-587C8A98-DA1D-0FCB-0DEC-51A60B24631C, disconnecting.
+1579037506: New connection from 172.22.45.80 on port 1883.
+1579037510: New connection from 172.22.45.142 on port 1883.
+1579037540: New client connected from 172.22.45.142 as auto-5903E309-F2BC-897A-DD80-9ACAC366F2C3 (p2, c1, k60).
+1579037575: New client connected from 172.22.45.80 as auto-886CA037-E3A8-EBC0-FCDA-7C76A70498C8 (p2, c1, k60).
+1579037611: Socket error on client auto-886CA037-E3A8-EBC0-FCDA-7C76A70498C8, disconnecting.
+1579037631: Client auto-5903E309-F2BC-897A-DD80-9ACAC366F2C3 has exceeded timeout, disconnecting.
+1579037724: New connection from 172.22.45.80 on port 1883.
+1579037799: New client connected from 172.22.45.80 as auto-04031D7E-1B88-2FA0-B207-65A2544B7579 (p2, c1, k60).
+1579037832: New connection from 172.22.45.142 on port 1883.
+1579037838: Socket error on client auto-04031D7E-1B88-2FA0-B207-65A2544B7579, disconnecting.
+1579037912: New connection from 172.22.45.80 on port 1883.
+1579037922: Client <unknown> has exceeded timeout, disconnecting.
+1579037957: New client connected from 172.22.45.80 as auto-EAA9C8A5-A35C-5A94-07FA-A32F76049C6B (p2, c1, k60).
+1579037957: Socket error on client auto-EAA9C8A5-A35C-5A94-07FA-A32F76049C6B, disconnecting.
+1579038052: New connection from 172.22.45.80 on port 1883.
+1579038074: New connection from 172.22.45.142 on port 1883.
+1579038079: New client connected from 172.22.45.80 as auto-E7E02390-CD42-1C2C-5CAA-1E2030CEE397 (p2, c1, k60).
+1579038139: New client connected from 172.22.45.142 as auto-9EA35149-FF33-B514-AFB2-39A549183861 (p2, c1, k60).
+1579038139: Socket error on client auto-9EA35149-FF33-B514-AFB2-39A549183861, disconnecting.
+1579038169: Client auto-E7E02390-CD42-1C2C-5CAA-1E2030CEE397 has exceeded timeout, disconnecting.
+1579038216: New connection from 172.22.45.142 on port 1883.
+1579038247: New connection from 172.22.45.80 on port 1883.
+1579038303: New client connected from 172.22.45.142 as auto-94E668E3-2C42-104F-725B-5FC77787BA57 (p2, c1, k60).
+1579038316: New client connected from 172.22.45.80 as auto-F07B80B3-EC3A-5169-FA4C-8999D1B6401D (p2, c1, k60).
+1579038341: Socket error on client auto-94E668E3-2C42-104F-725B-5FC77787BA57, disconnecting.
+1579038387: Socket error on client auto-F07B80B3-EC3A-5169-FA4C-8999D1B6401D, disconnecting.
+1579038422: New connection from 172.22.45.142 on port 1883.
+1579038500: New connection from 172.22.45.80 on port 1883.
+1579038512: New client connected from 172.22.45.142 as auto-86A84678-A5FD-967E-3607-0CD49E22612B (p2, c1, k60).
+1579038515: Socket error on client auto-86A84678-A5FD-967E-3607-0CD49E22612B, disconnecting.
+1579038559: New client connected from 172.22.45.80 as auto-5D22E0A7-54E2-A1D3-C8AE-44A2A624D5AE (p2, c1, k60).
+1579038559: Socket error on client auto-5D22E0A7-54E2-A1D3-C8AE-44A2A624D5AE, disconnecting.
+1579038585: New connection from 172.22.45.142 on port 1883.
+1579038626: New client connected from 172.22.45.142 as auto-B48FADBD-F239-0B7A-6DC2-80AD7A6C918D (p2, c1, k60).
+1579038631: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579038671: Socket error on client auto-B48FADBD-F239-0B7A-6DC2-80AD7A6C918D, disconnecting.
+1579038679: New connection from 172.22.45.80 on port 1883.
+1579038686: New client connected from 172.22.45.80 as auto-C2E243DD-AAD2-552F-4988-D550887408A3 (p2, c1, k60).
+1579038686: Socket error on client auto-C2E243DD-AAD2-552F-4988-D550887408A3, disconnecting.
+1579038787: New connection from 172.22.45.80 on port 1883.
+1579038788: New connection from 172.22.45.142 on port 1883.
+1579038840: New client connected from 172.22.45.80 as auto-0F1D0D37-D3E1-3857-2107-2AAA2D9E5A3F (p2, c1, k60).
+1579038840: Socket error on client auto-0F1D0D37-D3E1-3857-2107-2AAA2D9E5A3F, disconnecting.
+1579038873: New connection from 172.22.45.80 on port 1883.
+1579038878: Client <unknown> has exceeded timeout, disconnecting.
+1579038904: New client connected from 172.22.45.80 as auto-70C20877-AD7F-8957-A9E5-CBAF77EBEADF (p2, c1, k60).
+1579039027: Client auto-70C20877-AD7F-8957-A9E5-CBAF77EBEADF has exceeded timeout, disconnecting.
+1579039090: New connection from 172.22.45.142 on port 1883.
+1579039095: New connection from 172.22.45.80 on port 1883.
+1579039095: New client connected from 172.22.45.80 as auto-41D01D3A-41CB-F8A1-B3A7-CA9A127C56E8 (p2, c1, k60).
+1579039144: New client connected from 172.22.45.142 as auto-99C76623-D19F-5177-754C-8B199E59EC99 (p2, c1, k60).
+1579039185: Client auto-41D01D3A-41CB-F8A1-B3A7-CA9A127C56E8 has exceeded timeout, disconnecting.
+1579039219: Socket error on client auto-99C76623-D19F-5177-754C-8B199E59EC99, disconnecting.
+1579039236: New connection from 172.22.45.80 on port 1883.
+1579039292: New client connected from 172.22.45.80 as auto-FFFCC40A-0842-9F8C-62D9-8F14DF25A698 (p2, c1, k60).
+1579039435: New connection from 172.22.45.142 on port 1883.
+1579039435: New client connected from 172.22.45.142 as auto-87D85707-0279-7092-CE9B-6DB770734764 (p2, c1, k60).
+1579039521: Client auto-FFFCC40A-0842-9F8C-62D9-8F14DF25A698 has exceeded timeout, disconnecting.
+1579039525: Client auto-87D85707-0279-7092-CE9B-6DB770734764 has exceeded timeout, disconnecting.
+1579039567: New connection from 172.22.45.80 on port 1883.
+1579039567: New client connected from 172.22.45.80 as auto-F5E02AAD-83E2-090B-DECE-49DEC3A6F3D2 (p2, c1, k60).
+1579039657: Client auto-F5E02AAD-83E2-090B-DECE-49DEC3A6F3D2 has exceeded timeout, disconnecting.
+1579039671: New connection from 172.22.45.142 on port 1883.
+1579039681: New client connected from 172.22.45.142 as auto-BE28D91A-572C-7DA3-25F6-C55DB0222FFD (p2, c1, k60).
+1579039681: Socket error on client auto-BE28D91A-572C-7DA3-25F6-C55DB0222FFD, disconnecting.
+1579039703: New connection from 172.22.45.80 on port 1883.
+1579039729: New connection from 172.22.45.142 on port 1883.
+1579039745: New client connected from 172.22.45.80 as auto-8DFAF479-744E-CC6F-3F0F-8B79999D5C2E (p2, c1, k60).
+1579039769: New client connected from 172.22.45.142 as auto-30A582D2-DFAB-236C-7EA0-359ABF3F9453 (p2, c1, k60).
+1579039836: Client auto-8DFAF479-744E-CC6F-3F0F-8B79999D5C2E has exceeded timeout, disconnecting.
+1579039860: Client auto-30A582D2-DFAB-236C-7EA0-359ABF3F9453 has exceeded timeout, disconnecting.
+1579039922: New connection from 172.22.45.80 on port 1883.
+1579039923: New client connected from 172.22.45.80 as auto-4FBBEA32-ABD9-79D6-1837-CB458EF7821D (p2, c1, k60).
+1579040013: Client auto-4FBBEA32-ABD9-79D6-1837-CB458EF7821D has exceeded timeout, disconnecting.
+1579040038: New connection from 172.22.45.142 on port 1883.
+1579040049: New connection from 172.22.45.80 on port 1883.
+1579040049: New client connected from 172.22.45.80 as auto-E0DD47F1-03A7-884A-90EB-626E715BF146 (p2, c1, k60).
+1579040113: New client connected from 172.22.45.142 as auto-D0FA2E0E-BBC5-B7F9-B4DD-6D068320FCB2 (p2, c1, k60).
+1579040178: Client auto-E0DD47F1-03A7-884A-90EB-626E715BF146 has exceeded timeout, disconnecting.
+1579040180: Socket error on client auto-D0FA2E0E-BBC5-B7F9-B4DD-6D068320FCB2, disconnecting.
+1579040245: New connection from 172.22.45.142 on port 1883.
+1579040279: New connection from 172.22.45.80 on port 1883.
+1579040304: New client connected from 172.22.45.142 as auto-48F0944E-E638-C301-FC66-42CC025F35B2 (p2, c1, k60).
+1579040304: Socket error on client auto-48F0944E-E638-C301-FC66-42CC025F35B2, disconnecting.
+1579040308: New client connected from 172.22.45.80 as auto-0B4904D5-7F1D-B859-0ACC-140F7883E7A1 (p2, c1, k60).
+1579040308: Socket error on client auto-0B4904D5-7F1D-B859-0ACC-140F7883E7A1, disconnecting.
+1579040329: New connection from 172.22.45.142 on port 1883.
+1579040329: New client connected from 172.22.45.142 as auto-575174B8-B2CB-D61A-3DA6-6BD81DEAFF18 (p2, c1, k60).
+1579040361: New connection from 172.22.45.80 on port 1883.
+1579040363: New client connected from 172.22.45.80 as auto-21AC3239-A07C-8EE8-5761-E60AD13AE2B0 (p2, c1, k60).
+1579040419: Client auto-575174B8-B2CB-D61A-3DA6-6BD81DEAFF18 has exceeded timeout, disconnecting.
+1579040432: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579040450: New connection from 172.22.45.142 on port 1883.
+1579040450: New client connected from 172.22.45.142 as auto-F021AF2A-672E-39DB-D686-8A518F3B7375 (p2, c1, k60).
+1579040543: Client auto-21AC3239-A07C-8EE8-5761-E60AD13AE2B0 has exceeded timeout, disconnecting.
+1579040618: New connection from 172.22.45.80 on port 1883.
+1579040618: New client connected from 172.22.45.80 as auto-9AB3ED99-7B29-316F-785D-E4C5A28BC3F3 (p2, c1, k60).
+1579040654: Client auto-F021AF2A-672E-39DB-D686-8A518F3B7375 has exceeded timeout, disconnecting.
+1579040706: New connection from 172.22.45.142 on port 1883.
+1579040709: Client auto-9AB3ED99-7B29-316F-785D-E4C5A28BC3F3 has exceeded timeout, disconnecting.
+1579040741: New client connected from 172.22.45.142 as auto-C547AB5D-390C-5E42-E683-0DC57B9E968A (p2, c1, k60).
+1579040781: New connection from 172.22.45.80 on port 1883.
+1579040782: New client connected from 172.22.45.80 as auto-4D5ADDBC-6052-D88F-FD85-B8F749D4103B (p2, c1, k60).
+1579040927: Client auto-4D5ADDBC-6052-D88F-FD85-B8F749D4103B has exceeded timeout, disconnecting.
+1579040958: New connection from 172.22.45.80 on port 1883.
+1579040959: New client connected from 172.22.45.80 as auto-BAF13FFE-4BC2-568F-B3BF-8E806BBF7490 (p2, c1, k60).
+1579041107: Client auto-C547AB5D-390C-5E42-E683-0DC57B9E968A has exceeded timeout, disconnecting.
+1579041155: New connection from 172.22.45.142 on port 1883.
+1579041155: New client connected from 172.22.45.142 as auto-F1ABDF82-F462-B2F2-C0B3-1F181D3D6F6A (p2, c1, k60).
+1579041172: Client auto-BAF13FFE-4BC2-568F-B3BF-8E806BBF7490 has exceeded timeout, disconnecting.
+1579041205: New connection from 172.22.45.80 on port 1883.
+1579041205: New client connected from 172.22.45.80 as auto-CCA51C9F-AEAA-9C4E-C785-F9F7BCCC3D43 (p2, c1, k60).
+1579041508: Client auto-F1ABDF82-F462-B2F2-C0B3-1F181D3D6F6A has exceeded timeout, disconnecting.
+1579041538: Client auto-CCA51C9F-AEAA-9C4E-C785-F9F7BCCC3D43 has exceeded timeout, disconnecting.
+1579041563: New connection from 172.22.45.142 on port 1883.
+1579041563: New client connected from 172.22.45.142 as auto-8AD29742-48C6-74CF-B3E9-EE2A5EE274EF (p2, c1, k60).
+1579041570: New connection from 172.22.45.80 on port 1883.
+1579041570: New client connected from 172.22.45.80 as auto-2D94C921-EC2F-5564-DAF0-08DBF8756B4A (p2, c1, k60).
+1579041694: Client auto-2D94C921-EC2F-5564-DAF0-08DBF8756B4A has exceeded timeout, disconnecting.
+1579041714: Client auto-8AD29742-48C6-74CF-B3E9-EE2A5EE274EF has exceeded timeout, disconnecting.
+1579041757: New connection from 172.22.45.80 on port 1883.
+1579041768: New connection from 172.22.45.142 on port 1883.
+1579041768: New client connected from 172.22.45.142 as auto-644185CC-1C44-C3A6-66E1-F088491380C7 (p2, c1, k60).
+1579041821: New client connected from 172.22.45.80 as auto-088FF4D6-BDB9-7ECD-CF05-730B96439273 (p2, c1, k60).
+1579041822: Socket error on client auto-088FF4D6-BDB9-7ECD-CF05-730B96439273, disconnecting.
+1579041852: New connection from 172.22.45.80 on port 1883.
+1579041853: New client connected from 172.22.45.80 as auto-9ED55F3A-C74C-FBEB-D892-302E106EDE1C (p2, c1, k60).
+1579041917: Client auto-644185CC-1C44-C3A6-66E1-F088491380C7 has exceeded timeout, disconnecting.
+1579041943: Client auto-9ED55F3A-C74C-FBEB-D892-302E106EDE1C has exceeded timeout, disconnecting.
+1579041977: New connection from 172.22.45.142 on port 1883.
+1579041977: New client connected from 172.22.45.142 as auto-80CC8A65-9881-15EE-59C4-46A4C38E71A0 (p2, c1, k60).
+1579041994: New connection from 172.22.45.80 on port 1883.
+1579042026: New client connected from 172.22.45.80 as auto-45788481-2BAB-5DA5-151F-B7698862C96C (p2, c1, k60).
+1579042056: Socket error on client auto-45788481-2BAB-5DA5-151F-B7698862C96C, disconnecting.
+1579042067: Client auto-80CC8A65-9881-15EE-59C4-46A4C38E71A0 has exceeded timeout, disconnecting.
+1579042090: New connection from 172.22.45.80 on port 1883.
+1579042102: New connection from 172.22.45.142 on port 1883.
+1579042125: New client connected from 172.22.45.80 as auto-78D9D868-AF24-2B1C-761D-17E18B73946E (p2, c1, k60).
+1579042133: New client connected from 172.22.45.142 as auto-4F2B5F1F-7E85-D319-1873-9297A8BDAEE2 (p2, c1, k60).
+1579042133: Socket error on client auto-4F2B5F1F-7E85-D319-1873-9297A8BDAEE2, disconnecting.
+1579042153: Socket error on client auto-78D9D868-AF24-2B1C-761D-17E18B73946E, disconnecting.
+1579042163: New connection from 172.22.45.142 on port 1883.
+1579042191: New connection from 172.22.45.80 on port 1883.
+1579042192: New client connected from 172.22.45.142 as auto-47E37712-C277-1C33-097F-0ADCF47A4551 (p2, c1, k60).
+1579042229: New client connected from 172.22.45.80 as auto-9FCAD297-E3B0-7414-39AD-5B90882B8A12 (p2, c1, k60).
+1579042233: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579042346: Client auto-47E37712-C277-1C33-097F-0ADCF47A4551 has exceeded timeout, disconnecting.
+1579042355: Client auto-9FCAD297-E3B0-7414-39AD-5B90882B8A12 has exceeded timeout, disconnecting.
+1579042379: New connection from 172.22.45.142 on port 1883.
+1579042379: New client connected from 172.22.45.142 as auto-856E18ED-270C-D1D2-9283-1B90A07205CD (p2, c1, k60).
+1579042433: New connection from 172.22.45.80 on port 1883.
+1579042433: New client connected from 172.22.45.80 as auto-A747A2C8-41C6-0BCE-9C06-09919DC618AE (p2, c1, k60).
+1579042756: Client auto-A747A2C8-41C6-0BCE-9C06-09919DC618AE has exceeded timeout, disconnecting.
+1579042828: New connection from 172.22.45.80 on port 1883.
+1579042828: New client connected from 172.22.45.80 as auto-10D2DC39-1A9F-F019-6A58-2A132C9B94DD (p2, c1, k60).
+1579042889: Client auto-856E18ED-270C-D1D2-9283-1B90A07205CD has exceeded timeout, disconnecting.
+1579042919: Client auto-10D2DC39-1A9F-F019-6A58-2A132C9B94DD has exceeded timeout, disconnecting.
+1579042969: New connection from 172.22.45.142 on port 1883.
+1579042991: New connection from 172.22.45.80 on port 1883.
+1579042991: New client connected from 172.22.45.80 as auto-5D80B510-8518-42DC-C6EE-E499E185DE63 (p2, c1, k60).
+1579043000: New client connected from 172.22.45.142 as auto-BA6875FF-2476-573A-B764-D47D9450B435 (p2, c1, k60).
+1579043001: Socket error on client auto-BA6875FF-2476-573A-B764-D47D9450B435, disconnecting.
+1579043036: New connection from 172.22.45.142 on port 1883.
+1579043065: New client connected from 172.22.45.142 as auto-FA137CB8-3A00-3436-5229-56947EAC8150 (p2, c1, k60).
+1579043135: Client auto-5D80B510-8518-42DC-C6EE-E499E185DE63 has exceeded timeout, disconnecting.
+1579043155: Client auto-FA137CB8-3A00-3436-5229-56947EAC8150 has exceeded timeout, disconnecting.
+1579043181: New connection from 172.22.45.80 on port 1883.
+1579043207: New client connected from 172.22.45.80 as auto-6E666D79-1B48-70B7-6B91-603663679A49 (p2, c1, k60).
+1579043359: New connection from 172.22.45.142 on port 1883.
+1579043402: New client connected from 172.22.45.142 as auto-2B1F809B-3ACB-E52B-D8C5-6C7BBD985217 (p2, c1, k60).
+1579043403: Socket error on client auto-2B1F809B-3ACB-E52B-D8C5-6C7BBD985217, disconnecting.
+1579043436: New connection from 172.22.45.142 on port 1883.
+1579043465: New client connected from 172.22.45.142 as auto-B7C3012C-E201-170A-18BC-F274AB7EBFA5 (p2, c1, k60).
+1579043533: Client auto-6E666D79-1B48-70B7-6B91-603663679A49 has exceeded timeout, disconnecting.
+1579043555: Client auto-B7C3012C-E201-170A-18BC-F274AB7EBFA5 has exceeded timeout, disconnecting.
+1579043567: New connection from 172.22.45.80 on port 1883.
+1579043601: New client connected from 172.22.45.80 as auto-EB7ECE88-C1B1-829E-A0D9-1785E1F74CDB (p2, c1, k60).
+1579043626: New connection from 172.22.45.142 on port 1883.
+1579043627: New client connected from 172.22.45.142 as auto-B0D71D67-4180-EEC2-475A-9BB7712687B6 (p2, c1, k60).
+1579043790: Client auto-B0D71D67-4180-EEC2-475A-9BB7712687B6 has exceeded timeout, disconnecting.
+1579043809: Client auto-EB7ECE88-C1B1-829E-A0D9-1785E1F74CDB has exceeded timeout, disconnecting.
+1579043869: New connection from 172.22.45.80 on port 1883.
+1579043877: New connection from 172.22.45.142 on port 1883.
+1579043879: New client connected from 172.22.45.142 as auto-F98F5D6C-3507-6CD5-964F-314B358A7FFA (p2, c1, k60).
+1579043903: New client connected from 172.22.45.80 as auto-7C2B5134-2ACE-8A27-CF73-17BF0A8E1E71 (p2, c1, k60).
+1579043970: Client auto-F98F5D6C-3507-6CD5-964F-314B358A7FFA has exceeded timeout, disconnecting.
+1579043994: Client auto-7C2B5134-2ACE-8A27-CF73-17BF0A8E1E71 has exceeded timeout, disconnecting.
+1579044034: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579044044: New connection from 172.22.45.142 on port 1883.
+1579044047: New client connected from 172.22.45.142 as auto-F9E37F65-1CB8-9ABD-EF35-3CC776A564BC (p2, c1, k60).
+1579044110: New connection from 172.22.45.80 on port 1883.
+1579044111: New client connected from 172.22.45.80 as auto-92BD61C0-3E5C-381C-F81B-A7261C879331 (p2, c1, k60).
+1579044143: Socket error on client auto-92BD61C0-3E5C-381C-F81B-A7261C879331, disconnecting.
+1579044184: New connection from 172.22.45.80 on port 1883.
+1579044219: New client connected from 172.22.45.80 as auto-05BB854E-85F1-E048-65DA-D34DC90E8012 (p2, c1, k60).
+1579044255: Socket error on client auto-05BB854E-85F1-E048-65DA-D34DC90E8012, disconnecting.
+1579044295: New connection from 172.22.45.80 on port 1883.
+1579044304: Client auto-F9E37F65-1CB8-9ABD-EF35-3CC776A564BC has exceeded timeout, disconnecting.
+1579044326: New client connected from 172.22.45.80 as auto-060BADB2-9286-062D-C696-B33E8ACFCC0E (p2, c1, k60).
+1579044414: New connection from 172.22.45.142 on port 1883.
+1579044416: New client connected from 172.22.45.142 as auto-107EC76E-FB23-D800-6D19-3D7C0539E1EF (p2, c1, k60).
+1579044416: Client auto-060BADB2-9286-062D-C696-B33E8ACFCC0E has exceeded timeout, disconnecting.
+1579044531: New connection from 172.22.45.80 on port 1883.
+1579044573: Client auto-107EC76E-FB23-D800-6D19-3D7C0539E1EF has exceeded timeout, disconnecting.
+1579044610: New client connected from 172.22.45.80 as auto-78EC51B8-B21F-43DD-1AAB-911176A161AA (p2, c1, k60).
+1579044613: Socket error on client auto-78EC51B8-B21F-43DD-1AAB-911176A161AA, disconnecting.
+1579044615: New connection from 172.22.45.142 on port 1883.
+1579044616: New client connected from 172.22.45.142 as auto-8F96960D-C4DB-7CC8-2C27-D8EEE580AFF1 (p2, c1, k60).
+1579044703: New connection from 172.22.45.80 on port 1883.
+1579044749: New client connected from 172.22.45.80 as auto-25535463-F516-6B01-74D3-136AC412D5B9 (p2, c1, k60).
+1579044750: Socket error on client auto-25535463-F516-6B01-74D3-136AC412D5B9, disconnecting.
+1579044789: Client auto-8F96960D-C4DB-7CC8-2C27-D8EEE580AFF1 has exceeded timeout, disconnecting.
+1579044826: New connection from 172.22.45.80 on port 1883.
+1579044831: New connection from 172.22.45.142 on port 1883.
+1579044866: New client connected from 172.22.45.142 as auto-9A73D759-6F8F-E979-63FB-DA70A6268D60 (p2, c1, k60).
+1579044866: Socket error on client auto-9A73D759-6F8F-E979-63FB-DA70A6268D60, disconnecting.
+1579044868: New client connected from 172.22.45.80 as auto-A9825BF4-F0C8-D227-A767-5AA9C6A0D014 (p2, c1, k60).
+1579044931: New connection from 172.22.45.142 on port 1883.
+1579044934: Socket error on client auto-A9825BF4-F0C8-D227-A767-5AA9C6A0D014, disconnecting.
+1579044934: New client connected from 172.22.45.142 as auto-ADB40F3F-519F-BFE4-01FB-482F9451CFE0 (p2, c1, k60).
+1579045002: New connection from 172.22.45.80 on port 1883.
+1579045003: New client connected from 172.22.45.80 as auto-27679975-109F-173D-9A17-17C69CFC6ACC (p2, c1, k60).
+1579045093: Client auto-27679975-109F-173D-9A17-17C69CFC6ACC has exceeded timeout, disconnecting.
+1579045096: Client auto-ADB40F3F-519F-BFE4-01FB-482F9451CFE0 has exceeded timeout, disconnecting.
+1579045172: New connection from 172.22.45.142 on port 1883.
+1579045173: New client connected from 172.22.45.142 as auto-11F38593-F0B4-0A9F-DB68-C47CE9E0BC3F (p2, c1, k60).
+1579045187: New connection from 172.22.45.80 on port 1883.
+1579045223: New client connected from 172.22.45.80 as auto-8580F3B0-37C7-138B-BA6B-4189E1106946 (p2, c1, k60).
+1579045263: Socket error on client auto-8580F3B0-37C7-138B-BA6B-4189E1106946, disconnecting.
+1579045327: New connection from 172.22.45.80 on port 1883.
+1579045361: New client connected from 172.22.45.80 as auto-4512B545-E749-42C1-FD9F-B731EEC76E14 (p2, c1, k60).
+1579045368: Client auto-11F38593-F0B4-0A9F-DB68-C47CE9E0BC3F has exceeded timeout, disconnecting.
+1579045393: Socket error on client auto-4512B545-E749-42C1-FD9F-B731EEC76E14, disconnecting.
+1579045429: New connection from 172.22.45.80 on port 1883.
+1579045443: New connection from 172.22.45.142 on port 1883.
+1579045446: New client connected from 172.22.45.142 as auto-CFF7104A-DAEB-E959-02C6-1C64D433729A (p2, c1, k60).
+1579045496: New client connected from 172.22.45.80 as auto-44BF21B0-D001-D69E-AAC9-B9F33A5F773F (p2, c1, k60).
+1579045497: Socket error on client auto-44BF21B0-D001-D69E-AAC9-B9F33A5F773F, disconnecting.
+1579045531: New connection from 172.22.45.80 on port 1883.
+1579045564: New client connected from 172.22.45.80 as auto-83CC0054-1709-48B8-D38C-F1F4F6C5B630 (p2, c1, k60).
+1579045567: Client auto-CFF7104A-DAEB-E959-02C6-1C64D433729A has exceeded timeout, disconnecting.
+1579045601: Socket error on client auto-83CC0054-1709-48B8-D38C-F1F4F6C5B630, disconnecting.
+1579045622: New connection from 172.22.45.142 on port 1883.
+1579045623: New client connected from 172.22.45.142 as auto-870AAC74-53B9-3A01-BA1F-EDD845FA1C17 (p2, c1, k60).
+1579045706: New connection from 172.22.45.80 on port 1883.
+1579045708: New client connected from 172.22.45.80 as auto-243AA70D-8975-595C-8094-4AA2081EDFA7 (p2, c1, k60).
+1579045743: New client connected from ::ffff:172.22.45.153 as web_57 (p2, c1, k60).
+1579045743: Socket error on client web_38, disconnecting.
+1579045745: Socket error on client auto-243AA70D-8975-595C-8094-4AA2081EDFA7, disconnecting.
+1579045778: Client auto-870AAC74-53B9-3A01-BA1F-EDD845FA1C17 has exceeded timeout, disconnecting.
+1579045835: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579045863: New connection from 172.22.45.142 on port 1883.
+1579045868: New connection from 172.22.45.80 on port 1883.
+1579045894: New client connected from 172.22.45.142 as auto-52EC163D-24E3-39DD-FE42-F5A1F1ED49C2 (p2, c1, k60).
+1579045934: New client connected from 172.22.45.80 as auto-3069A3F7-349E-8469-9E95-7D13FDD27379 (p2, c1, k60).
+1579045942: Socket error on client auto-3069A3F7-349E-8469-9E95-7D13FDD27379, disconnecting.
+1579046047: New connection from 172.22.45.80 on port 1883.
+1579046063: Client auto-52EC163D-24E3-39DD-FE42-F5A1F1ED49C2 has exceeded timeout, disconnecting.
+1579046080: New client connected from 172.22.45.80 as auto-BE77F808-587F-C2FA-FDCF-51DDEFEB5521 (p2, c1, k60).
+1579046144: New connection from 172.22.45.142 on port 1883.
+1579046171: Client auto-BE77F808-587F-C2FA-FDCF-51DDEFEB5521 has exceeded timeout, disconnecting.
+1579046182: New client connected from 172.22.45.142 as auto-4E6CB2BA-8E40-3331-5ACC-59F4126F5F4A (p2, c1, k60).
+1579046219: Socket error on client auto-4E6CB2BA-8E40-3331-5ACC-59F4126F5F4A, disconnecting.
+1579046261: New connection from 172.22.45.142 on port 1883.
+1579046290: New connection from 172.22.45.80 on port 1883.
+1579046297: New client connected from 172.22.45.142 as auto-04FD7B15-B33C-589F-CD3E-62668F8A9D74 (p2, c1, k60).
+1579046354: New client connected from 172.22.45.80 as auto-726A82C9-55C8-A379-7EDA-DF7513CBD2B4 (p2, c1, k60).
+1579046358: Socket error on client auto-726A82C9-55C8-A379-7EDA-DF7513CBD2B4, disconnecting.
+1579046418: New client connected from ::ffff:172.22.45.153 as web_99 (p2, c1, k60).
+1579046418: Socket error on client web_57, disconnecting.
+1579046429: New connection from 172.22.45.80 on port 1883.
+1579046458: Client auto-04FD7B15-B33C-589F-CD3E-62668F8A9D74 has exceeded timeout, disconnecting.
+1579046467: New client connected from 172.22.45.80 as auto-CED9BB12-2A43-068B-4528-3DB5F9785C56 (p2, c1, k60).
+1579046497: Socket error on client auto-CED9BB12-2A43-068B-4528-3DB5F9785C56, disconnecting.
+1579046509: Socket error on client web_99, disconnecting.
+1579046516: New client connected from ::ffff:172.22.45.153 as web_82 (p2, c1, k60).
+1579046562: New connection from 172.22.45.142 on port 1883.
+1579046566: New connection from 172.22.45.80 on port 1883.
+1579046567: New client connected from 172.22.45.80 as auto-96724947-1C95-5422-CE61-B72BED94135B (p2, c1, k60).
+1579046598: New client connected from ::ffff:172.22.45.153 as web_46 (p2, c1, k60).
+1579046598: Socket error on client web_82, disconnecting.
+1579046600: New client connected from 172.22.45.142 as auto-DEB656CE-5A27-D084-039A-5F119085BED9 (p2, c1, k60).
+1579046631: Socket error on client auto-DEB656CE-5A27-D084-039A-5F119085BED9, disconnecting.
+1579046658: Client auto-96724947-1C95-5422-CE61-B72BED94135B has exceeded timeout, disconnecting.
+1579046672: New connection from 172.22.45.142 on port 1883.
+1579046706: New client connected from 172.22.45.142 as auto-A70381BF-D55B-4BBA-7057-27A6EDC264FA (p2, c1, k60).
+1579046758: New connection from 172.22.45.80 on port 1883.
+1579046793: New client connected from 172.22.45.80 as auto-B5A91405-D903-8B6C-7B1E-CAC4580BE887 (p2, c1, k60).
+1579046796: Client auto-A70381BF-D55B-4BBA-7057-27A6EDC264FA has exceeded timeout, disconnecting.
+1579046830: New client connected from ::ffff:172.22.45.153 as web_15 (p2, c1, k60).
+1579046830: Socket error on client web_46, disconnecting.
+1579046883: Client auto-B5A91405-D903-8B6C-7B1E-CAC4580BE887 has exceeded timeout, disconnecting.
+1579046966: New connection from 172.22.45.142 on port 1883.
+1579047003: New client connected from 172.22.45.142 as auto-4863A1B7-66D7-A006-5481-C17ACF219F92 (p2, c1, k60).
+1579047003: Socket error on client auto-4863A1B7-66D7-A006-5481-C17ACF219F92, disconnecting.
+1579047040: New connection from 172.22.45.142 on port 1883.
+1579047106: New client connected from 172.22.45.142 as auto-95F1E509-CB2D-2F34-147B-CBDBB23A9309 (p2, c1, k60).
+1579047106: Socket error on client auto-95F1E509-CB2D-2F34-147B-CBDBB23A9309, disconnecting.
+1579047142: New connection from 172.22.45.142 on port 1883.
+1579047185: New client connected from 172.22.45.142 as auto-7B9CA754-011D-44E0-EB8D-5E55D3F30E1F (p2, c1, k60).
+1579047219: Socket error on client auto-7B9CA754-011D-44E0-EB8D-5E55D3F30E1F, disconnecting.
+1579047293: New connection from 172.22.45.142 on port 1883.
+1579047320: New connection from 172.22.45.80 on port 1883.
+1579047326: New client connected from 172.22.45.142 as auto-E7F5DEAE-D775-ACD0-554E-04A7A6132D38 (p2, c1, k60).
+1579047354: New client connected from 172.22.45.80 as auto-2E16F6EF-12CA-A9A1-E302-68EAAEFFE476 (p2, c1, k60).
+1579047354: Socket error on client auto-2E16F6EF-12CA-A9A1-E302-68EAAEFFE476, disconnecting.
+1579047365: Socket error on client auto-E7F5DEAE-D775-ACD0-554E-04A7A6132D38, disconnecting.
+1579047398: New connection from 172.22.45.142 on port 1883.
+1579047398: New client connected from 172.22.45.142 as auto-71FB33DD-1C88-BFAA-3301-0C3A41232E3D (p2, c1, k60).
+1579047425: New connection from 172.22.45.80 on port 1883.
+1579047464: New client connected from 172.22.45.80 as auto-8BEE1839-E039-1AFF-97F0-5A22504EAA73 (p2, c1, k60).
+1579047466: Socket error on client auto-8BEE1839-E039-1AFF-97F0-5A22504EAA73, disconnecting.
+1579047488: Client auto-71FB33DD-1C88-BFAA-3301-0C3A41232E3D has exceeded timeout, disconnecting.
+1579047501: New connection from 172.22.45.80 on port 1883.
+1579047543: New client connected from 172.22.45.80 as auto-0560A85F-B52A-A719-1747-F2C7A24BBA82 (p2, c1, k60).
+1579047578: New connection from 172.22.45.142 on port 1883.
+1579047578: New client connected from 172.22.45.142 as auto-A3BDEAE6-3F67-E6EF-9851-2533CF29264C (p2, c1, k60).
+1579047633: Client auto-0560A85F-B52A-A719-1747-F2C7A24BBA82 has exceeded timeout, disconnecting.
+1579047636: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579047705: Client auto-A3BDEAE6-3F67-E6EF-9851-2533CF29264C has exceeded timeout, disconnecting.
+1579047781: New connection from 172.22.45.142 on port 1883.
+1579047818: New client connected from 172.22.45.142 as auto-AADB4D58-1317-8C4A-B2FD-876CFE236A03 (p2, c1, k60).
+1579047819: Socket error on client auto-AADB4D58-1317-8C4A-B2FD-876CFE236A03, disconnecting.
+1579047853: New connection from 172.22.45.142 on port 1883.
+1579047867: New connection from 172.22.45.80 on port 1883.
+1579047881: New client connected from 172.22.45.142 as auto-85AB5A6F-B61C-E694-65DF-C4C77AE69C4C (p2, c1, k60).
+1579047899: New client connected from 172.22.45.80 as auto-49555067-BA3E-8291-DEC8-A1CC75B84C1D (p2, c1, k60).
+1579047899: Socket error on client auto-49555067-BA3E-8291-DEC8-A1CC75B84C1D, disconnecting.
+1579047999: New connection from 172.22.45.80 on port 1883.
+1579048033: Client auto-85AB5A6F-B61C-E694-65DF-C4C77AE69C4C has exceeded timeout, disconnecting.
+1579048034: New client connected from 172.22.45.80 as auto-B49F6878-AAFC-23BA-5160-53E7E6CB30C1 (p2, c1, k60).
+1579048066: Socket error on client auto-B49F6878-AAFC-23BA-5160-53E7E6CB30C1, disconnecting.
+1579048103: New connection from 172.22.45.80 on port 1883.
+1579048110: New connection from 172.22.45.142 on port 1883.
+1579048171: New client connected from 172.22.45.80 as auto-12B80FEA-9018-C0BF-EF13-88C6274688A6 (p2, c1, k60).
+1579048171: Socket error on client auto-12B80FEA-9018-C0BF-EF13-88C6274688A6, disconnecting.
+1579048174: New client connected from 172.22.45.142 as auto-6103FD76-8024-C000-485B-892E1AD935AB (p2, c1, k60).
+1579048174: Socket error on client auto-6103FD76-8024-C000-485B-892E1AD935AB, disconnecting.
+1579048238: New connection from 172.22.45.80 on port 1883.
+1579048242: New connection from 172.22.45.142 on port 1883.
+1579048243: New client connected from 172.22.45.80 as auto-9135A98C-E678-3EC2-68D6-94B05DE6DD5A (p2, c1, k60).
+1579048277: Socket error on client auto-9135A98C-E678-3EC2-68D6-94B05DE6DD5A, disconnecting.
+1579048287: New client connected from 172.22.45.142 as auto-5B2DB145-896F-9325-AD5D-D3BD6B640D65 (p2, c1, k60).
+1579048287: Socket error on client auto-5B2DB145-896F-9325-AD5D-D3BD6B640D65, disconnecting.
+1579048319: New connection from 172.22.45.142 on port 1883.
+1579048319: New client connected from 172.22.45.142 as auto-38472020-3F78-C09C-B20B-4280F99D7B2F (p2, c1, k60).
+1579048382: New connection from 172.22.45.80 on port 1883.
+1579048386: New client connected from 172.22.45.80 as auto-AB6450CE-7BB1-5F5C-F5DD-F10DAAC93F70 (p2, c1, k60).
+1579048409: Client auto-38472020-3F78-C09C-B20B-4280F99D7B2F has exceeded timeout, disconnecting.
+1579048459: New connection from 172.22.45.142 on port 1883.
+1579048477: Client auto-AB6450CE-7BB1-5F5C-F5DD-F10DAAC93F70 has exceeded timeout, disconnecting.
+1579048490: New client connected from 172.22.45.142 as auto-026D51CE-C5FD-E788-1126-905907426D5C (p2, c1, k60).
+1579048535: New connection from 172.22.45.80 on port 1883.
+1579048536: New client connected from 172.22.45.80 as auto-641B17A3-9266-65D1-FB61-870E4341B61C (p2, c1, k60).
+1579048581: Client auto-026D51CE-C5FD-E788-1126-905907426D5C has exceeded timeout, disconnecting.
+1579048626: Client auto-641B17A3-9266-65D1-FB61-870E4341B61C has exceeded timeout, disconnecting.
+1579048627: New connection from 172.22.45.142 on port 1883.
+1579048660: New client connected from 172.22.45.142 as auto-F9C63152-EC79-FC88-E718-E37359C0741C (p2, c1, k60).
+1579048694: New connection from 172.22.45.80 on port 1883.
+1579048696: New client connected from 172.22.45.80 as auto-2EA02BC8-528B-9E20-1A44-485C34F69171 (p2, c1, k60).
+1579048781: Client auto-F9C63152-EC79-FC88-E718-E37359C0741C has exceeded timeout, disconnecting.
+1579048787: Client auto-2EA02BC8-528B-9E20-1A44-485C34F69171 has exceeded timeout, disconnecting.
+1579048857: New connection from 172.22.45.80 on port 1883.
+1579048859: New client connected from 172.22.45.80 as auto-65963FB4-72A2-F0DB-E9CD-9ABEF410D4F8 (p2, c1, k60).
+1579048860: New connection from 172.22.45.142 on port 1883.
+1579048893: New client connected from 172.22.45.142 as auto-FFCCB9DF-4126-2CEC-C498-7A7BD7BCA403 (p2, c1, k60).
+1579048893: Socket error on client auto-FFCCB9DF-4126-2CEC-C498-7A7BD7BCA403, disconnecting.
+1579048956: New connection from 172.22.45.142 on port 1883.
+1579048957: New client connected from 172.22.45.142 as auto-BBE949BF-2B77-B99D-1B64-22B4B2587DB5 (p2, c1, k60).
+1579048983: New client connected from ::ffff:172.22.45.153 as web_58 (p2, c1, k60).
+1579048983: Socket error on client web_15, disconnecting.
+1579049002: Client auto-65963FB4-72A2-F0DB-E9CD-9ABEF410D4F8 has exceeded timeout, disconnecting.
+1579049073: New connection from 172.22.45.80 on port 1883.
+1579049084: Client auto-BBE949BF-2B77-B99D-1B64-22B4B2587DB5 has exceeded timeout, disconnecting.
+1579049107: New client connected from 172.22.45.80 as auto-80D891CB-ACCC-B893-2C39-64294FBAA914 (p2, c1, k60).
+1579049108: Socket error on client auto-80D891CB-ACCC-B893-2C39-64294FBAA914, disconnecting.
+1579049141: New connection from 172.22.45.80 on port 1883.
+1579049156: New connection from 172.22.45.142 on port 1883.
+1579049156: New client connected from 172.22.45.142 as auto-5C1C8B97-5F88-3BC3-AC0D-859162DA0B66 (p2, c1, k60).
+1579049174: New client connected from 172.22.45.80 as auto-2A92F878-FDC7-19D4-A2A3-C3C08E870D17 (p2, c1, k60).
+1579049207: Socket error on client auto-2A92F878-FDC7-19D4-A2A3-C3C08E870D17, disconnecting.
+1579049276: New connection from 172.22.45.80 on port 1883.
+1579049276: New client connected from 172.22.45.80 as auto-0ADF9103-BEEA-BB9A-B7C1-BF1AC7D15EF5 (p2, c1, k60).
+1579049278: Client auto-5C1C8B97-5F88-3BC3-AC0D-859162DA0B66 has exceeded timeout, disconnecting.
+1579049355: New connection from 172.22.45.142 on port 1883.
+1579049387: New client connected from 172.22.45.142 as auto-0BC5C21C-06DF-509B-A667-43B5CD23C7B2 (p2, c1, k60).
+1579049436: Client auto-0ADF9103-BEEA-BB9A-B7C1-BF1AC7D15EF5 has exceeded timeout, disconnecting.
+1579049437: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579049486: New connection from 172.22.45.80 on port 1883.
+1579049509: Client auto-0BC5C21C-06DF-509B-A667-43B5CD23C7B2 has exceeded timeout, disconnecting.
+1579049545: New client connected from 172.22.45.80 as auto-7D07A66B-4720-1A92-9EBE-74773B368B89 (p2, c1, k60).
+1579049546: Socket error on client auto-7D07A66B-4720-1A92-9EBE-74773B368B89, disconnecting.
+1579049555: New connection from 172.22.45.142 on port 1883.
+1579049579: New connection from 172.22.45.80 on port 1883.
+1579049579: New client connected from 172.22.45.80 as auto-9BA28BD4-A75B-3A41-87F2-D410A2C9F267 (p2, c1, k60).
+1579049586: New client connected from 172.22.45.142 as auto-4674558A-37F9-84AE-3E7A-153D6712C115 (p2, c1, k60).
+1579049669: Client auto-9BA28BD4-A75B-3A41-87F2-D410A2C9F267 has exceeded timeout, disconnecting.
+1579049745: New connection from 172.22.45.80 on port 1883.
+1579049745: New client connected from 172.22.45.80 as auto-A6CF6D87-40D6-6083-7488-C2AA94A86D77 (p2, c1, k60).
+1579049836: Client auto-A6CF6D87-40D6-6083-7488-C2AA94A86D77 has exceeded timeout, disconnecting.
+1579049882: New connection from 172.22.45.80 on port 1883.
+1579049912: New client connected from 172.22.45.80 as auto-ADCA55D7-A61F-FB20-9CD2-AA66A81D10E4 (p2, c1, k60).
+1579050002: Client auto-ADCA55D7-A61F-FB20-9CD2-AA66A81D10E4 has exceeded timeout, disconnecting.
+1579050004: Client auto-4674558A-37F9-84AE-3E7A-153D6712C115 has exceeded timeout, disconnecting.
+1579050015: New connection from 172.22.45.80 on port 1883.
+1579050047: New client connected from 172.22.45.80 as auto-61A2AB8B-F4BB-6457-CFB3-7D4095E15157 (p2, c1, k60).
+1579050106: New connection from 172.22.45.142 on port 1883.
+1579050106: New client connected from 172.22.45.142 as auto-F44D9B18-7156-D7D3-98FF-195AF03D35AA (p2, c1, k60).
+1579050276: Client auto-61A2AB8B-F4BB-6457-CFB3-7D4095E15157 has exceeded timeout, disconnecting.
+1579050307: New client connected from ::ffff:172.22.45.153 as web_67 (p2, c1, k60).
+1579050307: Socket error on client web_58, disconnecting.
+1579050317: New connection from 172.22.45.80 on port 1883.
+1579050317: New client connected from 172.22.45.80 as auto-1B67299A-5E65-4783-51DE-6E82E8052DC7 (p2, c1, k60).
+1579050339: Client auto-F44D9B18-7156-D7D3-98FF-195AF03D35AA has exceeded timeout, disconnecting.
+1579050407: Client auto-1B67299A-5E65-4783-51DE-6E82E8052DC7 has exceeded timeout, disconnecting.
+1579050411: New connection from 172.22.45.142 on port 1883.
+1579050412: New client connected from 172.22.45.142 as auto-B1A99B25-B0AA-CE0A-D18B-9D88577564A4 (p2, c1, k60).
+1579050454: New connection from 172.22.45.80 on port 1883.
+1579050488: New client connected from 172.22.45.80 as auto-E963E4CB-361B-E2C3-CBB3-FDD6155CB0C3 (p2, c1, k60).
+1579050521: Socket error on client auto-E963E4CB-361B-E2C3-CBB3-FDD6155CB0C3, disconnecting.
+1579050558: New connection from 172.22.45.80 on port 1883.
+1579050584: Client auto-B1A99B25-B0AA-CE0A-D18B-9D88577564A4 has exceeded timeout, disconnecting.
+1579050619: New client connected from 172.22.45.80 as auto-ADDE3D2B-23C5-43C4-8604-95C70E7297CD (p2, c1, k60).
+1579050623: Socket error on client auto-ADDE3D2B-23C5-43C4-8604-95C70E7297CD, disconnecting.
+1579050634: New connection from 172.22.45.142 on port 1883.
+1579050662: New client connected from 172.22.45.142 as auto-A4D9B59E-D02F-F367-980D-A2231556D19B (p2, c1, k60).
+1579050689: New connection from 172.22.45.80 on port 1883.
+1579050721: New client connected from 172.22.45.80 as auto-31349AF9-80FC-BE30-4B20-FF6A3CA681D4 (p2, c1, k60).
+1579050722: Socket error on client auto-31349AF9-80FC-BE30-4B20-FF6A3CA681D4, disconnecting.
+1579050752: Client auto-A4D9B59E-D02F-F367-980D-A2231556D19B has exceeded timeout, disconnecting.
+1579050787: New connection from 172.22.45.80 on port 1883.
+1579050820: New client connected from 172.22.45.80 as auto-D1F6BD0E-6E34-8AC7-47F6-84DF3B4CA7A5 (p2, c1, k60).
+1579050821: Socket error on client auto-D1F6BD0E-6E34-8AC7-47F6-84DF3B4CA7A5, disconnecting.
+1579050822: New connection from 172.22.45.142 on port 1883.
+1579050850: New client connected from 172.22.45.142 as auto-6163BA07-6C91-8788-EE93-297DE21578E0 (p2, c1, k60).
+1579050859: New connection from 172.22.45.80 on port 1883.
+1579050888: New client connected from 172.22.45.80 as auto-492B886E-9007-6478-15B6-10062792B703 (p2, c1, k60).
+1579051046: Client auto-492B886E-9007-6478-15B6-10062792B703 has exceeded timeout, disconnecting.
+1579051051: Client auto-6163BA07-6C91-8788-EE93-297DE21578E0 has exceeded timeout, disconnecting.
+1579051114: New connection from 172.22.45.142 on port 1883.
+1579051114: New client connected from 172.22.45.142 as auto-1292D3A4-6482-324A-B8C6-5057633CA49B (p2, c1, k60).
+1579051121: New connection from 172.22.45.80 on port 1883.
+1579051121: New client connected from 172.22.45.80 as auto-0C29734E-8888-DE2E-4FC8-F36BA198F64C (p2, c1, k60).
+1579051238: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579051271: Client auto-1292D3A4-6482-324A-B8C6-5057633CA49B has exceeded timeout, disconnecting.
+1579051280: Client auto-0C29734E-8888-DE2E-4FC8-F36BA198F64C has exceeded timeout, disconnecting.
+1579051344: New connection from 172.22.45.142 on port 1883.
+1579051352: New connection from 172.22.45.80 on port 1883.
+1579051352: New client connected from 172.22.45.80 as auto-11665CE0-9383-1A22-3DDD-44B321B0C9B1 (p2, c1, k60).
+1579051376: New client connected from 172.22.45.142 as auto-981BBDC9-D3F8-C51C-40EF-C3AD2035168C (p2, c1, k60).
+1579051376: Socket error on client auto-981BBDC9-D3F8-C51C-40EF-C3AD2035168C, disconnecting.
+1579051410: New connection from 172.22.45.142 on port 1883.
+1579051442: New client connected from 172.22.45.142 as auto-11E80322-9FFE-A7C0-DDAB-DFDC765255DE (p2, c1, k60).
+1579051512: Client auto-11665CE0-9383-1A22-3DDD-44B321B0C9B1 has exceeded timeout, disconnecting.
+1579051578: New connection from 172.22.45.80 on port 1883.
+1579051582: New client connected from 172.22.45.80 as auto-12D0B6B6-D51D-1D19-D20E-866C8DF1E0C1 (p2, c1, k60).
+1579051600: Client auto-11E80322-9FFE-A7C0-DDAB-DFDC765255DE has exceeded timeout, disconnecting.
+1579051640: New connection from 172.22.45.142 on port 1883.
+1579051640: New client connected from 172.22.45.142 as auto-7D3DD5C2-EBF1-4A91-29D3-247CCC41419E (p2, c1, k60).
+1579051730: Client auto-7D3DD5C2-EBF1-4A91-29D3-247CCC41419E has exceeded timeout, disconnecting.
+1579051770: Client auto-12D0B6B6-D51D-1D19-D20E-866C8DF1E0C1 has exceeded timeout, disconnecting.
+1579051803: New connection from 172.22.45.142 on port 1883.
+1579051804: New client connected from 172.22.45.142 as auto-F9C5DF72-45ED-D280-BB9C-0BC2FD20874C (p2, c1, k60).
+1579051813: New connection from 172.22.45.80 on port 1883.
+1579051876: New client connected from 172.22.45.80 as auto-12F6FD5D-EDC3-847F-B85E-2E4CEF9AEFD5 (p2, c1, k60).
+1579051879: Socket error on client auto-12F6FD5D-EDC3-847F-B85E-2E4CEF9AEFD5, disconnecting.
+1579051914: New connection from 172.22.45.80 on port 1883.
+1579051946: New client connected from 172.22.45.80 as auto-6BB033FD-741F-3EBE-DF74-1796B7D229F9 (p2, c1, k60).
+1579051978: Client auto-F9C5DF72-45ED-D280-BB9C-0BC2FD20874C has exceeded timeout, disconnecting.
+1579052023: New connection from 172.22.45.142 on port 1883.
+1579052036: Client auto-6BB033FD-741F-3EBE-DF74-1796B7D229F9 has exceeded timeout, disconnecting.
+1579052053: New client connected from 172.22.45.142 as auto-0ACE589E-03C6-A9B4-62AF-4CB7766C601E (p2, c1, k60).
+1579052079: New connection from 172.22.45.80 on port 1883.
+1579052109: New client connected from 172.22.45.80 as auto-82E33951-B5ED-A8D9-F38C-1BCAE39961D6 (p2, c1, k60).
+1579052200: Client auto-82E33951-B5ED-A8D9-F38C-1BCAE39961D6 has exceeded timeout, disconnecting.
+1579052243: Client auto-0ACE589E-03C6-A9B4-62AF-4CB7766C601E has exceeded timeout, disconnecting.
+1579052276: New connection from 172.22.45.80 on port 1883.
+1579052279: New client connected from 172.22.45.80 as auto-5E1BD899-F7C8-2750-C2EB-6BD04373FCF6 (p2, c1, k60).
+1579052312: New connection from 172.22.45.142 on port 1883.
+1579052342: New client connected from 172.22.45.142 as auto-DF8FCD1F-EDB3-C9B0-97A9-5C672E8E2A7B (p2, c1, k60).
+1579052439: Client auto-5E1BD899-F7C8-2750-C2EB-6BD04373FCF6 has exceeded timeout, disconnecting.
+1579052480: New connection from 172.22.45.80 on port 1883.
+1579052480: New client connected from 172.22.45.80 as auto-DF21B2AF-18B6-1376-F064-5CF194693279 (p2, c1, k60).
+1579052575: Client auto-DF8FCD1F-EDB3-C9B0-97A9-5C672E8E2A7B has exceeded timeout, disconnecting.
+1579052641: Client auto-DF21B2AF-18B6-1376-F064-5CF194693279 has exceeded timeout, disconnecting.
+1579052679: New connection from 172.22.45.80 on port 1883.
+1579052679: New client connected from 172.22.45.80 as auto-E7E0D12A-266C-884C-767C-DD2C1E48D65D (p2, c1, k60).
+1579052680: New connection from 172.22.45.142 on port 1883.
+1579052682: New client connected from 172.22.45.142 as auto-472368FA-A0AC-19C2-BE5B-C1897484B575 (p2, c1, k60).
+1579052682: Socket error on client auto-472368FA-A0AC-19C2-BE5B-C1897484B575, disconnecting.
+1579052746: New connection from 172.22.45.142 on port 1883.
+1579052747: New client connected from 172.22.45.142 as auto-3E59EC6E-7493-9DB0-5DE4-924BBF74CA03 (p2, c1, k60).
+1579052838: Client auto-3E59EC6E-7493-9DB0-5DE4-924BBF74CA03 has exceeded timeout, disconnecting.
+1579052883: New connection from 172.22.45.142 on port 1883.
+1579052915: New client connected from 172.22.45.142 as auto-EB5D3981-089A-BE25-6727-E9C6C94A965C (p2, c1, k60).
+1579052915: Socket error on client auto-EB5D3981-089A-BE25-6727-E9C6C94A965C, disconnecting.
+1579052948: New connection from 172.22.45.142 on port 1883.
+1579052970: Client auto-E7E0D12A-266C-884C-767C-DD2C1E48D65D has exceeded timeout, disconnecting.
+1579052980: New client connected from 172.22.45.142 as auto-5220E63B-2D56-EAFD-834C-80C270871159 (p2, c1, k60).
+1579053012: Socket error on client auto-5220E63B-2D56-EAFD-834C-80C270871159, disconnecting.
+1579053013: New connection from 172.22.45.80 on port 1883.
+1579053039: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579053051: New connection from 172.22.45.142 on port 1883.
+1579053079: New client connected from 172.22.45.142 as auto-A08C7791-8B1D-2B51-8299-3318C1B5AC0F (p2, c1, k60).
+1579053085: New client connected from 172.22.45.80 as auto-62277C5D-89AA-AD54-B154-9B0AF93E752C (p2, c1, k60).
+1579053086: Socket error on client auto-62277C5D-89AA-AD54-B154-9B0AF93E752C, disconnecting.
+1579053124: New connection from 172.22.45.80 on port 1883.
+1579053153: New client connected from 172.22.45.80 as auto-092C2A28-40B6-F014-E2B0-CE19406760A7 (p2, c1, k60).
+1579053244: Client auto-092C2A28-40B6-F014-E2B0-CE19406760A7 has exceeded timeout, disconnecting.
+1579053291: New connection from 172.22.45.80 on port 1883.
+1579053324: New client connected from 172.22.45.80 as auto-C0BDA61E-1C39-5417-7974-2A460ADCAECC (p2, c1, k60).
+1579053437: Client auto-A08C7791-8B1D-2B51-8299-3318C1B5AC0F has exceeded timeout, disconnecting.
+1579053485: Client auto-C0BDA61E-1C39-5417-7974-2A460ADCAECC has exceeded timeout, disconnecting.
+1579053509: New connection from 172.22.45.142 on port 1883.
+1579053511: New client connected from 172.22.45.142 as auto-7034CF10-6F51-AB52-DF06-D53E669B88A9 (p2, c1, k60).
+1579053560: New connection from 172.22.45.80 on port 1883.
+1579053563: New client connected from 172.22.45.80 as auto-5BADD520-5F1B-8AFC-F5EE-E39EC0CD34E7 (p2, c1, k60).
+1579053671: Client auto-7034CF10-6F51-AB52-DF06-D53E669B88A9 has exceeded timeout, disconnecting.
+1579053717: Client auto-5BADD520-5F1B-8AFC-F5EE-E39EC0CD34E7 has exceeded timeout, disconnecting.
+1579053727: New connection from 172.22.45.142 on port 1883.
+1579053728: New client connected from 172.22.45.142 as auto-FFC2E881-AFCB-CD74-D931-6C7E426FC483 (p2, c1, k60).
+1579053779: New connection from 172.22.45.80 on port 1883.
+1579053819: Client auto-FFC2E881-AFCB-CD74-D931-6C7E426FC483 has exceeded timeout, disconnecting.
+1579053843: New client connected from 172.22.45.80 as auto-8F21D07B-D37F-FA9E-AF8A-91C546F23014 (p2, c1, k60).
+1579053844: Socket error on client auto-8F21D07B-D37F-FA9E-AF8A-91C546F23014, disconnecting.
+1579053861: New connection from 172.22.45.142 on port 1883.
+1579053879: New connection from 172.22.45.80 on port 1883.
+1579053893: New client connected from 172.22.45.142 as auto-68EAA9B0-A0BA-68BE-722A-D968D319524E (p2, c1, k60).
+1579053909: New client connected from 172.22.45.80 as auto-935698CD-C434-CE4A-9750-3BADA5027506 (p2, c1, k60).
+1579053983: Client auto-68EAA9B0-A0BA-68BE-722A-D968D319524E has exceeded timeout, disconnecting.
+1579054070: New connection from 172.22.45.142 on port 1883.
+1579054070: New client connected from 172.22.45.142 as auto-46721B26-633F-F1F7-CD01-D217DBBBE0DA (p2, c1, k60).
+1579054138: Client auto-935698CD-C434-CE4A-9750-3BADA5027506 has exceeded timeout, disconnecting.
+1579054181: New connection from 172.22.45.80 on port 1883.
+1579054181: New client connected from 172.22.45.80 as auto-ADE2AF71-F684-1AA7-723C-CC212F53D01B (p2, c1, k60).
+1579054303: Client auto-46721B26-633F-F1F7-CD01-D217DBBBE0DA has exceeded timeout, disconnecting.
+1579054350: New connection from 172.22.45.142 on port 1883.
+1579054381: New client connected from 172.22.45.142 as auto-ECFA7BC9-1DFE-0C1F-0AE3-803585728E07 (p2, c1, k60).
+1579054543: Client auto-ECFA7BC9-1DFE-0C1F-0AE3-803585728E07 has exceeded timeout, disconnecting.
+1579054556: Client auto-ADE2AF71-F684-1AA7-723C-CC212F53D01B has exceeded timeout, disconnecting.
+1579054600: New connection from 172.22.45.80 on port 1883.
+1579054624: New client connected from 172.22.45.80 as auto-39AD547E-0E6E-C1BA-C017-9369DCF187F8 (p2, c1, k60).
+1579054651: New connection from 172.22.45.142 on port 1883.
+1579054652: New client connected from 172.22.45.142 as auto-EDD3D4EB-C924-374E-2792-03B12EECDAFC (p2, c1, k60).
+1579054652: Socket error on client auto-EDD3D4EB-C924-374E-2792-03B12EECDAFC, disconnecting.
+1579054717: New connection from 172.22.45.142 on port 1883.
+1579054720: New client connected from 172.22.45.142 as auto-CE6C8E63-C8F2-C5A9-08D7-C8C6DFC46F23 (p2, c1, k60).
+1579054751: Socket error on client auto-CE6C8E63-C8F2-C5A9-08D7-C8C6DFC46F23, disconnecting.
+1579054816: New connection from 172.22.45.142 on port 1883.
+1579054819: New client connected from 172.22.45.142 as auto-9B303AEE-E771-3E8B-952F-A0D9DEE4626A (p2, c1, k60).
+1579054840: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579054846: Client auto-39AD547E-0E6E-C1BA-C017-9369DCF187F8 has exceeded timeout, disconnecting.
+1579054852: Socket error on client auto-9B303AEE-E771-3E8B-952F-A0D9DEE4626A, disconnecting.
+1579054903: New connection from 172.22.45.80 on port 1883.
+1579054917: New connection from 172.22.45.142 on port 1883.
+1579054919: New client connected from 172.22.45.142 as auto-D22B15D9-E93E-5084-7DE3-EDC783E8512E (p2, c1, k60).
+1579054933: New client connected from 172.22.45.80 as auto-26366A11-F665-5281-7D16-B8CF84911925 (p2, c1, k60).
+1579055023: Client auto-26366A11-F665-5281-7D16-B8CF84911925 has exceeded timeout, disconnecting.
+1579055080: Client auto-D22B15D9-E93E-5084-7DE3-EDC783E8512E has exceeded timeout, disconnecting.
+1579055100: New connection from 172.22.45.80 on port 1883.
+1579055104: New client connected from 172.22.45.80 as auto-148F2645-423F-0EC8-996B-67566DF17621 (p2, c1, k60).
+1579055123: New connection from 172.22.45.142 on port 1883.
+1579055135: Socket error on client auto-148F2645-423F-0EC8-996B-67566DF17621, disconnecting.
+1579055157: New client connected from 172.22.45.142 as auto-E6B4D50C-29D1-6553-A7E8-BEC505C3FA0C (p2, c1, k60).
+1579055172: New connection from 172.22.45.80 on port 1883.
+1579055202: New client connected from 172.22.45.80 as auto-54C43A39-53D8-72CB-B4E5-BDA9F76C2A8E (p2, c1, k60).
+1579055233: Socket error on client auto-54C43A39-53D8-72CB-B4E5-BDA9F76C2A8E, disconnecting.
+1579055295: New connection from 172.22.45.80 on port 1883.
+1579055297: New client connected from 172.22.45.80 as auto-C1E46A6C-23BE-89FE-E929-0507034062F0 (p2, c1, k60).
+1579055354: Client auto-E6B4D50C-29D1-6553-A7E8-BEC505C3FA0C has exceeded timeout, disconnecting.
+1579055429: New connection from 172.22.45.142 on port 1883.
+1579055429: Client auto-C1E46A6C-23BE-89FE-E929-0507034062F0 has exceeded timeout, disconnecting.
+1579055474: New client connected from 172.22.45.142 as auto-280BBCB3-9E96-05C8-B22A-D025ECB45730 (p2, c1, k60).
+1579055475: New connection from 172.22.45.80 on port 1883.
+1579055506: Socket error on client auto-280BBCB3-9E96-05C8-B22A-D025ECB45730, disconnecting.
+1579055507: New client connected from 172.22.45.80 as auto-DEAC3CB2-9C71-D77E-F73D-1911ED9C51DE (p2, c1, k60).
+1579055538: New connection from 172.22.45.142 on port 1883.
+1579055538: New client connected from 172.22.45.142 as auto-95D386C9-D469-10C5-8BA4-168CF5C604AC (p2, c1, k60).
+1579055597: Client auto-DEAC3CB2-9C71-D77E-F73D-1911ED9C51DE has exceeded timeout, disconnecting.
+1579055628: Client auto-95D386C9-D469-10C5-8BA4-168CF5C604AC has exceeded timeout, disconnecting.
+1579055645: New client connected from ::ffff:172.22.45.153 as web_25 (p2, c1, k60).
+1579055645: Socket error on client web_67, disconnecting.
+1579055710: New connection from 172.22.45.142 on port 1883.
+1579055713: New connection from 172.22.45.80 on port 1883.
+1579055714: New client connected from 172.22.45.80 as auto-ED283106-6094-9355-A5E0-B51E5887922A (p2, c1, k60).
+1579055743: New client connected from 172.22.45.142 as auto-176202A4-534E-2E72-C2A2-43AFB086772E (p2, c1, k60).
+1579055776: Socket error on client auto-176202A4-534E-2E72-C2A2-43AFB086772E, disconnecting.
+1579055809: New connection from 172.22.45.142 on port 1883.
+1579055809: New client connected from 172.22.45.142 as auto-C087EC1E-6E3D-BF80-BA00-19F16539CA87 (p2, c1, k60).
+1579055893: Client auto-ED283106-6094-9355-A5E0-B51E5887922A has exceeded timeout, disconnecting.
+1579055970: New connection from 172.22.45.80 on port 1883.
+1579055970: New client connected from 172.22.45.80 as auto-75E063E4-E20B-AA10-2693-BB9164A368C9 (p2, c1, k60).
+1579055974: Client auto-C087EC1E-6E3D-BF80-BA00-19F16539CA87 has exceeded timeout, disconnecting.
+1579056077: New connection from 172.22.45.142 on port 1883.
+1579056113: New client connected from 172.22.45.142 as auto-8396761B-5BA5-67A2-ED68-E614933BCC54 (p2, c1, k60).
+1579056118: Socket error on client auto-8396761B-5BA5-67A2-ED68-E614933BCC54, disconnecting.
+1579056184: New connection from 172.22.45.142 on port 1883.
+1579056200: Client auto-75E063E4-E20B-AA10-2693-BB9164A368C9 has exceeded timeout, disconnecting.
+1579056241: New connection from 172.22.45.80 on port 1883.
+1579056241: New client connected from 172.22.45.80 as auto-3EC8648F-8FDE-2375-E760-FD3EEAA9E74F (p2, c1, k60).
+1579056250: New client connected from 172.22.45.142 as auto-A9BF5718-E7D2-EB2F-7F55-C258B3C83083 (p2, c1, k60).
+1579056251: Socket error on client auto-A9BF5718-E7D2-EB2F-7F55-C258B3C83083, disconnecting.
+1579056286: New connection from 172.22.45.142 on port 1883.
+1579056323: New client connected from 172.22.45.142 as auto-BC8A99E4-5978-B48F-01FF-C639F0E3C6B0 (p2, c1, k60).
+1579056480: Client auto-BC8A99E4-5978-B48F-01FF-C639F0E3C6B0 has exceeded timeout, disconnecting.
+1579056524: New connection from 172.22.45.142 on port 1883.
+1579056558: New client connected from 172.22.45.142 as auto-332FFA9B-C2F6-AA71-AB30-8E81A4B7DA45 (p2, c1, k60).
+1579056558: Socket error on client auto-332FFA9B-C2F6-AA71-AB30-8E81A4B7DA45, disconnecting.
+1579056595: New connection from 172.22.45.142 on port 1883.
+1579056603: Client auto-3EC8648F-8FDE-2375-E760-FD3EEAA9E74F has exceeded timeout, disconnecting.
+1579056625: New client connected from 172.22.45.142 as auto-078367F6-213A-E2F4-6ED9-2A4F6DB5B390 (p2, c1, k60).
+1579056641: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579056655: New connection from 172.22.45.80 on port 1883.
+1579056687: New client connected from 172.22.45.80 as auto-2CBA8F53-F5E8-54EF-5B92-76BF78AD6291 (p2, c1, k60).
+1579056715: Client auto-078367F6-213A-E2F4-6ED9-2A4F6DB5B390 has exceeded timeout, disconnecting.
+1579056777: Client auto-2CBA8F53-F5E8-54EF-5B92-76BF78AD6291 has exceeded timeout, disconnecting.
+1579056799: New connection from 172.22.45.142 on port 1883.
+1579056857: New connection from 172.22.45.80 on port 1883.
+1579056857: New client connected from 172.22.45.80 as auto-910BF0C0-E494-0D19-9391-888E2D375D36 (p2, c1, k60).
+1579056862: New client connected from 172.22.45.142 as auto-A808DD3A-019D-E86C-632C-42320BAE0915 (p2, c1, k60).
+1579056862: Socket error on client auto-A808DD3A-019D-E86C-632C-42320BAE0915, disconnecting.
+1579056899: New connection from 172.22.45.142 on port 1883.
+1579056965: New client connected from 172.22.45.142 as auto-43AE315C-EABE-49B5-B6C1-A2E18ED480B7 (p2, c1, k60).
+1579056965: Socket error on client auto-43AE315C-EABE-49B5-B6C1-A2E18ED480B7, disconnecting.
+1579057017: Client auto-910BF0C0-E494-0D19-9391-888E2D375D36 has exceeded timeout, disconnecting.
+1579057030: New connection from 172.22.45.142 on port 1883.
+1579057030: New client connected from 172.22.45.142 as auto-30FA7789-6A87-9EE2-2B04-F2CB442425D6 (p2, c1, k60).
+1579057091: New connection from 172.22.45.80 on port 1883.
+1579057093: New client connected from 172.22.45.80 as auto-2E0CF35E-D2F2-58C4-9FA2-7AB4DFA2CDBF (p2, c1, k60).
+1579057093: Socket error on client auto-2E0CF35E-D2F2-58C4-9FA2-7AB4DFA2CDBF, disconnecting.
+1579057126: New connection from 172.22.45.80 on port 1883.
+1579057157: New client connected from 172.22.45.80 as auto-F4A8EEAF-214C-BA70-57C1-C145C75F2F77 (p2, c1, k60).
+1579057160: Client auto-30FA7789-6A87-9EE2-2B04-F2CB442425D6 has exceeded timeout, disconnecting.
+1579057237: New connection from 172.22.45.142 on port 1883.
+1579057238: New client connected from 172.22.45.142 as auto-28ABF70A-203E-B80E-E251-71B277383665 (p2, c1, k60).
+1579057248: Client auto-F4A8EEAF-214C-BA70-57C1-C145C75F2F77 has exceeded timeout, disconnecting.
+1579057301: New connection from 172.22.45.80 on port 1883.
+1579057328: Client auto-28ABF70A-203E-B80E-E251-71B277383665 has exceeded timeout, disconnecting.
+1579057330: New client connected from 172.22.45.80 as auto-25171689-965B-8CDF-02F5-8D3D9ACA756C (p2, c1, k60).
+1579057418: New connection from 172.22.45.142 on port 1883.
+1579057452: New client connected from 172.22.45.142 as auto-EA4FD8B9-03F7-276D-CC79-83CB0C2A34AC (p2, c1, k60).
+1579057453: Socket error on client auto-EA4FD8B9-03F7-276D-CC79-83CB0C2A34AC, disconnecting.
+1579057486: New connection from 172.22.45.142 on port 1883.
+1579057486: New client connected from 172.22.45.142 as auto-A02CCC6B-4DC5-9BEE-3BC3-72A87934F1C2 (p2, c1, k60).
+1579057493: Client auto-25171689-965B-8CDF-02F5-8D3D9ACA756C has exceeded timeout, disconnecting.
+1579057535: New connection from 172.22.45.80 on port 1883.
+1579057567: New client connected from 172.22.45.80 as auto-27A08170-917D-901B-C4D8-980E4273296F (p2, c1, k60).
+1579057567: Socket error on client auto-27A08170-917D-901B-C4D8-980E4273296F, disconnecting.
+1579057576: Client auto-A02CCC6B-4DC5-9BEE-3BC3-72A87934F1C2 has exceeded timeout, disconnecting.
+1579057601: New connection from 172.22.45.80 on port 1883.
+1579057631: New client connected from 172.22.45.80 as auto-A8B7299A-D83D-E3F4-BC8F-0659670F4A3D (p2, c1, k60).
+1579057655: New connection from 172.22.45.142 on port 1883.
+1579057657: New client connected from 172.22.45.142 as auto-B76E7F37-3E0F-5553-1721-E21933380F48 (p2, c1, k60).
+1579057664: Socket error on client auto-A8B7299A-D83D-E3F4-BC8F-0659670F4A3D, disconnecting.
+1579057696: New connection from 172.22.45.80 on port 1883.
+1579057731: New client connected from 172.22.45.80 as auto-91F30C3E-7AFB-6580-0BF6-A2A44388E3DB (p2, c1, k60).
+1579057761: Socket error on client auto-91F30C3E-7AFB-6580-0BF6-A2A44388E3DB, disconnecting.
+1579057779: Client auto-B76E7F37-3E0F-5553-1721-E21933380F48 has exceeded timeout, disconnecting.
+1579057824: New connection from 172.22.45.142 on port 1883.
+1579057825: New connection from 172.22.45.80 on port 1883.
+1579057829: New client connected from 172.22.45.80 as auto-552AD6AE-486B-B41C-CE18-762048676490 (p2, c1, k60).
+1579057857: New client connected from 172.22.45.142 as auto-0C4C4DF5-354B-F3D0-43AB-BBA35DD3D6D1 (p2, c1, k60).
+1579057919: Client auto-552AD6AE-486B-B41C-CE18-762048676490 has exceeded timeout, disconnecting.
+1579057947: Client auto-0C4C4DF5-354B-F3D0-43AB-BBA35DD3D6D1 has exceeded timeout, disconnecting.
+1579057970: New connection from 172.22.45.80 on port 1883.
+1579057970: New client connected from 172.22.45.80 as auto-25F40070-2EEC-1504-D7E0-2733863A6120 (p2, c1, k60).
+1579057989: New connection from 172.22.45.142 on port 1883.
+1579058024: New client connected from 172.22.45.142 as auto-09BAE1A1-489C-6927-E17E-BE07844A8CBA (p2, c1, k60).
+1579058054: Socket error on client auto-09BAE1A1-489C-6927-E17E-BE07844A8CBA, disconnecting.
+1579058088: New connection from 172.22.45.142 on port 1883.
+1579058120: New client connected from 172.22.45.142 as auto-F7DAB7DC-7D55-A32D-122B-838C4AB88E4D (p2, c1, k60).
+1579058124: Client auto-25F40070-2EEC-1504-D7E0-2733863A6120 has exceeded timeout, disconnecting.
+1579058153: Socket error on client auto-F7DAB7DC-7D55-A32D-122B-838C4AB88E4D, disconnecting.
+1579058189: New connection from 172.22.45.142 on port 1883.
+1579058199: New connection from 172.22.45.80 on port 1883.
+1579058200: New client connected from 172.22.45.80 as auto-0B4A8B87-2B60-BEAF-9697-A4D585F2192B (p2, c1, k60).
+1579058219: New client connected from 172.22.45.142 as auto-7908A692-E36B-3FB8-1B20-AF4BF3BF273B (p2, c1, k60).
+1579058290: Client auto-0B4A8B87-2B60-BEAF-9697-A4D585F2192B has exceeded timeout, disconnecting.
+1579058309: Client auto-7908A692-E36B-3FB8-1B20-AF4BF3BF273B has exceeded timeout, disconnecting.
+1579058347: New connection from 172.22.45.80 on port 1883.
+1579058380: New client connected from 172.22.45.80 as auto-2A6881AC-4D87-A563-D6FC-46D5A200F286 (p2, c1, k60).
+1579058399: New connection from 172.22.45.142 on port 1883.
+1579058433: New client connected from 172.22.45.142 as auto-B2AAFC15-F51C-C571-5AE0-7980E8022F4C (p2, c1, k60).
+1579058434: Socket error on client auto-B2AAFC15-F51C-C571-5AE0-7980E8022F4C, disconnecting.
+1579058442: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579058470: Client auto-2A6881AC-4D87-A563-D6FC-46D5A200F286 has exceeded timeout, disconnecting.
+1579058497: New connection from 172.22.45.142 on port 1883.
+1579058499: New client connected from 172.22.45.142 as auto-844AA53B-B751-D5D4-CF4E-6AB4641EEF67 (p2, c1, k60).
+1579058523: New connection from 172.22.45.80 on port 1883.
+1579058552: New client connected from 172.22.45.80 as auto-8AB6CF74-65E5-C992-0A83-F6F152D3AA7A (p2, c1, k60).
+1579058662: Client auto-844AA53B-B751-D5D4-CF4E-6AB4641EEF67 has exceeded timeout, disconnecting.
+1579058703: New connection from 172.22.45.142 on port 1883.
+1579058735: New client connected from 172.22.45.142 as auto-C4A4B12E-6A27-3E2C-DC80-CA6BA737E619 (p2, c1, k60).
+1579058735: Socket error on client auto-C4A4B12E-6A27-3E2C-DC80-CA6BA737E619, disconnecting.
+1579058769: New connection from 172.22.45.142 on port 1883.
+1579058803: New client connected from 172.22.45.142 as auto-09F235F4-3A8D-E14B-BA35-8A1DE4CEDBA4 (p2, c1, k60).
+1579058928: Client auto-09F235F4-3A8D-E14B-BA35-8A1DE4CEDBA4 has exceeded timeout, disconnecting.
+1579058945: Client auto-8AB6CF74-65E5-C992-0A83-F6F152D3AA7A has exceeded timeout, disconnecting.
+1579059013: New connection from 172.22.45.142 on port 1883.
+1579059013: New client connected from 172.22.45.142 as auto-D84EA8DF-3D1A-3339-3809-AEDFD69045B3 (p2, c1, k60).
+1579059017: New connection from 172.22.45.80 on port 1883.
+1579059050: New client connected from 172.22.45.80 as auto-B327E666-96FE-E664-8F4E-69EC0523BF66 (p2, c1, k60).
+1579059142: Client auto-B327E666-96FE-E664-8F4E-69EC0523BF66 has exceeded timeout, disconnecting.
+1579059222: New connection from 172.22.45.80 on port 1883.
+1579059241: Client auto-D84EA8DF-3D1A-3339-3809-AEDFD69045B3 has exceeded timeout, disconnecting.
+1579059255: New client connected from 172.22.45.80 as auto-4E7EE3CC-C5B8-5D48-E5F8-00B6C71965A2 (p2, c1, k60).
+1579059255: Socket error on client auto-4E7EE3CC-C5B8-5D48-E5F8-00B6C71965A2, disconnecting.
+1579059293: New connection from 172.22.45.80 on port 1883.
+1579059315: New connection from 172.22.45.142 on port 1883.
+1579059315: New client connected from 172.22.45.142 as auto-B8F1E1D2-8CB7-7240-C019-0250D663971F (p2, c1, k60).
+1579059356: New client connected from 172.22.45.80 as auto-EA05D40C-5FAA-6278-836D-5D5B7956F4DF (p2, c1, k60).
+1579059357: Socket error on client auto-EA05D40C-5FAA-6278-836D-5D5B7956F4DF, disconnecting.
+1579059392: New connection from 172.22.45.80 on port 1883.
+1579059426: New client connected from 172.22.45.80 as auto-40A5C99C-A503-95C1-365C-BBB51405CB12 (p2, c1, k60).
+1579059478: Client auto-B8F1E1D2-8CB7-7240-C019-0250D663971F has exceeded timeout, disconnecting.
+1579059516: Client auto-40A5C99C-A503-95C1-365C-BBB51405CB12 has exceeded timeout, disconnecting.
+1579059550: New connection from 172.22.45.142 on port 1883.
+1579059551: New client connected from 172.22.45.142 as auto-074DBAF5-F8D5-B9FB-6060-201FF0C5C95D (p2, c1, k60).
+1579059566: New connection from 172.22.45.80 on port 1883.
+1579059599: New client connected from 172.22.45.80 as auto-174E3F29-FBFE-F3D9-6730-9595C42D6E52 (p2, c1, k60).
+1579059628: Socket error on client auto-174E3F29-FBFE-F3D9-6730-9595C42D6E52, disconnecting.
+1579059642: Client auto-074DBAF5-F8D5-B9FB-6060-201FF0C5C95D has exceeded timeout, disconnecting.
+1579059667: New connection from 172.22.45.80 on port 1883.
+1579059691: New connection from 172.22.45.142 on port 1883.
+1579059698: New client connected from 172.22.45.80 as auto-EC19AF86-D47F-25E8-CAFB-643100DDD9F9 (p2, c1, k60).
+1579059724: New client connected from 172.22.45.142 as auto-CC5CD0A9-FEE8-CEB8-1121-264E6EEDCBB3 (p2, c1, k60).
+1579059724: Socket error on client auto-CC5CD0A9-FEE8-CEB8-1121-264E6EEDCBB3, disconnecting.
+1579059755: New connection from 172.22.45.142 on port 1883.
+1579059788: Client auto-EC19AF86-D47F-25E8-CAFB-643100DDD9F9 has exceeded timeout, disconnecting.
+1579059789: New client connected from 172.22.45.142 as auto-31AFCAE9-BD86-AA64-C494-7292C59A7681 (p2, c1, k60).
+1579059872: New connection from 172.22.45.80 on port 1883.
+1579059880: Client auto-31AFCAE9-BD86-AA64-C494-7292C59A7681 has exceeded timeout, disconnecting.
+1579059905: New client connected from 172.22.45.80 as auto-712FB36E-C9E6-4D2F-3931-ABD028BAD437 (p2, c1, k60).
+1579059954: New connection from 172.22.45.142 on port 1883.
+1579059986: New client connected from 172.22.45.142 as auto-D30575F1-0BFD-BC8B-E21F-42E79A674716 (p2, c1, k60).
+1579059988: Socket error on client auto-D30575F1-0BFD-BC8B-E21F-42E79A674716, disconnecting.
+1579059995: Client auto-712FB36E-C9E6-4D2F-3931-ABD028BAD437 has exceeded timeout, disconnecting.
+1579060022: New connection from 172.22.45.142 on port 1883.
+1579060048: New connection from 172.22.45.80 on port 1883.
+1579060053: New client connected from 172.22.45.142 as auto-C8CDB5D5-77BE-5440-6D47-68F7FAA30E39 (p2, c1, k60).
+1579060080: New client connected from 172.22.45.80 as auto-3F3F3018-CC7E-A51C-9511-6769265E70E5 (p2, c1, k60).
+1579060170: Client auto-3F3F3018-CC7E-A51C-9511-6769265E70E5 has exceeded timeout, disconnecting.
+1579060175: Client auto-C8CDB5D5-77BE-5440-6D47-68F7FAA30E39 has exceeded timeout, disconnecting.
+1579060211: New connection from 172.22.45.80 on port 1883.
+1579060222: New connection from 172.22.45.142 on port 1883.
+1579060236: New client connected from 172.22.45.80 as auto-4870BA75-BAFF-3129-1F44-C27C67155FCC (p2, c1, k60).
+1579060243: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579060252: New client connected from 172.22.45.142 as auto-9C1F38DA-8B04-3939-C725-3A8E27F55397 (p2, c1, k60).
+1579060409: Client auto-4870BA75-BAFF-3129-1F44-C27C67155FCC has exceeded timeout, disconnecting.
+1579060416: Socket error on client web_25, disconnecting.
+1579060430: New client connected from ::ffff:172.22.45.153 as web_0 (p2, c1, k60).
+1579060452: New connection from 172.22.45.80 on port 1883.
+1579060481: New client connected from 172.22.45.80 as auto-B8C70D34-CE63-59E3-D4CA-7F45A7C1927D (p2, c1, k60).
+1579060572: Client auto-9C1F38DA-8B04-3939-C725-3A8E27F55397 has exceeded timeout, disconnecting.
+1579060572: Client auto-B8C70D34-CE63-59E3-D4CA-7F45A7C1927D has exceeded timeout, disconnecting.
+1579060612: New connection from 172.22.45.142 on port 1883.
+1579060612: New client connected from 172.22.45.142 as auto-4007C420-6634-1C6A-0D13-604764FB416B (p2, c1, k60).
+1579060618: New connection from 172.22.45.80 on port 1883.
+1579060618: New client connected from 172.22.45.80 as auto-71DCA322-732A-24E5-2A7F-C91E0682DA0C (p2, c1, k60).
+1579060709: Client auto-71DCA322-732A-24E5-2A7F-C91E0682DA0C has exceeded timeout, disconnecting.
+1579060786: New connection from 172.22.45.80 on port 1883.
+1579060788: New client connected from 172.22.45.80 as auto-2DA62B92-526F-B60E-5065-FE1BB477D3D9 (p2, c1, k60).
+1579060844: Client auto-4007C420-6634-1C6A-0D13-604764FB416B has exceeded timeout, disconnecting.
+1579060878: Client auto-2DA62B92-526F-B60E-5065-FE1BB477D3D9 has exceeded timeout, disconnecting.
+1579060926: New connection from 172.22.45.80 on port 1883.
+1579060928: New connection from 172.22.45.142 on port 1883.
+1579060929: New client connected from 172.22.45.142 as auto-99A0ED85-2B9E-FA41-EEFD-FC1B39D4CAC2 (p2, c1, k60).
+1579060955: New client connected from 172.22.45.80 as auto-91868A5B-0DE2-F216-C439-A260E6946E91 (p2, c1, k60).
+1579061117: Client auto-91868A5B-0DE2-F216-C439-A260E6946E91 has exceeded timeout, disconnecting.
+1579061188: New connection from 172.22.45.80 on port 1883.
+1579061190: New client connected from 172.22.45.80 as auto-5F522AB5-3F48-55BA-FA2B-99FD6611A82D (p2, c1, k60).
+1579061231: Client auto-99A0ED85-2B9E-FA41-EEFD-FC1B39D4CAC2 has exceeded timeout, disconnecting.
+1579061292: New connection from 172.22.45.142 on port 1883.
+1579061327: New client connected from 172.22.45.142 as auto-C01C1A3C-2FAF-A0AC-6678-EF2159CC13F2 (p2, c1, k60).
+1579061350: Client auto-5F522AB5-3F48-55BA-FA2B-99FD6611A82D has exceeded timeout, disconnecting.
+1579061358: Socket error on client auto-C01C1A3C-2FAF-A0AC-6678-EF2159CC13F2, disconnecting.
+1579061395: New connection from 172.22.45.142 on port 1883.
+1579061424: New client connected from 172.22.45.142 as auto-9281DAC4-F1D2-A9BC-7E06-B13CD1B5B6F6 (p2, c1, k60).
+1579061463: New connection from 172.22.45.80 on port 1883.
+1579061492: New client connected from 172.22.45.80 as auto-03CCCB5F-29B2-D0CB-950B-02CC7DC888F3 (p2, c1, k60).
+1579061653: Client auto-9281DAC4-F1D2-A9BC-7E06-B13CD1B5B6F6 has exceeded timeout, disconnecting.
+1579061693: New connection from 172.22.45.142 on port 1883.
+1579061725: New client connected from 172.22.45.142 as auto-6C4AAEFC-354D-B6B1-A654-9A46815EC187 (p2, c1, k60).
+1579061785: Client auto-03CCCB5F-29B2-D0CB-950B-02CC7DC888F3 has exceeded timeout, disconnecting.
+1579061815: Client auto-6C4AAEFC-354D-B6B1-A654-9A46815EC187 has exceeded timeout, disconnecting.
+1579061833: New client connected from ::ffff:172.22.45.153 as web_27 (p2, c1, k60).
+1579061833: Socket error on client web_0, disconnecting.
+1579061870: New connection from 172.22.45.80 on port 1883.
+1579061873: New client connected from 172.22.45.80 as auto-8EB96B73-BB29-42A3-CD98-959513E55DF5 (p2, c1, k60).
+1579061908: New connection from 172.22.45.142 on port 1883.
+1579061941: New client connected from 172.22.45.142 as auto-23FBD833-7FF2-6537-A88C-82B55350CB04 (p2, c1, k60).
+1579061963: Client auto-8EB96B73-BB29-42A3-CD98-959513E55DF5 has exceeded timeout, disconnecting.
+1579062014: New connection from 172.22.45.80 on port 1883.
+1579062028: New client connected from ::ffff:172.22.45.153 as web_47 (p2, c1, k60).
+1579062028: Socket error on client web_27, disconnecting.
+1579062044: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579062094: New client connected from 172.22.45.80 as auto-F5C29FB1-25DF-4DC9-8740-65670556480C (p2, c1, k60).
+1579062094: Socket error on client auto-F5C29FB1-25DF-4DC9-8740-65670556480C, disconnecting.
+1579062128: New connection from 172.22.45.80 on port 1883.
+1579062128: New client connected from 172.22.45.80 as auto-B9F6DCB1-D93C-0536-0EC2-06CE4A5BD03E (p2, c1, k60).
+1579062218: Client auto-B9F6DCB1-D93C-0536-0EC2-06CE4A5BD03E has exceeded timeout, disconnecting.
+1579062265: New connection from 172.22.45.80 on port 1883.
+1579062296: New client connected from 172.22.45.80 as auto-69A0C78D-6BC3-DA9A-8CB1-6FEC21D0BAA4 (p2, c1, k60).
+1579062367: Client auto-23FBD833-7FF2-6537-A88C-82B55350CB04 has exceeded timeout, disconnecting.
+1579062410: New connection from 172.22.45.142 on port 1883.
+1579062410: New client connected from 172.22.45.142 as auto-6AEA882C-2A01-899F-7955-8CA3BBD5F5C3 (p2, c1, k60).
+1579062619: Client auto-69A0C78D-6BC3-DA9A-8CB1-6FEC21D0BAA4 has exceeded timeout, disconnecting.
+1579062636: Client auto-6AEA882C-2A01-899F-7955-8CA3BBD5F5C3 has exceeded timeout, disconnecting.
+1579062661: New connection from 172.22.45.80 on port 1883.
+1579062690: New connection from 172.22.45.142 on port 1883.
+1579062690: New client connected from 172.22.45.142 as auto-A09D7843-8E19-3ADC-A152-CBC36BB1B07C (p2, c1, k60).
+1579062693: New client connected from 172.22.45.80 as auto-C944B55F-6C27-41AD-DA8C-A397905C5B69 (p2, c1, k60).
+1579062725: Socket error on client auto-C944B55F-6C27-41AD-DA8C-A397905C5B69, disconnecting.
+1579062761: New connection from 172.22.45.80 on port 1883.
+1579062761: New client connected from 172.22.45.80 as auto-FD52321E-A233-7DAA-76BD-925D1E83FF1A (p2, c1, k60).
+1579062780: Client auto-A09D7843-8E19-3ADC-A152-CBC36BB1B07C has exceeded timeout, disconnecting.
+1579062856: New connection from 172.22.45.142 on port 1883.
+1579062858: New client connected from 172.22.45.142 as auto-151F12E1-764A-7E69-5603-E4FD4BE2E35B (p2, c1, k60).
+1579063020: Client auto-151F12E1-764A-7E69-5603-E4FD4BE2E35B has exceeded timeout, disconnecting.
+1579063061: Client auto-FD52321E-A233-7DAA-76BD-925D1E83FF1A has exceeded timeout, disconnecting.
+1579063064: New connection from 172.22.45.142 on port 1883.
+1579063064: New client connected from 172.22.45.142 as auto-E66E3142-0027-879E-BAFE-9B676993DA62 (p2, c1, k60).
+1579063102: New connection from 172.22.45.80 on port 1883.
+1579063102: New client connected from 172.22.45.80 as auto-0A3F816B-6939-DD73-C877-B1BA9FF8F37F (p2, c1, k60).
+1579063154: Client auto-E66E3142-0027-879E-BAFE-9B676993DA62 has exceeded timeout, disconnecting.
+1579063192: Client auto-0A3F816B-6939-DD73-C877-B1BA9FF8F37F has exceeded timeout, disconnecting.
+1579063205: New connection from 172.22.45.142 on port 1883.
+1579063234: New connection from 172.22.45.80 on port 1883.
+1579063234: New client connected from 172.22.45.80 as auto-09B045EA-498B-3950-6486-03F4FF27452B (p2, c1, k60).
+1579063265: New client connected from 172.22.45.142 as auto-1E7B6506-D72F-AFED-2A90-969C41D1ED16 (p2, c1, k60).
+1579063266: Socket error on client auto-1E7B6506-D72F-AFED-2A90-969C41D1ED16, disconnecting.
+1579063324: Client auto-09B045EA-498B-3950-6486-03F4FF27452B has exceeded timeout, disconnecting.
+1579063330: New connection from 172.22.45.142 on port 1883.
+1579063332: New client connected from 172.22.45.142 as auto-0F147802-780A-C6B8-066E-8142B2F7F4EC (p2, c1, k60).
+1579063371: New connection from 172.22.45.80 on port 1883.
+1579063371: New client connected from 172.22.45.80 as auto-250024F7-CA16-00C8-4905-EA7ECEC2EFEB (p2, c1, k60).
+1579063461: Client auto-250024F7-CA16-00C8-4905-EA7ECEC2EFEB has exceeded timeout, disconnecting.
+1579063510: New connection from 172.22.45.80 on port 1883.
+1579063539: New client connected from 172.22.45.80 as auto-64CABCC7-CE7D-1C4E-A154-1F2AC8582597 (p2, c1, k60).
+1579063629: Client auto-64CABCC7-CE7D-1C4E-A154-1F2AC8582597 has exceeded timeout, disconnecting.
+1579063658: Client auto-0F147802-780A-C6B8-066E-8142B2F7F4EC has exceeded timeout, disconnecting.
+1579063679: New connection from 172.22.45.80 on port 1883.
+1579063679: New client connected from 172.22.45.80 as auto-7900A757-4179-F497-03C4-BCE267E1EB8B (p2, c1, k60).
+1579063733: New connection from 172.22.45.142 on port 1883.
+1579063733: New client connected from 172.22.45.142 as auto-432487DE-140B-C9E0-FE31-D991D6543F5A (p2, c1, k60).
+1579063770: Client auto-7900A757-4179-F497-03C4-BCE267E1EB8B has exceeded timeout, disconnecting.
+1579063821: New connection from 172.22.45.80 on port 1883.
+1579063821: New client connected from 172.22.45.80 as auto-263E62A2-823E-9391-03C9-00B8205DE7D5 (p2, c1, k60).
+1579063823: Client auto-432487DE-140B-C9E0-FE31-D991D6543F5A has exceeded timeout, disconnecting.
+1579063845: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579063904: New connection from 172.22.45.142 on port 1883.
+1579063905: New client connected from 172.22.45.142 as auto-29694F2B-A4A3-A3FF-6640-81B191509393 (p2, c1, k60).
+1579063912: Client auto-263E62A2-823E-9391-03C9-00B8205DE7D5 has exceeded timeout, disconnecting.
+1579063970: New connection from 172.22.45.80 on port 1883.
+1579064035: New client connected from 172.22.45.80 as auto-77EC8C69-DB88-0EA9-D09B-7CD150D1F893 (p2, c1, k60).
+1579064037: Socket error on client auto-77EC8C69-DB88-0EA9-D09B-7CD150D1F893, disconnecting.
+1579064065: Client auto-29694F2B-A4A3-A3FF-6640-81B191509393 has exceeded timeout, disconnecting.
+1579064106: New connection from 172.22.45.80 on port 1883.
+1579064107: New connection from 172.22.45.142 on port 1883.
+1579064108: New client connected from 172.22.45.80 as auto-2AB61098-2E17-A09E-E13C-BB08E36AD7E5 (p2, c1, k60).
+1579064140: New client connected from 172.22.45.142 as auto-C09BC11F-6B71-9FA4-E4A6-CD9012F9EF19 (p2, c1, k60).
+1579064272: Client auto-2AB61098-2E17-A09E-E13C-BB08E36AD7E5 has exceeded timeout, disconnecting.
+1579064315: New connection from 172.22.45.80 on port 1883.
+1579064348: New client connected from 172.22.45.80 as auto-0B1A2810-940D-632A-36C3-EB65A43B8D4C (p2, c1, k60).
+1579064440: New client connected from ::ffff:172.22.45.153 as web_68 (p2, c1, k60).
+1579064440: Socket error on client web_47, disconnecting.
+1579064467: Client auto-C09BC11F-6B71-9FA4-E4A6-CD9012F9EF19 has exceeded timeout, disconnecting.
+1579064504: Client auto-0B1A2810-940D-632A-36C3-EB65A43B8D4C has exceeded timeout, disconnecting.
+1579064547: New connection from 172.22.45.80 on port 1883.
+1579064556: New connection from 172.22.45.142 on port 1883.
+1579064579: New client connected from 172.22.45.80 as auto-E6EA3C9B-4114-3732-3121-551444D18EBA (p2, c1, k60).
+1579064589: New client connected from 172.22.45.142 as auto-41DEC289-636E-3F79-54C4-62151EC47C0A (p2, c1, k60).
+1579064589: Socket error on client auto-41DEC289-636E-3F79-54C4-62151EC47C0A, disconnecting.
+1579064626: New connection from 172.22.45.142 on port 1883.
+1579064654: New client connected from 172.22.45.142 as auto-336C3F9B-F47E-25F2-6638-9E244FEDFB61 (p2, c1, k60).
+1579064787: Client auto-E6EA3C9B-4114-3732-3121-551444D18EBA has exceeded timeout, disconnecting.
+1579064861: New connection from 172.22.45.80 on port 1883.
+1579064865: New client connected from 172.22.45.80 as auto-8B3651E5-78D2-9975-52A3-6BE810877854 (p2, c1, k60).
+1579064952: Client auto-336C3F9B-F47E-25F2-6638-9E244FEDFB61 has exceeded timeout, disconnecting.
+1579064955: Client auto-8B3651E5-78D2-9975-52A3-6BE810877854 has exceeded timeout, disconnecting.
+1579064993: New connection from 172.22.45.142 on port 1883.
+1579065006: New connection from 172.22.45.80 on port 1883.
+1579065025: New client connected from 172.22.45.142 as auto-FC032190-FDB0-D5E9-6021-D6006B4AEC05 (p2, c1, k60).
+1579065025: Socket error on client auto-FC032190-FDB0-D5E9-6021-D6006B4AEC05, disconnecting.
+1579065036: New client connected from 172.22.45.80 as auto-23EBB6B6-C09A-91F7-36D2-CD977718946B (p2, c1, k60).
+1579065061: New connection from 172.22.45.142 on port 1883.
+1579065124: New client connected from 172.22.45.142 as auto-73637AC0-62CE-71AE-ACEE-C240927625D8 (p2, c1, k60).
+1579065125: Socket error on client auto-73637AC0-62CE-71AE-ACEE-C240927625D8, disconnecting.
+1579065127: Client auto-23EBB6B6-C09A-91F7-36D2-CD977718946B has exceeded timeout, disconnecting.
+1579065159: New connection from 172.22.45.142 on port 1883.
+1579065193: New client connected from 172.22.45.142 as auto-FA676106-20BE-5D9F-E1BE-240044E4E1BB (p2, c1, k60).
+1579065207: New connection from 172.22.45.80 on port 1883.
+1579065210: New client connected from 172.22.45.80 as auto-8B6B47E5-55F6-F178-246E-CF33EA2D9184 (p2, c1, k60).
+1579065369: Client auto-8B6B47E5-55F6-F178-246E-CF33EA2D9184 has exceeded timeout, disconnecting.
+1579065409: New connection from 172.22.45.80 on port 1883.
+1579065480: New client connected from 172.22.45.80 as auto-865C577E-8C68-D179-CB99-0116BA441460 (p2, c1, k60).
+1579065482: Socket error on client auto-865C577E-8C68-D179-CB99-0116BA441460, disconnecting.
+1579065484: Client auto-FA676106-20BE-5D9F-E1BE-240044E4E1BB has exceeded timeout, disconnecting.
+1579065533: New connection from 172.22.45.142 on port 1883.
+1579065549: New connection from 172.22.45.80 on port 1883.
+1579065551: New client connected from 172.22.45.80 as auto-6A576F89-02C2-47EE-F6B1-9CB39F1AEFAD (p2, c1, k60).
+1579065606: New client connected from 172.22.45.142 as auto-59FC41AB-3FB8-583A-6263-F77496BF20CC (p2, c1, k60).
+1579065606: Socket error on client auto-59FC41AB-3FB8-583A-6263-F77496BF20CC, disconnecting.
+1579065646: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579065648: New connection from 172.22.45.142 on port 1883.
+1579065718: New client connected from 172.22.45.142 as auto-BA8D254D-4F55-A988-E674-E39FC8D46B67 (p2, c1, k60).
+1579065719: Socket error on client auto-BA8D254D-4F55-A988-E674-E39FC8D46B67, disconnecting.
+1579065786: New connection from 172.22.45.142 on port 1883.
+1579065787: New client connected from 172.22.45.142 as auto-E946773F-3373-3504-D24D-2DDB9F95C9B3 (p2, c1, k60).
+1579065788: Client auto-6A576F89-02C2-47EE-F6B1-9CB39F1AEFAD has exceeded timeout, disconnecting.
+1579065838: New connection from 172.22.45.80 on port 1883.
+1579065877: Client auto-E946773F-3373-3504-D24D-2DDB9F95C9B3 has exceeded timeout, disconnecting.
+1579065903: New client connected from 172.22.45.80 as auto-46EC5B5D-E96B-8E86-4141-4C753894D38B (p2, c1, k60).
+1579065907: Socket error on client auto-46EC5B5D-E96B-8E86-4141-4C753894D38B, disconnecting.
+1579065923: New connection from 172.22.45.142 on port 1883.
+1579065923: New client connected from 172.22.45.142 as auto-F40E5A1B-9A9A-7F2D-353E-407C3E68727E (p2, c1, k60).
+1579065973: New connection from 172.22.45.80 on port 1883.
+1579065973: New client connected from 172.22.45.80 as auto-7CD5B412-9595-7A1A-83B2-875CC99F5D70 (p2, c1, k60).
+1579066013: Client auto-F40E5A1B-9A9A-7F2D-353E-407C3E68727E has exceeded timeout, disconnecting.
+1579066060: New connection from 172.22.45.142 on port 1883.
+1579066063: Client auto-7CD5B412-9595-7A1A-83B2-875CC99F5D70 has exceeded timeout, disconnecting.
+1579066091: New client connected from 172.22.45.142 as auto-8CC7BDF5-E02A-15E4-7B31-774FAC2C592F (p2, c1, k60).
+1579066143: New connection from 172.22.45.80 on port 1883.
+1579066145: New client connected from 172.22.45.80 as auto-F2BF5032-4D56-F7F0-B3A3-98610EAA0951 (p2, c1, k60).
+1579066145: Socket error on client auto-F2BF5032-4D56-F7F0-B3A3-98610EAA0951, disconnecting.
+1579066178: New connection from 172.22.45.80 on port 1883.
+1579066210: New client connected from 172.22.45.80 as auto-FAEBDB03-5259-F4D6-DBFC-C607034565A3 (p2, c1, k60).
+1579066295: Client auto-8CC7BDF5-E02A-15E4-7B31-774FAC2C592F has exceeded timeout, disconnecting.
+1579066301: Client auto-FAEBDB03-5259-F4D6-DBFC-C607034565A3 has exceeded timeout, disconnecting.
+1579066350: New connection from 172.22.45.142 on port 1883.
+1579066375: New connection from 172.22.45.80 on port 1883.
+1579066377: New client connected from 172.22.45.80 as auto-8135EC8B-9CD6-02F1-97E4-61C55274ECDA (p2, c1, k60).
+1579066385: New client connected from 172.22.45.142 as auto-65E1DCBE-7AE3-8537-C843-1CF058C7028A (p2, c1, k60).
+1579066385: Socket error on client auto-65E1DCBE-7AE3-8537-C843-1CF058C7028A, disconnecting.
+1579066454: New connection from 172.22.45.142 on port 1883.
+1579066455: New client connected from 172.22.45.142 as auto-DB23CE34-22F0-F4FF-9E48-F8DA48955E68 (p2, c1, k60).
+1579066541: Client auto-8135EC8B-9CD6-02F1-97E4-61C55274ECDA has exceeded timeout, disconnecting.
+1579066580: Client auto-DB23CE34-22F0-F4FF-9E48-F8DA48955E68 has exceeded timeout, disconnecting.
+1579066586: New connection from 172.22.45.80 on port 1883.
+1579066621: New client connected from 172.22.45.80 as auto-149615E4-6A58-052F-86CD-25E16561CF8C (p2, c1, k60).
+1579066621: Socket error on client auto-149615E4-6A58-052F-86CD-25E16561CF8C, disconnecting.
+1579066630: New connection from 172.22.45.142 on port 1883.
+1579066655: New connection from 172.22.45.80 on port 1883.
+1579066655: New client connected from 172.22.45.80 as auto-C6839CC9-637F-15F5-A6C8-BF732D9E1024 (p2, c1, k60).
+1579066666: New client connected from 172.22.45.142 as auto-7A107579-C4E9-FB81-4288-60215DD9D46D (p2, c1, k60).
+1579066697: Socket error on client auto-7A107579-C4E9-FB81-4288-60215DD9D46D, disconnecting.
+1579066745: Client auto-C6839CC9-637F-15F5-A6C8-BF732D9E1024 has exceeded timeout, disconnecting.
+1579066793: New connection from 172.22.45.80 on port 1883.
+1579066793: New client connected from 172.22.45.80 as auto-DB036615-79E2-681B-4CA4-E2E811FB8354 (p2, c1, k60).
+1579066798: New connection from 172.22.45.142 on port 1883.
+1579066800: New client connected from 172.22.45.142 as auto-5990DC1B-D85E-471D-BF4D-BCEE08728065 (p2, c1, k60).
+1579066883: Client auto-DB036615-79E2-681B-4CA4-E2E811FB8354 has exceeded timeout, disconnecting.
+1579066890: Client auto-5990DC1B-D85E-471D-BF4D-BCEE08728065 has exceeded timeout, disconnecting.
+1579066948: New connection from 172.22.45.80 on port 1883.
+1579066948: New client connected from 172.22.45.80 as auto-9FF2F8A8-89B0-1FF7-D908-C7CA4D271429 (p2, c1, k60).
+1579066973: New connection from 172.22.45.142 on port 1883.
+1579067005: New client connected from 172.22.45.142 as auto-23D74350-E60E-9637-9F2C-7BA9446EB128 (p2, c1, k60).
+1579067164: Client auto-23D74350-E60E-9637-9F2C-7BA9446EB128 has exceeded timeout, disconnecting.
+1579067212: New connection from 172.22.45.142 on port 1883.
+1579067243: New client connected from 172.22.45.142 as auto-783E2FFB-7188-1EAC-9494-679A72E88840 (p2, c1, k60).
+1579067333: Client auto-783E2FFB-7188-1EAC-9494-679A72E88840 has exceeded timeout, disconnecting.
+1579067384: New connection from 172.22.45.142 on port 1883.
+1579067415: New client connected from 172.22.45.142 as auto-91BDD1A6-05EA-125F-1ED5-172E738C0870 (p2, c1, k60).
+1579067419: Client auto-9FF2F8A8-89B0-1FF7-D908-C7CA4D271429 has exceeded timeout, disconnecting.
+1579067447: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579067468: New connection from 172.22.45.80 on port 1883.
+1579067468: New client connected from 172.22.45.80 as auto-F7618949-697C-4F03-58D4-6A17FB89478E (p2, c1, k60).
+1579067616: New client connected from ::ffff:172.22.45.153 as web_1 (p2, c1, k60).
+1579067616: Socket error on client web_68, disconnecting.
+1579067706: Client auto-91BDD1A6-05EA-125F-1ED5-172E738C0870 has exceeded timeout, disconnecting.
+1579067785: New connection from 172.22.45.142 on port 1883.
+1579067794: New client connected from 172.22.45.142 as auto-95956D10-D8E6-21C1-F8B1-6C15333976AF (p2, c1, k60).
+1579067826: Socket error on client auto-95956D10-D8E6-21C1-F8B1-6C15333976AF, disconnecting.
+1579067857: New connection from 172.22.45.142 on port 1883.
+1579067884: New client connected from 172.22.45.142 as auto-E76E0A9A-71A2-BF40-0C13-DBD366792C86 (p2, c1, k60).
+1579068011: Client auto-E76E0A9A-71A2-BF40-0C13-DBD366792C86 has exceeded timeout, disconnecting.
+1579068093: New connection from 172.22.45.142 on port 1883.
+1579068094: New client connected from 172.22.45.142 as auto-F99AAF7B-3A19-921F-5CE9-3568247E7079 (p2, c1, k60).
+1579068184: Client auto-F99AAF7B-3A19-921F-5CE9-3568247E7079 has exceeded timeout, disconnecting.
+1579068263: New connection from 172.22.45.142 on port 1883.
+1579068297: New client connected from 172.22.45.142 as auto-282B5446-90F8-9624-7322-79AFEF97D531 (p2, c1, k60).
+1579068387: Client auto-282B5446-90F8-9624-7322-79AFEF97D531 has exceeded timeout, disconnecting.
+1579068435: New connection from 172.22.45.142 on port 1883.
+1579068435: New client connected from 172.22.45.142 as auto-C0A6164B-3D8A-DF75-F86A-8E6F75B28B01 (p2, c1, k60).
+1579068795: Client auto-C0A6164B-3D8A-DF75-F86A-8E6F75B28B01 has exceeded timeout, disconnecting.
+1579068870: New connection from 172.22.45.142 on port 1883.
+1579068872: New client connected from 172.22.45.142 as auto-F70ED5AA-7675-27CD-4633-E0A068C99948 (p2, c1, k60).
+1579069069: Client auto-F7618949-697C-4F03-58D4-6A17FB89478E has exceeded timeout, disconnecting.
+1579069102: Client auto-F70ED5AA-7675-27CD-4633-E0A068C99948 has exceeded timeout, disconnecting.
+1579069158: New connection from 172.22.45.142 on port 1883.
+1579069159: New client connected from 172.22.45.142 as auto-4969FBD8-A565-3265-7EEC-1BABF68FE520 (p2, c1, k60).
+1579069167: New connection from 172.22.45.80 on port 1883.
+1579069167: New client connected from 172.22.45.80 as auto-98C1B50D-5379-75A6-E23A-B4FA03701B3A (p2, c1, k60).
+1579069248: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579069332: Client auto-4969FBD8-A565-3265-7EEC-1BABF68FE520 has exceeded timeout, disconnecting.
+1579069400: New connection from 172.22.45.142 on port 1883.
+1579069428: New client connected from 172.22.45.142 as auto-50CE0FDF-0544-42B7-1F05-7835AC11AACC (p2, c1, k60).
+1579069447: Socket error on client web_1, disconnecting.
+1579069448: New client connected from ::ffff:172.22.45.153 as web_0 (p2, c1, k60).
+1579069815: Client auto-50CE0FDF-0544-42B7-1F05-7835AC11AACC has exceeded timeout, disconnecting.
+1579069890: New connection from 172.22.45.142 on port 1883.
+1579069929: New client connected from 172.22.45.142 as auto-476F7E35-B67D-3F92-64A4-7805431A1559 (p2, c1, k60).
+1579069929: Socket error on client auto-476F7E35-B67D-3F92-64A4-7805431A1559, disconnecting.
+1579069963: New connection from 172.22.45.142 on port 1883.
+1579069999: New client connected from 172.22.45.142 as auto-E10E50AD-4802-7534-D5D9-42D0FF0E1ACB (p2, c1, k60).
+1579070089: Client auto-E10E50AD-4802-7534-D5D9-42D0FF0E1ACB has exceeded timeout, disconnecting.
+1579070129: New connection from 172.22.45.142 on port 1883.
+1579070163: New client connected from 172.22.45.142 as auto-6B4A9EE6-6813-FD98-4698-E5C5CE334759 (p2, c1, k60).
+1579070195: Socket error on client auto-6B4A9EE6-6813-FD98-4698-E5C5CE334759, disconnecting.
+1579070230: New connection from 172.22.45.142 on port 1883.
+1579070261: New client connected from 172.22.45.142 as auto-7930A787-0242-7D89-F77C-4EC19F6042F8 (p2, c1, k60).
+1579070417: Client auto-7930A787-0242-7D89-F77C-4EC19F6042F8 has exceeded timeout, disconnecting.
+1579070459: New connection from 172.22.45.142 on port 1883.
+1579070488: New client connected from 172.22.45.142 as auto-CB874AF4-CEB5-A233-EFB0-1C85E1D91E8F (p2, c1, k60).
+1579070713: Client auto-CB874AF4-CEB5-A233-EFB0-1C85E1D91E8F has exceeded timeout, disconnecting.
+1579070757: New connection from 172.22.45.142 on port 1883.
+1579070757: New client connected from 172.22.45.142 as auto-5EBE5AF9-EC25-FF8F-5FB7-93AC3CD2B980 (p2, c1, k60).
+1579070848: Client auto-5EBE5AF9-EC25-FF8F-5FB7-93AC3CD2B980 has exceeded timeout, disconnecting.
+1579070922: New connection from 172.22.45.142 on port 1883.
+1579070923: New client connected from 172.22.45.142 as auto-2B414EF0-B1F0-4A5C-4869-A2491742FF38 (p2, c1, k60).
+1579071049: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579071074: Client auto-98C1B50D-5379-75A6-E23A-B4FA03701B3A has exceeded timeout, disconnecting.
+1579071081: Client auto-2B414EF0-B1F0-4A5C-4869-A2491742FF38 has exceeded timeout, disconnecting.
+1579071098: New connection from 172.22.45.80 on port 1883.
+1579071098: New client connected from 172.22.45.80 as auto-4F5ECB7C-CE85-9911-B606-839B2C9F6A9F (p2, c1, k60).
+1579071128: New connection from 172.22.45.142 on port 1883.
+1579071158: New client connected from 172.22.45.142 as auto-78441931-D91B-3ABC-B65D-C7813A43BF9B (p2, c1, k60).
+1579071325: Client auto-4F5ECB7C-CE85-9911-B606-839B2C9F6A9F has exceeded timeout, disconnecting.
+1579071326: Client auto-78441931-D91B-3ABC-B65D-C7813A43BF9B has exceeded timeout, disconnecting.
+1579071399: New connection from 172.22.45.80 on port 1883.
+1579071404: New connection from 172.22.45.142 on port 1883.
+1579071404: New client connected from 172.22.45.142 as auto-86AE6AB5-8341-205A-EA9F-A8CBE40CC517 (p2, c1, k60).
+1579071407: Socket error on client auto-86AE6AB5-8341-205A-EA9F-A8CBE40CC517, disconnecting.
+1579071433: New client connected from 172.22.45.80 as auto-868FE85A-91D1-40C5-0610-31816B6B4623 (p2, c1, k60).
+1579071433: Socket error on client auto-868FE85A-91D1-40C5-0610-31816B6B4623, disconnecting.
+1579071440: New connection from 172.22.45.142 on port 1883.
+1579071440: New client connected from 172.22.45.142 as auto-52FDD88B-7D86-0EDC-9071-0FF203D2E0D5 (p2, c1, k60).
+1579071454: New connection from 172.22.45.80 on port 1883.
+1579071454: New client connected from 172.22.45.80 as auto-22594C5E-4261-A828-8570-50E9FB1B30DC (p2, c1, k60).
+1579071530: Client auto-52FDD88B-7D86-0EDC-9071-0FF203D2E0D5 has exceeded timeout, disconnecting.
+1579071580: New connection from 172.22.45.142 on port 1883.
+1579071580: New client connected from 172.22.45.142 as auto-6DB2C688-3FB1-5614-228C-75B306C2E965 (p2, c1, k60).
+1579071636: Client auto-22594C5E-4261-A828-8570-50E9FB1B30DC has exceeded timeout, disconnecting.
+1579071671: Client auto-6DB2C688-3FB1-5614-228C-75B306C2E965 has exceeded timeout, disconnecting.
+1579071683: New connection from 172.22.45.80 on port 1883.
+1579071683: New client connected from 172.22.45.80 as auto-5FAF018B-0D8E-CF3D-4C4A-7B9A523099C2 (p2, c1, k60).
+1579071768: New connection from 172.22.45.142 on port 1883.
+1579071775: Client auto-5FAF018B-0D8E-CF3D-4C4A-7B9A523099C2 has exceeded timeout, disconnecting.
+1579071799: New connection from 172.22.45.80 on port 1883.
+1579071799: New client connected from 172.22.45.80 as auto-839BBB86-B43A-9D5B-2A29-6EC00612C34B (p2, c1, k60).
+1579071801: New client connected from 172.22.45.142 as auto-8C9F0691-3B39-14D3-22EB-E342172D3AD1 (p2, c1, k60).
+1579071891: Client auto-8C9F0691-3B39-14D3-22EB-E342172D3AD1 has exceeded timeout, disconnecting.
+1579071939: New connection from 172.22.45.142 on port 1883.
+1579071972: New client connected from 172.22.45.142 as auto-6B8A15EA-2A89-83DA-21DB-644C2DFFCE20 (p2, c1, k60).
+1579072145: Client auto-6B8A15EA-2A89-83DA-21DB-644C2DFFCE20 has exceeded timeout, disconnecting.
+1579072218: New connection from 172.22.45.142 on port 1883.
+1579072220: New client connected from 172.22.45.142 as auto-35B25F9A-44BE-6938-0D3D-05CC3D67CCCE (p2, c1, k60).
+1579072478: Client auto-35B25F9A-44BE-6938-0D3D-05CC3D67CCCE has exceeded timeout, disconnecting.
+1579072521: New connection from 172.22.45.142 on port 1883.
+1579072553: New client connected from 172.22.45.142 as auto-C67ABF52-6293-FE2B-648A-CDA28884928E (p2, c1, k60).
+1579072554: Socket error on client auto-C67ABF52-6293-FE2B-648A-CDA28884928E, disconnecting.
+1579072587: New connection from 172.22.45.142 on port 1883.
+1579072620: New client connected from 172.22.45.142 as auto-8E7EDFF7-CF5E-2A14-C8FC-73CBCBC426B9 (p2, c1, k60).
+1579072668: Client auto-839BBB86-B43A-9D5B-2A29-6EC00612C34B has exceeded timeout, disconnecting.
+1579072696: New connection from 172.22.45.80 on port 1883.
+1579072696: New client connected from 172.22.45.80 as auto-D549AF43-C34A-39DF-D735-C722A71E1CDA (p2, c1, k60).
+1579072790: Client auto-8E7EDFF7-CF5E-2A14-C8FC-73CBCBC426B9 has exceeded timeout, disconnecting.
+1579072834: New connection from 172.22.45.142 on port 1883.
+1579072850: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579072867: New client connected from 172.22.45.142 as auto-FFEB2283-CB2D-6CCA-11EA-412FCD6F6FF3 (p2, c1, k60).
+1579072920: Client auto-D549AF43-C34A-39DF-D735-C722A71E1CDA has exceeded timeout, disconnecting.
+1579072948: New connection from 172.22.45.80 on port 1883.
+1579072948: New client connected from 172.22.45.80 as auto-B0D71B28-CAB8-1A3C-3E28-B9C42D1203CA (p2, c1, k60).
+1579073032: Client auto-FFEB2283-CB2D-6CCA-11EA-412FCD6F6FF3 has exceeded timeout, disconnecting.
+1579073038: Client auto-B0D71B28-CAB8-1A3C-3E28-B9C42D1203CA has exceeded timeout, disconnecting.
+1579073061: New connection from 172.22.45.80 on port 1883.
+1579073061: New client connected from 172.22.45.80 as auto-959292D4-D8DA-ED5B-51F9-D799D4967F91 (p2, c1, k60).
+1579073115: New connection from 172.22.45.142 on port 1883.
+1579073148: New client connected from 172.22.45.142 as auto-899FCA22-AA3C-A04A-BDD6-90031AAC42E1 (p2, c1, k60).
+1579073151: Socket error on client auto-899FCA22-AA3C-A04A-BDD6-90031AAC42E1, disconnecting.
+1579073243: New connection from 172.22.45.142 on port 1883.
+1579073279: New client connected from 172.22.45.142 as auto-F54EE1A9-D913-43E9-66F6-757B59C7C3E1 (p2, c1, k60).
+1579073279: Socket error on client auto-F54EE1A9-D913-43E9-66F6-757B59C7C3E1, disconnecting.
+1579073315: New connection from 172.22.45.142 on port 1883.
+1579073381: New client connected from 172.22.45.142 as auto-589EA2C5-C622-D62D-D5B5-7FF521C7F655 (p2, c1, k60).
+1579073382: Socket error on client auto-589EA2C5-C622-D62D-D5B5-7FF521C7F655, disconnecting.
+1579073450: New connection from 172.22.45.142 on port 1883.
+1579073450: New client connected from 172.22.45.142 as auto-728D527A-2E14-773F-14F7-F058BBBAAF5B (p2, c1, k60).
+1579073540: Client auto-728D527A-2E14-773F-14F7-F058BBBAAF5B has exceeded timeout, disconnecting.
+1579073634: Client auto-959292D4-D8DA-ED5B-51F9-D799D4967F91 has exceeded timeout, disconnecting.
+1579073651: New connection from 172.22.45.142 on port 1883.
+1579073653: New client connected from 172.22.45.142 as auto-83BD09A4-1628-82F5-67EC-9746AD8548FF (p2, c1, k60).
+1579073730: New connection from 172.22.45.80 on port 1883.
+1579073744: Client auto-83BD09A4-1628-82F5-67EC-9746AD8548FF has exceeded timeout, disconnecting.
+1579073761: New client connected from 172.22.45.80 as auto-7F7E8A0F-350D-D37C-E525-568356F29BE6 (p2, c1, k60).
+1579073827: New connection from 172.22.45.142 on port 1883.
+1579073828: New client connected from 172.22.45.142 as auto-D3F05087-1200-9FEE-E0C6-9358A0AD00A1 (p2, c1, k60).
+1579073851: Client auto-7F7E8A0F-350D-D37C-E525-568356F29BE6 has exceeded timeout, disconnecting.
+1579073899: New connection from 172.22.45.80 on port 1883.
+1579073951: Client auto-D3F05087-1200-9FEE-E0C6-9358A0AD00A1 has exceeded timeout, disconnecting.
+1579073961: New client connected from 172.22.45.80 as auto-40A21060-AB34-C03D-330D-6DD15B0EB73C (p2, c1, k60).
+1579073961: Socket error on client auto-40A21060-AB34-C03D-330D-6DD15B0EB73C, disconnecting.
+1579073998: New connection from 172.22.45.142 on port 1883.
+1579074000: New connection from 172.22.45.80 on port 1883.
+1579074029: New client connected from 172.22.45.142 as auto-93196AF5-3FCB-FEB3-C178-C9D94551983F (p2, c1, k60).
+1579074032: New client connected from 172.22.45.80 as auto-DFF2F4B1-8AE2-B460-C42D-45CF576F6259 (p2, c1, k60).
+1579074122: Client auto-DFF2F4B1-8AE2-B460-C42D-45CF576F6259 has exceeded timeout, disconnecting.
+1579074211: New connection from 172.22.45.80 on port 1883.
+1579074227: Client auto-93196AF5-3FCB-FEB3-C178-C9D94551983F has exceeded timeout, disconnecting.
+1579074240: New client connected from ::ffff:172.22.45.153 as web_1 (p2, c1, k60).
+1579074240: Socket error on client web_0, disconnecting.
+1579074246: New client connected from 172.22.45.80 as auto-FCCDD44E-A083-A82F-51AB-877DCB4E4676 (p2, c1, k60).
+1579074247: Socket error on client auto-FCCDD44E-A083-A82F-51AB-877DCB4E4676, disconnecting.
+1579074274: New connection from 172.22.45.142 on port 1883.
+1579074281: New connection from 172.22.45.80 on port 1883.
+1579074306: New client connected from 172.22.45.142 as auto-F23F7784-26A3-33B5-007A-F78A2A5CD6E8 (p2, c1, k60).
+1579074312: New client connected from 172.22.45.80 as auto-D0E32F72-5320-1671-7E28-E13AAF9E98D9 (p2, c1, k60).
+1579074402: Client auto-D0E32F72-5320-1671-7E28-E13AAF9E98D9 has exceeded timeout, disconnecting.
+1579074446: New connection from 172.22.45.80 on port 1883.
+1579074446: New client connected from 172.22.45.80 as auto-EEA18F56-3E73-495B-5E22-07B77A7CB3B4 (p2, c1, k60).
+1579074536: Client auto-EEA18F56-3E73-495B-5E22-07B77A7CB3B4 has exceeded timeout, disconnecting.
+1579074539: Client auto-F23F7784-26A3-33B5-007A-F78A2A5CD6E8 has exceeded timeout, disconnecting.
+1579074585: New connection from 172.22.45.80 on port 1883.
+1579074585: New client connected from 172.22.45.80 as auto-7DFE0970-2A92-E500-95E0-1EAD17043311 (p2, c1, k60).
+1579074635: New connection from 172.22.45.142 on port 1883.
+1579074637: New client connected from 172.22.45.142 as auto-A2586F19-3480-D3B4-E560-B2555233561D (p2, c1, k60).
+1579074651: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579074676: Client auto-7DFE0970-2A92-E500-95E0-1EAD17043311 has exceeded timeout, disconnecting.
+1579074751: Socket error on client web_1, disconnecting.
+1579074756: New client connected from ::ffff:172.22.45.153 as web_98 (p2, c1, k60).
+1579074779: New connection from 172.22.45.80 on port 1883.
+1579074798: Client auto-A2586F19-3480-D3B4-E560-B2555233561D has exceeded timeout, disconnecting.
+1579074842: New client connected from 172.22.45.80 as auto-FFD458C7-B071-FE6B-BFDD-725E6D666E87 (p2, c1, k60).
+1579074844: Socket error on client auto-FFD458C7-B071-FE6B-BFDD-725E6D666E87, disconnecting.
+1579074848: New connection from 172.22.45.142 on port 1883.
+1579074848: New client connected from 172.22.45.142 as auto-2A08E097-899A-D5EE-0F5C-2DD2FF45A9A1 (p2, c1, k60).
+1579074910: New connection from 172.22.45.80 on port 1883.
+1579074911: New client connected from 172.22.45.80 as auto-88239ACA-FC13-6BD2-2478-041951274275 (p2, c1, k60).
+1579074938: Client auto-2A08E097-899A-D5EE-0F5C-2DD2FF45A9A1 has exceeded timeout, disconnecting.
+1579075023: New connection from 172.22.45.142 on port 1883.
+1579075024: New client connected from 172.22.45.142 as auto-989CB2F2-8DB5-945E-1DF4-07A9A17E31DC (p2, c1, k60).
+1579075036: Client auto-88239ACA-FC13-6BD2-2478-041951274275 has exceeded timeout, disconnecting.
+1579075089: New connection from 172.22.45.80 on port 1883.
+1579075120: New client connected from 172.22.45.80 as auto-01B1DCF4-3DA5-F739-4AA7-D168E277373D (p2, c1, k60).
+1579075120: Socket error on client auto-01B1DCF4-3DA5-F739-4AA7-D168E277373D, disconnecting.
+1579075155: New connection from 172.22.45.80 on port 1883.
+1579075188: Client auto-989CB2F2-8DB5-945E-1DF4-07A9A17E31DC has exceeded timeout, disconnecting.
+1579075221: New client connected from 172.22.45.80 as auto-6B1D993A-A199-CECB-7AD8-FE0B2880E50D (p2, c1, k60).
+1579075221: Socket error on client auto-6B1D993A-A199-CECB-7AD8-FE0B2880E50D, disconnecting.
+1579075238: New connection from 172.22.45.142 on port 1883.
+1579075269: New client connected from 172.22.45.142 as auto-45BBC25C-2F16-2EC8-4CC9-026F9F94F426 (p2, c1, k60).
+1579075285: New connection from 172.22.45.80 on port 1883.
+1579075287: New client connected from 172.22.45.80 as auto-B99DF8AA-4889-F2D3-0495-8FE57C44E486 (p2, c1, k60).
+1579075437: Client auto-45BBC25C-2F16-2EC8-4CC9-026F9F94F426 has exceeded timeout, disconnecting.
+1579075447: Socket error on client web_98, disconnecting.
+1579075447: New client connected from ::ffff:172.22.45.153 as web_74 (p2, c1, k60).
+1579075453: Client auto-B99DF8AA-4889-F2D3-0495-8FE57C44E486 has exceeded timeout, disconnecting.
+1579075486: New connection from 172.22.45.142 on port 1883.
+1579075529: New connection from 172.22.45.80 on port 1883.
+1579075529: New client connected from 172.22.45.80 as auto-4A29142F-B690-617E-3387-F0C939F9FFD0 (p2, c1, k60).
+1579075577: Client <unknown> has exceeded timeout, disconnecting.
+1579075619: Client auto-4A29142F-B690-617E-3387-F0C939F9FFD0 has exceeded timeout, disconnecting.
+1579075621: New connection from 172.22.45.142 on port 1883.
+1579075653: New client connected from 172.22.45.142 as auto-EE0A3C07-EA9C-5335-555F-AC04A0EDC6FD (p2, c1, k60).
+1579075669: New connection from 172.22.45.80 on port 1883.
+1579075702: New client connected from 172.22.45.80 as auto-2EBD0E09-CFDA-D6D2-0442-874F7EF9F217 (p2, c1, k60).
+1579075820: Client auto-EE0A3C07-EA9C-5335-555F-AC04A0EDC6FD has exceeded timeout, disconnecting.
+1579075865: New connection from 172.22.45.142 on port 1883.
+1579075873: Client auto-2EBD0E09-CFDA-D6D2-0442-874F7EF9F217 has exceeded timeout, disconnecting.
+1579075896: New client connected from 172.22.45.142 as auto-C881A519-6D24-5886-CDD3-018A03049EC8 (p2, c1, k60).
+1579075896: Socket error on client auto-C881A519-6D24-5886-CDD3-018A03049EC8, disconnecting.
+1579075904: New connection from 172.22.45.80 on port 1883.
+1579075904: New client connected from 172.22.45.80 as auto-5F2C9BB8-80C1-E735-4F09-D10E4C71D07C (p2, c1, k60).
+1579075960: New connection from 172.22.45.142 on port 1883.
+1579075962: New client connected from 172.22.45.142 as auto-FB72D4D5-B222-DB9B-700E-8BC48C1CF3F5 (p2, c1, k60).
+1579076217: New client connected from ::ffff:172.22.45.153 as web_47 (p2, c1, k60).
+1579076217: Socket error on client web_74, disconnecting.
+1579076241: Client auto-5F2C9BB8-80C1-E735-4F09-D10E4C71D07C has exceeded timeout, disconnecting.
+1579076260: Client auto-FB72D4D5-B222-DB9B-700E-8BC48C1CF3F5 has exceeded timeout, disconnecting.
+1579076271: New connection from 172.22.45.80 on port 1883.
+1579076271: New client connected from 172.22.45.80 as auto-AF660DD4-AE85-CDB7-E521-3A2352B52F79 (p2, c1, k60).
+1579076354: New connection from 172.22.45.142 on port 1883.
+1579076384: New client connected from 172.22.45.142 as auto-C458B0C6-7185-7245-34EA-E7EF6E7F22A4 (p2, c1, k60).
+1579076384: Socket error on client auto-C458B0C6-7185-7245-34EA-E7EF6E7F22A4, disconnecting.
+1579076451: New connection from 172.22.45.142 on port 1883.
+1579076452: New client connected from 172.22.45.142 as auto-F95A9ABB-3998-3BEE-E73E-6908F4DE1B6F (p2, c1, k60).
+1579076452: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579076751: Client auto-F95A9ABB-3998-3BEE-E73E-6908F4DE1B6F has exceeded timeout, disconnecting.
+1579076789: New connection from 172.22.45.142 on port 1883.
+1579076827: New client connected from 172.22.45.142 as auto-A22397D2-48D6-0E3F-9916-6EF2BC9FBE4C (p2, c1, k60).
+1579076931: New client connected from ::ffff:172.22.45.153 as web_97 (p2, c1, k60).
+1579076931: Socket error on client web_47, disconnecting.
+1579076986: Client auto-A22397D2-48D6-0E3F-9916-6EF2BC9FBE4C has exceeded timeout, disconnecting.
+1579077035: New connection from 172.22.45.142 on port 1883.
+1579077069: New client connected from 172.22.45.142 as auto-4FFE5817-88C5-6B06-D027-83DEDB287F2B (p2, c1, k60).
+1579077159: Client auto-4FFE5817-88C5-6B06-D027-83DEDB287F2B has exceeded timeout, disconnecting.
+1579077227: New connection from 172.22.45.142 on port 1883.
+1579077228: New client connected from 172.22.45.142 as auto-570148B5-F30B-FEA1-6336-F65D3A0BB93B (p2, c1, k60).
+1579077232: Client auto-AF660DD4-AE85-CDB7-E521-3A2352B52F79 has exceeded timeout, disconnecting.
+1579077260: New connection from 172.22.45.80 on port 1883.
+1579077261: New client connected from 172.22.45.80 as auto-E85B42A8-726E-809A-9109-BFECE41CFD2F (p2, c1, k60).
+1579077318: Client auto-570148B5-F30B-FEA1-6336-F65D3A0BB93B has exceeded timeout, disconnecting.
+1579077373: New connection from 172.22.45.142 on port 1883.
+1579077404: New client connected from 172.22.45.142 as auto-2E11FC89-68E3-1769-7AAC-3871830E4BC2 (p2, c1, k60).
+1579077416: Client auto-E85B42A8-726E-809A-9109-BFECE41CFD2F has exceeded timeout, disconnecting.
+1579077442: New connection from 172.22.45.80 on port 1883.
+1579077442: New client connected from 172.22.45.80 as auto-BF44696C-23C2-1092-D63D-D827A8AD3C97 (p2, c1, k60).
+1579077527: Client auto-2E11FC89-68E3-1769-7AAC-3871830E4BC2 has exceeded timeout, disconnecting.
+1579077586: New connection from 172.22.45.142 on port 1883.
+1579077648: New client connected from 172.22.45.142 as auto-EBDF9CD7-1683-C38D-41CD-D2B7E7E4F942 (p2, c1, k60).
+1579077650: Socket error on client auto-EBDF9CD7-1683-C38D-41CD-D2B7E7E4F942, disconnecting.
+1579077681: New connection from 172.22.45.142 on port 1883.
+1579077681: New client connected from 172.22.45.142 as auto-EACBC666-9881-E783-46B3-F01B5DF6826F (p2, c1, k60).
+1579077772: Client auto-EACBC666-9881-E783-46B3-F01B5DF6826F has exceeded timeout, disconnecting.
+1579077814: New connection from 172.22.45.142 on port 1883.
+1579077877: New client connected from 172.22.45.142 as auto-666CBCFE-8F81-8A78-C1EE-36A7B245ACF1 (p2, c1, k60).
+1579077879: Socket error on client auto-666CBCFE-8F81-8A78-C1EE-36A7B245ACF1, disconnecting.
+1579077943: New connection from 172.22.45.142 on port 1883.
+1579077945: New client connected from 172.22.45.142 as auto-C8A630C0-3944-EE51-77D4-19C27AE5425F (p2, c1, k60).
+1579077955: Client auto-BF44696C-23C2-1092-D63D-D827A8AD3C97 has exceeded timeout, disconnecting.
+1579078000: New connection from 172.22.45.80 on port 1883.
+1579078035: Client auto-C8A630C0-3944-EE51-77D4-19C27AE5425F has exceeded timeout, disconnecting.
+1579078040: New client connected from 172.22.45.80 as auto-A5DFFFC8-1C88-8052-102C-B13B9D47B0D3 (p2, c1, k60).
+1579078075: Socket error on client auto-A5DFFFC8-1C88-8052-102C-B13B9D47B0D3, disconnecting.
+1579078177: New connection from 172.22.45.80 on port 1883.
+1579078195: New connection from 172.22.45.142 on port 1883.
+1579078213: New client connected from 172.22.45.80 as auto-60E68B40-F301-CCDB-8FB9-D7A432CE8B8A (p2, c1, k60).
+1579078213: Socket error on client auto-60E68B40-F301-CCDB-8FB9-D7A432CE8B8A, disconnecting.
+1579078229: New client connected from 172.22.45.142 as auto-A66CE031-BDFA-E1C9-9D53-1D89F4E3075A (p2, c1, k60).
+1579078252: New connection from 172.22.45.80 on port 1883.
+1579078253: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579078262: Socket error on client auto-A66CE031-BDFA-E1C9-9D53-1D89F4E3075A, disconnecting.
+1579078293: New client connected from 172.22.45.80 as auto-8A6F8A1D-B1C2-1999-25BE-E130772776E5 (p2, c1, k60).
+1579078296: New connection from 172.22.45.142 on port 1883.
+1579078296: New client connected from 172.22.45.142 as auto-BD983114-5439-721D-2344-404E7C67750C (p2, c1, k60).
+1579078326: Socket error on client auto-8A6F8A1D-B1C2-1999-25BE-E130772776E5, disconnecting.
+1579078361: New connection from 172.22.45.80 on port 1883.
+1579078361: New client connected from 172.22.45.80 as auto-B63211B3-B74B-167C-AA22-FBB77DD1C0E2 (p2, c1, k60).
+1579078524: Client auto-B63211B3-B74B-167C-AA22-FBB77DD1C0E2 has exceeded timeout, disconnecting.
+1579078529: Client auto-BD983114-5439-721D-2344-404E7C67750C has exceeded timeout, disconnecting.
+1579078573: New connection from 172.22.45.142 on port 1883.
+1579078574: New connection from 172.22.45.80 on port 1883.
+1579078605: New client connected from 172.22.45.80 as auto-27688C82-5B6D-B784-DBD2-6C9790E29AD9 (p2, c1, k60).
+1579078606: New client connected from 172.22.45.142 as auto-8FE1763F-0E81-D250-D094-0B9FC61F148F (p2, c1, k60).
+1579078696: Client auto-8FE1763F-0E81-D250-D094-0B9FC61F148F has exceeded timeout, disconnecting.
+1579078696: Client auto-27688C82-5B6D-B784-DBD2-6C9790E29AD9 has exceeded timeout, disconnecting.
+1579078777: New connection from 172.22.45.142 on port 1883.
+1579078778: New connection from 172.22.45.80 on port 1883.
+1579078780: New client connected from 172.22.45.80 as auto-851ED51F-208D-ADA2-772E-CC4638657EEA (p2, c1, k60).
+1579078810: New client connected from 172.22.45.142 as auto-7D0A2CAA-C006-B0D0-26ED-B65A7C940783 (p2, c1, k60).
+1579078810: Socket error on client auto-7D0A2CAA-C006-B0D0-26ED-B65A7C940783, disconnecting.
+1579078848: New connection from 172.22.45.142 on port 1883.
+1579078870: Client auto-851ED51F-208D-ADA2-772E-CC4638657EEA has exceeded timeout, disconnecting.
+1579078880: New client connected from 172.22.45.142 as auto-35210EF7-FED1-22D1-9D40-6DEC27F25907 (p2, c1, k60).
+1579078920: New connection from 172.22.45.80 on port 1883.
+1579078970: Client auto-35210EF7-FED1-22D1-9D40-6DEC27F25907 has exceeded timeout, disconnecting.
+1579078984: New client connected from 172.22.45.80 as auto-F972BDC3-DECE-8568-3155-E745FDB361A8 (p2, c1, k60).
+1579078987: Socket error on client auto-F972BDC3-DECE-8568-3155-E745FDB361A8, disconnecting.
+1579079046: New connection from 172.22.45.142 on port 1883.
+1579079047: New client connected from 172.22.45.142 as auto-F66B4ADD-6531-753D-C7A8-68A284541F1C (p2, c1, k60).
+1579079114: New connection from 172.22.45.80 on port 1883.
+1579079205: Client <unknown> has exceeded timeout, disconnecting.
+1579079219: Client auto-F66B4ADD-6531-753D-C7A8-68A284541F1C has exceeded timeout, disconnecting.
+1579079284: New connection from 172.22.45.80 on port 1883.
+1579079284: New client connected from 172.22.45.80 as auto-BADB1F89-B221-095C-0D0B-BBB9828C8E4F (p2, c1, k60).
+1579079291: New connection from 172.22.45.142 on port 1883.
+1579079291: New client connected from 172.22.45.142 as auto-18F16585-E45F-ED2F-6DF4-65AAC947DD18 (p2, c1, k60).
+1579079383: Client auto-18F16585-E45F-ED2F-6DF4-65AAC947DD18 has exceeded timeout, disconnecting.
+1579079455: New connection from 172.22.45.142 on port 1883.
+1579079456: New client connected from 172.22.45.142 as auto-3A397BFC-B141-2D1E-4D47-C0DF74CF10E6 (p2, c1, k60).
+1579079580: Client auto-BADB1F89-B221-095C-0D0B-BBB9828C8E4F has exceeded timeout, disconnecting.
+1579079609: New connection from 172.22.45.80 on port 1883.
+1579079631: New client connected from 172.22.45.80 as auto-7A93D47F-0B32-5605-98D8-DB630E3AEAE2 (p2, c1, k60).
+1579079700: Client auto-3A397BFC-B141-2D1E-4D47-C0DF74CF10E6 has exceeded timeout, disconnecting.
+1579079739: New connection from 172.22.45.142 on port 1883.
+1579079740: New client connected from 172.22.45.142 as auto-C066FD0F-4794-CE98-6035-2E7F7A2E3007 (p2, c1, k60).
+1579079830: Client auto-C066FD0F-4794-CE98-6035-2E7F7A2E3007 has exceeded timeout, disconnecting.
+1579079876: New connection from 172.22.45.142 on port 1883.
+1579079876: New client connected from 172.22.45.142 as auto-ADFC15B8-4684-C700-F30D-02FDF2D5CF12 (p2, c1, k60).
+1579079992: Client auto-ADFC15B8-4684-C700-F30D-02FDF2D5CF12 has exceeded timeout, disconnecting.
+1579080033: New connection from 172.22.45.142 on port 1883.
+1579080054: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579080058: New client connected from 172.22.45.142 as auto-EDA6FF6B-19DC-3A03-2214-8BAEFA95F187 (p2, c1, k60).
+1579080175: Client auto-EDA6FF6B-19DC-3A03-2214-8BAEFA95F187 has exceeded timeout, disconnecting.
+1579080229: Client auto-7A93D47F-0B32-5605-98D8-DB630E3AEAE2 has exceeded timeout, disconnecting.
+1579080284: New connection from 172.22.45.80 on port 1883.
+1579080284: New client connected from 172.22.45.80 as auto-CE312AF4-AED8-7459-0F4C-48BEE1CD960E (p2, c1, k60).
+1579080300: New connection from 172.22.45.142 on port 1883.
+1579080300: New client connected from 172.22.45.142 as auto-41C4DF31-7F77-E687-AF0E-2FA8F20B4F8E (p2, c1, k60).
+1579080374: Client auto-CE312AF4-AED8-7459-0F4C-48BEE1CD960E has exceeded timeout, disconnecting.
+1579080408: Client auto-41C4DF31-7F77-E687-AF0E-2FA8F20B4F8E has exceeded timeout, disconnecting.
+1579080493: New connection from 172.22.45.80 on port 1883.
+1579080515: New connection from 172.22.45.142 on port 1883.
+1579080549: New client connected from 172.22.45.142 as auto-C7030508-BFD7-21B7-2A2C-BFD8B5473D2B (p2, c1, k60).
+1579080583: Client <unknown> has exceeded timeout, disconnecting.
+1579080640: Client auto-C7030508-BFD7-21B7-2A2C-BFD8B5473D2B has exceeded timeout, disconnecting.
+1579080721: New connection from 172.22.45.80 on port 1883.
+1579080723: New client connected from 172.22.45.80 as auto-3AB7EB69-031F-63EA-94DB-BF2B4E283794 (p2, c1, k60).
+1579080738: New connection from 172.22.45.142 on port 1883.
+1579080741: New client connected from 172.22.45.142 as auto-AB375E87-98A9-5ABF-3975-4DE37465B564 (p2, c1, k60).
+1579080813: Client auto-3AB7EB69-031F-63EA-94DB-BF2B4E283794 has exceeded timeout, disconnecting.
+1579080906: New connection from 172.22.45.80 on port 1883.
+1579080939: New client connected from 172.22.45.80 as auto-6ADF104E-797C-4057-1C38-A96930F967CB (p2, c1, k60).
+1579081012: Client auto-AB375E87-98A9-5ABF-3975-4DE37465B564 has exceeded timeout, disconnecting.
+1579081029: Client auto-6ADF104E-797C-4057-1C38-A96930F967CB has exceeded timeout, disconnecting.
+1579081081: New connection from 172.22.45.80 on port 1883.
+1579081101: New connection from 172.22.45.142 on port 1883.
+1579081101: New client connected from 172.22.45.142 as auto-473A6C58-DB04-4BD9-BCB3-32811891E7AE (p2, c1, k60).
+1579081101: Socket error on client auto-473A6C58-DB04-4BD9-BCB3-32811891E7AE, disconnecting.
+1579081117: New client connected from 172.22.45.80 as auto-D5F77A4D-8F93-701B-A43B-57041E472EDE (p2, c1, k60).
+1579081145: New connection from 172.22.45.142 on port 1883.
+1579081153: Socket error on client auto-D5F77A4D-8F93-701B-A43B-57041E472EDE, disconnecting.
+1579081177: New client connected from 172.22.45.142 as auto-79B5E449-B0EC-49B6-7CC4-70E766ED6356 (p2, c1, k60).
+1579081190: New connection from 172.22.45.80 on port 1883.
+1579081221: New client connected from 172.22.45.80 as auto-E3F2C70D-E99C-995F-5486-40189286D8C8 (p2, c1, k60).
+1579081253: Socket error on client auto-E3F2C70D-E99C-995F-5486-40189286D8C8, disconnecting.
+1579081321: New connection from 172.22.45.80 on port 1883.
+1579081356: New client connected from 172.22.45.80 as auto-44D1D9D8-5873-9B74-11ED-510BB5246366 (p2, c1, k60).
+1579081358: Socket error on client auto-44D1D9D8-5873-9B74-11ED-510BB5246366, disconnecting.
+1579081421: New connection from 172.22.45.80 on port 1883.
+1579081444: Client auto-79B5E449-B0EC-49B6-7CC4-70E766ED6356 has exceeded timeout, disconnecting.
+1579081457: New client connected from 172.22.45.80 as auto-4FDBDBAC-E780-A7BD-72C0-D7220613175B (p2, c1, k60).
+1579081457: Socket error on client auto-4FDBDBAC-E780-A7BD-72C0-D7220613175B, disconnecting.
+1579081469: New connection from 172.22.45.142 on port 1883.
+1579081469: New client connected from 172.22.45.142 as auto-BBC88220-921F-7B70-84FA-19666EF03A62 (p2, c1, k60).
+1579081524: New connection from 172.22.45.80 on port 1883.
+1579081528: New client connected from 172.22.45.80 as auto-CD079A1F-27C0-CC72-5143-582D7DB107C2 (p2, c1, k60).
+1579081559: Client auto-BBC88220-921F-7B70-84FA-19666EF03A62 has exceeded timeout, disconnecting.
+1579081560: Socket error on client auto-CD079A1F-27C0-CC72-5143-582D7DB107C2, disconnecting.
+1579081593: New connection from 172.22.45.80 on port 1883.
+1579081606: New connection from 172.22.45.142 on port 1883.
+1579081607: New client connected from 172.22.45.142 as auto-F74E057D-95E0-C23E-3FD8-7BB7A7F38E41 (p2, c1, k60).
+1579081625: New client connected from 172.22.45.80 as auto-013BED8B-6657-CDDB-4AA6-6982506CB5E3 (p2, c1, k60).
+1579081697: Client auto-F74E057D-95E0-C23E-3FD8-7BB7A7F38E41 has exceeded timeout, disconnecting.
+1579081716: Client auto-013BED8B-6657-CDDB-4AA6-6982506CB5E3 has exceeded timeout, disconnecting.
+1579081747: New connection from 172.22.45.142 on port 1883.
+1579081759: New connection from 172.22.45.80 on port 1883.
+1579081759: New client connected from 172.22.45.80 as auto-92557B4F-CCF1-4779-DB3C-DAB79C1EF5D3 (p2, c1, k60).
+1579081777: New client connected from 172.22.45.142 as auto-566886D6-A34E-9C11-0240-C96A57866D77 (p2, c1, k60).
+1579081855: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579081867: Client auto-566886D6-A34E-9C11-0240-C96A57866D77 has exceeded timeout, disconnecting.
+1579081923: Client auto-92557B4F-CCF1-4779-DB3C-DAB79C1EF5D3 has exceeded timeout, disconnecting.
+1579081925: New connection from 172.22.45.142 on port 1883.
+1579081957: New client connected from 172.22.45.142 as auto-C9E23CD0-5310-AAD8-B201-D0CECDB1C031 (p2, c1, k60).
+1579081957: Socket error on client auto-C9E23CD0-5310-AAD8-B201-D0CECDB1C031, disconnecting.
+1579081994: New connection from 172.22.45.80 on port 1883.
+1579082024: New connection from 172.22.45.142 on port 1883.
+1579082025: New client connected from 172.22.45.142 as auto-8B8DEB03-FF97-4534-298F-1B8417EA0259 (p2, c1, k60).
+1579082061: New client connected from 172.22.45.80 as auto-98A0212F-1B04-84DC-4D8A-6B90C603BD14 (p2, c1, k60).
+1579082061: Socket error on client auto-98A0212F-1B04-84DC-4D8A-6B90C603BD14, disconnecting.
+1579082115: Client auto-8B8DEB03-FF97-4534-298F-1B8417EA0259 has exceeded timeout, disconnecting.
+1579082129: New connection from 172.22.45.80 on port 1883.
+1579082132: New client connected from 172.22.45.80 as auto-9F343145-979F-B9B3-6827-EFD356FABD37 (p2, c1, k60).
+1579082202: New connection from 172.22.45.142 on port 1883.
+1579082222: Client auto-9F343145-979F-B9B3-6827-EFD356FABD37 has exceeded timeout, disconnecting.
+1579082242: New client connected from 172.22.45.142 as auto-2E22CC2E-B16E-2A05-0B17-DF336F46D0F2 (p2, c1, k60).
+1579082277: Socket error on client auto-2E22CC2E-B16E-2A05-0B17-DF336F46D0F2, disconnecting.
+1579082277: New connection from 172.22.45.80 on port 1883.
+1579082307: New client connected from 172.22.45.80 as auto-44B1211C-63C9-7CED-703E-65373BDCA490 (p2, c1, k60).
+1579082313: New connection from 172.22.45.142 on port 1883.
+1579082347: New client connected from 172.22.45.142 as auto-1C47439E-8C86-D758-DCDB-FA06C8CDB86C (p2, c1, k60).
+1579082378: Socket error on client auto-1C47439E-8C86-D758-DCDB-FA06C8CDB86C, disconnecting.
+1579082398: Client auto-44B1211C-63C9-7CED-703E-65373BDCA490 has exceeded timeout, disconnecting.
+1579082448: New connection from 172.22.45.142 on port 1883.
+1579082449: New client connected from 172.22.45.142 as auto-C38F9647-67E6-0D5E-425F-D2C6FED5A547 (p2, c1, k60).
+1579082476: New connection from 172.22.45.80 on port 1883.
+1579082476: New client connected from 172.22.45.80 as auto-E6100B01-C099-6CFE-09BA-056E819C1300 (p2, c1, k60).
+1579082539: Client auto-C38F9647-67E6-0D5E-425F-D2C6FED5A547 has exceeded timeout, disconnecting.
+1579082600: New connection from 172.22.45.142 on port 1883.
+1579082636: New client connected from 172.22.45.142 as auto-B19A285A-1464-4EF2-BE09-10C80BAE3FBE (p2, c1, k60).
+1579082667: Socket error on client auto-B19A285A-1464-4EF2-BE09-10C80BAE3FBE, disconnecting.
+1579082707: New connection from 172.22.45.142 on port 1883.
+1579082707: New client connected from 172.22.45.142 as auto-4FCAFC74-1B43-96BB-3CEF-1D9DECC7F62F (p2, c1, k60).
+1579082708: Client auto-E6100B01-C099-6CFE-09BA-056E819C1300 has exceeded timeout, disconnecting.
+1579082759: New connection from 172.22.45.80 on port 1883.
+1579082759: New client connected from ::ffff:172.22.45.153 as web_61 (p2, c1, k60).
+1579082759: Socket error on client web_97, disconnecting.
+1579082759: New client connected from 172.22.45.80 as auto-39481AF9-8990-1E02-2D8B-865C036BA2B9 (p2, c1, k60).
+1579082873: Client auto-4FCAFC74-1B43-96BB-3CEF-1D9DECC7F62F has exceeded timeout, disconnecting.
+1579082922: New connection from 172.22.45.142 on port 1883.
+1579082955: New client connected from 172.22.45.142 as auto-8B62723F-27B2-0658-C2B0-F73778EFD86D (p2, c1, k60).
+1579083046: Client auto-8B62723F-27B2-0658-C2B0-F73778EFD86D has exceeded timeout, disconnecting.
+1579083107: New connection from 172.22.45.142 on port 1883.
+1579083136: Client auto-39481AF9-8990-1E02-2D8B-865C036BA2B9 has exceeded timeout, disconnecting.
+1579083137: New client connected from 172.22.45.142 as auto-FE5C37A6-88C8-DFD2-40BD-6F074BEC9829 (p2, c1, k60).
+1579083164: New connection from 172.22.45.80 on port 1883.
+1579083164: New client connected from 172.22.45.80 as auto-B476A6C8-66FB-59C1-7251-6D3985ABF429 (p2, c1, k60).
+1579083169: Socket error on client auto-FE5C37A6-88C8-DFD2-40BD-6F074BEC9829, disconnecting.
+1579083237: New connection from 172.22.45.142 on port 1883.
+1579083271: New client connected from 172.22.45.142 as auto-B52552F1-9E6F-392E-61BA-381F0DDCF9B4 (p2, c1, k60).
+1579083271: Socket error on client auto-B52552F1-9E6F-392E-61BA-381F0DDCF9B4, disconnecting.
+1579083279: Client auto-B476A6C8-66FB-59C1-7251-6D3985ABF429 has exceeded timeout, disconnecting.
+1579083307: New connection from 172.22.45.142 on port 1883.
+1579083307: New client connected from 172.22.45.142 as auto-CAACD712-4A95-90D1-A6C3-FBAB68C6D8F6 (p2, c1, k60).
+1579083308: New connection from 172.22.45.80 on port 1883.
+1579083333: New client connected from 172.22.45.80 as auto-A8B0B924-C56F-1E9F-BF1B-7F081A244E19 (p2, c1, k60).
+1579083397: Client auto-CAACD712-4A95-90D1-A6C3-FBAB68C6D8F6 has exceeded timeout, disconnecting.
+1579083424: Client auto-A8B0B924-C56F-1E9F-BF1B-7F081A244E19 has exceeded timeout, disconnecting.
+1579083503: New connection from 172.22.45.142 on port 1883.
+1579083520: New connection from 172.22.45.80 on port 1883.
+1579083537: New client connected from 172.22.45.142 as auto-F3BDFE6E-B4BD-8A67-90E7-E40C50E1D71B (p2, c1, k60).
+1579083551: New client connected from 172.22.45.80 as auto-0CBDA316-D4F8-A6B4-AAE3-13FDDD938DAA (p2, c1, k60).
+1579083551: Socket error on client auto-0CBDA316-D4F8-A6B4-AAE3-13FDDD938DAA, disconnecting.
+1579083615: New connection from 172.22.45.80 on port 1883.
+1579083653: New client connected from 172.22.45.80 as auto-73C49369-58F5-BD9E-6D2C-B745652DD6C4 (p2, c1, k60).
+1579083656: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579083699: Socket error on client auto-73C49369-58F5-BD9E-6D2C-B745652DD6C4, disconnecting.
+1579083774: New connection from 172.22.45.80 on port 1883.
+1579083807: New client connected from 172.22.45.80 as auto-6F39A4C6-FCA0-219B-B7BA-F9C22B9995A8 (p2, c1, k60).
+1579083807: Socket error on client auto-6F39A4C6-FCA0-219B-B7BA-F9C22B9995A8, disconnecting.
+1579083840: Client auto-F3BDFE6E-B4BD-8A67-90E7-E40C50E1D71B has exceeded timeout, disconnecting.
+1579083846: New connection from 172.22.45.80 on port 1883.
+1579083893: New connection from 172.22.45.142 on port 1883.
+1579083914: New client connected from 172.22.45.80 as auto-C55B4D88-36E3-9C91-D09C-FBB4D370A99A (p2, c1, k60).
+1579083923: New client connected from 172.22.45.142 as auto-6A0A51C4-4B6A-11C1-6B87-FFFE7667BBC4 (p2, c1, k60).
+1579083952: Socket error on client auto-C55B4D88-36E3-9C91-D09C-FBB4D370A99A, disconnecting.
+1579084019: New connection from 172.22.45.80 on port 1883.
+1579084020: New client connected from 172.22.45.80 as auto-8D1836A1-0593-96A7-5051-BF5001D55D14 (p2, c1, k60).
+1579084086: Client auto-6A0A51C4-4B6A-11C1-6B87-FFFE7667BBC4 has exceeded timeout, disconnecting.
+1579084110: Client auto-8D1836A1-0593-96A7-5051-BF5001D55D14 has exceeded timeout, disconnecting.
+1579084138: New connection from 172.22.45.142 on port 1883.
+1579084138: New client connected from 172.22.45.142 as auto-DC12AD52-F40E-21F1-3FB5-75F3F3236CEA (p2, c1, k60).
+1579084173: New connection from 172.22.45.80 on port 1883.
+1579084228: Client auto-DC12AD52-F40E-21F1-3FB5-75F3F3236CEA has exceeded timeout, disconnecting.
+1579084242: New client connected from 172.22.45.80 as auto-68608710-836C-6D01-55A9-A2BFCD2AAC4D (p2, c1, k60).
+1579084278: Socket error on client auto-68608710-836C-6D01-55A9-A2BFCD2AAC4D, disconnecting.
+1579084328: New connection from 172.22.45.142 on port 1883.
+1579084346: New connection from 172.22.45.80 on port 1883.
+1579084370: New client connected from 172.22.45.142 as auto-D2AB99A3-BBA3-4828-39A7-4C972935AEA8 (p2, c1, k60).
+1579084370: Socket error on client auto-D2AB99A3-BBA3-4828-39A7-4C972935AEA8, disconnecting.
+1579084380: New client connected from 172.22.45.80 as auto-CF10CAE8-0A21-C337-0DFE-FB86776D3B55 (p2, c1, k60).
+1579084380: Socket error on client auto-CF10CAE8-0A21-C337-0DFE-FB86776D3B55, disconnecting.
+1579084442: New connection from 172.22.45.142 on port 1883.
+1579084472: New client connected from 172.22.45.142 as auto-3123F661-9FEC-BC13-EB38-D0A1F542B4CA (p2, c1, k60).
+1579084491: New connection from 172.22.45.80 on port 1883.
+1579084492: New client connected from 172.22.45.80 as auto-3BDA5780-77CA-42C8-9472-B40746F13ACB (p2, c1, k60).
+1579084562: Client auto-3123F661-9FEC-BC13-EB38-D0A1F542B4CA has exceeded timeout, disconnecting.
+1579084582: Client auto-3BDA5780-77CA-42C8-9472-B40746F13ACB has exceeded timeout, disconnecting.
+1579084687: New connection from 172.22.45.142 on port 1883.
+1579084689: New client connected from 172.22.45.142 as auto-C5C55FD7-9114-9910-8737-C792A0073272 (p2, c1, k60).
+1579084724: New connection from 172.22.45.80 on port 1883.
+1579084795: New client connected from 172.22.45.80 as auto-E4D99A1B-D3B8-14D7-DFA9-41FA76CF46AC (p2, c1, k60).
+1579084833: Socket error on client auto-E4D99A1B-D3B8-14D7-DFA9-41FA76CF46AC, disconnecting.
+1579084852: Client auto-C5C55FD7-9114-9910-8737-C792A0073272 has exceeded timeout, disconnecting.
+1579084871: New connection from 172.22.45.80 on port 1883.
+1579084900: New connection from 172.22.45.142 on port 1883.
+1579084935: New client connected from 172.22.45.142 as auto-8E3668AE-2A97-70D6-5263-A64007816303 (p2, c1, k60).
+1579084935: Socket error on client auto-8E3668AE-2A97-70D6-5263-A64007816303, disconnecting.
+1579084939: New client connected from 172.22.45.80 as auto-6F381B9C-183C-5D20-3567-8E867F839878 (p2, c1, k60).
+1579084943: Socket error on client auto-6F381B9C-183C-5D20-3567-8E867F839878, disconnecting.
+1579085003: New connection from 172.22.45.142 on port 1883.
+1579085008: New connection from 172.22.45.80 on port 1883.
+1579085042: New client connected from 172.22.45.142 as auto-A0B283DB-327E-0B8F-32D7-CC560C41A806 (p2, c1, k60).
+1579085042: Socket error on client auto-A0B283DB-327E-0B8F-32D7-CC560C41A806, disconnecting.
+1579085074: New client connected from 172.22.45.80 as auto-38C9AB9B-6F12-20EF-FF4C-1C565E01650B (p2, c1, k60).
+1579085077: Socket error on client auto-38C9AB9B-6F12-20EF-FF4C-1C565E01650B, disconnecting.
+1579085080: New connection from 172.22.45.142 on port 1883.
+1579085113: New client connected from 172.22.45.142 as auto-E8C13902-B8EF-2C97-89A3-ED4ECB013190 (p2, c1, k60).
+1579085176: New connection from 172.22.45.80 on port 1883.
+1579085177: New client connected from 172.22.45.80 as auto-693F2AB5-19B7-CCF3-4F43-57145B836380 (p2, c1, k60).
+1579085203: Client auto-E8C13902-B8EF-2C97-89A3-ED4ECB013190 has exceeded timeout, disconnecting.
+1579085319: New connection from 172.22.45.142 on port 1883.
+1579085320: New client connected from 172.22.45.142 as auto-A25D824B-0F3B-AFB1-61CD-09DC035E02F7 (p2, c1, k60).
+1579085320: Socket error on client auto-A25D824B-0F3B-AFB1-61CD-09DC035E02F7, disconnecting.
+1579085355: New connection from 172.22.45.142 on port 1883.
+1579085355: New client connected from 172.22.45.142 as auto-EC85596C-9F9B-30C7-25C3-C2FDEEA9C957 (p2, c1, k60).
+1579085409: Client auto-693F2AB5-19B7-CCF3-4F43-57145B836380 has exceeded timeout, disconnecting.
+1579085445: Client auto-EC85596C-9F9B-30C7-25C3-C2FDEEA9C957 has exceeded timeout, disconnecting.
+1579085457: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579085459: New connection from 172.22.45.80 on port 1883.
+1579085459: New client connected from 172.22.45.80 as auto-3F84D55D-E8E4-48EC-8684-66A426E5D7FE (p2, c1, k60).
+1579085534: New connection from 172.22.45.142 on port 1883.
+1579085549: Client auto-3F84D55D-E8E4-48EC-8684-66A426E5D7FE has exceeded timeout, disconnecting.
+1579085575: New client connected from 172.22.45.142 as auto-85CA5440-6672-EA03-477E-B8BCC493D163 (p2, c1, k60).
+1579085575: Socket error on client auto-85CA5440-6672-EA03-477E-B8BCC493D163, disconnecting.
+1579085620: New connection from 172.22.45.142 on port 1883.
+1579085658: New client connected from 172.22.45.142 as auto-117A835B-BC88-EEE5-DD89-EECEEEE38179 (p2, c1, k60).
+1579085683: New connection from 172.22.45.80 on port 1883.
+1579085721: New client connected from 172.22.45.80 as auto-2C62D0CF-2951-4DAA-B3EE-F57EFA3FE50D (p2, c1, k60).
+1579085721: Socket error on client auto-2C62D0CF-2951-4DAA-B3EE-F57EFA3FE50D, disconnecting.
+1579085755: New connection from 172.22.45.80 on port 1883.
+1579085791: New client connected from 172.22.45.80 as auto-8E22A8FE-BAA2-0B88-F10B-91FEB0812898 (p2, c1, k60).
+1579085881: Client auto-8E22A8FE-BAA2-0B88-F10B-91FEB0812898 has exceeded timeout, disconnecting.
+1579085941: New connection from 172.22.45.80 on port 1883.
+1579085970: New client connected from 172.22.45.80 as auto-9F9E0CB4-0712-417A-8880-6869AD1B7D56 (p2, c1, k60).
+1579085970: Socket error on client auto-9F9E0CB4-0712-417A-8880-6869AD1B7D56, disconnecting.
+1579086009: New connection from 172.22.45.80 on port 1883.
+1579086099: Client <unknown> has exceeded timeout, disconnecting.
+1579086184: New connection from 172.22.45.239 on port 1883.
+1579086184: New client connected from 172.22.45.239 as auto-7DFE7DCE-A516-3B66-C783-6263D8A2C48B (p2, c1, k60).
+1579086621: Client auto-117A835B-BC88-EEE5-DD89-EECEEEE38179 has exceeded timeout, disconnecting.
+1579086645: New connection from 172.22.45.142 on port 1883.
+1579086667: New client connected from 172.22.45.142 as auto-98802CB5-ED95-6172-9184-04A7E61E2AA4 (p2, c1, k60).
+1579087010: Socket error on client auto-7DFE7DCE-A516-3B66-C783-6263D8A2C48B, disconnecting.
+1579087093: Client auto-98802CB5-ED95-6172-9184-04A7E61E2AA4 has exceeded timeout, disconnecting.
+1579087125: New connection from 172.22.45.142 on port 1883.
+1579087125: New client connected from 172.22.45.142 as auto-B45C2F7D-C35E-E741-5FA8-6312E0D57F7B (p2, c1, k60).
+1579087215: Client auto-B45C2F7D-C35E-E741-5FA8-6312E0D57F7B has exceeded timeout, disconnecting.
+1579087238: New connection from 172.22.45.142 on port 1883.
+1579087238: New client connected from 172.22.45.142 as auto-A4BCB7A4-6F08-C48C-898F-9CA6B42DF020 (p2, c1, k60).
+1579087258: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579087354: Client auto-A4BCB7A4-6F08-C48C-898F-9CA6B42DF020 has exceeded timeout, disconnecting.
+1579087401: New connection from 172.22.45.142 on port 1883.
+1579087401: New client connected from 172.22.45.142 as auto-BF1C569C-001D-AECA-31E9-E547F4775220 (p2, c1, k60).
+1579087674: Client auto-BF1C569C-001D-AECA-31E9-E547F4775220 has exceeded timeout, disconnecting.
+1579087718: New connection from 172.22.45.142 on port 1883.
+1579087718: New client connected from 172.22.45.142 as auto-70316DCA-3F94-73B4-5C96-3C0CC864CD0A (p2, c1, k60).
+1579087808: Client auto-70316DCA-3F94-73B4-5C96-3C0CC864CD0A has exceeded timeout, disconnecting.
+1579087867: New connection from 172.22.45.142 on port 1883.
+1579087867: New client connected from 172.22.45.142 as auto-4355E1C8-03D4-93A1-00A6-C720FDD175DD (p2, c1, k60).
+1579087957: Client auto-4355E1C8-03D4-93A1-00A6-C720FDD175DD has exceeded timeout, disconnecting.
+1579088000: New connection from 172.22.45.142 on port 1883.
+1579088066: New client connected from 172.22.45.142 as auto-BC355CCC-DA0A-618A-D24A-E34D119D8038 (p2, c1, k60).
+1579088067: Socket error on client auto-BC355CCC-DA0A-618A-D24A-E34D119D8038, disconnecting.
+1579088103: New connection from 172.22.45.142 on port 1883.
+1579088103: New client connected from 172.22.45.142 as auto-964364F5-0198-E60D-E62B-1FE6685D67C6 (p2, c1, k60).
+1579088264: Client auto-964364F5-0198-E60D-E62B-1FE6685D67C6 has exceeded timeout, disconnecting.
+1579088345: New connection from 172.22.45.142 on port 1883.
+1579088348: New client connected from 172.22.45.142 as auto-97EBE71A-145E-174C-5A64-F95D091916D4 (p2, c1, k60).
+1579088348: Socket error on client auto-97EBE71A-145E-174C-5A64-F95D091916D4, disconnecting.
+1579088416: New connection from 172.22.45.142 on port 1883.
+1579088417: New client connected from 172.22.45.142 as auto-EA18539E-006D-02EC-6BE5-34161753E583 (p2, c1, k60).
+1579088619: Client auto-EA18539E-006D-02EC-6BE5-34161753E583 has exceeded timeout, disconnecting.
+1579088702: New connection from 172.22.45.142 on port 1883.
+1579088703: New client connected from 172.22.45.142 as auto-63AFF302-23CB-3389-33EF-F8B8689B6923 (p2, c1, k60).
+1579088793: Client auto-63AFF302-23CB-3389-33EF-F8B8689B6923 has exceeded timeout, disconnecting.
+1579088852: New connection from 172.22.45.142 on port 1883.
+1579088916: New client connected from 172.22.45.142 as auto-C903C062-1F1D-077F-32D4-F8650C8ACA02 (p2, c1, k60).
+1579088919: Socket error on client auto-C903C062-1F1D-077F-32D4-F8650C8ACA02, disconnecting.
+1579088987: New connection from 172.22.45.142 on port 1883.
+1579088988: New client connected from 172.22.45.142 as auto-8642F130-6B8B-0D67-94F7-698AA12EDAE7 (p2, c1, k60).
+1579089059: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579089155: Client auto-8642F130-6B8B-0D67-94F7-698AA12EDAE7 has exceeded timeout, disconnecting.
+1579089244: New connection from 172.22.45.142 on port 1883.
+1579089280: New client connected from 172.22.45.142 as auto-7202AA7F-70B4-6AE5-0F14-AFD2C29560F7 (p2, c1, k60).
+1579089296: New connection from 172.22.45.239 on port 1883.
+1579089296: New client connected from 172.22.45.239 as auto-BC1C20FE-580E-F46A-4CDC-45C7C18059E8 (p2, c1, k60).
+1579089371: Client auto-7202AA7F-70B4-6AE5-0F14-AFD2C29560F7 has exceeded timeout, disconnecting.
+1579089459: New connection from 172.22.45.142 on port 1883.
+1579089493: New client connected from 172.22.45.142 as auto-E820B557-84A7-3ED1-1D3E-11233AFEC107 (p2, c1, k60).
+1579089495: Socket error on client auto-E820B557-84A7-3ED1-1D3E-11233AFEC107, disconnecting.
+1579089564: New connection from 172.22.45.142 on port 1883.
+1579089566: New client connected from 172.22.45.142 as auto-E34B0709-A932-49A3-1286-69EDE37231CA (p2, c1, k60).
+1579089705: Client auto-E34B0709-A932-49A3-1286-69EDE37231CA has exceeded timeout, disconnecting.
+1579089773: New connection from 172.22.45.142 on port 1883.
+1579089841: New client connected from 172.22.45.142 as auto-C6362E7D-73D1-DE24-A44B-CDD9A8094BC0 (p2, c1, k60).
+1579089842: Socket error on client auto-C6362E7D-73D1-DE24-A44B-CDD9A8094BC0, disconnecting.
+1579089916: New connection from 172.22.45.142 on port 1883.
+1579089951: New client connected from 172.22.45.142 as auto-8DC5686A-60AB-6E55-D94B-F34DD7C93920 (p2, c1, k60).
+1579090033: Socket error on client auto-88273AE4-1490-EA67-4C5E-359FF2F46F1B, disconnecting.
+1579090039: New connection from 172.18.0.6 on port 1883.
+1579090039: New client connected from 172.18.0.6 as auto-B3FFF9BD-537C-8859-E50E-665DFAF1FC65 (p2, c1, k60).
+1579090042: Client auto-8DC5686A-60AB-6E55-D94B-F34DD7C93920 has exceeded timeout, disconnecting.
+1579090043: Socket error on client auto-BC1C20FE-580E-F46A-4CDC-45C7C18059E8, disconnecting.
+1579090100: New connection from 172.22.45.142 on port 1883.
+1579090100: New client connected from 172.22.45.142 as auto-51529C78-6F60-3704-CC0C-CAD66813850A (p2, c1, k60).
+1579090119: New connection from 172.22.45.239 on port 1883.
+1579090119: New client connected from 172.22.45.239 as auto-474CFF40-F9FF-E3D8-177F-368F18BDC184 (p2, c1, k60).
+1579090216: Client auto-51529C78-6F60-3704-CC0C-CAD66813850A has exceeded timeout, disconnecting.
+1579090241: New connection from 172.22.45.142 on port 1883.
+1579090266: New client connected from 172.22.45.142 as auto-C1CDDE02-1A01-59E6-4940-4E4D1B958E0C (p2, c1, k60).
+1579090357: Client auto-C1CDDE02-1A01-59E6-4940-4E4D1B958E0C has exceeded timeout, disconnecting.
+1579090480: New connection from 172.22.45.142 on port 1883.
+1579090482: New client connected from 172.22.45.142 as auto-0EAAFB27-C430-F8CE-D5E4-4B16ACC3DB07 (p2, c1, k60).
+1579090573: Client auto-0EAAFB27-C430-F8CE-D5E4-4B16ACC3DB07 has exceeded timeout, disconnecting.
+1579090671: New connection from 172.22.45.142 on port 1883.
+1579090672: New client connected from 172.22.45.142 as auto-7BD2AA77-F176-4275-F776-6807153A0CA4 (p2, c1, k60).
+1579090763: Client auto-7BD2AA77-F176-4275-F776-6807153A0CA4 has exceeded timeout, disconnecting.
+1579090789: New connection from 172.22.45.142 on port 1883.
+1579090789: New client connected from 172.22.45.142 as auto-6FE9D10D-8768-F372-0E39-EFA911CC24FE (p2, c1, k60).
+1579090860: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579091151: Client auto-6FE9D10D-8768-F372-0E39-EFA911CC24FE has exceeded timeout, disconnecting.
+1579091178: New connection from 172.22.45.142 on port 1883.
+1579091199: New client connected from 172.22.45.142 as auto-CA90C630-F84B-9B67-E73C-9EC86DB573C1 (p2, c1, k60).
+1579091357: Client auto-CA90C630-F84B-9B67-E73C-9EC86DB573C1 has exceeded timeout, disconnecting.
+1579091448: New connection from 172.22.45.142 on port 1883.
+1579091448: New client connected from 172.22.45.142 as auto-720B09A1-2ADD-61B5-49EB-4F8C52AF41C0 (p2, c1, k60).
+1579091538: Client auto-720B09A1-2ADD-61B5-49EB-4F8C52AF41C0 has exceeded timeout, disconnecting.
+1579091599: New client connected from ::ffff:172.22.45.153 as web_31 (p2, c1, k60).
+1579091599: Socket error on client web_61, disconnecting.
+1579091648: New connection from 172.22.45.142 on port 1883.
+1579091651: New client connected from 172.22.45.142 as auto-02A9C492-5BD3-0EE6-EA06-F82949E4759F (p2, c1, k60).
+1579091741: Client auto-02A9C492-5BD3-0EE6-EA06-F82949E4759F has exceeded timeout, disconnecting.
+1579091806: New connection from 172.22.45.142 on port 1883.
+1579091844: New client connected from 172.22.45.142 as auto-A37352B6-885D-89B5-35C0-8537F4F4ADA3 (p2, c1, k60).
+1579091875: Socket error on client auto-A37352B6-885D-89B5-35C0-8537F4F4ADA3, disconnecting.
+1579091911: New connection from 172.22.45.142 on port 1883.
+1579091979: New client connected from 172.22.45.142 as auto-F0E77EED-89FF-5F70-6B84-4E7336888ED0 (p2, c1, k60).
+1579091979: Socket error on client auto-F0E77EED-89FF-5F70-6B84-4E7336888ED0, disconnecting.
+1579092049: New connection from 172.22.45.142 on port 1883.
+1579092051: New client connected from 172.22.45.142 as auto-D7BBD313-F31A-A0C2-556A-0CF9387B00F5 (p2, c1, k60).
+1579092084: Socket error on client auto-D7BBD313-F31A-A0C2-556A-0CF9387B00F5, disconnecting.
+1579092153: New connection from 172.22.45.142 on port 1883.
+1579092194: New client connected from 172.22.45.142 as auto-9E3EDE05-177C-6CF0-4816-4C4213A4ED7E (p2, c1, k60).
+1579092194: Socket error on client auto-9E3EDE05-177C-6CF0-4816-4C4213A4ED7E, disconnecting.
+1579092224: New connection from 172.22.45.142 on port 1883.
+1579092224: New client connected from 172.22.45.142 as auto-476E7433-1A5E-49B2-06E5-8CB6434452E3 (p2, c1, k60).
+1579092342: Client auto-476E7433-1A5E-49B2-06E5-8CB6434452E3 has exceeded timeout, disconnecting.
+1579092417: New connection from 172.22.45.142 on port 1883.
+1579092420: New client connected from 172.22.45.142 as auto-68546278-263F-38BE-7F3C-0CD30F7ECD29 (p2, c1, k60).
+1579092420: Socket error on client auto-68546278-263F-38BE-7F3C-0CD30F7ECD29, disconnecting.
+1579092459: New connection from 172.22.45.142 on port 1883.
+1579092490: New client connected from 172.22.45.142 as auto-9D40912C-42BF-2C11-E4D7-2FBDBED550CE (p2, c1, k60).
+1579092580: Client auto-9D40912C-42BF-2C11-E4D7-2FBDBED550CE has exceeded timeout, disconnecting.
+1579092661: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579092671: New connection from 172.22.45.142 on port 1883.
+1579092709: New client connected from 172.22.45.142 as auto-3AB0161C-494D-AB78-94B3-E0F960485827 (p2, c1, k60).
+1579092743: Socket error on client auto-3AB0161C-494D-AB78-94B3-E0F960485827, disconnecting.
+1579092780: New connection from 172.22.45.142 on port 1883.
+1579092781: New client connected from 172.22.45.142 as auto-0DF8E299-875C-C02F-15D8-CB75218E8A81 (p2, c1, k60).
+1579092871: Client auto-0DF8E299-875C-C02F-15D8-CB75218E8A81 has exceeded timeout, disconnecting.
+1579092965: New connection from 172.22.45.142 on port 1883.
+1579093032: New client connected from 172.22.45.142 as auto-8CFDEFEA-11BD-1871-B310-440F4765321E (p2, c1, k60).
+1579093033: Socket error on client auto-8CFDEFEA-11BD-1871-B310-440F4765321E, disconnecting.
+1579093139: New connection from 172.22.45.142 on port 1883.
+1579093141: New client connected from 172.22.45.142 as auto-922C6A9D-B078-C95E-6811-B74886115A81 (p2, c1, k60).
+1579093231: Client auto-922C6A9D-B078-C95E-6811-B74886115A81 has exceeded timeout, disconnecting.
+1579093285: Socket error on client web_43, disconnecting.
+1579093292: New client connected from ::ffff:172.22.46.34 as web_18 (p2, c1, k60).
+1579093333: New connection from 172.22.45.142 on port 1883.
+1579093333: New client connected from 172.22.45.142 as auto-21592912-F107-35AA-D815-31A8F1AA06E4 (p2, c1, k60).
+1579093732: Socket error on client auto-474CFF40-F9FF-E3D8-177F-368F18BDC184, disconnecting.
+1579093793: New connection from 172.22.45.239 on port 1883.
+1579093793: New client connected from 172.22.45.239 as auto-19ABE54B-1872-3C57-96E8-4B30C37750F1 (p2, c1, k60).
+1579093952: New client connected from ::ffff:172.22.46.42 as web_73 (p2, c1, k60).
+1579093974: New client connected from ::ffff:172.22.46.41 as web_45 (p2, c1, k60).
+1579093983: Socket error on client web_73, disconnecting.
+1579093986: Socket error on client web_45, disconnecting.
+1579094039: New client connected from ::ffff:172.22.46.42 as web_47 (p2, c1, k60).
+1579094050: New client connected from ::ffff:172.22.46.41 as web_37 (p2, c1, k60).
+1579094067: Socket error on client auto-21592912-F107-35AA-D815-31A8F1AA06E4, disconnecting.
+1579094108: Socket error on client auto-19ABE54B-1872-3C57-96E8-4B30C37750F1, disconnecting.
+1579094145: New connection from 172.22.45.142 on port 1883.
+1579094145: New client connected from 172.22.45.142 as auto-74FC2D14-6311-FB92-07FD-77A8073441EF (p2, c1, k60).
+1579094185: New connection from 172.22.45.239 on port 1883.
+1579094185: New client connected from 172.22.45.239 as auto-3A6D99C1-3C32-A53F-2958-8A66693FF3B0 (p2, c1, k60).
+1579094462: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579096263: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579096970: Socket error on client web_31, disconnecting.
+1579096978: New client connected from ::ffff:172.22.45.153 as web_36 (p2, c1, k60).
+1579097778: New client connected from ::ffff:172.22.45.153 as web_69 (p2, c1, k60).
+1579097778: Socket error on client web_36, disconnecting.
+1579097982: New client connected from ::ffff:172.22.45.153 as web_50 (p2, c1, k60).
+1579097982: Socket error on client web_69, disconnecting.
+1579098064: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579098109: New client connected from ::ffff:172.22.45.153 as web_11 (p2, c1, k60).
+1579098109: Socket error on client web_50, disconnecting.
+1579099029: New client connected from ::ffff:172.22.45.153 as web_57 (p2, c1, k60).
+1579099029: Socket error on client web_11, disconnecting.
+1579099512: New client connected from ::ffff:172.22.45.153 as web_60 (p2, c1, k60).
+1579099512: Socket error on client web_57, disconnecting.
+1579099865: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579099879: New client connected from ::ffff:172.22.45.153 as web_56 (p2, c1, k60).
+1579099879: Socket error on client web_60, disconnecting.
+1579101666: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579101688: New client connected from ::ffff:172.22.45.142 as web_34 (p2, c1, k60).
+1579103071: Socket error on client web_56, disconnecting.
+1579103084: New client connected from ::ffff:172.22.45.153 as web_3 (p2, c1, k60).
+1579103283: Client auto-3A6D99C1-3C32-A53F-2958-8A66693FF3B0 has exceeded timeout, disconnecting.
+1579103467: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579103594: Socket error on client web_3, disconnecting.
+1579103597: New client connected from ::ffff:172.22.45.153 as web_20 (p2, c1, k60).
+1579105268: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579106026: New client connected from ::ffff:172.22.45.153 as web_8 (p2, c1, k60).
+1579106026: Socket error on client web_20, disconnecting.
+1579106569: New client connected from ::ffff:172.22.45.153 as web_9 (p2, c1, k60).
+1579106569: Socket error on client web_8, disconnecting.
+1579106718: Socket error on client web_47, disconnecting.
+1579106727: Socket error on client web_37, disconnecting.
+1579106774: New client connected from ::ffff:172.22.46.42 as web_35 (p2, c1, k60).
+1579106789: New client connected from ::ffff:172.22.46.41 as web_81 (p2, c1, k60).
+1579106800: Socket error on client web_34, disconnecting.
+1579106858: Socket error on client auto-74FC2D14-6311-FB92-07FD-77A8073441EF, disconnecting.
+1579106913: New connection from 172.22.45.80 on port 1883.
+1579106913: New client connected from 172.22.45.80 as auto-175F45CD-C8F3-CB4B-2342-E93579A309D1 (p2, c1, k60).
+1579106933: New connection from 172.22.45.142 on port 1883.
+1579106933: New client connected from 172.22.45.142 as auto-20B6193F-12F2-215C-7590-41E20F961906 (p2, c1, k60).
+1579107069: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579107199: Socket error on client web_9, disconnecting.
+1579107201: New client connected from ::ffff:172.22.45.153 as web_37 (p2, c1, k60).
+1579107584: Socket error on client auto-175F45CD-C8F3-CB4B-2342-E93579A309D1, disconnecting.
+1579107588: New connection from 172.22.45.80 on port 1883.
+1579107588: New client connected from 172.22.45.80 as auto-92A05ED5-8BA2-EDF4-D04A-3E1DAE4AACCC (p2, c1, k60).
+1579107757: Socket error on client auto-92A05ED5-8BA2-EDF4-D04A-3E1DAE4AACCC, disconnecting.
+1579107811: New connection from 172.22.45.80 on port 1883.
+1579107811: New client connected from 172.22.45.80 as auto-87449AA7-DEDF-14B5-BEBE-6580E66DEB9A (p2, c1, k60).
+1579107872: New client connected from ::ffff:172.22.45.153 as web_97 (p2, c1, k60).
+1579107872: Socket error on client web_37, disconnecting.
+1579108051: Socket error on client auto-B3FFF9BD-537C-8859-E50E-665DFAF1FC65, disconnecting.
+1579108059: New connection from 172.18.0.6 on port 1883.
+1579108059: New client connected from 172.18.0.6 as auto-520418F0-F355-BFCC-ABF3-B4BD480B1C7C (p2, c1, k60).
+1579108155: Socket error on client auto-520418F0-F355-BFCC-ABF3-B4BD480B1C7C, disconnecting.
+1579108160: New connection from 172.18.0.6 on port 1883.
+1579108160: New client connected from 172.18.0.6 as auto-C2F9B2E3-12FA-4749-0EB9-CB409D8D6E72 (p2, c1, k60).
+1579108175: Socket error on client auto-87449AA7-DEDF-14B5-BEBE-6580E66DEB9A, disconnecting.
+1579108215: New connection from 172.22.45.80 on port 1883.
+1579108215: New client connected from 172.22.45.80 as auto-49774C31-982F-B1C1-9EC3-49E7333525A9 (p2, c1, k60).
+1579108352: Socket error on client auto-C2F9B2E3-12FA-4749-0EB9-CB409D8D6E72, disconnecting.
+1579108357: New connection from 172.18.0.6 on port 1883.
+1579108357: New client connected from 172.18.0.6 as auto-55A699C9-7EE7-4D57-93E5-6392BB933008 (p2, c1, k60).
+1579108477: Socket error on client auto-55A699C9-7EE7-4D57-93E5-6392BB933008, disconnecting.
+1579108483: New connection from 172.18.0.6 on port 1883.
+1579108483: New client connected from 172.18.0.6 as auto-F17D370E-955D-17E4-9D7B-2673200DCE16 (p2, c1, k60).
+1579108489: Socket error on client auto-49774C31-982F-B1C1-9EC3-49E7333525A9, disconnecting.
+1579108530: New connection from 172.22.45.80 on port 1883.
+1579108530: New client connected from 172.22.45.80 as auto-174F2F14-E00A-AC43-5B93-0B2424B56E9C (p2, c1, k60).
+1579108742: New client connected from ::ffff:172.22.45.153 as web_95 (p2, c1, k60).
+1579108742: Socket error on client web_97, disconnecting.
+1579108748: Socket error on client auto-F17D370E-955D-17E4-9D7B-2673200DCE16, disconnecting.
+1579108754: New connection from 172.18.0.6 on port 1883.
+1579108754: New client connected from 172.18.0.6 as auto-F6657354-71AE-798E-793D-CA508B47B53F (p2, c1, k60).
+1579108762: Socket error on client auto-174F2F14-E00A-AC43-5B93-0B2424B56E9C, disconnecting.
+1579108799: New connection from 172.22.45.80 on port 1883.
+1579108799: New client connected from 172.22.45.80 as auto-E2521265-F662-6FA9-C7C3-4E591621DD6F (p2, c1, k60).
+1579108870: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579108910: Socket error on client auto-F6657354-71AE-798E-793D-CA508B47B53F, disconnecting.
+1579108916: New connection from 172.18.0.6 on port 1883.
+1579108916: New client connected from 172.18.0.6 as auto-D224EBF0-D91F-C691-E05F-4D69EE43E801 (p2, c1, k60).
+1579108931: Socket error on client auto-E2521265-F662-6FA9-C7C3-4E591621DD6F, disconnecting.
+1579108971: New connection from 172.22.45.80 on port 1883.
+1579108971: New client connected from 172.22.45.80 as auto-C4B3D274-C62C-BB6F-9456-D26E56F7BBC7 (p2, c1, k60).
+1579109150: Socket error on client auto-D224EBF0-D91F-C691-E05F-4D69EE43E801, disconnecting.
+1579109157: New connection from 172.18.0.6 on port 1883.
+1579109157: New client connected from 172.18.0.6 as auto-F6E667B9-3344-E3B0-A123-CC8CAC2837B8 (p2, c1, k60).
+1579109342: Socket error on client auto-F6E667B9-3344-E3B0-A123-CC8CAC2837B8, disconnecting.
+1579109347: New connection from 172.18.0.6 on port 1883.
+1579109347: New client connected from 172.18.0.6 as auto-7B03224D-3B6A-2F77-28B5-8504EE8F438D (p2, c1, k60).
+1579109348: Socket error on client auto-C4B3D274-C62C-BB6F-9456-D26E56F7BBC7, disconnecting.
+1579109384: New connection from 172.22.45.80 on port 1883.
+1579109384: New client connected from 172.22.45.80 as auto-F5D66B42-7488-878F-0849-EF37DA3F4B73 (p2, c1, k60).
+1579109575: Socket error on client auto-7B03224D-3B6A-2F77-28B5-8504EE8F438D, disconnecting.
+1579109582: New connection from 172.18.0.6 on port 1883.
+1579109582: New client connected from 172.18.0.6 as auto-B7EDE274-231E-7048-C5F1-8654F938DB72 (p2, c1, k60).
+1579109600: Socket error on client auto-F5D66B42-7488-878F-0849-EF37DA3F4B73, disconnecting.
+1579109640: New connection from 172.22.45.80 on port 1883.
+1579109640: New client connected from 172.22.45.80 as auto-D1146B9E-B4EB-7E3A-B54E-F6B4850A7451 (p2, c1, k60).
+1579109824: Socket error on client auto-B7EDE274-231E-7048-C5F1-8654F938DB72, disconnecting.
+1579109829: New connection from 172.18.0.6 on port 1883.
+1579109829: New client connected from 172.18.0.6 as auto-E5BED239-11C3-FAF3-25C5-CE915462247E (p2, c1, k60).
+1579110156: Socket error on client auto-D1146B9E-B4EB-7E3A-B54E-F6B4850A7451, disconnecting.
+1579110234: New connection from 172.22.45.80 on port 1883.
+1579110234: New client connected from 172.22.45.80 as auto-25241195-A77A-0088-F031-0113C66B1561 (p2, c1, k60).
+1579110385: Client auto-25241195-A77A-0088-F031-0113C66B1561 has exceeded timeout, disconnecting.
+1579110391: Socket error on client web_18, disconnecting.
+1579110392: Socket error on client web_95, disconnecting.
+1579110405: Socket error on client web_35, disconnecting.
+1579110410: Client auto-20B6193F-12F2-215C-7590-41E20F961906 has exceeded timeout, disconnecting.
+1579110419: Socket error on client web_81, disconnecting.
+1579110578: New client connected from ::ffff:172.22.46.34 as web_27 (p2, c1, k60).
+1579110623: New connection from 172.22.45.80 on port 1883.
+1579110623: New client connected from 172.22.45.80 as auto-4EC3E200-5249-3342-A0A6-704F7613155B (p2, c1, k60).
+1579110671: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1579110702: New connection from 172.22.45.142 on port 1883.
+1579110702: New client connected from 172.22.45.142 as auto-687CEC3F-4CE6-135F-2B89-E10F6A38D94A (p2, c1, k60).
+1579111057: New client connected from ::ffff:172.21.69.135 as web_5 (p2, c1, k60).
+1579111080: New client connected from ::ffff:172.21.69.135 as web_26 (p2, c1, k60).
+1579111081: Socket error on client web_26, disconnecting.
+1579111137: New client connected from ::ffff:172.21.69.135 as web_99 (p2, c1, k60).
+1579111141: Socket error on client web_99, disconnecting.
+1579111142: New client connected from ::ffff:172.21.69.135 as web_39 (p2, c1, k60).
+1579111162: Socket error on client web_39, disconnecting.
+1579111163: New client connected from ::ffff:172.21.69.135 as web_63 (p2, c1, k60).
+1579111170: Socket error on client web_63, disconnecting.
+1579111170: New client connected from ::ffff:172.21.69.135 as web_73 (p2, c1, k60).
+1579111171: Socket error on client web_73, disconnecting.
+1579111226: Socket error on client web_5, disconnecting.
+1579111403: New client connected from ::ffff:172.21.69.135 as web_3 (p2, c1, k60).
+1579111403: Socket error on client web_3, disconnecting.
+1579111470: New client connected from ::ffff:172.21.69.135 as web_66 (p2, c1, k60).
+1579111470: Socket error on client web_66, disconnecting.
+1579111483: New client connected from ::ffff:172.21.69.135 as web_76 (p2, c1, k60).
+1579111484: Socket error on client web_76, disconnecting.
+1579111484: New client connected from ::ffff:172.21.69.135 as web_24 (p2, c1, k60).
+1579111484: Socket error on client web_24, disconnecting.
+1579111485: New client connected from ::ffff:172.21.69.135 as web_30 (p2, c1, k60).
+1579111485: Socket error on client web_30, disconnecting.
+1579111485: New client connected from ::ffff:172.21.69.135 as web_97 (p2, c1, k60).
+1579111485: Socket error on client web_97, disconnecting.
+1579111485: New client connected from ::ffff:172.21.69.135 as web_92 (p2, c1, k60).
+1579111490: Socket error on client web_92, disconnecting.
+1579111516: New client connected from ::ffff:172.22.46.41 as web_77 (p2, c1, k60).
+1579111607: Socket error on client web_77, disconnecting.
+1579111726: Socket error on client auto-E5BED239-11C3-FAF3-25C5-CE915462247E, disconnecting.

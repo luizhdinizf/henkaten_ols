@@ -133,8 +133,8 @@ class controller():
                 stringSubtitle = "Cadastramento"
                 self.screen.displaySubtitule(stringSubtitle)
 
-            if len(self.workplace.logados) == 0:
-                self.onLogout()                
+            if len(self.workplace.logados) == 0 and self.logar is False:
+                self.onLogout()
                 self.logar = True
             self.screen.show()
             key = cv2.waitKey(1) & 0xFF

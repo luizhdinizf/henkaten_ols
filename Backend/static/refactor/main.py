@@ -25,8 +25,9 @@ from colaborador import colaborador
 import paho.mqtt.client as mqtt
 import socket
 
-#mac = socket.gethostname()
-mac = "RMTZ3097"
+mac = socket.gethostname()
+print(mac)
+#mac = "RMTZ3097"
 cap = cv2.VideoCapture(0)   
 main1 = controller(mac,cap,screenController(),faceDetector(),linha(),workplace(mac))
 
@@ -67,9 +68,13 @@ def on_message(client, userdata, msg):
             main1.registraEvento("logoutGeral", " ")
         else:
             colab = main1.linha.findColabByMatricula(mat)
+            print(colab.name)
+            print(colab in main1.workplace.logados)
             if colab in main1.workplace.logados:
                 main1.registraEvento("logout", colab.name)
                 main1.workplace.removerLogado(colab.matricula)
+                main1.logar = True
+                
 
     elif command == "cadastrar":
         try:
