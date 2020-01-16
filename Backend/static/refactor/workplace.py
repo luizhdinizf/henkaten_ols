@@ -18,7 +18,11 @@ class workplace():
         collection = database['postos']
         query = {}
         query["mac"] = self.mac
-        workplaceInfo = collection.find(query)[0]
+        print(self.mac)
+        try:
+            workplaceInfo = collection.find_one(query)
+        except:
+            pass
         self.processo = workplaceInfo["Processo"]
         self.posto = workplaceInfo["Posto"]
         self.atividades = workplaceInfo["Atividades"]
@@ -43,7 +47,7 @@ class workplace():
         self.atualizaPosto()
 
     def atualizaPosto(self):
-        print("Atualizando Posto")
+        print(self.logados)
         collection = database['postos']
         matriculas = [colab.matricula for colab in self.logados]
         query = {}

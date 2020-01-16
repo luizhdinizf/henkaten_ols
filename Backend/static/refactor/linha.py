@@ -5,11 +5,12 @@ from datetime import datetime
 
 class linha():
     def __init__(self):
-        self.colaboradores = []        
+        self.colaboradores = []
        
 
     def findColaboradores(self,):
         x = 0
+        self.colaboradores = []
         collection = database["colaboradores"]
         query = {}
         #query["AREA"] = area
