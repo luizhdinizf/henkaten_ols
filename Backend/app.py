@@ -171,9 +171,40 @@ def clearMain():
         ) 
     return "Sucess"
 
+
+
 @app.route('/retrieveLogged', methods=['GET'])
-def loggeed():
-     return render_template('logged.html')
+def retrieveLogged():
+        import collections
+        from random import randint
+        dataR = request.args['date']
+        from bson.json_util import dumps
+        from flask import send_file
+        import csv
+        regx = re.compile("^"+dataR, re.IGNORECASE)
+   # { "date" : { $regex : /^08\/01\/2020/ }}
+        collection = database["historico"]
+        query = {}
+        query["date"] = regx
+        projection = {"_id": 0}
+        #query["CLIENTE"] = self.cliente
+        #query["LINHA"] = self.linha
+        cursor = collection.find(query,projection)
+        path = '/tmp/'+str(randint(0,5000))+'.csv'
+        employ_data = open(path, 'w')
+        count = 0
+        for doc in cursor:
+            if count == 0:
+                header = doc.keys()
+                fieldnames = doc.keys()
+                writer = csv.DictWriter(employ_data, fieldnames=fieldnames, delimiter=";")
+                writer.writeheader()
+                count += 1
+            #od = collections.OrderedDict(doc.keys())
+            writer.writerow(doc)
+        employ_data.close()
+
+        return send_file(path, as_attachment=True)
 
 
 @app.route('/api/upload', methods=['POST'])
@@ -196,6 +227,8 @@ def test():
     r = request  
 
     return r.data
+
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0',ssl_context=('cert.pem', 'key.pem'))

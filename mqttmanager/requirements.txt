@@ -1,0 +1,10 @@
+flask
+pymongo
+pandas
+wtforms
+jsonpickle
+flask-login
+flask-wtf
+flask-cors
+pyopenssl
+paho-mqtt

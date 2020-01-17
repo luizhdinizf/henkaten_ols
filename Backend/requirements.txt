@@ -1,10 +1,6 @@
-flask
 pymongo
 pandas
-wtforms
-jsonpickle
-flask-login
-flask-wtf
-flask-cors
+requests
 pyopenssl
 paho-mqtt
+numpy

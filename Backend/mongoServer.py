@@ -171,6 +171,8 @@ def mqttCommand(args):
 
 def retrieveLogged(date):
         from bson.json_util import dumps
+        from flask import send_file
+        import csv
         regx = re.compile("^"+date['date'], re.IGNORECASE)
    # { "date" : { $regex : /^08\/01\/2020/ }}
         collection = database["historico"]
@@ -179,10 +181,16 @@ def retrieveLogged(date):
         #query["CLIENTE"] = self.cliente
         #query["LINHA"] = self.linha
         cursor = collection.find(query)
+        path = '/tmp/EmployData.csv'
+        employ_data = open(path, 'w')
+        csvwriter = csv.writer(employ_data)
         ret =[]
         for doc in cursor:
             ret.append(doc)
-        return (ret)
+
+        return ret
+        #send_from_directory(directory=uploads, filename=filename)
+        #return (ret)
 
 
 def find_matriculas():

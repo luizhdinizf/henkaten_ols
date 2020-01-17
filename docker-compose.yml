@@ -26,6 +26,18 @@ services:
             - mqtt
         
         command: python -m flask run --host=0.0.0.0 
+    
+    mqttmanager:
+        build: ./mqttmanager
+        restart: always
+        working_dir: /dir
+        volumes:
+            - ./mqttmanager:/dir
+        depends_on:
+            - mongo
+            - mqtt
+        
+        command: python main.py
                
     mongo:
         image: mongo
